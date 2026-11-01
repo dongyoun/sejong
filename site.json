@@ -1,0 +1,7 @@
+{
+  "name": "세종",
+  "homepage": "https://dongyoun.github.io/sejong",
+  "downloadBase": "https://github.com/dongyoun/sejong/releases/download/v{version}",
+  "contact": "https://github.com/dongyoun/sejong/issues",
+  "minVersion": "0.0.0"
+}

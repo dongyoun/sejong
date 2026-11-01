@@ -1,0 +1,43 @@
+{
+  "product": "sejong",
+  "version": "1.2.0",
+  "date": "2026-11-01",
+  "minVersion": "0.0.0",
+  "page": "https://dongyoun.github.io/sejong",
+  "notes": "실행할 때 새 판을 확인하고, 앱을 다시 받지 않아도 기능이 고쳐집니다.\n\n- 세종을 켜면 홈페이지에서 새 판과 알림을 확인합니다. 보내는 것은 확인 요청 하나뿐이고, 문서나 사용 기록은 보내지 않습니다.\n- 작은 고침과 새 기능은 앱이 받아 두었다가 다시 시작할 때 적용합니다. 설치 파일을 다시 받지 않아도 됩니다.\n- 문제가 생긴 기능은 고친 판이 나올 때까지 잠시 꺼 둘 수 있게 했습니다.\n- 도움말 > 이용 정보에서 지금 쓰는 판을 봅니다. 모든 기능은 계속 무료입니다.",
+  "mac": {
+    "arm64": {
+      "dmg": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v1.2.0/Sejong-1.2.0-arm64.dmg",
+        "size": 134586018,
+        "sha256": "17b8d8a8d9574ebc6b1d47df2efc26d7e809d7a1428aa3a9dfea5d82b464dbc7"
+      },
+      "zip": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v1.2.0/Sejong-1.2.0-arm64-mac.zip",
+        "size": 133981472,
+        "sha256": "c8e14fadf7fe39715613bbb23ee04f4ef23f2c68f555c37f52f8f60cf242db77"
+      }
+    }
+  },
+  "bundle": {
+    "version": "1.2.0",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v1.2.0/Sejong-bundle-1.2.0.zip",
+    "size": 4122330,
+    "sha256": "592c09d6a3b78e1264316800e06ea827331105fbb901ddac822090f59b36fb4a",
+    "shellMin": "1.2.0",
+    "notes": "실행할 때 새 판을 확인하고, 앱을 다시 받지 않아도 기능이 고쳐집니다.\n\n- 세종을 켜면 홈페이지에서 새 판과 알림을 확인합니다. 보내는 것은 확인 요청 하나뿐이고, 문서나 사용 기록은 보내지 않습니다.\n- 작은 고침과 새 기능은 앱이 받아 두었다가 다시 시작할 때 적용합니다. 설치 파일을 다시 받지 않아도 됩니다.\n- 문제가 생긴 기능은 고친 판이 나올 때까지 잠시 꺼 둘 수 있게 했습니다.\n- 도움말 > 이용 정보에서 지금 쓰는 판을 봅니다. 모든 기능은 계속 무료입니다."
+  },
+  "config": {
+    "flags": {},
+    "plans": {},
+    "tiers": [
+      "free",
+      "pro",
+      "org"
+    ],
+    "links": {
+      "support": "https://github.com/dongyoun/sejong/issues"
+    }
+  },
+  "sig": "gTqN3AVzZHwMUqLHQCLqNdM5neaG4MCyjZYp32GKNvHL/TH1DAzyXQuQ/lXGPlu6W4FMcIYXan7meOC0TOS8CQ=="
+}
