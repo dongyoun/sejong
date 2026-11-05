@@ -10,7 +10,9 @@
     const dmg = m.mac && m.mac.arm64 && m.mac.arm64.dmg;
     const zip = m.mac && m.mac.arm64 && m.mac.arm64.zip;
     if (!dmg) throw new Error('no-mac');
-    all('[data-ver]').forEach((el) => (el.textContent = m.version));
+    // 화면 묶음만 올린 판이 있으면 '고친 것'은 그 판을 보여 준다 (설치 파일을 받아도 처음 실행 때 그 판이 된다)
+    const newest = m.bundle && m.bundle.notes ? m.bundle : m;
+    all('[data-ver]').forEach((el) => (el.textContent = newest.version));
     all('[data-date]').forEach((el) => (el.textContent = m.date));
     all('[data-dl="dmg"]').forEach((el) => {
       el.href = dmg.url;
@@ -20,9 +22,9 @@
     all('[data-dl-meta]').forEach((el) => (el.textContent = `${m.version} · ${mb(dmg.size)} · Apple Silicon`));
     all('[data-sha]').forEach((el) => (el.textContent = dmg.sha256));
     const notes = $('[data-notes]');
-    if (notes && !m.notes) notes.replaceChildren(Object.assign(document.createElement('p'), { className: 'muted', textContent: '이 판에서 고친 것은 아래에서 봅니다.' }));
-    if (notes && m.notes) {
-      const items = m.notes.split('\n').map((l) => l.trim()).filter(Boolean);
+    if (notes && !newest.notes) notes.replaceChildren(Object.assign(document.createElement('p'), { className: 'muted', textContent: '이 판에서 고친 것은 아래에서 봅니다.' }));
+    if (notes && newest.notes) {
+      const items = newest.notes.split('\n').map((l) => l.trim()).filter(Boolean);
       const ul = document.createElement('ul');
       for (const line of items) {
         if (!line.startsWith('- ')) continue;

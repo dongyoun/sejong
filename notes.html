@@ -12,7 +12,7 @@
 <body>
   <header class="top">
     <div class="wrap">
-      <a class="logo" href="index.html" aria-label="세종"><img src="assets/sejong-logo-horizontal.svg" alt="세종" /></a>
+      <a class="logo" href="index.html" aria-label="세종"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sejong-logo-horizontal-white.svg" /><img src="assets/sejong-logo-horizontal.svg" alt="세종" /></picture></a>
       <nav>
         <a href="index.html#features">무엇이 되나</a>
         <a href="index.html#faq">자주 묻는 것</a>
@@ -28,6 +28,17 @@
         <h2 style="margin-bottom: 8px">판마다 고친 것과 새로 된 것</h2>
         <p class="muted">맨 위가 가장 새 판입니다. 새 판이 나오면 앱이 알려 줍니다.</p>
         <div class="box" style="margin-top: 26px; max-width: 760px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 30px">
+<h2 id="v1.5.0">1.5.0<span class="ver">2026-11-06</span></h2>
+<p>맞춤법 사전이 들어왔습니다. 글을 쓰는 동안 틀렸을 수 있는 말에 빨간 물결 밑줄이 그어집니다.</p>
+<ul>
+<li>밑줄 친 말에 오른쪽 단추를 누르면 고칠 말이 나옵니다. 고르면 바로 바뀌고, 앞뒤 글자 모양은 그대로입니다.</li>
+<li>검토 &gt; 맞춤법(F8)은 이제 커서 뒤부터 한 곳씩 보여 줍니다. 바꾸기, 모두 바꾸기, 건너뛰기, 모두 건너뛰기, 사전에 더하기를 고를 수 있습니다.</li>
+<li>내 맞춤법 사전: 자주 쓰는 이름이나 용어를 더해 둡니다. 조사가 붙어도 알아봅니다.</li>
+<li>문서에서 여러 번 되풀이되는 이름과 전문 용어에는 밑줄을 긋지 않습니다.</li>
+<li>`제안되었다`를 `제안 되었다`로 고치라고 하던 잘못을 바로잡았습니다.</li>
+<li>밑줄이 번거로우면 검토 &gt; 맞춤법 도우미로 끕니다. 인쇄와 PDF에는 나오지 않습니다.</li>
+<li>사전은 hunspell-dict-ko 0.7.94입니다. 앱 정보 창에 출처와 라이선스를 적었습니다.</li>
+</ul>
 <h2 id="v1.4.0">1.4.0<span class="ver">2026-11-06</span></h2>
 <p>옛날 파일까지 열리고, 한글에서 인쇄한 것과 더 비슷하게 나옵니다.</p>
 <ul>
