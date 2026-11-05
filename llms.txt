@@ -7,6 +7,7 @@
 - MCP 서버: `/Applications/Sejong.app/Contents/Resources/cli/sejong mcp` (stdio). Claude Code: `claude mcp add sejong -- /Applications/Sejong.app/Contents/Resources/cli/sejong mcp`
 - 도구: sejong_outline(구조만) → sejong_read(문단 범위, 주소 p0.12) → sejong_find · sejong_table → sejong_preview/sejong_apply(ops) → sejong_save(hwp·hwpx·docx·txt·md·json) · sejong_convert · sejong_export
 - 명령(ops): replace_text · set_paragraph · insert_paragraphs · fill_field · set_cell. 서식은 보내지 않는다 — 그 자리 서식이 그대로 남는다.
+- 엑셀(.xlsx·.xls·.csv)·파워포인트(.pptx)도 같은 도구로: set_cells · insert_rows · add_sheet · add_chart, add_slide · set_shape_text · set_notes · animate 등. 암호 파일은 password.
 - 안내 문서: docs/AI.md (저장소), 홈페이지의 'AI 와 함께' 절
 
 ## 사람용
