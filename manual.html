@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
+  <script>(function(){try{if(location.host==="dongyoun.github.io")return;var a={"en":"en/manual.html","ja":"en/manual.html"},s=localStorage.getItem('hs.site.lang');if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var ls=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<ls.length;i++){var l=String(ls[i]).slice(0,2).toLowerCase();if(l==='ko')return;if(a[l]){w=l;break}}if(!w)w='en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
@@ -34,10 +35,10 @@
         <a href="office.html">오피스</a>
         <a href="cad.html">캐드</a>
         <a href="manual.html" aria-current="page">매뉴얼</a>
-        <a href="notes.html">고친 것</a>
+        <a href="notes.html">업데이트</a>
         <a class="nav-cta" href="office.html#download">내려받기</a>
       </nav>
-      <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="manual.html" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="en/manual.html" hreflang="en" lang="en">English</a><a href="ja/index.html" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" hreflang="zh-Hans" lang="zh-CN">简体中文</a></div></details>
+      <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="manual.html" hreflang="ko" lang="ko" data-l="ko" aria-current="true">한국어</a><a href="en/manual.html" hreflang="en" lang="en" data-l="en">English</a><a href="ja/index.html" hreflang="ja" lang="ja" data-l="ja">日本語</a></div></details>
     </div>
   </header>
 
@@ -81,21 +82,26 @@
         <section>
           <h2 id="start">시작하기</h2>
           <h3>설치</h3>
-          <p>Apple Silicon 맥(M1 이후)과 macOS 11 이상에서 돌아갑니다. <a href="office.html#download">내려받기</a>에서 .dmg 를 받아 열고, <b>HyperSeven Office</b> 를 <b>응용 프로그램</b> 폴더로 끌어 놓습니다.</p>
+          <p>Apple Silicon 맥(M1 이후)과 macOS 11 이상, 윈도우 10·11 (64비트)에서 돌아갑니다.</p>
+          <ul>
+            <li><b>맥</b> — <a href="office.html#download">내려받기</a>에서 .dmg 를 받아 열고, <b>HyperSeven Office</b> 를 <b>응용 프로그램</b> 폴더로 끌어 놓습니다.</li>
+            <li><b>윈도우</b> — .exe 를 받아 실행하면 바로 설치되고 앱이 뜹니다. 내 계정에만 깔려 관리자 권한이 필요 없고, 바탕 화면과 시작 메뉴에 바로 가기가 생깁니다. 설치 없이 쓰려면 .zip 을 풀어 <b>HyperSeven Office.exe</b> 를 실행합니다.</li>
+          </ul>
           <h3>처음 열 때</h3>
-          <p>아직 애플 공증을 받지 않아서 처음 실행하면 “확인되지 않은 개발자” 창이 뜹니다. 한 번만 이렇게 엽니다.</p>
+          <p>윈도우에서 “Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 누릅니다. 아직 코드 서명 인증서가 없어서 뜨는 창입니다.</p>
+          <p>맥은 아직 애플 공증을 받지 않아서 처음 실행하면 “확인되지 않은 개발자” 창이 뜹니다. 한 번만 이렇게 엽니다.</p>
           <ol>
             <li>응용 프로그램 폴더에서 앱을 오른쪽 단추로 누르고 <b>열기 → 열기</b>를 고릅니다.</li>
             <li>macOS 15 부터는 <span class="menu">시스템 설정 › 개인정보 보호 및 보안</span> 맨 아래의 <b>그래도 열기</b>를 누릅니다.</li>
             <li>그래도 열리지 않으면 터미널에서 <code>xattr -cr "/Applications/HyperSeven Office.app"</code> 을 한 번 실행합니다. 내려받은 파일에 붙는 ‘격리’ 표시를 떼는 것뿐입니다.</li>
           </ol>
           <h3>업데이트</h3>
-          <p>앱을 켜면 곧바로, 그 뒤로는 6시간마다 새 판이 있는지 확인합니다. 새 판이 있으면 ‘새 버전’ 창이 뜨고 상태 표시줄에도 표시됩니다. 창에서 <b>내려받기 페이지 열기</b>, <b>나중에</b>, <b>이 판은 건너뛰기</b> 가운데 고릅니다.</p>
+          <p>앱을 켜면 곧바로, 그 뒤로는 6시간마다 새 버전이 있는지 확인합니다. 새 버전이 있으면 ‘새 버전’ 창이 뜨고 상태 표시줄에도 표시됩니다. 창에서 <b>내려받기 페이지 열기</b>, <b>나중에</b>, <b>이 판은 건너뛰기</b> 가운데 고릅니다.</p>
           <ul>
             <li>설치 파일을 다시 받지 않아도 되는 고침은 ‘새 기능’ 창으로 알립니다. <b>지금 다시 시작</b>하거나 다음에 켤 때 적용됩니다.</li>
-            <li>꼭 고쳐야 하는 문제가 있을 때만 닫을 수 없는 업데이트 창이 뜹니다. 이때는 <b>저장하고 종료</b>로 문서를 지킨 뒤 새 판을 받습니다.</li>
+            <li>꼭 고쳐야 하는 문제가 있을 때만 닫을 수 없는 업데이트 창이 뜹니다. 이때는 <b>저장하고 종료</b>로 문서를 지킨 뒤 새 버전을 받습니다.</li>
             <li>직접 확인하려면 앱 메뉴의 <span class="menu">HyperSeven Office › 새 버전 확인…</span> 또는 <span class="menu">도구 › 새 버전 확인…</span>을 고릅니다.</li>
-            <li>새 설치 파일로 응용 프로그램 폴더의 앱을 바꿔 넣어도 문서와 설정은 그대로입니다.</li>
+            <li>새 설치 파일로 응용 프로그램 폴더의 앱을 바꿔 넣어도(윈도우는 새 .exe 를 실행해 그 위에 설치해도) 문서와 설정은 그대로입니다.</li>
           </ul>
         </section>
 
@@ -342,6 +348,7 @@
   "command": "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven",
   "args": ["mcp"]
 }</pre>
+          <p>윈도우는 같은 창에 나오는 명령을 그대로 복사합니다. 앱 실행 파일(<code>HyperSeven Office.exe</code>)에 <code>ELECTRON_RUN_AS_NODE=1</code> 을 붙여 <code>resources\cli\hyperseven.cjs</code> 를 넘기는 모양입니다 — 많은 에이전트가 <code>.cmd</code> 파일을 바로 띄우지 못해서입니다. 사람이 쓰는 명령줄은 설치 폴더의 <code>resources\cli\hyperseven.cmd</code> 입니다.</p>
           <h3>도구와 순서</h3>
           <p><code>office_outline</code>(구조만) → <code>office_read</code>(문단 범위, 주소 <code>p0.12</code>) → <code>office_find</code> · <code>office_table</code> → <code>office_preview</code> / <code>office_apply</code>(명령) → <code>office_save</code>. 그 밖에 <code>office_export</code> · <code>office_convert</code> · <code>office_close</code>.</p>
           <p>글 문서 명령은 <code>replace_text</code> · <code>set_paragraph</code> · <code>insert_paragraphs</code> · <code>fill_field</code> · <code>set_cell</code> 입니다. 서식은 보내지 않고, 그 자리 서식이 그대로 남습니다. 엑셀·파워포인트도 같은 도구로 다루고(<code>set_cells</code> · <code>add_sheet</code> · <code>add_slide</code> · <code>set_shape_text</code> 등), 암호 파일은 <code>password</code> 를 넘깁니다.</p>
@@ -359,6 +366,7 @@ hyperseven apply 문서.hwp 명령.json -o 결과.hwp     # --dry 로 미리 보
 
         <section>
           <h2 id="keys">단축키</h2>
+          <p>윈도우판은 한글 Windows 방식 키를 씁니다. 한글에서 쓰던 그대로이고, 아래 표는 맥 키입니다 — 윈도우 키 목록은 <span class="menu">도구 › 단축키 도움말</span>에서 봅니다.</p>
           <p>맥에서는 ‘한글 Mac 방식’ 키가 먼저이고, 겹치지 않는 한글 Windows 키도 함께 됩니다. <span class="menu">도구 › 단축키 설정…</span>에서 ‘Windows 한글 방식 우선’으로 바꾸거나 키를 하나씩 바꿀 수 있습니다.</p>
           <div class="callout"><p><b>겹글쇠</b> — <kbd>⌃N</kbd>, <kbd>T</kbd>는 <kbd>⌃N</kbd>을 누르고 4초 안에 <kbd>T</kbd>를 누르는 것입니다. 둘째 키는 <kbd>⌃</kbd>를 누른 채여도 됩니다.</p><p>F1~F12 는 맥 키보드 설정에 따라 <kbd>fn</kbd>과 함께 눌러야 할 수 있습니다. <kbd>⌘Q</kbd> <kbd>⌘H</kbd> <kbd>⌘M</kbd> <kbd>⌘Tab</kbd> <kbd>⌘Space</kbd>처럼 macOS 가 먼저 쓰는 키는 바꿀 수 없습니다.</p></div>
           <h3>파일 · 편집</h3>
@@ -496,18 +504,18 @@ hyperseven apply 문서.hwp 명령.json -o 결과.hwp     # --dry 로 미리 보
           </ul>
         </div>
         <div>
-          <h4>도움</h4>
+          <h4>지원</h4>
           <ul>
             <li><a href="manual.html">매뉴얼</a></li>
-            <li><a href="notes.html">고친 것</a></li>
-            <li><a href="office.html#faq">자주 묻는 것</a></li>
+            <li><a href="notes.html">업데이트 내역</a></li>
+            <li><a href="office.html#faq">자주 묻는 질문</a></li>
             <li><a href="llms.txt">AI 에이전트용 안내</a></li>
           </ul>
         </div>
         <div>
           <h4>문의</h4>
           <ul>
-            <li><a data-contact href="https://github.com/dongyoun/sejong/issues">GitHub 에 남기기</a></li>
+            <li><a data-contact href="https://github.com/dongyoun/sejong/issues">GitHub에 남기기</a></li>
           </ul>
         </div>
       </div>

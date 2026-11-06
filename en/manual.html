@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
@@ -37,7 +38,7 @@
         
         <a class="nav-cta" href="office.html#download">Download</a>
       </nav>
-      <details class="lang"><summary aria-label="Change language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>English</span></summary><div class="lang-list"><a href="../manual.html" hreflang="ko" lang="ko">한국어</a><a href="../en/manual.html" hreflang="en" lang="en" aria-current="true">English</a><a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" hreflang="zh-Hans" lang="zh-CN">简体中文</a></div></details>
+      <details class="lang"><summary aria-label="Change language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>English</span></summary><div class="lang-list"><a href="../manual.html" hreflang="ko" lang="ko" data-l="ko">한국어</a><a href="../en/manual.html" hreflang="en" lang="en" data-l="en" aria-current="true">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" data-l="ja">日本語</a></div></details>
     </div>
   </header>
 
@@ -81,9 +82,14 @@
         <section>
           <h2 id="start">Getting started</h2>
           <h3>Installing</h3>
-          <p>HyperSeven Office runs on Apple Silicon Macs (M1 or later) with macOS 11 or later. Get the .dmg from <a href="office.html#download">Download</a>, open it and drag <b>HyperSeven Office</b> into the <b>Applications</b> folder.</p>
+          <p>HyperSeven Office runs on Apple Silicon Macs (M1 or later) with macOS 11 or later, and on Windows 10 and 11 (64-bit).</p>
+          <ul>
+            <li><b>Mac</b> — Get the .dmg from <a href="office.html#download">Download</a>, open it and drag <b>HyperSeven Office</b> into the <b>Applications</b> folder.</li>
+            <li><b>Windows</b> — Run the .exe. It installs right away and opens the app — just for your account, so no admin rights are needed — and adds shortcuts to the desktop and Start menu. To use it without installing, unzip the .zip and run <b>HyperSeven Office.exe</b>.</li>
+          </ul>
           <h3>First launch</h3>
-          <p>The app isn't notarized by Apple yet, so the first time you open it macOS warns about an unidentified developer. You only have to get past this once:</p>
+          <p>On Windows, if you see “Windows protected your PC”, click <b>More info → Run anyway</b>. It shows up because the app isn't code-signed yet.</p>
+          <p>On the Mac, the app isn't notarized by Apple yet, so the first time you open it macOS warns about an unidentified developer. You only have to get past this once:</p>
           <ol>
             <li>In Applications, right-click the app and choose <b>Open → Open</b>.</li>
             <li>On macOS 15 and later, go to <span class="menu">System Settings › Privacy &amp; Security</span> and click <b>Open Anyway</b> at the bottom.</li>
@@ -95,7 +101,7 @@
             <li>Fixes that don't need a new installer arrive as a “What's New” window. They take effect when you choose <b>Restart Now</b>, or the next time you open the app.</li>
             <li>Only when something must be fixed does an update window appear that can't be closed. Use <b>Save and Quit</b> to keep your work, then install the new version.</li>
             <li>To check yourself, choose <span class="menu">HyperSeven Office › Check for Updates…</span> or <span class="menu">Tools › Check for Updates…</span>.</li>
-            <li>Replacing the app in Applications with a new installer keeps your documents and settings.</li>
+            <li>Replacing the app in Applications with a new installer (on Windows, running the new .exe over the old one) keeps your documents and settings.</li>
           </ul>
         </section>
 
@@ -342,6 +348,7 @@
   "command": "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven",
   "args": ["mcp"]
 }</pre>
+          <p>On Windows, copy the command from the same window. It runs the app (<code>HyperSeven Office.exe</code>) with <code>ELECTRON_RUN_AS_NODE=1</code> and passes it <code>resources\cli\hyperseven.cjs</code>, because many agents can't start a <code>.cmd</code> file directly. For your own terminal, use <code>resources\cli\hyperseven.cmd</code> in the install folder.</p>
           <h3>Tools, in order</h3>
           <p><code>office_outline</code> (structure only) → <code>office_read</code> (a paragraph range, addresses like <code>p0.12</code>) → <code>office_find</code> · <code>office_table</code> → <code>office_preview</code> / <code>office_apply</code> (edit operations) → <code>office_save</code>. Also <code>office_export</code>, <code>office_convert</code> and <code>office_close</code>.</p>
           <p>Document edits are <code>replace_text</code>, <code>set_paragraph</code>, <code>insert_paragraphs</code>, <code>fill_field</code> and <code>set_cell</code>. Formatting is never sent; whatever formatting is in place stays. Excel and PowerPoint use the same tools (<code>set_cells</code>, <code>add_sheet</code>, <code>add_slide</code>, <code>set_shape_text</code> and more), and protected files take a <code>password</code>.</p>
@@ -359,6 +366,7 @@ hyperseven apply report.hwp edits.json -o result.hwp     # --dry to preview</pre
 
         <section>
           <h2 id="keys">Keyboard shortcuts</h2>
+          <p>The Windows version uses the Hangul Windows keys, just as in Hangul. The table below lists Mac keys; for the Windows list, see <span class="menu">Tools › Shortcut Help</span>.</p>
           <p>On the Mac, the Hangul Mac layout comes first, and Hangul Windows keys that don't clash work too. In <span class="menu">Tools › Keyboard Shortcuts…</span> you can switch to “Prefer Hangul Windows keys” or change keys one by one.</p>
           <div class="callout"><p><b>Two-step keys</b> — <kbd>⌃N</kbd>, <kbd>T</kbd> means press <kbd>⌃N</kbd>, then <kbd>T</kbd> within four seconds. You can keep holding <kbd>⌃</kbd> for the second key.</p><p>Depending on your keyboard settings, F1–F12 may need <kbd>fn</kbd>. Keys macOS reserves, such as <kbd>⌘Q</kbd> <kbd>⌘H</kbd> <kbd>⌘M</kbd> <kbd>⌘Tab</kbd> <kbd>⌘Space</kbd>, can't be reassigned.</p></div>
           <h3>File · Edit</h3>

@@ -1,0 +1,4 @@
+# Cloudflare Pages 넘기기 규칙 (GitHub Pages 에서는 쓰지 않는 그냥 파일)
+# 중국어 쪽은 없앴다 (2026-11-06) — 이미 알려진 /zh/ 주소는 같은 쪽의 영어판으로
+/zh /en/ 301
+/zh/* /en/:splat 301

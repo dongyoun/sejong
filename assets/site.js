@@ -1,13 +1,33 @@
 // 배포 안내문(latest.json)을 읽어 판 번호·내려받기 주소·고친 것을 채운다. 안내문이 없으면 '준비 중' 으로 둔다.
-// 모든 쪽이 함께 쓴다 — 없는 자리는 건너뛴다. en/·ja/·zh/ 쪽은 <script data-root="../"> 로 안내문 자리를 알려 준다.
+// 모든 쪽이 함께 쓴다 — 없는 자리는 건너뛴다. en/·ja/ 쪽은 <script data-root="../"> 로 안내문 자리를 알려 준다.
 const ROOT = (document.currentScript && document.currentScript.dataset.root) || '';
 const LANG = (document.documentElement.lang || 'ko').slice(0, 2);
 const T = {
-  ko: { prep: '내려받기 준비 중', notesBelow: '이 판에서 고친 것은 아래에서 봅니다.', notesNone: '고친 것은 아래에서 봅니다.' },
-  en: { prep: 'Getting the download ready', notesBelow: 'See the full release notes below.', notesNone: 'See the release notes below.' },
-  ja: { prep: '準備中', notesBelow: '更新内容は下で見られます。', notesNone: '更新内容は下で見られます。' },
-  zh: { prep: '准备中', notesBelow: '更新内容见下方。', notesNone: '更新内容见下方。' },
+  ko: { prep: '내려받기 준비 중', win: '윈도우 10·11', notesBelow: '이 버전의 업데이트 내역은 아래에서 봅니다.', notesNone: '업데이트 내역은 아래에서 봅니다.' },
+  en: { prep: 'Getting the download ready', win: 'Windows 10/11', notesBelow: 'See the full release notes below.', notesNone: 'See the release notes below.' },
+  ja: { prep: '準備中', win: 'Windows 10・11', notesBelow: '更新内容は下で見られます。', notesNone: '更新内容は下で見られます。' },
 }[LANG] || {};
+// 이 컴퓨터가 윈도우인가 (받기 단추는 이 컴퓨터용을 앞에, 진하게)
+const ON_WIN = /win/i.test((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent);
+const primary = (os) =>
+  document.querySelectorAll('.get-btns').forEach((box) => {
+    const mine = box.querySelector(`[data-os="${os}"]`);
+    if (mine) box.prepend(mine);
+    box.querySelectorAll('[data-os]').forEach((el) => el.classList.toggle('ghost', el.dataset.os !== os));
+  });
+primary(ON_WIN ? 'win' : 'mac');
+// 명령 찾기 단축키: 맥 ⌘K, 윈도우 Ctrl+Shift+K
+if (ON_WIN) document.querySelectorAll('[data-k]').forEach((el) => (el.textContent = 'Ctrl+Shift+K'));
+// 언어를 직접 고르면 기억한다 (첫 화면의 자동 언어 고르기가 그 뜻을 따르게 — build.mjs 의 langAuto)
+document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
+  a.addEventListener('click', () => {
+    try {
+      localStorage.setItem('hs.site.lang', a.dataset.l);
+    } catch {
+      /* 저장소를 못 쓰면 그대로 */
+    }
+  }),
+);
 
 // 머리 막대: 내리면 아래 선
 (() => {
@@ -54,20 +74,29 @@ const T = {
     const r = await fetch(ROOT + 'latest.json', { cache: 'no-store' });
     if (!r.ok) throw new Error(String(r.status));
     const m = await r.json();
-    const dmg = m.mac && m.mac.arm64 && m.mac.arm64.dmg;
-    const zip = m.mac && m.mac.arm64 && m.mac.arm64.zip;
-    if (!dmg) throw new Error('no-mac');
+    // 맥(dmg·zip)과 윈도우(exe·zip, 2.0~). data-dl="auto" 와 값 없는 data-dl-meta 는 이 컴퓨터에 맞는 쪽
+    const mac = (m.mac && m.mac.arm64) || {};
+    const win = (m.win && m.win.x64) || {};
+    if (!mac.dmg && !win.exe) throw new Error('no-build');
+    const os = ON_WIN && win.exe ? 'win' : 'mac';
+    primary(os);
+    const FILE = { dmg: mac.dmg, zip: mac.zip || mac.dmg, exe: win.exe, winzip: win.zip || win.exe, auto: os === 'win' ? win.exe : mac.dmg };
+    const META = { mac: mac.dmg && `${m.version} · ${mb(mac.dmg.size)} · Apple Silicon`, win: win.exe && `${m.version} · ${mb(win.exe.size)} · ${T.win}` };
+    const which = (v) => (v === 'win' || v === 'mac' ? v : os);
     // 화면 묶음만 올린 판이 있으면 '고친 것'은 그 판을 보여 준다 (설치 파일을 받아도 처음 실행 때 그 판이 된다)
     const newest = m.bundle && m.bundle.notes ? m.bundle : m;
     all('[data-ver]').forEach((el) => (el.textContent = newest.version));
     all('[data-date]').forEach((el) => (el.textContent = m.date));
-    all('[data-dl="dmg"]').forEach((el) => {
-      el.href = dmg.url;
-      el.classList.remove('disabled');
+    all('[data-dl]').forEach((el) => {
+      const f = FILE[el.dataset.dl];
+      if (f) el.href = f.url;
+      el.classList.toggle('disabled', !f);
     });
-    all('[data-dl="zip"]').forEach((el) => (el.href = zip ? zip.url : dmg.url));
-    all('[data-dl-meta]').forEach((el) => (el.textContent = `${m.version} · ${mb(dmg.size)} · Apple Silicon`));
-    all('[data-sha]').forEach((el) => (el.textContent = dmg.sha256));
+    all('[data-dl-meta]').forEach((el) => (el.textContent = META[which(el.dataset.dlMeta)] || T.prep));
+    all('[data-sha]').forEach((el) => {
+      const f = which(el.dataset.sha) === 'win' ? win.exe : mac.dmg;
+      el.textContent = f ? f.sha256 : '—';
+    });
     const notes = $('[data-notes]');
     if (notes && !newest.notes) notes.replaceChildren(Object.assign(document.createElement('p'), { className: 'muted', textContent: T.notesBelow }));
     if (notes && newest.notes) {
@@ -90,7 +119,7 @@ const T = {
     }
   } catch {
     all('[data-dl-meta]').forEach((el) => (el.textContent = T.prep));
-    all('[data-dl="dmg"]').forEach((el) => el.classList.add('disabled'));
+    all('[data-dl]').forEach((el) => el.classList.add('disabled'));
     const notes = $('[data-notes]');
     if (notes) notes.replaceChildren(Object.assign(document.createElement('p'), { className: 'muted', textContent: T.notesNone }));
   }

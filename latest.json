@@ -4,7 +4,7 @@
   "date": "2026-11-06",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "HyperSeven Office 로 새로 나왔습니다. 한글·워드·엑셀·파워포인트·PDF 를 한 앱에서 다루는 것은 그대로이고, 영어 화면과 명령 찾기가 더해졌습니다.\n- 영어로도 씁니다. 처음에는 맥의 언어를 따르고, 환경 설정 › 보기 › 언어에서 바꿉니다.\n- 명령 찾기 `⌘K`: 메뉴가 어디 있는지 몰라도 이름이나 초성 몇 자로 명령을 찾아 바로 실행합니다.\n- 문제 알리기: 도구 › 문제 알리기…에서 한 줄만 쓰면 됩니다. 문서 글은 보내지 않고, 문서 모양이 문제라면 글자를 지운 사본을 붙입니다. 오류가 나면 뜨는 알림에서도 바로 보낼 수 있고, 고쳐지면 앱이 알려 드립니다.\n- 쓰던 설정·단축키·최근 문서·자동 저장은 처음 켤 때 그대로 옮겨 옵니다. AI 도우미 열쇠만 한 번 다시 넣어 주세요. 예전 이름의 앱은 응용 프로그램 폴더에서 지워도 됩니다.\n- AI 에이전트용 명령줄과 MCP 이름이 `hyperseven`, 도구 이름이 `office_*` 로 바뀌었습니다. 도구 › AI 연결 (MCP) 에서 새 명령을 복사해 다시 붙여 주세요.\n- 새 아이콘과 새 홈페이지.",
+  "notes": "HyperSeven Office로 새롭게 나왔습니다. 한글·워드·엑셀·파워포인트·PDF를 한 앱에서 다루고, 윈도우판과 영어 화면, 명령 찾기가 더해졌습니다.\n- 윈도우 10·11(64비트) 지원: .exe를 실행하면 바로 설치되고, 한글 Windows 방식 단축키를 그대로 씁니다.\n- 영어 화면: 처음에는 운영체제 언어를 따르고, 환경 설정 › 보기 › 언어에서 바꿉니다.\n- 명령 찾기 `⌘K`(윈도우 `Ctrl+Shift+K`): 이름이나 초성 몇 자로 모든 명령을 바로 실행합니다.\n- 문제 알리기: 도구 › 문제 알리기…에서 한 줄만 적어 보내면 됩니다. 문서 모양이 문제라면 글자를 지운 사본을 붙일 수 있고, 고쳐지면 앱이 알려 드립니다.\n- 쓰던 설정·단축키·최근 문서·자동 저장은 처음 실행할 때 그대로 옮겨 옵니다. AI 도우미 열쇠만 한 번 다시 넣어 주세요.\n- AI 에이전트용 명령줄과 MCP 이름이 `hyperseven`, 도구 이름이 `office_*`로 바뀌었습니다. 도구 › AI 연결 (MCP)에서 새 명령을 복사해 다시 연결해 주세요.\n- 새 아이콘과 새 홈페이지.",
   "mac": {
     "arm64": {
       "dmg": {
@@ -20,12 +20,12 @@
     }
   },
   "bundle": {
-    "version": "2.0.0",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-bundle-2.0.0.zip",
-    "size": 5216170,
-    "sha256": "35d0447244d756fc8005cd348df249991dc658de966124211c3ec4e95acfe222",
+    "version": "2.0.1",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-bundle-2.0.1.zip",
+    "size": 5216366,
+    "sha256": "639cbe0b269a254b9d9fe52a274617bdc24ca9fe92034c2eff7e14c93cf8ad03",
     "shellMin": "2.0.0",
-    "notes": "HyperSeven Office 로 새로 나왔습니다. 한글·워드·엑셀·파워포인트·PDF 를 한 앱에서 다루는 것은 그대로이고, 영어 화면과 명령 찾기가 더해졌습니다.\n- 영어로도 씁니다. 처음에는 맥의 언어를 따르고, 환경 설정 › 보기 › 언어에서 바꿉니다.\n- 명령 찾기 `⌘K`: 메뉴가 어디 있는지 몰라도 이름이나 초성 몇 자로 명령을 찾아 바로 실행합니다.\n- 문제 알리기: 도구 › 문제 알리기…에서 한 줄만 쓰면 됩니다. 문서 글은 보내지 않고, 문서 모양이 문제라면 글자를 지운 사본을 붙입니다. 오류가 나면 뜨는 알림에서도 바로 보낼 수 있고, 고쳐지면 앱이 알려 드립니다.\n- 쓰던 설정·단축키·최근 문서·자동 저장은 처음 켤 때 그대로 옮겨 옵니다. AI 도우미 열쇠만 한 번 다시 넣어 주세요. 예전 이름의 앱은 응용 프로그램 폴더에서 지워도 됩니다.\n- AI 에이전트용 명령줄과 MCP 이름이 `hyperseven`, 도구 이름이 `office_*` 로 바뀌었습니다. 도구 › AI 연결 (MCP) 에서 새 명령을 복사해 다시 붙여 주세요.\n- 새 아이콘과 새 홈페이지."
+    "notes": "앱이 꺼져 있을 때 문서를 두 번 눌러 열면, 그 문서가 바로 열립니다.\n- 문서를 두 번 눌러 앱을 켜면 빈 문서만 뜨던 문제를 고쳤습니다 (맥 Finder·윈도우 탐색기·명령줄 모두)."
   },
   "config": {
     "flags": {},
@@ -39,5 +39,19 @@
       "support": "https://github.com/dongyoun/sejong/issues"
     }
   },
-  "sig": "cr2s7Q7Pxw2mJaAjtKJx6sZ6xdFgJptf/Ug+a5nKbSJSBqqjvfAp5FnBC2XgTBMKaFv1FKXXye5NliprZtorBA=="
+  "win": {
+    "x64": {
+      "exe": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-2.0.0-win-x64.exe",
+        "size": 107886733,
+        "sha256": "8dad89045e292021a8c752a01a098468e3bea65d783dfd9518c7f090a1574d03"
+      },
+      "zip": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-2.0.0-win-x64.zip",
+        "size": 147477581,
+        "sha256": "2185866f9f5dcc7326be04441aa43ce3d5a4d95ea5a6ed665f8cac83304cecf9"
+      }
+    }
+  },
+  "sig": "NVXkiNr9SXHOA91IM+GIlYMg97Un7jskYGjicy0IBRDEgY798Mi++rpcCtX8fqtyjZMoAjXbCm85wtqfiop/Bw=="
 }
