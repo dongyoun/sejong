@@ -18,11 +18,12 @@ const primary = (os) =>
 primary(ON_WIN ? 'win' : 'mac');
 // 명령 찾기 단축키: 맥 ⌘K, 윈도우 Ctrl+Shift+K
 if (ON_WIN) document.querySelectorAll('[data-k]').forEach((el) => (el.textContent = 'Ctrl+Shift+K'));
-// 언어를 직접 고르면 기억한다 (첫 화면의 자동 언어 고르기가 그 뜻을 따르게 — build.mjs 의 langAuto)
+// 언어를 직접 고르면 이 방문 동안만 기억한다 (한국어 쪽의 자동 언어 고르기가 그 뜻을 따르게 — build.mjs 의 langAuto).
+// 다음 방문은 다시 운영체제(브라우저 첫째) 언어로 시작한다.
 document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
   a.addEventListener('click', () => {
     try {
-      localStorage.setItem('hs.site.lang', a.dataset.l);
+      sessionStorage.setItem('hs.site.lang', a.dataset.l);
     } catch {
       /* 저장소를 못 쓰면 그대로 */
     }

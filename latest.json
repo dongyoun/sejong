@@ -20,12 +20,12 @@
     }
   },
   "bundle": {
-    "version": "2.0.1",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-bundle-2.0.1.zip",
-    "size": 5216366,
-    "sha256": "639cbe0b269a254b9d9fe52a274617bdc24ca9fe92034c2eff7e14c93cf8ad03",
+    "version": "2.0.2",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-bundle-2.0.2.zip",
+    "size": 5216747,
+    "sha256": "0c8d261fe39c981e72df3a6829f5746bfc0c47723489d2d21f5e16492021e3b6",
     "shellMin": "2.0.0",
-    "notes": "앱이 꺼져 있을 때 문서를 두 번 눌러 열면, 그 문서가 바로 열립니다.\n- 문서를 두 번 눌러 앱을 켜면 빈 문서만 뜨던 문제를 고쳤습니다 (맥 Finder·윈도우 탐색기·명령줄 모두)."
+    "notes": "한글 문서를 워드로 저장하면 문단 사이 간격까지 한글과 같게 나옵니다.\n- 워드(.docx)로 저장한 문서를 워드에서 열 때 문단 사이가 한글보다 좁아 보이던 것을 고쳤습니다."
   },
   "config": {
     "flags": {},
@@ -53,5 +53,5 @@
       }
     }
   },
-  "sig": "NVXkiNr9SXHOA91IM+GIlYMg97Un7jskYGjicy0IBRDEgY798Mi++rpcCtX8fqtyjZMoAjXbCm85wtqfiop/Bw=="
+  "sig": "qPg9SFA/AWsFWWnc5nK7lgl25SIcHsStV84NJ+nvS/lxyM+ZmyjZRDc5vr6jzG2hhTDXAUMLx8tSXVJBAEt9Bw=="
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
-  <script>(function(){try{if(location.host==="dongyoun.github.io")return;var a={"en":"en/index.html","ja":"ja/index.html"},s=localStorage.getItem('hs.site.lang');if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var ls=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];for(var i=0;i<ls.length;i++){var l=String(ls[i]).slice(0,2).toLowerCase();if(l==='ko')return;if(a[l]){w=l;break}}if(!w)w='en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
+  <script>(function(){try{if(location.host==="dongyoun.github.io")return;try{localStorage.removeItem('hs.site.lang')}catch(e){}var a={"en":"en/index.html","ja":"ja/index.html"},s='';try{s=sessionStorage.getItem('hs.site.lang')||''}catch(e){}if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var l=String((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();if(l==='ko')return;w=a[l]?l:'en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
@@ -37,56 +37,43 @@
         <a href="cad.html">캐드</a>
         <a href="manual.html">매뉴얼</a>
         <a href="notes.html">업데이트</a>
-        <a class="nav-cta" href="office.html#download">내려받기</a>
+        
       </nav>
       <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="index.html" hreflang="ko" lang="ko" data-l="ko" aria-current="true">한국어</a><a href="en/index.html" hreflang="en" lang="en" data-l="en">English</a><a href="ja/index.html" hreflang="ja" lang="ja" data-l="ja">日本語</a></div></details>
     </div>
   </header>
 
 <main>
-    <section class="hero">
+    <section class="hero menu">
       <div class="wrap">
-        <div>
+        <div class="menu-head">
           <span class="eyebrow"><img src="assets/brand/hyperseven-mark.svg" alt="" width="18" height="18" />하이퍼세븐 랩스</span>
           <h1>글짓기부터<br />집짓기까지<span class="ver">.</span></h1>
-          <p class="lead">한글·워드·엑셀·파워포인트·PDF, 그리고 오토캐드·스케치업·라이노·레빗·아키캐드까지. 하나의 플랫폼에서 다룹니다.</p>
-          <div class="get">
-            <p class="get-label"><img src="assets/brand/icon-office.svg" alt="" width="26" height="26" />하이퍼세븐 오피스 <span data-ver>2.0</span></p>
-            <div class="get-btns">
-  <a class="btn os" href="office.html#download" data-dl="dmg" data-os="mac">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
-  </a>
-  <a class="btn os" href="office.html#download" data-dl="exe" data-os="win">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>Windows 다운로드<small data-dl-meta="win">준비 중</small></span>
-  </a>
-</div>
-
-            <p class="get-note">무료 · 한국어 · English</p>
-          </div>
-          <div class="get-links">
-            <a class="link ver" href="office.html">오피스 자세히 보기 <span aria-hidden="true">→</span></a>
-            <a class="link blue" href="cad.html">캐드 미리 보기 <span aria-hidden="true">→</span></a>
-          </div>
+          <p class="lead">문서부터 건축 설계까지, 하나의 플랫폼.</p>
         </div>
-        <div class="stack stage" aria-hidden="true">
-  <div class="window dark back"><div class="bar"><i></i><i></i><i></i><span class="wname">HyperSeven CAD</span></div><img src="assets/shots/cad-3d.webp" alt="" width="1600" height="1012" /></div>
-  <div class="window front sdoc">
-    <div class="bar"><i></i><i></i><i></i><span class="tabs"><b class="on">보고서.hwp</b><b>실적.xlsx</b><b>발표.pptx</b></span></div>
-    <div class="sbody">
-      <div class="spage">
-        <i class="t"></i><i></i><i></i><i class="s"></i>
-        <div class="stbl"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="sbar"><i style="height: 44%"></i><i style="height: 68%"></i><i class="a" style="height: 100%"></i><i style="height: 58%"></i><i style="height: 80%"></i></div>
-        <i></i><i class="s"></i>
-      </div>
-    </div>
-  </div>
-  <div class="kchip"><kbd data-k>⌘K</kbd><span>명령 찾기</span></div>
-  <div class="aichip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /><path d="M19 15.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z" /></svg>AI 에이전트 연결됨</div>
+        <div class="menu-cards">
+          <a class="mcard office" href="office.html">
+            <div class="mtop"><img src="assets/brand/icon-office.svg" alt="" width="56" height="56" /><div><b>HyperSeven Office</b><span>하이퍼세븐 오피스 · 문서 · 시트 · 발표 · PDF</span></div></div>
+            <div class="tags"><span class="tag">무료</span><span class="tag">맥 · 윈도우</span></div>
+            <p class="mdesc">한글·워드·엑셀·파워포인트·PDF를 한 앱에서. 한글로 열고 워드로 저장해도 서식이 그대로입니다.</p>
+            <span class="mgo">오피스 보기 <span aria-hidden="true">→</span></span>
+            <div class="mshot"><div class="fan" aria-hidden="true">
+  <div class="fc f1"><div class="ln"><i class="h"></i><i></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">HWP</span></div>
+  <div class="fc f2"><div class="ln"><i class="h"></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">DOCX</span></div>
+  <div class="fc f3"><div class="gridc"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="bars"><i style="height: 40%"></i><i style="height: 65%"></i><i class="a" style="height: 100%"></i><i style="height: 55%"></i></div><span class="badge">XLSX</span></div>
+  <div class="fc f4"><div class="sl"><i></i></div><div class="ln" style="margin-top: 12px"><i class="s"></i></div><span class="badge">PPTX</span></div>
+  <div class="fc f5"><div class="ln"><i class="h"></i><i></i><i class="hl"></i><i></i><i class="s"></i></div><span class="badge">PDF</span></div>
 </div>
-
+</div>
+          </a>
+          <a class="mcard cad" href="cad.html">
+            <div class="mtop"><img src="assets/brand/icon-cad.svg" alt="" width="56" height="56" /><div><b>HyperSeven CAD</b><span>하이퍼세븐 캐드 · 도면 · 3D · 곡면 · 노드 · BIM</span></div></div>
+            <div class="tags"><span class="tag dev"><span class="dot"></span>개발 중</span></div>
+            <p class="mdesc">오토캐드·스케치업·라이노·레빗·아키캐드의 작업을 한 번에. 도면부터 3D·곡면·노드·BIM까지 하나의 모델로 이어집니다.</p>
+            <span class="mgo">캐드 미리 보기 <span aria-hidden="true">→</span></span>
+            <div class="mshot"><div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/cad-3d.webp" alt="하이퍼세븐 캐드의 3D 화면 — 박공지붕 벽돌집 예제" width="1600" height="1012" /></div></div>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -148,50 +135,7 @@
       </div>
     </section>
 
-    <section class="sec soft" id="tools">
-      <div class="wrap">
-        <div class="sec-head">
-          <div class="kicker">두 가지 도구, 한 플랫폼</div>
-          <h2>쓰는 일과 짓는 일</h2>
-        </div>
-        <div class="products">
-          <article class="product office">
-            <img class="icon" src="assets/brand/icon-office.svg" alt="" width="68" height="68" />
-            <h3>HyperSeven Office</h3>
-            <p class="sub">하이퍼세븐 오피스 · 문서 · 시트 · 발표 · PDF</p>
-            <p class="desc">한글·워드·엑셀·파워포인트·PDF를 한 앱에서. 한글로 열고 워드로 저장해도 서식이 그대로입니다.</p>
-            <div class="tags"><span class="tag now"><span class="dot"></span>지금 받기</span><span class="tag">무료</span><span class="tag">맥 · 윈도우</span></div>
-            <div class="links">
-              <a class="link ver" href="office.html">자세히 보기 <span aria-hidden="true">→</span></a>
-              <a class="link" href="office.html#download">다운로드</a>
-              <a class="link" href="manual.html">매뉴얼</a>
-            </div>
-            <div class="shot"><div class="fan" aria-hidden="true">
-  <div class="fc f1"><div class="ln"><i class="h"></i><i></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">HWP</span></div>
-  <div class="fc f2"><div class="ln"><i class="h"></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">DOCX</span></div>
-  <div class="fc f3"><div class="gridc"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="bars"><i style="height: 40%"></i><i style="height: 65%"></i><i class="a" style="height: 100%"></i><i style="height: 55%"></i></div><span class="badge">XLSX</span></div>
-  <div class="fc f4"><div class="sl"><i></i></div><div class="ln" style="margin-top: 12px"><i class="s"></i></div><span class="badge">PPTX</span></div>
-  <div class="fc f5"><div class="ln"><i class="h"></i><i></i><i class="hl"></i><i></i><i class="s"></i></div><span class="badge">PDF</span></div>
-</div>
-</div>
-          </article>
-          <article class="product cad">
-            <img class="icon" src="assets/brand/icon-cad.svg" alt="" width="68" height="68" />
-            <h3>HyperSeven CAD</h3>
-            <p class="sub">하이퍼세븐 캐드 · 도면 · 3D · 곡면 · 노드 · BIM</p>
-            <p class="desc">오토캐드·스케치업·라이노·레빗·아키캐드의 작업을 한 번에. 도면부터 3D·곡면·노드·BIM까지 하나의 모델로 이어집니다.</p>
-            <div class="tags"><span class="tag dev"><span class="dot"></span>개발 중</span><span class="tag">macOS 먼저</span></div>
-            <div class="links">
-              <a class="link blue" href="cad.html">미리 보기 <span aria-hidden="true">→</span></a>
-            </div>
-            <div class="shot"><div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/cad-plan.webp" alt="하이퍼세븐 캐드의 평면 도면 화면" loading="lazy" width="1600" height="1012" /></div></div>
-          </article>
-        </div>
-        <p class="tm">Word·Excel·PowerPoint는 Microsoft, AutoCAD·Revit은 Autodesk, SketchUp은 Trimble, Rhino는 Robert McNeel &amp; Associates, Archicad는 Graphisoft의 상표입니다.</p>
-      </div>
-    </section>
-
-    <section class="sec" id="seven">
+    <section class="sec soft" id="seven">
       <div class="wrap story">
         <div class="big7"><img src="assets/brand/hyperseven-mark.svg" alt="하이퍼세븐의 7 — 먹색 가로획 위로 주홍 기둥이 접혀 내려온 모양" width="420" height="408" /></div>
         <div>
@@ -204,6 +148,9 @@
             <span class="chip"><i style="background: #2747f0"></i><span><b>청</b> 캐드 — 청사진의 빛</span></span>
           </div>
         </div>
+      </div>
+      <div class="wrap">
+        <p class="tm">Word·Excel·PowerPoint는 Microsoft, AutoCAD·Revit은 Autodesk, SketchUp은 Trimble, Rhino는 Robert McNeel &amp; Associates, Archicad는 Graphisoft의 상표입니다.</p>
       </div>
     </section>
   </main>
