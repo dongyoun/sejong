@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Manual — HyperSeven Office</title>
+  <meta name="description" content="The HyperSeven Office manual: installing and first launch, opening and saving, documents, tables and pages, spelling, Sheets, Slides, PDF, fonts, the AI assistant, connecting AI agents, and keyboard shortcuts." />
+  <meta property="og:site_name" content="HyperSeven Labs" />
+  <meta property="og:title" content="Manual — HyperSeven Office" />
+  <meta property="og:description" content="The HyperSeven Office manual: installing and first launch, opening and saving, documents, tables and pages, spelling, Sheets, Slides, PDF, fonts, the AI assistant, connecting AI agents, and keyboard shortcuts." />
+  <meta property="og:image" content="https://hyperseven.pages.dev/assets/og-en.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://hyperseven.pages.dev/en/manual" />
+  <meta property="og:url" content="https://hyperseven.pages.dev/en/manual" />
+  <link rel="alternate" hreflang="ko" href="https://hyperseven.pages.dev/manual" />
+  <link rel="alternate" hreflang="en" href="https://hyperseven.pages.dev/en/manual" />
+  <link rel="alternate" hreflang="x-default" href="https://hyperseven.pages.dev/manual" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="../assets/brand/icon-labs.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="HyperSeven Labs home"><img src="../assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="217" height="24" /></a>
+      <nav aria-label="Main menu">
+        <a href="office.html">Office</a>
+        <a href="cad.html">CAD</a>
+        <a href="manual.html" aria-current="page">Manual</a>
+        
+        <a class="nav-cta" href="office.html#download">Download</a>
+      </nav>
+      <details class="lang"><summary aria-label="Change language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>English</span></summary><div class="lang-list"><a href="../manual.html" hreflang="ko" lang="ko">한국어</a><a href="../en/manual.html" hreflang="en" lang="en" aria-current="true">English</a><a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a><a href="../zh/index.html" hreflang="zh-Hans" lang="zh-CN">简体中文</a></div></details>
+    </div>
+  </header>
+
+<main>
+    <div class="wrap doc-head">
+      <div class="kicker">Manual · HyperSeven Office</div>
+      <h1>From first launch to shortcuts</h1>
+      <p>How to open, edit and save documents with HyperSeven Office. Menu names and shortcuts are written exactly as they appear in the app's English interface. In Korean, the spreadsheet and presentation modes are called 셈터 and 보임터; in English they're simply Sheets and Slides.</p>
+    </div>
+
+    <div class="wrap doc">
+      <nav class="toc" aria-label="Manual contents">
+        <details open>
+          <summary>Contents</summary>
+          <div class="grp">Start</div>
+          <a href="#start">Getting started</a>
+          <a href="#screen">The window</a>
+          <div class="grp">Documents</div>
+          <a href="#files">Opening and saving</a>
+          <a href="#writer">Writing</a>
+          <a href="#tables">Tables</a>
+          <a href="#pages">Pages and printing</a>
+          <a href="#proof">Spelling and AutoCorrect</a>
+          <div class="grp">Other files</div>
+          <a href="#sheet">Sheets (Excel)</a>
+          <a href="#slides">Slides (PowerPoint)</a>
+          <a href="#pdf">PDF</a>
+          <div class="grp">Tools</div>
+          <a href="#fonts">Fonts</a>
+          <a href="#assistant">AI assistant</a>
+          <a href="#agents">Connecting AI agents</a>
+          <a href="#keys">Keyboard shortcuts</a>
+          <a href="#prefs">Settings and info</a>
+          <a href="#trouble">Troubleshooting</a>
+          <div class="grp">HyperSeven CAD</div>
+          <a href="#cad">CAD manual</a>
+        </details>
+      </nav>
+
+      <article class="manual">
+        <section>
+          <h2 id="start">Getting started</h2>
+          <h3>Installing</h3>
+          <p>HyperSeven Office runs on Apple Silicon Macs (M1 or later) with macOS 11 or later. Get the .dmg from <a href="office.html#download">Download</a>, open it and drag <b>HyperSeven Office</b> into the <b>Applications</b> folder.</p>
+          <h3>First launch</h3>
+          <p>The app isn't notarized by Apple yet, so the first time you open it macOS warns about an unidentified developer. You only have to get past this once:</p>
+          <ol>
+            <li>In Applications, right-click the app and choose <b>Open → Open</b>.</li>
+            <li>On macOS 15 and later, go to <span class="menu">System Settings › Privacy &amp; Security</span> and click <b>Open Anyway</b> at the bottom.</li>
+            <li>If it still won't open, run <code>xattr -cr "/Applications/HyperSeven Office.app"</code> once in Terminal. It only removes the quarantine flag that downloaded files get.</li>
+          </ol>
+          <h3>Updates</h3>
+          <p>The app checks for a new version as soon as it starts and every six hours after that. When one is out, a window appears and the status bar says so. Choose <b>Open Download Page</b>, <b>Later</b> or <b>Skip This Version</b>.</p>
+          <ul>
+            <li>Fixes that don't need a new installer arrive as a “What's New” window. They take effect when you choose <b>Restart Now</b>, or the next time you open the app.</li>
+            <li>Only when something must be fixed does an update window appear that can't be closed. Use <b>Save and Quit</b> to keep your work, then install the new version.</li>
+            <li>To check yourself, choose <span class="menu">HyperSeven Office › Check for Updates…</span> or <span class="menu">Tools › Check for Updates…</span>.</li>
+            <li>Replacing the app in Applications with a new installer keeps your documents and settings.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="screen">The window</h2>
+          <p>From top to bottom: the <b>menu bar</b>, the <b>toolbar</b>, the <b>formatting bar</b>, <b>document tabs</b>, the <b>editing area with the task pane</b>, and the <b>status bar</b>.</p>
+          <ul>
+            <li>The right end of the <b>menu bar</b> holds Find a Command, AI, Shortcuts and Task Pane buttons, plus the document name. Click the logo on the left for app info.</li>
+            <li><b>Find a Command</b> <kbd>⌘K</kbd> — no need to know where a menu lives. Type a few letters of a command and run it. It's the same key in every HyperSeven tool.</li>
+            <li><b>Menus change with the document.</b> Documents, Sheets and Slides each have their own menus. Inside a table a Table menu appears, selecting an object adds an Object menu, and PDFs get a PDF menu.</li>
+            <li>The <b>formatting bar</b> has styles, font, size, bold, italic, underline, strikethrough, superscript and subscript, text color, highlight, alignment, line spacing, numbering and bullets.</li>
+            <li><b>Document tabs</b> appear once two or more documents are open. Each tab shows the format, and a ● marks unsaved changes.</li>
+            <li>The <b>task pane</b> has Object, Table, Format, Styles and Outline tabs. Turn it on and off with <span class="menu">View › Task Pane</span>.</li>
+            <li>The <b>status bar</b> shows page, column, line, cell and section, insert/overwrite mode and a zoom slider (10–400%). Click the page field to go to a page.</li>
+          </ul>
+          <div class="callout"><p>Right-click any menu item or toolbar button to change its shortcut on the spot. For a dark window, choose <span class="menu">View › Appearance</span>.</p></div>
+        </section>
+
+        <section>
+          <h2 id="files">Opening and saving</h2>
+          <h3>What opens, and how it saves</h3>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Format</th><th>Open</th><th>Save</th></tr></thead>
+              <tbody>
+                <tr><td>Hangul HWP (5.x)</td><td>Yes · distribution documents are read-only</td><td>HWP</td></tr>
+                <tr><td>Hangul HWPX</td><td>Yes · including password-protected files</td><td>HWPX</td></tr>
+                <tr><td>Word DOCX</td><td>Yes</td><td>DOCX · keeps the original structure</td></tr>
+                <tr><td>Older Word DOC · RTF · ODT</td><td>Yes</td><td>Saved as a new DOCX (the original is untouched)</td></tr>
+                <tr><td>Excel XLSX · XLSM</td><td>Yes</td><td>Same format</td></tr>
+                <tr><td>Older Excel XLS · ODS · HTML tables</td><td>Yes</td><td>Saved as XLSX</td></tr>
+                <tr><td>CSV · TSV</td><td>Yes</td><td>CSV (you're warned if there are several sheets)</td></tr>
+                <tr><td>PowerPoint PPTX</td><td>Yes</td><td>PPTX</td></tr>
+                <tr><td>Older PowerPoint PPT</td><td>Yes</td><td>Saved as a new PPTX</td></tr>
+                <tr><td>PDF</td><td>Yes</td><td>Your edits are written on top of the original</td></tr>
+                <tr><td>Text · Markdown · HTML</td><td>Yes</td><td>TXT · HTML</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Not supported: password-protected HWP 5.x, documents locked with DRM or certificates, HWP 3.0 and earlier, and Word 95 and earlier. If you open one of these — or a file from another app such as Pages, Numbers or Keynote — the app tells you why it can't.</p>
+          <h3>Opening</h3>
+          <ul>
+            <li><span class="menu">File › Open…</span> <kbd>⌘O</kbd>, or double-click in Finder. Opening several files at once puts them in tabs of one window.</li>
+            <li>You can also drop files on the window. Font files are added as fonts, and images go where you drop them.</li>
+            <li><span class="menu">File › Open Recent</span> keeps the last ten.</li>
+          </ul>
+          <h3>Saving</h3>
+          <ul>
+            <li><span class="menu">File › Save</span> <kbd>⌘S</kbd> and <span class="menu">File › Save As…</span> <kbd>⇧⌘S</kbd>.</li>
+            <li><span class="menu">File › Export As</span> saves a copy as HWP, HWPX, DOCX, PDF, HTML, TXT or PNG. PNG exports the current page or every page at 150 or 300 dpi.</li>
+            <li>In PDFs, text stays as vector text, the outline becomes bookmarks and hyperlinks stay clickable.</li>
+            <li>Every save is read back and compared with the original, and you're told if anything differs. If changing format would drop something, you're asked before saving.</li>
+          </ul>
+          <h3>New documents and templates</h3>
+          <ul>
+            <li><span class="menu">File › New Document</span> <kbd>⌘N</kbd> starts with Hamchorom Batang 10 pt, 160% line spacing, on A4.</li>
+            <li><span class="menu">File › New Compatible Document…</span> <kbd>⌃N</kbd>, <kbd>D</kbd> lets you pick HWP, HWPX or DOCX up front.</li>
+            <li><span class="menu">File › Templates…</span> <kbd>⌃⌥N</kbd> offers a blank document and seven Korean-format templates: official letter, bulleted report, meeting minutes, business trip request, leave request, résumé and notice. Preview the first page, double-click to open.</li>
+            <li><span class="menu">File › Create From This</span> turns the current document into slides, or opens a new deck or workbook.</li>
+          </ul>
+          <h3>Autosave and recovery</h3>
+          <p>Changed documents are autosaved every minute by default; set 1–60 minutes in <span class="menu">Settings › File</span>. Autosaves stay on your Mac. If the app quits unexpectedly, a Document Recovery window appears the next time you open it. PDFs and password-protected documents aren't autosaved.</p>
+          <h3>Passwords</h3>
+          <ul>
+            <li>Opening a protected file asks for its password. This works for older doc/xls/ppt files, Office (DOCX, XLSX, PPTX) files and HWPX.</li>
+            <li><span class="menu">File › Password…</span> sets, changes or removes a password (four characters or more) on HWPX, DOCX, XLSX and PPTX files. HWP can't take a password.</li>
+            <li>Password-protected PDFs open once you enter the password, but can't be edited or reorganized.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="writer">Writing</h2>
+          <h3>Characters and paragraphs</h3>
+          <ul>
+            <li><b>Character…</b> <kbd>⌘L</kbd> — the Basic tab sets font, size, width, spacing, baseline shift and attributes (bold, italic, underline, strikethrough, outline, shadow, emboss, engrave, super- and subscript); Advanced covers shadow, underline, emphasis marks and kerning; there's also a Borders/Background tab.</li>
+            <li><b>Paragraph…</b> <kbd>⌘T</kbd> — alignment, margins, first line, line spacing, space before and after, and how lines break (Korean by word or character, English by word, hyphen or character). The Advanced tab has widow/orphan control, keep with next and more.</li>
+            <li><b>Styles…</b> <kbd>F6</kbd> — apply, add and edit styles. Changing a style updates every paragraph that uses it. Styles 1–10 are on <kbd>⌃1</kbd>–<kbd>⌃0</kbd>.</li>
+            <li><b>Numbering and outlines</b> — <span class="menu">Format › Numbering…</span>, <span class="menu">Format › Outline Numbering…</span>, and raising or lowering levels.</li>
+          </ul>
+          <h3>Inserting</h3>
+          <ul>
+            <li><b>Picture</b> <kbd>⌃N</kbd>, <kbd>I</kbd> — bmp, gif, jpg, png, webp and svg. Object properties offer grayscale, black-and-white, brightness, contrast and cropping.</li>
+            <li><b>Shapes</b> — pick one from <span class="menu">Insert › Shape</span> and drag on the page; a single click inserts it at the default size.</li>
+            <li><b>Text Box</b> <kbd>⌃N</kbd>, <kbd>B</kbd> · <b>Equation</b> <kbd>⌃N</kbd>, <kbd>M</kbd> (Hangul equation script) · <b>Symbols</b> <kbd>⌘F10</kbd> · <b>Hanja</b> <kbd>⌘F9</kbd></li>
+            <li><b>Footnote</b> <kbd>⌃N</kbd>, <kbd>N</kbd> · <b>Endnote</b> <kbd>⌃N</kbd>, <kbd>E</kbd> · <b>Bookmark</b> <kbd>⌃K</kbd>, <kbd>B</kbd> · <b>Hyperlink</b> <kbd>⌃K</kbd>, <kbd>H</kbd> · <b>Cross-reference</b> <kbd>⌃K</kbd>, <kbd>R</kbd> · <b>Field</b> <kbd>⌃K</kbd>, <kbd>E</kbd></li>
+            <li><b>Charts</b> in documents are saved as pictures; double-click one to edit it again.</li>
+            <li><b>Comments</b> — add, edit and delete them from <span class="menu">Insert › Comment</span>. The author name comes from the user name in Settings.</li>
+          </ul>
+          <h3>Find and replace</h3>
+          <p><span class="menu">Edit › Find…</span> <kbd>⌘F</kbd> and <span class="menu">Edit › Find and Replace…</span> <kbd>⇧⌘H</kbd>, with options for case, whole words, ignoring spaces, wildcards (<code>?</code> <code>*</code>) and regular expressions. <kbd>⌘G</kbd> finds the next match and <kbd>⌥G</kbd> goes to a page, line, section or bookmark.</p>
+          <h3>More</h3>
+          <ul>
+            <li><b>Table of contents and index</b> — <span class="menu">Tools › Table of Contents…</span> and <span class="menu">Tools › Index</span>.</li>
+            <li><b>Mail merge and labels</b> — <span class="menu">Tools › Mail Merge</span>.</li>
+            <li><b>AutoFill My Info</b> — fills blanks such as name, department and phone number from what you saved in <span class="menu">Tools › My Info…</span>.</li>
+            <li><b>Compare Documents</b> and <b>Redact Personal Info</b> — in the <span class="menu">Review</span> menu.</li>
+            <li><b>Linked sheet values</b> — in Sheets, <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>, then <span class="menu">Paste Link</span> in a document. When the sheet changes, <span class="menu">Tools › Update Links</span> brings it up to date.</li>
+            <li><b>Insert File…</b> <kbd>⌃O</kbd> — inserts another document at the cursor.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="tables">Tables</h2>
+          <ul>
+            <li><b>Creating</b> <kbd>⌃N</kbd>, <kbd>T</kbd> — 5 rows by 5 columns by default, up to 500 rows and 62 columns. You can also select text and use <span class="menu">Insert › Text to Table…</span>.</li>
+            <li><b>Selecting cells</b> — inside a table, <kbd>F5</kbd> starts a cell block and <kbd>⇧F5</kbd> extends it. In a cell block, <kbd>⇧</kbd>+arrow keys resize cells.</li>
+            <li><b>One-key commands in a cell block</b> — <kbd>M</kbd> Merge Cells, <kbd>S</kbd> Split Cells, <kbd>L</kbd> borders, <kbd>C</kbd> shading, <kbd>P</kbd> Table/Cell Properties, <kbd>H</kbd>·<kbd>W</kbd> equal heights and widths, <kbd>A</kbd> auto fill.</li>
+            <li><b>Rows and columns</b> — <kbd>⌃Return</kbd> adds a row, <kbd>⌃⌫</kbd> deletes one, <kbd>⌃I</kbd>·<kbd>⌃D</kbd> open the insert and delete windows.</li>
+            <li><b>Sizing</b> — drag a table line to change column widths and row heights. Lines between columns keep the table width; the right edge widens the table. One undo puts it back.</li>
+            <li><b>Formulas</b> — <span class="menu">Table › Formula…</span> <kbd>⌃N</kbd>, <kbd>F</kbd> uses SUM, AVG, PRODUCT, MIN, MAX and COUNT with LEFT, RIGHT, ABOVE, BELOW or cell names like A1. The result goes in as text. Block sum, average and product are <kbd>⌃⇧S</kbd>·<kbd>⌃⇧A</kbd>·<kbd>⌃⇧P</kbd> in a cell block.</li>
+            <li><b>Formatting</b> — ten Table Styles, Cell Borders/Shading, sorting by up to three keys, thousands separators, Split Table <kbd>⌃N</kbd>, <kbd>A</kbd> and Join Tables <kbd>⌃N</kbd>, <kbd>Z</kbd>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="pages">Pages and printing</h2>
+          <ul>
+            <li><b>Page Setup…</b> <kbd>F7</kbd> — A4, A3, A5, B4, B5, Letter, Legal, Korean book size or custom; orientation, binding (single, facing, top), seven margins, and whether it applies to the current section or the whole document.</li>
+            <li><b>Header/Footer…</b> <kbd>⌃N</kbd>, <kbd>H</kbd> — separate ones for all, even and odd pages. Press <kbd>⇧Esc</kbd> to return to the body.</li>
+            <li><b>Page Numbers…</b> <kbd>⌃N</kbd>, <kbd>P</kbd> — 11 positions, 17 styles, dashes and decorations, a starting number. To hide it on one page, use <kbd>⌃N</kbd>, <kbd>S</kbd>.</li>
+            <li><b>Columns…</b> — 1 to 10 columns: normal, balanced or parallel, with an optional line between.</li>
+            <li><b>Breaks</b> — page <kbd>⌃Return</kbd>, column <kbd>⌃⇧Return</kbd>, multi-column <kbd>⌃⌥Return</kbd>, section <kbd>⌥⇧Return</kbd>.</li>
+            <li>Page Borders…, Master Page…, Footnote/Endnote Format… and Section… <kbd>⌃N</kbd>, <kbd>G</kbd> are in the <span class="menu">Page</span> menu.</li>
+          </ul>
+          <h3>Printing</h3>
+          <p><span class="menu">File › Print…</span> <kbd>⌘P</kbd> sets the range (all, current page, current section or pages like <code>1-3, 5, 7~9</code>), odd or even pages, reverse order, 2/4/6/8/9/16 pages per sheet, booklet printing and a text watermark. The same window can <b>Save as PDF</b>, and it remembers your last settings. In <span class="menu">File › Print Preview</span>, <kbd>←</kbd> <kbd>→</kbd> turn pages.</p>
+        </section>
+
+        <section>
+          <h2 id="proof">Spelling and AutoCorrect</h2>
+          <ul>
+            <li><b>Red wavy underlines</b> — Check Spelling as You Type is on by default and marks words that may be misspelled. Right-click one for suggestions. Underlines never print or appear in PDFs; turn them off with <span class="menu">Review › Check Spelling as You Type</span>.</li>
+            <li><b>Spelling…</b> <kbd>F8</kbd> — walks through issues from the cursor onward, with Change, Change All, Ignore, Ignore All and Add to Dictionary.</li>
+            <li><b>My Dictionary</b> — add up to 5,000 names and terms you use often; they're recognized even with Korean particles attached. Words repeated more than three times in a document aren't underlined.</li>
+            <li><b>AutoCorrect</b> and <b>Auto Korean/English Switch</b> are on by default. AutoCorrect entries are on <kbd>⇧F8</kbd>.</li>
+            <li><b>Word Count</b> — <span class="menu">Review › Word Count</span>.</li>
+          </ul>
+          <div class="callout"><p>Spell check covers Korean in documents (not yet Sheets, Slides or PDF). It checks word by word against the dictionary, so it doesn't correct grammar in context or spacing in general. The dictionary is hunspell-dict-ko 0.7.94.</p></div>
+        </section>
+
+        <section>
+          <h2 id="sheet">Sheets (Excel)</h2>
+          <p>Excel files (XLSX, XLSM, XLS, ODS, CSV and HTML tables from banks) open in Sheets. Cells and formatting you don't touch are saved exactly as they were.</p>
+          <ul>
+            <li><b>Functions</b> — over 420. A cell using a function the app doesn't know shows the value saved in the file. XLSX files show their saved values on open rather than recalculating.</li>
+            <li><b>Format Cells…</b> <kbd>⌘1</kbd> — Number, Alignment, Font, Border and Fill, including a format that writes amounts out in Korean.</li>
+            <li><b>Conditional Formatting</b> — highlight rules, top/bottom, data bars, color scales, formula rules and a rule manager.</li>
+            <li><b>Data</b> — sorting, Filter <kbd>⌘⇧L</kbd>, Text to Columns…, Remove Duplicates…, Data Validation…, Name Manager… and PivotTable… (built with formulas such as SUMIFS).</li>
+            <li><b>Charts</b> — column, bar, line, pie, area and scatter, saved as standard Excel charts.</li>
+            <li><b>View</b> — Freeze Panes (top row, first column) and Gridlines. Right-click a sheet tab to move it or set a Tab Color.</li>
+            <li><b>Linking to documents</b> — <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>, paste into a document or deck, and <span class="menu">Update Links</span> keeps it current.</li>
+            <li><b>Printing</b> — prints the current sheet using the paper, margins, scale and print titles saved in the file. In Sheets you can set the <span class="menu">File › Print Area</span>.</li>
+          </ul>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Key</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><kbd>⌘</kbd>+arrow · <kbd>⇧</kbd>+arrow</td><td>Jump to the edge of data · extend the selection</td></tr>
+                <tr><td><kbd>F2</kbd> · <kbd>Delete</kbd></td><td>Edit cell · clear contents</td></tr>
+                <tr><td><kbd>⌘D</kbd> · <kbd>⌘R</kbd></td><td>Fill down · fill right</td></tr>
+                <tr><td><kbd>⌘;</kbd> · <kbd>⌘⇧;</kbd></td><td>Today's date · current time</td></tr>
+                <tr><td><kbd>⌘1</kbd></td><td>Format Cells</td></tr>
+                <tr><td><kbd>⌘⇧1</kbd> <kbd>⌘⇧4</kbd> <kbd>⌘⇧5</kbd></td><td>Number · currency · percent</td></tr>
+                <tr><td><kbd>⌘-</kbd> · <kbd>⌘⇧=</kbd></td><td>Delete · insert cells</td></tr>
+                <tr><td><kbd>⌥=</kbd></td><td>AutoSum</td></tr>
+                <tr><td><kbd>⌘PageUp</kbd> · <kbd>⌘PageDown</kbd></td><td>Previous · next sheet</td></tr>
+                <tr><td><kbd>⇧F11</kbd></td><td>Insert sheet</td></tr>
+                <tr><td><kbd>F4</kbd> (formula bar)</td><td>Cycle $ in references</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted small">In Sheets, <kbd>⌘</kbd> and <kbd>⌃</kbd> do the same thing.</p>
+        </section>
+
+        <section>
+          <h2 id="slides">Slides (PowerPoint)</h2>
+          <p>PowerPoint files (PPTX, PPSX, POTX and older PPT) open in Slides. Older PPT files are saved as new PPTX files.</p>
+          <ul>
+            <li><b>New decks</b> start from four themes and seven layouts.</li>
+            <li><b>Slides from a document</b> — in a document, <span class="menu">File › Create From This › Make Slides from This Document…</span>. Headings and body text become slides; right-click a slide to jump to its source paragraph.</li>
+            <li><b>Editing</b> — add text boxes, shapes, pictures and tables; align, order, group and rotate. <kbd>⌘M</kbd> (or <kbd>⌃M</kbd>) adds a slide, <kbd>⌘D</kbd> duplicates, <kbd>⌘G</kbd>·<kbd>⌘⇧G</kbd> group and ungroup, <kbd>Return</kbd> or <kbd>F2</kbd> edits text. Arrow keys nudge, ten times farther with <kbd>⇧</kbd>.</li>
+            <li><b>Animations</b> — five entrance, two emphasis and four exit effects, starting on click, with previous or after previous, plus eight Transitions.</li>
+          </ul>
+          <h3>Presenting</h3>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Key</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td><kbd>F5</kbd> · <kbd>⇧F5</kbd></td><td>From Beginning · From Current Slide</td></tr>
+                <tr><td><kbd>⌥F5</kbd></td><td>Presenter View — current and next slide, notes, elapsed time</td></tr>
+                <tr><td><kbd>→</kbd> <kbd>Space</kbd> <kbd>Return</kbd> · click</td><td>Next</td></tr>
+                <tr><td><kbd>←</kbd> <kbd>⌫</kbd></td><td>Previous</td></tr>
+                <tr><td>Number + <kbd>Return</kbd></td><td>Go to that slide</td></tr>
+                <tr><td><kbd>B</kbd> · <kbd>W</kbd></td><td>Black screen · white screen</td></tr>
+                <tr><td><kbd>Esc</kbd></td><td>End the show</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>With two displays, the audience view fills the other display and Presenter View stays on yours.</p>
+        </section>
+
+        <section>
+          <h2 id="pdf">PDF</h2>
+          <p>Opening a PDF adds a PDF menu.</p>
+          <ul>
+            <li><b>Annotations</b> — Mark Text (highlight, underline, strikethrough), comments, Draw (pen, rectangle, ellipse, line, arrow), text boxes, Add Image… and Add Signature…. Select an annotation to delete it with <kbd>Delete</kbd> or nudge it with the arrow keys.</li>
+            <li><b>Edit Text &amp; Images</b> — change body text and find and replace it.</li>
+            <li><b>Organize Pages</b> — Delete Page, Insert Blank Page, Insert Pages from File (Merge PDFs)…, Extract Selected Pages to New PDF, reorder and rotate pages.</li>
+            <li><b>Convert to Hangul Document</b> — turns a PDF into a document you can edit freely. Tables without lines may come out differently.</li>
+            <li><b>Saving</b> — your edits are written on top of the original.</li>
+          </ul>
+          <div class="callout"><p>Vertical text, rotated text and scanned pages can't be edited as text. Password-protected PDFs can be viewed but not edited or reorganized.</p></div>
+        </section>
+
+        <section>
+          <h2 id="fonts">Fonts</h2>
+          <ul>
+            <li>The font menu shows each font in its own face. Search by name across this document's fonts, recent fonts, Hangul and Word fonts and every font on your Mac.</li>
+            <li>Drop .ttf or .otf files on the window, or use <span class="menu">Tools › Add Fonts…</span>. <span class="menu">Tools › Manage Fonts…</span> opens the font folder and removes fonts.</li>
+            <li>Nanum Gothic, Nanum Myeongjo, Pretendard and Song Myung are built in.</li>
+            <li>When a document's font is missing, a similar one is drawn, but lines still break at the original font's widths. If Hangul is installed on your Mac, its fonts such as Hamchorom are used too.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="assistant">AI assistant</h2>
+          <p>Open it with the <b>AI</b> button in the menu bar (or <span class="menu">Tools › AI Assistant</span>) and ask in plain words to read or edit documents, sheets and slides.</p>
+          <ul>
+            <li>The first time, agree to the notice and enter a Claude API key (<code>sk-ant-…</code>). The key is encrypted in your Mac's keychain. Usage is billed to your own Anthropic account.</li>
+            <li>To keep everything offline, choose a model on your Mac (Ollama) instead.</li>
+            <li>Edits arrive as suggestion cards. Nothing changes until you click <b>Apply</b>, and <b>Undo</b> takes it back.</li>
+            <li>You can send just a selection, and copy-protected distribution documents are never sent. In the English interface, the assistant answers in English.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="agents">Connecting AI agents (MCP and the command line)</h2>
+          <p>A command-line tool and an MCP server run inside the app without opening a window; there's nothing else to install. Agents such as Claude Code and Claude Desktop read Hangul (HWP, HWPX), Word, Excel and PowerPoint files by their structure, change only what needs changing, and save.</p>
+          <h3>Connecting</h3>
+          <p>Copy the command from <span class="menu">Tools › Connect AI (MCP)…</span>:</p>
+          <pre class="code">claude mcp add hyperseven -- "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven" mcp</pre>
+          <p>In Claude Desktop, add it under <code>mcpServers</code> in <code>claude_desktop_config.json</code>:</p>
+          <pre class="code">"hyperseven": {
+  "command": "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven",
+  "args": ["mcp"]
+}</pre>
+          <h3>Tools, in order</h3>
+          <p><code>office_outline</code> (structure only) → <code>office_read</code> (a paragraph range, addresses like <code>p0.12</code>) → <code>office_find</code> · <code>office_table</code> → <code>office_preview</code> / <code>office_apply</code> (edit operations) → <code>office_save</code>. Also <code>office_export</code>, <code>office_convert</code> and <code>office_close</code>.</p>
+          <p>Document edits are <code>replace_text</code>, <code>set_paragraph</code>, <code>insert_paragraphs</code>, <code>fill_field</code> and <code>set_cell</code>. Formatting is never sent; whatever formatting is in place stays. Excel and PowerPoint use the same tools (<code>set_cells</code>, <code>add_sheet</code>, <code>add_slide</code>, <code>set_shape_text</code> and more), and protected files take a <code>password</code>.</p>
+          <h3>Command line</h3>
+          <pre class="code">hyperseven outline report.hwp
+hyperseven read report.hwp --from p0.3 --to p0.40
+hyperseven convert report.hwp report.docx
+hyperseven apply report.hwp edits.json -o result.hwp     # --dry to preview</pre>
+          <ul>
+            <li>Saving over the original leaves a <code>.bak</code>.</li>
+            <li>Distribution documents aren't opened. PDFs aren't handled on the command line; page layout and PDF export happen in the app.</li>
+            <li>A short summary for agents lives in <a href="../llms.txt">llms.txt</a>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="keys">Keyboard shortcuts</h2>
+          <p>On the Mac, the Hangul Mac layout comes first, and Hangul Windows keys that don't clash work too. In <span class="menu">Tools › Keyboard Shortcuts…</span> you can switch to “Prefer Hangul Windows keys” or change keys one by one.</p>
+          <div class="callout"><p><b>Two-step keys</b> — <kbd>⌃N</kbd>, <kbd>T</kbd> means press <kbd>⌃N</kbd>, then <kbd>T</kbd> within four seconds. You can keep holding <kbd>⌃</kbd> for the second key.</p><p>Depending on your keyboard settings, F1–F12 may need <kbd>fn</kbd>. Keys macOS reserves, such as <kbd>⌘Q</kbd> <kbd>⌘H</kbd> <kbd>⌘M</kbd> <kbd>⌘Tab</kbd> <kbd>⌘Space</kbd>, can't be reassigned.</p></div>
+          <h3>File · Edit</h3>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Action</th><th>Keys</th></tr></thead>
+              <tbody>
+                <tr><td>New Document · Templates</td><td><kbd>⌘N</kbd> · <kbd>⌃⌥N</kbd></td></tr>
+                <tr><td>Open · Insert File</td><td><kbd>⌘O</kbd> · <kbd>⌃O</kbd></td></tr>
+                <tr><td>Save · Save As</td><td><kbd>⌘S</kbd> · <kbd>⇧⌘S</kbd></td></tr>
+                <tr><td>Page Setup · Print</td><td><kbd>F7</kbd> · <kbd>⌘P</kbd></td></tr>
+                <tr><td>Close Document · Quit</td><td><kbd>⌘W</kbd> · <kbd>⌘Q</kbd></td></tr>
+                <tr><td>Undo · Redo</td><td><kbd>⌘Z</kbd> · <kbd>⇧⌘Z</kbd></td></tr>
+                <tr><td>Paste Special · Copy Format</td><td><kbd>⌃⌥V</kbd> · <kbd>⌥C</kbd></td></tr>
+                <tr><td>Select Block · cell block · Select Objects</td><td><kbd>F3</kbd> · <kbd>F4</kbd> · <kbd>F11</kbd></td></tr>
+                <tr><td>Find · Find and Replace</td><td><kbd>⌘F</kbd> · <kbd>⇧⌘H</kbd></td></tr>
+                <tr><td>Find Next · Find Previous · Go To</td><td><kbd>⌘G</kbd> · <kbd>⇧⌘G</kbd> · <kbd>⌥G</kbd></td></tr>
+                <tr><td>Move paragraph up · down</td><td><kbd>⌥⇧↑</kbd> · <kbd>⌥⇧↓</kbd></td></tr>
+                <tr><td>Find a Command</td><td><kbd>⌘K</kbd></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>View · Insert</h3>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Action</th><th>Keys</th></tr></thead>
+              <tbody>
+                <tr><td>Zoom In · Zoom Out</td><td><kbd>⌘=</kbd> · <kbd>⌘-</kbd></td></tr>
+                <tr><td>Fit Page · Fit Width · 100%</td><td><kbd>⌃G</kbd>, <kbd>P</kbd> · <kbd>⌃G</kbd>, <kbd>W</kbd> · <kbd>⌃G</kbd>, <kbd>Q</kbd></td></tr>
+                <tr><td>Formatting Marks · Paragraph Marks</td><td><kbd>⌃G</kbd>, <kbd>C</kbd> · <kbd>⌃G</kbd>, <kbd>T</kbd></td></tr>
+                <tr><td>Full Screen</td><td><kbd>⌃⌘F</kbd></td></tr>
+                <tr><td>Table · Picture · Text Box</td><td><kbd>⌃N</kbd>, <kbd>T</kbd> · <kbd>⌃N</kbd>, <kbd>I</kbd> · <kbd>⌃N</kbd>, <kbd>B</kbd></td></tr>
+                <tr><td>Equation · Caption</td><td><kbd>⌃N</kbd>, <kbd>M</kbd> · <kbd>⌃N</kbd>, <kbd>C</kbd></td></tr>
+                <tr><td>Footnote · Endnote</td><td><kbd>⌃N</kbd>, <kbd>N</kbd> · <kbd>⌃N</kbd>, <kbd>E</kbd></td></tr>
+                <tr><td>Symbols · Hanja</td><td><kbd>⌘F10</kbd> · <kbd>⌘F9</kbd></td></tr>
+                <tr><td>Date text · date code</td><td><kbd>⌃K</kbd>, <kbd>D</kbd> · <kbd>⌃K</kbd>, <kbd>C</kbd></td></tr>
+                <tr><td>Bookmark · Hyperlink · Field</td><td><kbd>⌃K</kbd>, <kbd>B</kbd> · <kbd>⌃K</kbd>, <kbd>H</kbd> · <kbd>⌃K</kbd>, <kbd>E</kbd></td></tr>
+                <tr><td>Line break · non-breaking space</td><td><kbd>⇧Return</kbd> · <kbd>⌃⌥Space</kbd></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Format · Paragraph · Page</h3>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Action</th><th>Keys</th></tr></thead>
+              <tbody>
+                <tr><td>Character · Paragraph · Styles</td><td><kbd>⌘L</kbd> · <kbd>⌘T</kbd> · <kbd>F6</kbd></td></tr>
+                <tr><td>Bold · Italic · Underline</td><td><kbd>⌘B</kbd> · <kbd>⌘I</kbd> · <kbd>⌘U</kbd></td></tr>
+                <tr><td>Superscript · Subscript · Plain Text</td><td><kbd>⌃⌘P</kbd> · <kbd>⌃⌘S</kbd> · <kbd>⌃⌘C</kbd></td></tr>
+                <tr><td>Bigger · smaller text</td><td><kbd>⇧⌘E</kbd> · <kbd>⇧⌘R</kbd></td></tr>
+                <tr><td>Wider · narrower spacing</td><td><kbd>⇧⌘W</kbd> · <kbd>⇧⌘N</kbd></td></tr>
+                <tr><td>Wider · narrower character width</td><td><kbd>⇧⌘K</kbd> · <kbd>⇧⌘J</kbd></td></tr>
+                <tr><td>Styles 1–10</td><td><kbd>⌃1</kbd> ~ <kbd>⌃0</kbd></td></tr>
+                <tr><td>Justify · Align Left · Center · Align Right</td><td><kbd>⌃⇧M</kbd> · <kbd>⌃⇧L</kbd> · <kbd>⌃⇧C</kbd> · <kbd>⌃⇧R</kbd></td></tr>
+                <tr><td>More · less line spacing</td><td><kbd>⌥⇧Z</kbd> · <kbd>⌥⇧A</kbd></td></tr>
+                <tr><td>Quick hanging indent</td><td><kbd>⇧Tab</kbd></td></tr>
+                <tr><td>Header/Footer · Page Numbers</td><td><kbd>⌃N</kbd>, <kbd>H</kbd> · <kbd>⌃N</kbd>, <kbd>P</kbd></td></tr>
+                <tr><td>Page Break · Column Break</td><td><kbd>⌃Return</kbd> · <kbd>⌃⇧Return</kbd></td></tr>
+                <tr><td>Spelling · Shortcut Help · Settings</td><td><kbd>F8</kbd> · <kbd>⇧⌘/</kbd> · <kbd>⌘,</kbd></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Moving the cursor</h3>
+          <div class="tbl">
+            <table>
+              <thead><tr><th>Action</th><th>Keys</th></tr></thead>
+              <tbody>
+                <tr><td>Start · end of line</td><td><kbd>⌘←</kbd> · <kbd>⌘→</kbd></td></tr>
+                <tr><td>By word</td><td><kbd>⌥←</kbd> · <kbd>⌥→</kbd></td></tr>
+                <tr><td>By paragraph</td><td><kbd>⌘↑</kbd> · <kbd>⌘↓</kbd></td></tr>
+                <tr><td>By page</td><td><kbd>⌥⌘↑</kbd> · <kbd>⌥⌘↓</kbd></td></tr>
+                <tr><td>Start · end of document</td><td><kbd>⌘PageUp</kbd> · <kbd>⌘PageDown</kbd></td></tr>
+                <tr><td>Delete word · previous word</td><td><kbd>⌘⌫</kbd> · <kbd>⌥⌫</kbd></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="prefs">Settings and info</h2>
+          <ul>
+            <li><b>Settings</b> <kbd>⌘,</kbd> — [Edit] AutoCorrect, Auto Korean/English Switch, Check Spelling as You Type · [File] Autosave and interval, Clear Recent Documents · [View] Appearance, Task Pane, Language (한국어 · English) · [User] your name (used for comments) and My Info for AutoFill. Changing the language takes effect after <b>Restart Now</b>.</li>
+            <li><b>Keyboard Shortcuts</b> — search by name or key, browse by category or show only changed keys. Click a key to change it, ＋ to add another, × to remove; <b>Reset All</b> goes back to the defaults.</li>
+            <li><b>Plan &amp; License</b> — <span class="menu">Tools › Plan &amp; License…</span> shows the plan (free — every feature), the version and the update check.</li>
+            <li><b>About HyperSeven Office</b> — the version, plus where the bundled fonts and dictionary come from and their licenses.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="trouble">Troubleshooting</h2>
+          <h3>The app won't open</h3>
+          <p>Follow the <a href="#start">first launch</a> steps. On an Intel Mac, macOS says the app isn't supported: for now it's built for Apple Silicon only, with an Intel version to follow.</p>
+          <h3>A document looks different from Hangul</h3>
+          <p>Usually it's the fonts. Installing the fonts the document uses brings it closer. If it still looks off, please send us the document — it's the most useful report we can get.</p>
+          <h3>Reporting a problem</h3>
+          <p>Choose <span class="menu">Tools › Report a Problem…</span> (or ‘Report a Problem’ in <kbd>⌘K</kbd>) and write one line, or nothing at all. The app version, error log and your recent commands come along automatically; your document's text never does.</p>
+          <ul>
+            <li>If the problem is how a document looks, attach a scrubbed copy. Letters become random letters, pictures turn gray, and only the layout stays. You see its first page before sending.</li>
+            <li>You can also send from the <b>Report</b> button on the notice that appears when something goes wrong. Turn on automatic reports and future errors are sent on their own, with error details only.</li>
+            <li>When a problem you reported is fixed, the app lets you know.</li>
+          </ul>
+          <h3>Not yet supported</h3>
+          <ul>
+            <li>Track changes — Word documents can show and accept changes but don't record new ones. Hangul documents don't track changes.</li>
+            <li>Creating new OLE objects; WordArt and form objects are limited.</li>
+            <li>Chart styling in sheets, recalculating pivots and references to other workbooks.</li>
+            <li>3D and chart editing in slides, and older media such as wmv.</li>
+            <li>Context-aware spelling and general spacing correction.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="cad">HyperSeven CAD manual</h2>
+          <div class="callout blue"><p>HyperSeven CAD is still in development. Its manual will be published here at launch. See what's being built in the <a href="cad.html">preview</a>.</p></div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html"><img src="../assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="199" height="22" /></a>
+        <p class="tagline">From words to walls.</p>
+        <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to Hancom’s published HWP document file format.) Hangul and HWP are trademarks of Hancom Inc.</p>
+        <p class="legal">© 2026 HyperSeven Labs</p>
+      </div>
+      <div class="cols">
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li><a href="office.html">HyperSeven Office</a></li>
+            <li><a href="cad.html">HyperSeven CAD</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="manual.html">Manual</a></li>
+            <li><a href="../notes.html">Release notes (Korean)</a></li>
+            <li><a href="office.html#faq">FAQ</a></li>
+            <li><a href="../llms.txt">Guide for AI agents</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-contact href="https://github.com/dongyoun/sejong/issues">Report on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/site.js" data-root="../"></script>
+</body>
+</html>

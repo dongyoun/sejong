@@ -2,296 +2,242 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
+  <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#1e4634" />
-  <title>세종 — 한글 문서를 그대로 여는 맥용 무료 편집기</title>
-  <meta name="description" content="세종은 한글(HWP·HWPX)·워드·PDF·엑셀·파워포인트 문서를 한 앱에서 열고 고치고 저장하는 맥용 무료 문서 편집기입니다. 한글에서 쓰던 메뉴와 단축키가 그대로입니다." />
-  <meta property="og:title" content="세종 — 한글 문서를 그대로 여는 맥용 무료 편집기" />
-  <meta property="og:description" content="한글·워드·PDF·엑셀·파워포인트를 한 앱에서. 무료, 광고 없음, 회원 가입 없음." />
-  <meta property="og:image" content="assets/shots/doc.webp" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>하이퍼세븐 랩스 — 글짓기부터 집짓기까지</title>
+  <meta name="description" content="문서·시트·발표·PDF부터 도면·3D·BIM까지 하나의 플랫폼에서. 어느 도구를 열어도 다루는 법이 같고, 처음부터 AI 와 함께 일하도록 만들었습니다." />
+  <meta property="og:site_name" content="HyperSeven Labs" />
+  <meta property="og:title" content="하이퍼세븐 랩스 — 글짓기부터 집짓기까지" />
+  <meta property="og:description" content="문서·시트·발표·PDF부터 도면·3D·BIM까지 하나의 플랫폼에서. 어느 도구를 열어도 다루는 법이 같고, 처음부터 AI 와 함께 일하도록 만들었습니다." />
+  <meta property="og:image" content="https://hyperseven.pages.dev/assets/og.png" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://hyperseven.pages.dev/" />
+  <meta property="og:url" content="https://hyperseven.pages.dev/" />
+  <link rel="alternate" hreflang="ko" href="https://hyperseven.pages.dev/" />
+  <link rel="alternate" hreflang="en" href="https://hyperseven.pages.dev/en/" />
+  <link rel="alternate" hreflang="ja" href="https://hyperseven.pages.dev/ja/" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyperseven.pages.dev/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://hyperseven.pages.dev/" />
   <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
-  <link rel="apple-touch-icon" href="assets/icon-256.png" />
+  <link rel="icon" href="assets/brand/icon-labs.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="top">
     <div class="wrap">
-      <a class="logo" href="#" aria-label="세종"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/sejong-logo-horizontal-white.svg" /><img src="assets/sejong-logo-horizontal.svg" alt="세종" /></picture></a>
-      <nav>
-        <a href="#features">무엇이 되나</a>
-        <a href="#ai">AI 와 함께</a>
-        <a href="#faq">자주 묻는 것</a>
-        <a href="#notes">고친 것</a>
-        <a class="nav-dl" href="#download">내려받기</a>
+      <a class="brand" href="index.html" aria-label="하이퍼세븐 랩스 처음 화면"><img src="assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="217" height="24" /></a>
+      <nav aria-label="주 메뉴">
+        <a href="office.html">오피스</a>
+        <a href="cad.html">캐드</a>
+        <a href="manual.html">매뉴얼</a>
+        <a href="notes.html">고친 것</a>
+        <a class="nav-cta" href="office.html#download">내려받기</a>
       </nav>
+      <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="index.html" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="en/index.html" hreflang="en" lang="en">English</a><a href="ja/index.html" hreflang="ja" lang="ja">日本語</a><a href="zh/index.html" hreflang="zh-Hans" lang="zh-CN">简体中文</a></div></details>
     </div>
   </header>
 
-  <main>
+<main>
     <section class="hero">
       <div class="wrap">
         <div>
-          <div class="kicker">맥용 · 무료</div>
-          <h1>한글 문서,<br />그대로 열고 고치고 저장합니다.</h1>
-          <p class="lead">세종은 맥용 무료 문서 편집기입니다. 한글(HWP·HWPX)은 물론 워드·PDF·엑셀·파워포인트 파일까지 한 앱에서 다룹니다. 예전 .doc·.xls·.ppt 파일도 열립니다. 한글에서 쓰던 메뉴와 단축키가 그대로라 배우지 않고 바로 씁니다.</p>
+          <span class="eyebrow"><img src="assets/brand/hyperseven-mark.svg" alt="" width="18" height="18" />하이퍼세븐 랩스</span>
+          <h1>글짓기부터<br />집짓기까지<span class="ver">.</span></h1>
+          <p class="lead">문서와 시트, 발표, PDF부터 도면과 3D, BIM까지. 쓰고 그리고 짓는 일을 하이퍼세븐 하나에 모았습니다. 어느 도구를 열어도 다루는 법이 같고, 처음부터 AI 와 함께 일하도록 만들었습니다.</p>
           <div class="cta">
-            <a class="btn" href="#download" data-dl="dmg">
+            <a class="btn" href="office.html#download">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-              <span>맥용 내려받기<small data-dl-meta>내려받기 준비 중</small></span>
+              <span>하이퍼세븐 오피스 받기<small data-dl-meta>무료 · macOS</small></span>
             </a>
-            <a class="alt" href="#download">처음 여는 법 보기 ↓</a>
+            <a class="link" href="cad.html">캐드 미리 보기 <span aria-hidden="true">→</span></a>
           </div>
-          <p class="note">Apple Silicon 맥 (macOS 11 이상) · 광고 없음 · 회원 가입 없음</p>
         </div>
-        <div class="frame"><img src="assets/shots/doc.webp" alt="세종에서 연 한글 문서 — 표와 글이 있는 문서, 오른쪽에 서식 작업 창" width="1440" height="900" /></div>
+        <div class="board" role="img" aria-label="하이퍼세븐 한 플랫폼에 든 도구: 문서, 시트, 발표, PDF, 도면, 3D 모델, 곡면, 노드, BIM">
+  <div class="board-head"><span class="who"><img src="assets/brand/hyperseven-mark.svg" alt="" width="20" height="19" />HyperSeven</span><span>한 플랫폼</span></div>
+  <div class="board-grid">
+    <div class="tile o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v4h4M9 12h6M9 16h6" /></svg><b>문서</b><span>HWP · HWPX · DOCX</span></div>
+    <div class="tile o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M4 10h16M4 15h16M10 4v16" /></svg><b>시트</b><span>XLSX · XLS · CSV</span></div>
+    <div class="tile o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2" /><path d="M12 17v3M8 20h8M7 13l3-3 2 2 3-4" /></svg><b>발표</b><span>PPTX · PPT</span></div>
+    <div class="tile o"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v4h4M9 12h6" /><path d="M9 16h5" stroke-width="3.2" stroke-opacity=".45" /></svg><b>PDF</b><span>주석 · 고치기</span></div>
+    <div class="tile c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1" /><path d="M12 4v6M12 14v6M3 13h5M12 10a4 4 0 0 1 4 4" /></svg><b>도면</b><span>DWG · DXF</span></div>
+    <div class="tile c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z" /><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" /></svg><b>3D 모델</b><span>SKP · OBJ</span></div>
+    <div class="tile c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c3-6 6 2 9-3s6 1 9-4" /><path d="M3 20c3-6 6 2 9-3s6 1 9-4" stroke-opacity=".45" /><path d="M3 15v5M21 8v5" stroke-opacity=".45" /></svg><b>곡면</b><span>3DM · STEP</span></div>
+    <div class="tile c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="6" height="5" rx="1.5" /><rect x="3" y="15" width="6" height="5" rx="1.5" /><rect x="15" y="9.5" width="6" height="5" rx="1.5" /><path d="M9 6.5c3 0 3 5.5 6 5.5M9 17.5c3 0 3-5.5 6-5.5" /></svg><b>노드</b><span>파라메트릭</span></div>
+    <div class="tile c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10z" /><path d="M4 20h16M9 20v-5h6v5M8 11h2M14 11h2" /></svg><b>BIM</b><span>IFC · RVT</span></div>
+  </div>
+  <div class="board-ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /><path d="M19 15.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z" /></svg>AI 에이전트 · MCP — 모든 도구에 같은 방식으로</div>
+  <div class="board-legend"><span><i style="background: var(--ver)"></i>오피스</span><span><i style="background: var(--blue)"></i>캐드 (개발 중)</span></div>
+</div>
+
       </div>
     </section>
 
-    <section class="three">
+    <section class="sec soft" id="same">
       <div class="wrap">
-        <div class="kicker">세종이 다른 점</div>
-        <h2>한글을 바꿔 쓰려고 만들었습니다</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13" /></svg></div>
-            <h3>같은 쪽, 같은 줄</h3>
-            <p>한글이 저장한 줄 정보를 그대로 따라서 쪽과 줄이 어긋나지 않습니다. 함초롬체가 없는 컴퓨터에서도 줄 바꿈은 원래 글꼴의 글자 폭으로 맞춥니다.</p>
-          </div>
-          <div class="card">
-            <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 10h18M9 10v10" /></svg></div>
-            <h3>다섯 가지 문서를 한 앱에서</h3>
-            <p>HWP·HWPX·DOCX·PDF·XLSX·PPTX. 엑셀 파일은 셈터로, 파워포인트는 보임터로 열리고, 저장하면 손대지 않은 부분은 원본 그대로 남습니다. 옛 .doc·.xls·.ppt 와 .rtf·.odt·.ods 도 엽니다.</p>
-          </div>
-          <div class="card">
-            <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg></div>
-            <h3>문서는 내 컴퓨터에만</h3>
-            <p>세종은 문서를 어디에도 보내지 않습니다. 인터넷에 하는 일은 새 버전이 나왔는지 묻는 것 하나뿐이고, AI 도우미는 열쇠를 넣고 켤 때만 움직입니다.</p>
-          </div>
+        <div class="sec-head">
+          <div class="kicker">같은 경험</div>
+          <h2>도구가 바뀌어도<br />손은 그대로입니다</h2>
+          <p>보고서를 고치다 도면을 열어도 새로 익힐 것이 없습니다. 명령을 찾는 법, AI 를 부르는 법, 파일을 다루는 법이 어디서나 같습니다.</p>
         </div>
-      </div>
-    </section>
+        <div class="twins" aria-hidden="true">
+  <figure class="mock">
+    <div class="mbar"><img src="assets/brand/icon-office.svg" alt="" /><span class="name">HyperSeven Office</span><span class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>명령 찾기<kbd>⌘K</kbd></span><span class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /></svg></span></div>
+    <div class="mbody">
+      <div class="rail"><i></i><i></i><i></i><i></i></div>
+      <div class="canvas"><div class="mpage"><i class="h"></i><i></i><i></i><i class="v"></i><i></i><i class="s"></i><div class="mt"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+      <div class="side"><i></i><i class="s"></i><i></i><i></i><i class="s"></i></div>
+    </div>
+    <figcaption class="cap">하이퍼세븐 오피스 — 보고서를 고치는 중</figcaption>
+  </figure>
+  <figure class="mock">
+    <div class="mbar"><img src="assets/brand/icon-cad.svg" alt="" /><span class="name">HyperSeven CAD</span><span class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>명령 찾기<kbd>⌘K</kbd></span><span class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /></svg></span></div>
+    <div class="mbody">
+      <div class="rail"><i></i><i></i><i></i><i></i></div>
+      <div class="canvas"><svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M60 40 100 26l24 18-40 14z" fill="currentColor" fill-opacity=".14" /><path d="M36 58l24-18 24 18v36H36z" fill="#fff" /><path d="M84 58l40-14v36L84 94" fill="#fff" /><path d="M48 70h12v12H48zM96 66l14-5v12l-14 5z" /><path d="M20 94h116" stroke-dasharray="3 4" stroke-opacity=".5" /></svg></div>
+      <div class="side"><i></i><i class="s"></i><i></i><i></i><i class="s"></i></div>
+    </div>
+    <figcaption class="cap">하이퍼세븐 캐드 — 같은 자리에 같은 도구</figcaption>
+  </figure>
+</div>
 
-    <section class="features" id="features">
-      <div class="wrap">
-        <div class="kicker">무엇이 되나</div>
-        <h2>한글에서 하던 일, 그리고 그 너머</h2>
-        <p class="lead intro">문서·시트·발표·PDF가 탭으로 나란히 열립니다. 시트의 값을 문서와 발표에 연결하고, 한글 문서로 발표를 만듭니다.</p>
-
-        <div class="feat">
-          <div class="feat-text">
-            <h3>문서 <em>한글 · 워드</em></h3>
-            <p>표, 그림, 각주와 미주, 머리말과 꼬리말, 바탕쪽, 쪽 번호, 차례, 메모, 글상자, 수식까지. 한글의 서식 도구와 단축키 그대로입니다.</p>
-            <ul>
-              <li>서식 자동 채우기 — 성명·소속·연락처 같은 빈칸을 내 정보로</li>
-              <li>표와 문단 정렬, 색인, 개인 정보 찾아서 가리기, 문서 비교, 맞춤법 검사와 빨간 밑줄</li>
-              <li>PDF 로 저장하면 개요는 책갈피로, 하이퍼링크는 누를 수 있게</li>
-              <li>문서마당 서식 8가지, 메일 머지와 라벨 문서</li>
-              <li>워드 문서는 원본 구조를 지키며 저장</li>
-            </ul>
-          </div>
-          <div class="frame bare"><img src="assets/shots/doc-table.webp" alt="표와 그림이 있는 한글 문서" loading="lazy" width="1440" height="900" /></div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-text">
-            <h3>셈터 <em>엑셀</em></h3>
-            <p>함수 420여 개, 조건부 서식, 자동 필터, 피벗, 차트. 엑셀 97 형식(.xls)과 CSV, 은행에서 받은 HTML 표까지 엽니다.</p>
-            <ul>
-              <li>저장하면 손대지 않은 칸과 서식은 원본과 바이트까지 같습니다</li>
-              <li>UNIQUE·FILTER 결과가 옆 칸으로 넘치는 동적 배열, 금액을 한글로 쓰는 표시 형식</li>
-              <li>줄·칸을 넣고 지워도 표·메모·차트·조건부 서식이 함께 움직입니다</li>
-              <li>시트 값을 한글 문서와 발표에 연결하고 갱신</li>
-            </ul>
-          </div>
-          <div class="frame bare"><img src="assets/shots/sheet.webp" alt="세종 셈터에서 연 엑셀 파일" loading="lazy" width="1440" height="900" /></div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-text">
-            <h3>보임터 <em>파워포인트</em></h3>
-            <p>테마, 애니메이션, 화면 전환, 발표자 보기. 파워포인트 파일을 열어 고치고 그대로 저장합니다. 옛 .ppt 파일도 엽니다.</p>
-            <ul>
-              <li>한글 문서에서 발표 만들기 — 제목과 본문을 슬라이드로</li>
-              <li>도형 90여 종, 표 스타일, 차트, SmartArt 보기</li>
-              <li>다른 발표의 슬라이드를 붙여 넣기</li>
-            </ul>
-          </div>
-          <div class="frame bare"><img src="assets/shots/slides.webp" alt="세종 보임터에서 연 발표" loading="lazy" width="1440" height="900" /></div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-text">
-            <h3>PDF</h3>
-            <p>보고, 주석을 달고, 양식을 채우고, 글과 그림을 고칩니다. 필요하면 PDF를 한글 문서로 바꿔 자유롭게 편집합니다.</p>
-            <ul>
-              <li>형광펜·메모·도장·그리기 주석, 양식 채우기</li>
-              <li>본문 글자 고치기와 찾아 바꾸기</li>
-              <li>쪽 정리 — 빼기, 돌리기, 순서 바꾸기</li>
-            </ul>
-          </div>
-          <div class="frame bare"><img src="assets/shots/pdf.webp" alt="세종에서 연 PDF" loading="lazy" width="1440" height="900" /></div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-text">
-            <h3>글꼴</h3>
-            <p>글꼴 상자에서 글꼴 모양을 보며 고릅니다. 이 문서의 글꼴, 최근 쓴 글꼴, 한글·워드 글꼴, 이 컴퓨터의 모든 글꼴 — 이름이나 초성으로 찾습니다.</p>
-            <ul>
-              <li>글꼴 파일(.ttf·.otf)을 창에 끌어다 놓으면 바로 쓸 수 있습니다</li>
-              <li>나눔고딕·나눔명조·Pretendard·송명이 함께 들어 있습니다 (무료 글꼴)</li>
-              <li>없는 글꼴은 비슷한 글꼴로 보이되, 줄 바꿈은 원래 글꼴 폭대로</li>
-            </ul>
-          </div>
-          <div class="frame bare"><img src="assets/shots/fonts.webp" alt="글꼴 상자 — 글꼴마다 그 글꼴 모양으로 보이는 목록" loading="lazy" width="1440" height="900" /></div>
-        </div>
-
-        <div class="feat">
-          <div class="feat-text">
-            <h3>AI 도우미 <em>선택</em></h3>
-            <p>내 Claude 열쇠를 넣거나 내 컴퓨터의 모델(Ollama)을 고르면, 문서·시트·발표를 읽고 고치는 일을 돕습니다. 제안을 보고 승인해야 문서에 적용되고, 되돌리기 한 번으로 돌아옵니다.</p>
-            <ul>
-              <li>열쇠는 맥 키체인에 보관하고 세종은 서버를 두지 않습니다</li>
-              <li>고른 부분만 보내기</li>
-            </ul>
-          </div>
-          <div class="frame bare"><img src="assets/shots/ai.webp" alt="AI 도우미 창" loading="lazy" width="1440" height="900" /></div>
+        <div class="points">
+          <div class="point"><span class="n">01</span><b>명령은 ⌘K 하나로</b><p>메뉴가 어디 있는지 몰라도 됩니다. 이름이나 초성 몇 자를 치면 바로 나옵니다.</p></div>
+          <div class="point"><span class="n">02</span><b>쓰던 단축키 그대로</b><p>오피스는 한글의 단축키를, 캐드는 AutoCAD·SketchUp·Revit 의 명령 이름과 단축키를 그대로 받습니다.</p></div>
+          <div class="point"><span class="n">03</span><b>AI 는 늘 같은 자리에</b><p>어느 도구에서든 오른쪽 위에서 AI 를 부르고, 같은 방식으로 제안을 받아 적용합니다.</p></div>
+          <div class="point"><span class="n">04</span><b>파일은 내 컴퓨터에</b><p>있던 파일을 열어 하던 일을 이어 갑니다. 서버에 올리지 않습니다.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="ai" id="ai">
+    <section class="sec" id="ai">
       <div class="wrap">
-        <div class="kicker">AI 와 함께</div>
-        <h2>AI 에이전트가 한글 문서를 다루는 길</h2>
-        <p class="lead intro">세종 안에는 창 없이 돌아가는 명령줄과 MCP 서버가 들어 있습니다. Claude Code·Claude Desktop 같은 에이전트가 한글(HWP·HWPX)·워드 문서를 <b>구조로 읽고</b>, 바꿀 문단만 <b>명령으로 고쳐</b>, 앱과 같은 방식으로 <b>저장</b>합니다. 서식은 손대지 않고 그 자리 것이 그대로 남습니다.</p>
-        <div class="ai-grid">
-          <div class="card">
-            <h3>붙이기 — 한 줄</h3>
-            <pre class="code">claude mcp add sejong -- \
-  /Applications/Sejong.app/Contents/Resources/cli/sejong mcp</pre>
-            <p>Claude Desktop 은 설정의 mcpServers 에 같은 명령을 넣습니다. 앱의 <b>도구 &gt; AI 연결 (MCP)</b>에서 복사할 수 있습니다.</p>
-          </div>
-          <div class="card">
-            <h3>토큰을 아끼는 순서</h3>
-            <p>구조만 먼저(제목·표·누름틀·분량, 10쪽 공문이면 수백 토큰) → 필요한 문단 범위만 읽기 → 바꿀 문단만 명령으로 → 저장. 문서를 통째로 다시 쓰지 않고, 서식은 읽지도 보내지도 않습니다.</p>
-          </div>
-          <div class="card">
-            <h3>망가뜨릴 수 없게</h3>
-            <p>명령은 미리 보기와 적용이 나뉘고, 원본 경로에 저장할 때는 .bak 을 남깁니다. 앱 안의 AI 도우미도 같은 명령을 쓰므로 사람이 승인하고 되돌리기 한 번으로 돌아옵니다. 문서는 이 컴퓨터 밖으로 나가지 않습니다.</p>
-          </div>
+        <div class="sec-head">
+          <div class="kicker">AI 를 위한 도구</div>
+          <h2>AI 가 다루기 쉬운 도구</h2>
+          <p>하이퍼세븐은 사람만 쓰는 프로그램이 아닙니다. AI 에이전트가 파일을 구조로 읽고, 필요한 곳만 고치고, 없는 기능은 만들어 쓰도록 길을 열어 두었습니다. 그래서 같은 일을 훨씬 적은 토큰으로 끝냅니다.</p>
         </div>
-        <p class="muted small" style="margin-top: 14px">명령줄: <code>sejong outline 문서.hwp</code> · <code>sejong read 문서.hwp --from p0.3 --to p0.40</code> · <code>sejong convert 문서.hwp 문서.docx</code> · <code>sejong apply 문서.hwp 명령.json -o 결과.hwp</code>. 자세한 안내는 <a href="llms.txt">llms.txt</a>.</p>
+        <div class="ai-wrap">
+          <div class="ai-cards">
+            <div class="ai-card"><b>구조부터 읽습니다</b><p>제목과 표, 빈칸, 분량만 먼저 봅니다. 10쪽짜리 보고서도 처음 훑는 데 수백 토큰이면 됩니다.</p></div>
+            <div class="ai-card"><b>고칠 곳만 고칩니다</b><p>파일을 통째로 다시 쓰지 않습니다. 바꿀 문단과 칸만 명령으로 보내고, 서식은 그 자리에 그대로 둡니다.</p></div>
+            <div class="ai-card key"><b>없는 기능은 만들어 씁니다</b><p>명령줄과 MCP 를 엮으면 앱에 없는 일도 됩니다. 한글 파일 백 개에서 표만 뽑아 시트 하나로 모으는 일을 AI 가 직접 짜서 돌립니다.</p></div>
+            <div class="ai-card"><b>마지막은 사람이 봅니다</b><p>미리 보기와 적용이 나뉘어 있고, 원본을 덮어쓸 때는 .bak 을 남깁니다. 되돌리기 한 번이면 돌아옵니다.</p></div>
+          </div>
+          <div class="session" role="img" aria-label="예시: AI 에이전트가 10쪽 보고서의 표 두 칸을 고치는 과정과 드는 토큰">
+  <div class="h"><span>예시 · 10쪽 보고서에서 표 두 칸 고치기</span><span>토큰</span></div>
+  <div class="row"><span class="call"><em>office_outline</em> 보고서.hwp</span><span class="res">제목 12 · 표 3 · 빈칸 5</span><span class="tok">≈ 300</span></div>
+  <div class="row"><span class="call"><em>office_table</em> t0.3.0</span><span class="res">표 하나만 · 6줄 × 4칸</span><span class="tok">≈ 180</span></div>
+  <div class="row"><span class="call"><em>office_apply</em> set_cell ×2</span><span class="res">두 칸 고침 · 서식 그대로</span><span class="tok">≈ 90</span></div>
+  <div class="row"><span class="call"><em>office_save</em></span><span class="res">저장 · .bak 남김</span><span class="tok">≈ 20</span></div>
+  <div class="total"><span>합계</span><span>≈ 600</span></div>
+  <p class="foot">파일을 통째로 읽고 다시 쓰면 만 토큰을 훌쩍 넘깁니다.</p>
+</div>
+
+        </div>
       </div>
     </section>
 
-    <section class="download" id="download">
+    <section class="sec soft" id="tools">
       <div class="wrap">
+        <div class="sec-head">
+          <div class="kicker">두 가지 도구, 한 플랫폼</div>
+          <h2>쓰는 일과 짓는 일</h2>
+        </div>
+        <div class="products">
+          <article class="product office">
+            <img class="icon" src="assets/brand/icon-office.svg" alt="" width="68" height="68" />
+            <h3>HyperSeven Office</h3>
+            <p class="sub">하이퍼세븐 오피스 · 문서 · 시트 · 발표 · PDF</p>
+            <p class="desc">한글(HWP·HWPX)과 워드, 엑셀, 파워포인트, PDF 를 한 앱에서 열고 고치고 저장합니다. 파일을 열면 원래 모양 그대로 보이고, 손대지 않은 곳은 원본 그대로 남습니다.</p>
+            <div class="tags"><span class="tag now"><span class="dot"></span>지금 받기</span><span class="tag">무료</span><span class="tag">macOS · Apple Silicon</span></div>
+            <div class="links">
+              <a class="link ver" href="office.html">자세히 보기 <span aria-hidden="true">→</span></a>
+              <a class="link" href="office.html#download">내려받기</a>
+              <a class="link" href="manual.html">매뉴얼</a>
+            </div>
+            <div class="shot"><div class="fan" aria-hidden="true">
+  <div class="fc f1"><div class="ln"><i class="h"></i><i></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">HWP</span></div>
+  <div class="fc f2"><div class="ln"><i class="h"></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">DOCX</span></div>
+  <div class="fc f3"><div class="gridc"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="bars"><i style="height: 40%"></i><i style="height: 65%"></i><i class="a" style="height: 100%"></i><i style="height: 55%"></i></div><span class="badge">XLSX</span></div>
+  <div class="fc f4"><div class="sl"><i></i></div><div class="ln" style="margin-top: 12px"><i class="s"></i></div><span class="badge">PPTX</span></div>
+  <div class="fc f5"><div class="ln"><i class="h"></i><i></i><i class="hl"></i><i></i><i class="s"></i></div><span class="badge">PDF</span></div>
+</div>
+</div>
+          </article>
+          <article class="product cad">
+            <img class="icon" src="assets/brand/icon-cad.svg" alt="" width="68" height="68" />
+            <h3>HyperSeven CAD</h3>
+            <p class="sub">하이퍼세븐 캐드 · 도면 · 3D · 곡면 · 노드 · BIM</p>
+            <p class="desc">캐드라고 도면만 그리지 않습니다. 선을 긋고, 매스를 올리고, 곡면을 다듬고, 노드로 형태를 엮고, 벽과 문으로 건물을 짓는 일까지 한 모델에서 합니다. AutoCAD 와 SketchUp, Rhino, Revit 을 오가던 일이 한곳에 모입니다.</p>
+            <div class="tags"><span class="tag dev"><span class="dot"></span>개발 중</span><span class="tag">macOS 먼저</span></div>
+            <div class="links">
+              <a class="link blue" href="cad.html">미리 보기 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="shot"><div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/cad-3d.webp" alt="하이퍼세븐 캐드의 3D 화면 — 박공지붕 벽돌집 예제" loading="lazy" width="1600" height="1012" /></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="seven">
+      <div class="wrap story">
+        <div class="big7"><img src="assets/brand/hyperseven-mark.svg" alt="하이퍼세븐의 7 — 먹색 가로획 위로 주홍 기둥이 접혀 내려온 모양" width="420" height="408" /></div>
         <div>
-          <div class="kicker">내려받기</div>
-          <h2>지금 받아서 바로 씁니다</h2>
-          <p class="lead">무료입니다. 회원 가입도, 광고도, 결제도 없습니다.</p>
-          <div class="cta">
-            <a class="btn" href="#download" data-dl="dmg">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-              <span>세종 받기 (.dmg)<small data-dl-meta>내려받기 준비 중</small></span>
-            </a>
-            <a class="alt" href="#download" data-dl="zip">.zip 으로 받기</a>
+          <div class="kicker">왜 7인가</div>
+          <h2>한 번 꺾으면 ㄱ,<br />한 번 접으면 7.</h2>
+          <p class="lead">7은 한글의 첫 글자 ㄱ을 닮았고, ㄱ은 목수가 쓰는 곱자의 모양입니다. 글을 짓는 일과 집을 짓는 일이 같은 꺾임에서 시작한다고 보았습니다.</p>
+          <p class="lead">로고의 7은 종이 띠를 한 번 접어 내린 모양입니다. 먹색 가로획 위로 주홍 기둥이 접혀 내려옵니다.</p>
+          <div class="chips">
+            <span class="chip"><i style="background: #111318"></i><span><b>먹</b> 하이퍼세븐 랩스</span></span>
+            <span class="chip"><i style="background: #f2481d"></i><span><b>주</b> 오피스 — 문서에 찍는 인주의 빛</span></span>
+            <span class="chip"><i style="background: #2747f0"></i><span><b>청</b> 캐드 — 청사진의 빛</span></span>
           </div>
-          <p class="meta">Apple Silicon 맥(M1 이후), macOS 11 이상. 인텔 맥용과 윈도우용은 그 다음에 준비합니다.<br />SHA-256 <code data-sha>—</code></p>
-          <p class="fine">새 판이 나오면 앱이 알려 줍니다. 받아서 응용 프로그램 폴더의 세종을 바꿔 넣으면 문서와 설정은 그대로입니다.</p>
-        </div>
-        <div class="box">
-          <h3>처음 여는 법</h3>
-          <ol class="steps">
-            <li>받은 <b>.dmg</b> 를 열고 세종을 <b>응용 프로그램</b> 폴더로 끌어 놓습니다.</li>
-            <li>처음 실행하면 "확인되지 않은 개발자" 창이 뜹니다. 세종은 아직 애플 공증을 받지 않았기 때문입니다.</li>
-            <li>응용 프로그램 폴더에서 세종을 <b>우클릭 → 열기 → 열기</b>. 한 번만 하면 됩니다.</li>
-            <li>macOS 15 부터는 <b>시스템 설정 → 개인정보 보호 및 보안</b> 맨 아래의 <b>그래도 열기</b>를 누릅니다.</li>
-          </ol>
-          <p class="fine">그래도 열리지 않으면 터미널에서 <code>xattr -cr /Applications/Sejong.app</code> 을 한 번 실행합니다 (내려받은 파일에 붙는 '격리' 표시를 떼는 것뿐입니다).</p>
-          <p class="fine">세종은 문서를 어디에도 보내지 않고, 설치 때 다른 프로그램을 함께 넣지 않습니다.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq" id="faq">
-      <div class="wrap">
-        <div class="kicker">자주 묻는 것</div>
-        <h2>궁금한 것</h2>
-        <div class="list">
-          <details>
-            <summary>정말 무료인가요?</summary>
-            <p>네. 모든 기능이 무료이고 회원 가입·광고·결제가 없습니다.</p>
-          </details>
-          <details>
-            <summary>한글이 설치되어 있어야 하나요?</summary>
-            <p>아니요. 한글이 없는 컴퓨터에서도 한글 문서를 열고 저장합니다. 한글이 깔려 있으면 그 글꼴(함초롬체 등)을 함께 써서 더 비슷하게 보입니다.</p>
-          </details>
-          <details>
-            <summary>한글에서 만든 문서가 똑같이 보이나요?</summary>
-            <p>쪽과 줄 바꿈은 한글이 저장한 대로 보입니다. 글꼴이 없으면 비슷한 글꼴로 대신 그리되 줄 바꿈은 원래 글꼴의 글자 폭으로 맞춥니다. 세종에서 저장한 문서는 한글에서 그대로 열립니다. 다르게 보이는 문서가 있으면 알려 주세요 — 고치는 데 가장 큰 도움이 됩니다.</p>
-          </details>
-          <details>
-            <summary>인텔 맥이나 윈도우에서도 되나요?</summary>
-            <p>지금은 Apple Silicon 맥용입니다. 인텔 맥용과 윈도우용은 그 다음에 준비합니다.</p>
-          </details>
-          <details>
-            <summary>문서가 밖으로 나가나요?</summary>
-            <p>아니요. 문서는 내 컴퓨터에만 있고 자동 저장도 내 컴퓨터 안입니다. 세종이 인터넷에 하는 일은 새 버전이 나왔는지 확인하는 것뿐입니다. AI 도우미는 내가 열쇠를 넣고 켤 때만 내가 고른 내용을 보냅니다.</p>
-          </details>
-          <details>
-            <summary>한글과컴퓨터와 관계가 있나요?</summary>
-            <p>없습니다. 세종은 한글과컴퓨터가 공개한 한글 문서 파일(.hwp) 문서를 참고해 만든 독립 소프트웨어입니다. '한글'과 'HWP'는 한글과컴퓨터의 상표입니다.</p>
-          </details>
-          <details>
-            <summary>버그를 찾았어요.</summary>
-            <p>아래 문의처로 알려 주세요. 어떤 문서에서 무엇을 했는지와, 도구 &gt; 오류 기록 보기의 내용을 함께 보내 주시면 빨리 고칩니다. 고친 판이 나오면 앱이 알려 드립니다.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="notes" id="notes">
-      <div class="wrap">
-        <div class="kicker">고친 것</div>
-        <h2>가장 새 판</h2>
-        <div class="box">
-          <h3>세종 <span data-ver>—</span> <span class="muted small" data-date></span></h3>
-          <div data-notes><p class="muted">고친 것을 불러오는 중…</p></div>
-          <p class="more"><a href="notes.html">지난 판까지 모두 보기 →</a></p>
         </div>
       </div>
     </section>
   </main>
 
+
   <footer>
     <div class="wrap">
       <div>
-        <img src="assets/sejong-logo-horizontal-white.svg" alt="세종" />
-        <p>한글·워드·PDF·엑셀·파워포인트 문서를 한 앱에서. 맥용, 무료.</p>
-        <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. 세종은 한글과컴퓨터와 관계가 없습니다.</p>
-        <p class="legal">함께 넣은 글꼴 나눔고딕·나눔명조(네이버), Pretendard(길형진), 송명은 SIL Open Font License 1.1로 배포됩니다. 세종은 Electron·Chromium·pdf.js 같은 오픈 소스 위에서 만들었습니다.</p>
-        <p class="legal">맞춤법 사전은 <a href="https://github.com/spellcheck-ko/hunspell-dict-ko">hunspell-dict-ko</a> 0.7.94(hunspell-dict-ko 기여자, 국립국어원)입니다. GPL-3.0-or-later로 배포되며, 고치지 않은 별도 파일로 함께 넣었습니다. 사전 소스는 <a href="https://github.com/dongyoun/sejong/releases/download/v1.5.0/hunspell-dict-ko-0.7.94.tar.gz">hunspell-dict-ko-0.7.94.tar.gz</a>(16MB)로 함께 올려 두었습니다.</p>
+        <a class="brand" href="index.html"><img src="assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="199" height="22" /></a>
+        <p class="tagline">글짓기부터 집짓기까지.</p>
+        <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. ‘한글’과 ‘HWP’는 한글과컴퓨터의 상표입니다.</p>
+        <p class="legal">© 2026 HyperSeven Labs</p>
       </div>
       <div class="cols">
         <div>
-          <h4>세종</h4>
+          <h4>도구</h4>
           <ul>
-            <li><a href="#download">내려받기</a></li>
+            <li><a href="office.html">하이퍼세븐 오피스</a></li>
+            <li><a href="cad.html">하이퍼세븐 캐드</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>도움</h4>
+          <ul>
+            <li><a href="manual.html">매뉴얼</a></li>
             <li><a href="notes.html">고친 것</a></li>
-            <li><a href="#faq">자주 묻는 것</a></li>
+            <li><a href="office.html#faq">자주 묻는 것</a></li>
+            <li><a href="llms.txt">AI 에이전트용 안내</a></li>
           </ul>
         </div>
         <div>
           <h4>문의</h4>
           <ul>
-            <li><a data-contact href="#faq">문의처는 곧 알려 드립니다</a></li>
+            <li><a data-contact href="https://github.com/dongyoun/sejong/issues">GitHub 에 남기기</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-  <script src="assets/site.js"></script>
+  <script src="assets/site.js" data-root=""></script>
 </body>
 </html>

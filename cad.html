@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>하이퍼세븐 캐드 — 도면·3D·곡면·노드·BIM을 한 모델에서 (개발 중)</title>
+  <meta name="description" content="하이퍼세븐 캐드는 개발 중인 건축 설계 도구입니다. 2D 제도와 3D 모델링, 자유 곡면, 노드, BIM 을 한 모델 위에서 오갑니다." />
+  <meta property="og:site_name" content="HyperSeven Labs" />
+  <meta property="og:title" content="하이퍼세븐 캐드 — 도면·3D·곡면·노드·BIM을 한 모델에서 (개발 중)" />
+  <meta property="og:description" content="하이퍼세븐 캐드는 개발 중인 건축 설계 도구입니다. 2D 제도와 3D 모델링, 자유 곡면, 노드, BIM 을 한 모델 위에서 오갑니다." />
+  <meta property="og:image" content="https://hyperseven.pages.dev/assets/og.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://hyperseven.pages.dev/cad" />
+  <meta property="og:url" content="https://hyperseven.pages.dev/cad" />
+  <link rel="alternate" hreflang="ko" href="https://hyperseven.pages.dev/cad" />
+  <link rel="alternate" hreflang="en" href="https://hyperseven.pages.dev/en/cad" />
+  <link rel="alternate" hreflang="ja" href="https://hyperseven.pages.dev/ja/cad" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://hyperseven.pages.dev/zh/cad" />
+  <link rel="alternate" hreflang="x-default" href="https://hyperseven.pages.dev/cad" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="assets/brand/icon-labs.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="하이퍼세븐 랩스 처음 화면"><img src="assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="217" height="24" /></a>
+      <nav aria-label="주 메뉴">
+        <a href="office.html">오피스</a>
+        <a href="cad.html" aria-current="page">캐드</a>
+        <a href="manual.html">매뉴얼</a>
+        <a href="notes.html">고친 것</a>
+        <a class="nav-cta" href="office.html#download">내려받기</a>
+      </nav>
+      <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="cad.html" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="en/cad.html" hreflang="en" lang="en">English</a><a href="ja/cad.html" hreflang="ja" lang="ja">日本語</a><a href="zh/cad.html" hreflang="zh-Hans" lang="zh-CN">简体中文</a></div></details>
+    </div>
+  </header>
+
+<main>
+    <section class="phero cad">
+      <div class="wrap">
+        <div class="ptitle"><img src="assets/brand/icon-cad.svg" alt="" width="60" height="60" /><div><b>HyperSeven CAD</b><span>하이퍼세븐 캐드 · 도면 · 3D · 곡면 · 노드 · BIM</span></div><span class="tag dev"><span class="dot"></span>개발 중</span></div>
+        <h1>그리고, 올리고, 다듬고, 짓습니다<span class="blue">.</span><br /><span class="dim">한 모델에서.</span></h1>
+        <p class="lead">캐드라고 하면 도면부터 떠올리지만, 하이퍼세븐 캐드는 거기서 멈추지 않습니다. 선을 긋고, 매스를 밀어 올리고, 곡면을 다듬고, 노드로 형태를 엮고, 벽과 문으로 건물을 짓는 일을 모델 하나에서 이어 갑니다.</p>
+        <p class="draft">아직 공개 전입니다. 만들고 있는 것을 미리 보여 드리는 쪽이라 내용은 바뀔 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="sec soft">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="kicker blue">다섯 가지 손</div>
+          <h2>프로그램은 그대로, 손만 바꿉니다</h2>
+          <p>AutoCAD, SketchUp, Rhino, Grasshopper, Revit 을 오가며 파일을 넘기던 일을 한 화면에서 합니다. 쓰던 프로그램의 명령 이름과 단축키도 그대로 받습니다.</p>
+        </div>
+        <div class="verbs">
+  <div class="verb">
+    <div class="art"><svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="34" y="24" width="92" height="64" fill="#fff" /><path d="M80 24v28M80 70v18" /><path d="M80 52a18 18 0 0 1 18 18H80" stroke-width="1.5" /><path d="M100 22v4M116 22v4M100 24h16" stroke-width="1.5" /><path d="M34 102h92M34 97v10M126 97v10" stroke-width="1.5" /></svg></div>
+    <div class="txt"><b>그리기</b><span class="what">2D 제도</span><p>명령줄과 별칭, 스냅, 치수·해치·블록으로 도면을 긋습니다.</p><p class="like">비슷한 도구 · <b>AutoCAD</b></p></div>
+  </div>
+  <div class="verb">
+    <div class="art"><svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M44 56 80 38l36 18-36 18z" fill="currentColor" fill-opacity=".16" /><path d="M44 56v30l36 18 36-18V56" fill="#fff" /><path d="M80 74v30" /><path d="M44 56 80 38l36 18-36 18z" /><path d="M80 52V12M71 21l9-9 9 9" /></svg></div>
+    <div class="txt"><b>올리기</b><span class="what">3D 모델링</span><p>면을 밀고 당겨 매스를 세우고, 되풀이되는 것은 컴포넌트로 묶습니다.</p><p class="like">비슷한 도구 · <b>SketchUp</b></p></div>
+  </div>
+  <div class="verb">
+    <div class="art"><svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 88c26-30 50 14 76-12s42-8 50-18" /><path d="M24 72c26-30 50 14 76-12s40-8 48-18" stroke-opacity=".55" /><path d="M30 56c26-30 50 14 76-12s38-8 46-18" stroke-opacity=".3" /><path d="M18 88 30 56M144 58l8-32" stroke-opacity=".45" /><path d="M18 30l38 12 38-24 40 14" stroke-dasharray="3 4" stroke-width="1.5" /><rect x="15" y="27" width="6" height="6" fill="#fff" stroke-width="1.5" /><rect x="53" y="39" width="6" height="6" fill="#fff" stroke-width="1.5" /><rect x="91" y="15" width="6" height="6" fill="#fff" stroke-width="1.5" /><rect x="131" y="29" width="6" height="6" fill="#fff" stroke-width="1.5" /></svg></div>
+    <div class="txt"><b>다듬기</b><span class="what">자유 곡면</span><p>NURBS 곡선과 곡면을 제어점으로 다듬고, SubD 와 메시를 다룹니다.</p><p class="like">비슷한 도구 · <b>Rhino</b></p></div>
+  </div>
+  <div class="verb">
+    <div class="art"><svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="20" width="44" height="28" rx="6" fill="#fff" /><rect x="14" y="72" width="44" height="28" rx="6" fill="#fff" /><rect x="102" y="44" width="44" height="32" rx="6" fill="currentColor" fill-opacity=".16" /><path d="M58 34c24 0 20 20 44 20M58 86c24 0 20-20 44-20" /><circle cx="58" cy="34" r="3" fill="currentColor" /><circle cx="58" cy="86" r="3" fill="currentColor" /><circle cx="102" cy="54" r="3" fill="currentColor" /><circle cx="102" cy="66" r="3" fill="currentColor" /><path d="M22 30h22M22 38h14M22 82h22M22 90h14M110 56h26M110 64h18" stroke-width="1.5" /></svg></div>
+    <div class="txt"><b>엮기</b><span class="what">노드 · 파라메트릭</span><p>노드를 이어 형태의 규칙을 짜고, 값을 바꿔 가며 대안을 봅니다.</p><p class="like">비슷한 도구 · <b>Grasshopper</b></p></div>
+  </div>
+  <div class="verb">
+    <div class="art"><svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M58 40 98 26l26 18-40 14z" fill="currentColor" fill-opacity=".16" /><path d="M34 58l24-18 26 18v38H34z" fill="#fff" /><path d="M84 58l40-14v38L84 96" fill="#fff" /><path d="M46 70h14v13H46zM96 68l16-6v13l-16 6z" /><path d="M14 96h132" stroke-dasharray="3 4" stroke-opacity=".5" /><path d="M60 76 74 102h30" stroke-width="1.5" stroke-dasharray="2 3" /><rect x="104" y="96" width="32" height="12" rx="6" fill="#fff" stroke-width="1.5" /><path d="M120 48 136 24h12" stroke-width="1.5" stroke-dasharray="2 3" /></svg></div>
+    <div class="txt"><b>짓기</b><span class="what">BIM</span><p>벽·문·창·슬래브·지붕·계단으로 짓고, 평면·단면·입면과 일람표를 모델에서 냅니다.</p><p class="like">비슷한 도구 · <b>Revit · Archicad</b></p></div>
+  </div>
+</div>
+<div class="onemodel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z" /><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5" /></svg>다섯 손이 만지는 것은 모델 하나입니다. 평면에 그은 벽이 3D 에서 서고, 도면과 일람표에 그대로 나옵니다.</div>
+
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="kicker blue">지금 만들고 있는 화면</div>
+          <h2>도면은 모델에서 나옵니다</h2>
+          <p>예제 주택 하나로 3D, 평면, 명령 찾기를 차례로 보면 이렇습니다.</p>
+        </div>
+        <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/cad-3d.webp" alt="하이퍼세븐 캐드의 3D 화면 — 박공지붕 벽돌집 예제와 그림자, 왼쪽에 층 목록, 오른쪽에 속성 칸" loading="lazy" width="1600" height="1012" /></div>
+        <div class="gallery" style="margin-top: 28px">
+          <figure>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/cad-plan.webp" alt="1층 평면 1:100 — 치수, 그리드, 실 면적, 문과 창 기호가 붙은 예제 주택" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>1층 평면 1:100. 치수와 창호 기호, 실 면적이 모델에서 저절로 붙습니다.</figcaption>
+          </figure>
+          <figure>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/cad-palette.webp" alt="명령 찾기 창 — '벽'을 치면 벽, 벽 윤곽, 벽 나누기 같은 명령이 영문 이름·단축키와 함께 나온다" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>명령 찾기 <kbd>⌘K</kbd>. 한글로, 초성으로, 영문 명령 이름으로 찾습니다.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec soft">
+      <div class="wrap split">
+        <div class="card">
+          <div class="kicker blue">손버릇</div>
+          <h3>쓰던 명령 이름과 단축키로</h3>
+          <p>AutoCAD·SketchUp·Rhino·Revit·Archicad 에서 쓰던 명령 이름과 단축키로 찾고 씁니다. AutoCAD 의 acad.pgp 와 Revit 단축키 파일도 가져옵니다.</p>
+        </div>
+        <div class="card">
+          <div class="kicker blue">AI</div>
+          <h3>AI 와 함께, 확정은 사람이</h3>
+          <p>앱 안에서 AI 에게 말로 시키거나, MCP 로 에이전트를 붙입니다. 파이썬과 플러그인으로 없는 도구를 더할 수 있어서, 필요한 기능은 AI 와 함께 만들어 씁니다. AI 가 만든 것은 제안으로 남고, 확정은 사람이 합니다.</p>
+        </div>
+        <div class="card">
+          <div class="kicker blue">파일</div>
+          <h3>있던 파일에서 이어서</h3>
+          <p>기존 설계 파일을 열어 하던 일을 잇고, 공개 표준으로 내보내는 것을 목표로 합니다. 형식마다 되는 범위는 공개할 때 표로 알려 드립니다.</p>
+          <div class="fmts"><span class="fmt">DWG·DXF</span><span class="fmt">SKP</span><span class="fmt">IFC</span><span class="fmt">3DM</span><span class="fmt">RVT<small>읽기</small></span><span class="fmt">STEP</span><span class="fmt">PDF</span><span class="fmt">OBJ·FBX·glTF</span></div>
+        </div>
+        <div class="card">
+          <div class="kicker blue">지금</div>
+          <h3>맥에서 먼저 다듬고 있습니다</h3>
+          <p>Apple Silicon 맥에서 먼저 다듬고, 윈도우와 리눅스는 그 다음입니다. 출시 날짜는 아직 정하지 않았습니다.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <p class="tm">AutoCAD·Revit 은 Autodesk, SketchUp 은 Trimble, Rhino·Grasshopper 는 Robert McNeel &amp; Associates, Archicad 는 Graphisoft 의 상표입니다. 하이퍼세븐 캐드는 이 회사들과 관계가 없습니다.</p>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="199" height="22" /></a>
+        <p class="tagline">글짓기부터 집짓기까지.</p>
+        <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. ‘한글’과 ‘HWP’는 한글과컴퓨터의 상표입니다.</p>
+        <p class="legal">© 2026 HyperSeven Labs</p>
+      </div>
+      <div class="cols">
+        <div>
+          <h4>도구</h4>
+          <ul>
+            <li><a href="office.html">하이퍼세븐 오피스</a></li>
+            <li><a href="cad.html">하이퍼세븐 캐드</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>도움</h4>
+          <ul>
+            <li><a href="manual.html">매뉴얼</a></li>
+            <li><a href="notes.html">고친 것</a></li>
+            <li><a href="office.html#faq">자주 묻는 것</a></li>
+            <li><a href="llms.txt">AI 에이전트용 안내</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>문의</h4>
+          <ul>
+            <li><a data-contact href="https://github.com/dongyoun/sejong/issues">GitHub 에 남기기</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js" data-root=""></script>
+</body>
+</html>
