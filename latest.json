@@ -1,31 +1,45 @@
 {
   "product": "sejong",
-  "version": "2.0.0",
-  "date": "2026-11-06",
+  "version": "2.0.3",
+  "date": "2026-11-07",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "HyperSeven Office로 새롭게 나왔습니다. 한글·워드·엑셀·파워포인트·PDF를 한 앱에서 다루고, 윈도우판과 영어 화면, 명령 찾기가 더해졌습니다.\n- 윈도우 10·11(64비트) 지원: .exe를 실행하면 바로 설치되고, 한글 Windows 방식 단축키를 그대로 씁니다.\n- 영어 화면: 처음에는 운영체제 언어를 따르고, 환경 설정 › 보기 › 언어에서 바꿉니다.\n- 명령 찾기 `⌘K`(윈도우 `Ctrl+Shift+K`): 이름이나 초성 몇 자로 모든 명령을 바로 실행합니다.\n- 문제 알리기: 도구 › 문제 알리기…에서 한 줄만 적어 보내면 됩니다. 문서 모양이 문제라면 글자를 지운 사본을 붙일 수 있고, 고쳐지면 앱이 알려 드립니다.\n- 쓰던 설정·단축키·최근 문서·자동 저장은 처음 실행할 때 그대로 옮겨 옵니다. AI 도우미 열쇠만 한 번 다시 넣어 주세요.\n- AI 에이전트용 명령줄과 MCP 이름이 `hyperseven`, 도구 이름이 `office_*`로 바뀌었습니다. 도구 › AI 연결 (MCP)에서 새 명령을 복사해 다시 연결해 주세요.\n- 새 아이콘과 새 홈페이지.",
+  "notes": "맥 앱이 애플 공증을 받았습니다. 내려받아 처음 열 때도 경고 없이 바로 열립니다.\n- 맥: 처음 열 때 나오던 '확인되지 않은 개발자' 경고와 '그래도 열기' 단계가 없어졌습니다.\n- 작업 창의 문단 왼쪽·오른쪽 여백에 음수도 넣을 수 있습니다. 문단을 본문 여백 밖으로 내밀 때 씁니다(문단 모양 창과 같습니다).\n- 윈도우: 새 버전 안내 창이 윈도우에 맞는 설치 방법을 알려 줍니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-2.0.0-arm64.dmg",
-        "size": 135086512,
-        "sha256": "49c8fa447ff470eefbd56177983f422c786f68fb7f2cbc7742e318b61014f8f8"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-arm64.dmg",
+        "size": 135255160,
+        "sha256": "771d60e4932fd1edd77e73bd896edc5c3b787fc6d37b010800dcf19abfab6909"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-2.0.0-arm64.zip",
-        "size": 135015435,
-        "sha256": "13757abd6d6477a00ae4d8d0e48809895f24069c209a8e8756c234f9ee554498"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-arm64.zip",
+        "size": 134791036,
+        "sha256": "0f5e7099586ed08023c696b96edda82b0e0e9add279d671a7197cda4eef91717"
+      }
+    }
+  },
+  "win": {
+    "x64": {
+      "exe": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-win-x64.exe",
+        "size": 107891552,
+        "sha256": "fefc237efd01373ea87e76ddbc6be76a5d6d475b58935e62396449c42ed78c10"
+      },
+      "zip": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-win-x64.zip",
+        "size": 147478285,
+        "sha256": "520cd0d4b5e546ffed9263a1386e0b6a3bdbaff83b5ffb9acac5182a60dcced8"
       }
     }
   },
   "bundle": {
-    "version": "2.0.2",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-bundle-2.0.2.zip",
-    "size": 5216747,
-    "sha256": "0c8d261fe39c981e72df3a6829f5746bfc0c47723489d2d21f5e16492021e3b6",
+    "version": "2.0.3",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-bundle-2.0.3.zip",
+    "size": 5216724,
+    "sha256": "a89a616d0f5b7b2c826f18ce8e0ca28e6878bed0c2c33132a255e8a1d505434d",
     "shellMin": "2.0.0",
-    "notes": "한글 문서를 워드로 저장하면 문단 사이 간격까지 한글과 같게 나옵니다.\n- 워드(.docx)로 저장한 문서를 워드에서 열 때 문단 사이가 한글보다 좁아 보이던 것을 고쳤습니다."
+    "notes": "맥 앱이 애플 공증을 받았습니다. 내려받아 처음 열 때도 경고 없이 바로 열립니다.\n- 맥: 처음 열 때 나오던 '확인되지 않은 개발자' 경고와 '그래도 열기' 단계가 없어졌습니다.\n- 작업 창의 문단 왼쪽·오른쪽 여백에 음수도 넣을 수 있습니다. 문단을 본문 여백 밖으로 내밀 때 씁니다(문단 모양 창과 같습니다).\n- 윈도우: 새 버전 안내 창이 윈도우에 맞는 설치 방법을 알려 줍니다."
   },
   "config": {
     "flags": {},
@@ -39,19 +53,5 @@
       "support": "https://github.com/dongyoun/sejong/issues"
     }
   },
-  "win": {
-    "x64": {
-      "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-2.0.0-win-x64.exe",
-        "size": 107886733,
-        "sha256": "8dad89045e292021a8c752a01a098468e3bea65d783dfd9518c7f090a1574d03"
-      },
-      "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.0/HyperSeven-Office-2.0.0-win-x64.zip",
-        "size": 147477581,
-        "sha256": "2185866f9f5dcc7326be04441aa43ce3d5a4d95ea5a6ed665f8cac83304cecf9"
-      }
-    }
-  },
-  "sig": "qPg9SFA/AWsFWWnc5nK7lgl25SIcHsStV84NJ+nvS/lxyM+ZmyjZRDc5vr6jzG2hhTDXAUMLx8tSXVJBAEt9Bw=="
+  "sig": "g8W4NMyy9XKDWQgn9hTUFn7wVCfnzxKYMEOXURaBUoLqeCtxOp2SgVicJP8oNPngcvcReAeWEt8dok0fqiAlCw=="
 }

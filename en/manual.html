@@ -89,12 +89,7 @@
           </ul>
           <h3>First launch</h3>
           <p>On Windows, if you see “Windows protected your PC”, click <b>More info → Run anyway</b>. It shows up because the app isn't code-signed yet.</p>
-          <p>On the Mac, the app isn't notarized by Apple yet, so the first time you open it macOS warns about an unidentified developer. You only have to get past this once:</p>
-          <ol>
-            <li>In Applications, right-click the app and choose <b>Open → Open</b>.</li>
-            <li>On macOS 15 and later, go to <span class="menu">System Settings › Privacy &amp; Security</span> and click <b>Open Anyway</b> at the bottom.</li>
-            <li>If it still won't open, run <code>xattr -cr "/Applications/HyperSeven Office.app"</code> once in Terminal. It only removes the quarantine flag that downloaded files get.</li>
-          </ol>
+          <p>On the Mac, the app is notarized by Apple, so it opens right away. If macOS asks whether to open an app downloaded from the internet, click <b>Open</b>.</p>
           <h3>Updates</h3>
           <p>The app checks for a new version as soon as it starts and every six hours after that. When one is out, a window appears and the status bar says so. Choose <b>Open Download Page</b>, <b>Later</b> or <b>Skip This Version</b>.</p>
           <ul>
