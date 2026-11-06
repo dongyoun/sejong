@@ -488,63 +488,53 @@ h2 {
   box-shadow: 0 -4px 40px rgba(17, 19, 24, 0.1);
 }
 
-/* 왜 7인가 */
-.story {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 72px;
-  align-items: center;
-}
-.big7 {
+/* 첫 화면 맨 아래 — 모눈 위 7 과 한 줄 */
+.end {
   position: relative;
-  display: grid;
-  place-items: center;
-  aspect-ratio: 1;
   overflow: hidden;
+  display: grid;
+  justify-items: center;
+  padding: clamp(64px, 8vw, 104px) 24px;
   border-radius: 32px;
   background: #fff;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  text-align: center;
 }
-.big7::before {
+.end::before {
   content: '';
   position: absolute;
   inset: 0;
   background-image: linear-gradient(var(--line-soft) 1px, transparent 1px), linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
   background-size: 32px 32px;
+  background-position: center;
 }
-.big7 img {
+.end > * {
   position: relative;
-  width: 56%;
 }
-.story h2 {
-  margin-bottom: 22px;
+.end-mark {
+  width: clamp(64px, 7vw, 96px);
+  margin-bottom: 36px;
 }
-.story .lead + .lead {
-  margin-top: 14px;
+.end h2 {
+  margin-bottom: 44px;
+  font-size: clamp(36px, 4.6vw, 60px);
+  letter-spacing: -0.045em;
+  line-height: 1.16;
 }
-.chips {
+.end h2 .ver {
+  color: var(--ver);
+}
+.end-go {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 30px;
+  justify-content: center;
+  gap: 12px;
 }
-.chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 9px 14px 9px 10px;
-  border-radius: 14px;
-  background: #fff;
-  border: 1px solid var(--line);
-  font-size: 14.5px;
-  color: var(--text);
-}
-.chip i {
-  flex: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 6px;
+.end-go .btn {
+  justify-content: center;
+  min-width: 208px;
+  padding: 14px 24px;
 }
 
 /* 카드 */
@@ -1236,7 +1226,6 @@ footer .cols a:hover {
 /* 좁은 화면 */
 @media (max-width: 1000px) {
   .hero .wrap,
-  .story,
   .feat,
   .dl,
   .split {
@@ -1254,9 +1243,6 @@ footer .cols a:hover {
   .modes,
   .mgrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .big7 {
-    max-width: 420px;
   }
   .doc {
     grid-template-columns: minmax(0, 1fr);
