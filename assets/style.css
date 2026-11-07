@@ -2575,3 +2575,199 @@ html[data-store] .exe-only {
     height: 130px;
   }
 }
+
+/* 첫 화면 (2026-11-08): 여는 형식 띠 · 왜 무료인가 · 호환 표 · 함께 만들기 */
+/* 첫 화면: 여는 형식 띠 (주 = 오피스, 청 = 캐드) */
+.hero-fmts {
+  gap: 6px;
+  margin-top: 26px;
+}
+.hero-fmts .fmt {
+  padding: 5px 11px;
+  font: 600 13px var(--mono);
+  letter-spacing: 0.02em;
+}
+.fmt.o::before,
+.fmt.c::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  border-radius: 50%;
+  vertical-align: 1px;
+  background: var(--ver);
+}
+.fmt.c::before {
+  background: var(--blue);
+}
+
+/* 왜 무료인가 */
+.mani {
+  max-width: 960px;
+}
+.mani h2 {
+  font-size: clamp(34px, 4.6vw, 60px);
+  letter-spacing: -0.045em;
+  line-height: 1.16;
+}
+.mani h2 .ver {
+  color: var(--ver);
+}
+.mani-p {
+  max-width: 760px;
+  margin-top: 30px;
+  font-size: clamp(17px, 1.55vw, 19.5px);
+  line-height: 1.85;
+}
+.mani-sign {
+  margin-top: 22px;
+  font-size: clamp(18px, 1.7vw, 21px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.vows {
+  gap: 28px;
+  margin-top: 72px;
+}
+.vows .point {
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+
+/* 호환 */
+.compat {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.cbox {
+  padding: 26px 28px 10px;
+  border-radius: 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.chead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.chead img {
+  width: 40px;
+  height: 40px;
+  flex: none;
+}
+.chead b {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.chead .tag {
+  margin-left: auto;
+  white-space: nowrap;
+}
+.crows {
+  margin: 0;
+}
+.crows > div {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.crows > div:last-child {
+  border-bottom: 0;
+}
+.crows dt {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.crows dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+.crows .fmt {
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: var(--soft);
+  font: 600 13px var(--mono);
+  letter-spacing: 0.02em;
+}
+.crows .fmt small {
+  font: 500 12px var(--font);
+  letter-spacing: 0;
+}
+.cbox.office .crows .fmt:not(:has(small)) {
+  background: var(--ver-soft);
+  border-color: var(--ver-line);
+  color: var(--ver-ink);
+}
+.cbox.cad .crows .fmt:not(:has(small)) {
+  background: var(--blue-soft);
+  border-color: var(--blue-line);
+  color: var(--blue-ink);
+}
+.crows .via {
+  margin-left: 4px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.cnote {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* 함께 만들기: 번호 고리 */
+.loop .pro .ic {
+  font: 700 15px var(--mono);
+  background: var(--soft);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.loop .pro b[data-ver] {
+  font-family: var(--mono);
+}
+
+@media (max-width: 900px) {
+  .compat {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .cbox {
+    padding: 22px 18px 6px;
+  }
+  /* 좁으면 표시(맥 · 윈도우, 개발 중)는 이름 아래 줄로 */
+  .chead {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .chead b {
+    flex: 1 1 calc(100% - 52px);
+    white-space: nowrap;
+  }
+  .chead .tag {
+    margin-left: 52px;
+  }
+  .crows > div {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+  .vows {
+    margin-top: 48px;
+  }
+  .hero-fmts .fmt {
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+}
