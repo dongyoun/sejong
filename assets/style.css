@@ -2771,3 +2771,20 @@ html[data-store] .exe-only {
     font-size: 12px;
   }
 }
+
+/* 오피스·캐드 쪽 호환 표 (2026-11-08): 왼쪽 설명, 오른쪽 표 */
+.duo > .sec-head {
+  margin-bottom: 0;
+}
+.sec-head .cnote {
+  margin-top: 20px;
+  font-size: 14px;
+}
+/* 제품 제목 줄의 '개발 중' 표시: .ptitle span 의 block 이 점까지 따로 줄을 차지하던 것 */
+.ptitle .tag {
+  display: inline-flex;
+  font-size: 13px;
+}
+.ptitle .tag .dot {
+  display: inline-block;
+}

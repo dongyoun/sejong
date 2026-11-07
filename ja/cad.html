@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
-  <title>HyperSeven CAD — AutoCAD・SketchUp・Rhino・Revit・Archicadをひとつに（開発中）</title>
-  <meta name="description" content="AutoCAD・SketchUp・Rhino・Revit・Archicadの作業を、ひとつのモデルで。開発中の建築設計ツール、HyperSeven CADをいち早くご覧ください。" />
+  <title>HyperSeven CAD — 5つのソフトの代わりに、みんなのCADをひとつ（開発中）</title>
+  <meta name="description" content="AutoCAD・SketchUp・Rhino・Revit・Archicadの作業とファイルを、ひとつのモデルで。誰でも無料で使える建築設計ツールになるHyperSeven CADを、いち早くご覧ください。" />
   <meta property="og:site_name" content="HyperSeven Labs" />
-  <meta property="og:title" content="HyperSeven CAD — AutoCAD・SketchUp・Rhino・Revit・Archicadをひとつに（開発中）" />
-  <meta property="og:description" content="AutoCAD・SketchUp・Rhino・Revit・Archicadの作業を、ひとつのモデルで。開発中の建築設計ツール、HyperSeven CADをいち早くご覧ください。" />
+  <meta property="og:title" content="HyperSeven CAD — 5つのソフトの代わりに、みんなのCADをひとつ（開発中）" />
+  <meta property="og:description" content="AutoCAD・SketchUp・Rhino・Revit・Archicadの作業とファイルを、ひとつのモデルで。誰でも無料で使える建築設計ツールになるHyperSeven CADを、いち早くご覧ください。" />
   <meta property="og:image" content="https://hyperseven.pages.dev/assets/og-ja.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
@@ -47,8 +47,8 @@
     <section class="phero cad">
       <div class="wrap">
         <div class="ptitle"><img src="../assets/brand/icon-cad.svg" alt="" width="60" height="60" /><div><b>HyperSeven CAD</b><span>図面 · 3D · 曲面 · ノード · BIM</span></div><span class="tag dev"><span class="dot"></span>開発中</span></div>
-        <h1>AutoCAD・SketchUp・Rhino・<br />Revit・Archicadを、ひとつに<span class="blue">。</span></h1>
-        <p class="lead">図面からマス・曲面・ノード・BIMまで。5つのソフトを行き来していた作業が、ひとつのモデルでつながります。</p>
+        <h1>5つのソフトの代わりに、<br />みんなのCADをひとつ<span class="blue">。</span></h1>
+        <p class="lead">AutoCAD・SketchUp・Rhino・Revit・Archicadを行き来していた作業が、ひとつのモデルでつながります。図面からマス・曲面・ノード・BIMまで、誰でも無料で。</p>
         <p class="draft">開発中の画面です。公開までに変わることがあります。</p>
       </div>
     </section>
@@ -108,8 +108,35 @@
       </div>
     </section>
 
-    <section class="sec soft">
+    <section class="sec soft" id="files">
+      <div class="wrap duo">
+        <div class="sec-head">
+          <div class="kicker blue">ファイル</div>
+          <h2>どこから来た図面も、<br />そのまま続きから</h2>
+          <p>受け取ったファイルを開いて作業を続け、相手が使う形式やオープン標準で書き出します。</p>
+          <p class="cnote">ラベルのない形式は、開いて保存できます。公開テストファイル921件のうち910件を開けます。</p>
+        </div>
+        <div class="cbox cad">
+          <dl class="crows">
+            <div><dt>AutoCAD</dt><dd><span class="fmt">DWG</span><span class="fmt">DXF</span><span class="via">R12〜2018形式で保存</span></dd></div>
+            <div><dt>SketchUp</dt><dd><span class="fmt">SKP</span></dd></div>
+            <div><dt>Rhino</dt><dd><span class="fmt">3DM</span><span class="fmt">STEP</span></dd></div>
+            <div><dt>Grasshopper</dt><dd><span class="fmt">GH<small>読み込み</small></span></dd></div>
+            <div><dt>Revit</dt><dd><span class="fmt">RVT<small>読み込み</small></span><span class="fmt">RFA<small>読み込み</small></span><span class="fmt">IFC</span></dd></div>
+            <div><dt>Archicad</dt><dd><span class="fmt">IFC</span><span class="via">IFCでやり取り</span></dd></div>
+            <div><dt>オープン標準</dt><dd><span class="fmt">IFC</span><span class="fmt">glTF</span><span class="fmt">OBJ</span><span class="fmt">PDF</span><span class="via">IFC 2x3・4・4.3</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
       <div class="wrap split">
+        <div class="card">
+          <div class="kicker blue">みんなに</div>
+          <h3>学生にも、設計事務所にも、同じCADを</h3>
+          <p>公開後は、すべての機能を誰でも無料で使えます。ライセンスを気にせず学び、同じ道具でそのまま実務へ。</p>
+        </div>
         <div class="card">
           <div class="kicker blue">ショートカット</div>
           <h3>使い慣れたコマンド名とショートカットで</h3>
@@ -119,12 +146,6 @@
           <div class="kicker blue">AI</div>
           <h3>AIと一緒に、決めるのは人</h3>
           <p>アプリの中でAIに言葉で頼むことも、MCPでエージェントをつなぐこともできます。必要な道具はPythonやプラグインでAIと一緒に作れます。AIの結果は提案として残し、確定するのは人です。</p>
-        </div>
-        <div class="card">
-          <div class="kicker blue">ファイル</div>
-          <h3>手持ちのファイルから続きを</h3>
-          <p>既存の設計ファイルを開いて作業を続け、オープンな標準形式で書き出すことを目指しています。</p>
-          <div class="fmts"><span class="fmt">DWG·DXF</span><span class="fmt">SKP</span><span class="fmt">IFC</span><span class="fmt">3DM</span><span class="fmt">RVT<small>読み込み</small></span><span class="fmt">STEP</span><span class="fmt">PDF</span><span class="fmt">OBJ·FBX·glTF</span></div>
         </div>
         <div class="card">
           <div class="kicker blue">いま</div>
