@@ -2812,3 +2812,50 @@ html[data-store] .exe-only {
     margin-left: auto;
   }
 }
+
+/* 업데이트 내역 (2026-11-08): 버전마다 선을 긋고 첫 줄(이번 버전 한 줄 요약)을 크게, 끝에 '다음 버전' 띠 */
+.notes-page h2 {
+  padding-top: 44px;
+  border-top: 1px solid var(--line);
+}
+.notes-page h2:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.notes-page h2 + p {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.notes-next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 32px;
+  max-width: 820px;
+  margin: 24px 0 96px;
+  padding: 28px 30px;
+  border-radius: 22px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+}
+.notes-next > div {
+  flex: 1 1 360px;
+}
+.notes-next b {
+  display: block;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.notes-next p {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.notes-page {
+  padding-top: 36px;
+}
