@@ -1094,6 +1094,18 @@ figcaption {
 .manual p {
   margin: 10px 0;
 }
+/* 개인정보 처리방침 — 매뉴얼 글 모양, 목차 없이 */
+.policy {
+  padding: 24px 0 120px;
+}
+.policy h2 {
+  margin: 48px 0 12px;
+  font-size: 24px;
+}
+.policy h3 {
+  margin: 26px 0 6px;
+  font-size: 18px;
+}
 .manual ul,
 .manual ol {
   margin: 10px 0;
