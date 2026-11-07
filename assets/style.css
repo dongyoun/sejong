@@ -2788,3 +2788,27 @@ html[data-store] .exe-only {
 .ptitle .tag .dot {
   display: inline-block;
 }
+/* 머리 막대: 641~860px 에서 언어 단추가 화면 밖으로 밀리던 것 — 폰처럼 메뉴를 둘째 줄로 */
+@media (min-width: 641px) and (max-width: 860px) {
+  .top .wrap {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 6px 12px;
+    padding: 12px 0 8px;
+  }
+  .top .lang {
+    order: 2;
+    margin-left: auto;
+  }
+  .top nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+  }
+  .top nav a:first-child {
+    padding-left: 0;
+  }
+  .top nav .nav-cta {
+    margin-left: auto;
+  }
+}
