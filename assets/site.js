@@ -9,11 +9,12 @@ const T = {
 }[LANG] || {};
 // 이 컴퓨터가 윈도우인가 (받기 단추는 이 컴퓨터용을 앞에, 진하게)
 const ON_WIN = /win/i.test((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent);
+// 윈도우 쪽은 묶음(.get-win: 스토어 단추 + 설치 파일 링크) — 진하게/연하게는 그 안의 단추에
 const primary = (os) =>
   document.querySelectorAll('.get-btns').forEach((box) => {
-    const mine = box.querySelector(`[data-os="${os}"]`);
-    if (mine) box.prepend(mine);
-    box.querySelectorAll('[data-os]').forEach((el) => el.classList.toggle('ghost', el.dataset.os !== os));
+    // 윈도우는 스토어 묶음과 .exe 단추 둘 다 data-os="win" (하나는 숨어 있다 — style.css 의 html[data-store]) — 둘 다 앞으로
+    [...box.querySelectorAll(`[data-os="${os}"]`)].reverse().forEach((el) => box.prepend(el));
+    box.querySelectorAll('[data-os]').forEach((el) => (el.matches('.btn') ? el : el.querySelector('.btn'))?.classList.toggle('ghost', el.dataset.os !== os));
   });
 primary(ON_WIN ? 'win' : 'mac');
 // 명령 찾기 단축키: 맥 ⌘K, 윈도우 Ctrl+Shift+K

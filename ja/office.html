@@ -55,7 +55,15 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>macOS版をダウンロード<small data-dl-meta="mac">準備中</small></span>
   </a>
-  <a class="btn os" href="office.html#download" data-dl="exe" data-os="win">
+  <div class="get-win store-only" data-os="win">
+    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
+      <span>Microsoft Storeからインストール<small>Windows 10・11 · 無料 · 自動更新</small></span>
+    </a>
+    <a class="get-exe" href="office.html#install" data-dl="exe">Windowsインストーラーを直接ダウンロード (.exe)</a>
+    <small class="get-exe-note">初回起動時に「WindowsによってPCが保護されました」と表示されたら、詳細情報 › 実行 を選びます。</small>
+  </div>
+  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>Windows版をダウンロード<small data-dl-meta="win">準備中</small></span>
   </a>
@@ -173,7 +181,15 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>macOS版をダウンロード<small data-dl-meta="mac">準備中</small></span>
   </a>
-  <a class="btn os" href="office.html#download" data-dl="exe" data-os="win">
+  <div class="get-win store-only" data-os="win">
+    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
+      <span>Microsoft Storeからインストール<small>Windows 10・11 · 無料 · 自動更新</small></span>
+    </a>
+    <a class="get-exe" href="office.html#install" data-dl="exe">Windowsインストーラーを直接ダウンロード (.exe)</a>
+    <small class="get-exe-note">初回起動時に「WindowsによってPCが保護されました」と表示されたら、詳細情報 › 実行 を選びます。</small>
+  </div>
+  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>Windows版をダウンロード<small data-dl-meta="win">準備中</small></span>
   </a>
@@ -191,8 +207,10 @@
           <div class="box">
             <h3>Windows</h3>
             <ol class="steps">
-              <li><b>.exe</b> を実行すると、そのままインストールされて起動します。</li>
-              <li>「WindowsによってPCが保護されました」と表示されたら、<b>詳細情報 › 実行</b>をクリックします。</li>
+              <li class="store-only"><b>Microsoft Storeからインストール</b>を選ぶと、Storeがインストールし、新しいバージョンも自動で届きます。</li>
+              <li class="store-only"><b>.exe</b> で直接インストールして「WindowsによってPCが保護されました」と表示されたら、<b>詳細情報 › 実行</b>をクリックします。</li>
+              <li class="exe-only"><b>.exe</b> を実行すると、そのままインストールされて起動します。</li>
+              <li class="exe-only">「WindowsによってPCが保護されました」と表示されたら、<b>詳細情報 › 実行</b>をクリックします。</li>
             </ol>
           </div>
         </div>

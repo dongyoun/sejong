@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
-  <script>(function(){try{if(location.host==="dongyoun.github.io")return;try{localStorage.removeItem('hs.site.lang')}catch(e){}var a={"en":"en/office.html","ja":"ja/office.html"},s='';try{s=sessionStorage.getItem('hs.site.lang')||''}catch(e){}if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var l=String((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();if(l==='ko')return;w=a[l]?l:'en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
+  <script>(function(){try{if(location.host==="dongyoun.github.io")return;try{localStorage.removeItem('hs.site.lang')}catch(e){}var a={"en":"en/office.html","ja":"ja/office.html"},s='';try{s=sessionStorage.getItem('hs.site.lang')||''}catch(e){}if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var ls=[].concat(navigator.languages&&navigator.languages.length?[].slice.call(navigator.languages):[navigator.language||'']).map(function(x){return String(x).slice(0,2).toLowerCase()}),tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}if(ls.indexOf('ko')>=0||tz==='Asia/Seoul')return;for(var i=0;i<ls.length&&!w;i++)if(a[ls[i]])w=ls[i];if(!w)w=tz==='Asia/Tokyo'&&a.ja?'ja':'en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
@@ -55,7 +55,15 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
   </a>
-  <a class="btn os" href="office.html#download" data-dl="exe" data-os="win">
+  <div class="get-win store-only" data-os="win">
+    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
+      <span>Microsoft Store에서 설치<small>Windows 10·11 · 무료 · 자동 업데이트</small></span>
+    </a>
+    <a class="get-exe" href="office.html#install" data-dl="exe">Windows 설치 파일 직접 다운로드 (.exe)</a>
+    <small class="get-exe-note">처음 실행할 때 ‘Windows의 PC 보호’ 경고가 나오면 추가 정보 › 실행을 누르세요.</small>
+  </div>
+  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>Windows 다운로드<small data-dl-meta="win">준비 중</small></span>
   </a>
@@ -173,7 +181,15 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
   </a>
-  <a class="btn os" href="office.html#download" data-dl="exe" data-os="win">
+  <div class="get-win store-only" data-os="win">
+    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
+      <span>Microsoft Store에서 설치<small>Windows 10·11 · 무료 · 자동 업데이트</small></span>
+    </a>
+    <a class="get-exe" href="office.html#install" data-dl="exe">Windows 설치 파일 직접 다운로드 (.exe)</a>
+    <small class="get-exe-note">처음 실행할 때 ‘Windows의 PC 보호’ 경고가 나오면 추가 정보 › 실행을 누르세요.</small>
+  </div>
+  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
     <span>Windows 다운로드<small data-dl-meta="win">준비 중</small></span>
   </a>
@@ -191,8 +207,10 @@
           <div class="box">
             <h3>윈도우</h3>
             <ol class="steps">
-              <li><b>.exe</b>를 실행하면 설치가 끝나고 바로 앱이 열립니다.</li>
-              <li>“Windows의 PC 보호” 창이 나오면 <b>추가 정보 › 실행</b>을 누릅니다.</li>
+              <li class="store-only"><b>Microsoft Store에서 설치</b>를 누르면 스토어가 설치하고, 새 버전도 알아서 받습니다.</li>
+              <li class="store-only">설치 파일(<b>.exe</b>)로 직접 설치할 때 “Windows의 PC 보호” 창이 나오면 <b>추가 정보 › 실행</b>을 누릅니다.</li>
+              <li class="exe-only"><b>.exe</b>를 실행하면 설치가 끝나고 바로 앱이 열립니다.</li>
+              <li class="exe-only">“Windows의 PC 보호” 창이 나오면 <b>추가 정보 › 실행</b>을 누릅니다.</li>
             </ol>
           </div>
         </div>

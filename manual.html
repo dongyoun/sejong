@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
-  <script>(function(){try{if(location.host==="dongyoun.github.io")return;try{localStorage.removeItem('hs.site.lang')}catch(e){}var a={"en":"en/manual.html","ja":"en/manual.html"},s='';try{s=sessionStorage.getItem('hs.site.lang')||''}catch(e){}if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var l=String((navigator.languages&&navigator.languages[0])||navigator.language||'').slice(0,2).toLowerCase();if(l==='ko')return;w=a[l]?l:'en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
+  <script>(function(){try{if(location.host==="dongyoun.github.io")return;try{localStorage.removeItem('hs.site.lang')}catch(e){}var a={"en":"en/manual.html","ja":"en/manual.html"},s='';try{s=sessionStorage.getItem('hs.site.lang')||''}catch(e){}if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var ls=[].concat(navigator.languages&&navigator.languages.length?[].slice.call(navigator.languages):[navigator.language||'']).map(function(x){return String(x).slice(0,2).toLowerCase()}),tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}if(ls.indexOf('ko')>=0||tz==='Asia/Seoul')return;for(var i=0;i<ls.length&&!w;i++)if(a[ls[i]])w=ls[i];if(!w)w=tz==='Asia/Tokyo'&&a.ja?'ja':'en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
@@ -85,10 +85,12 @@
           <p>Apple Silicon 맥(M1 이후)과 macOS 11 이상, 윈도우 10·11 (64비트)에서 돌아갑니다.</p>
           <ul>
             <li><b>맥</b> — <a href="office.html#download">내려받기</a>에서 .dmg 를 받아 열고, <b>HyperSeven Office</b> 를 <b>응용 프로그램</b> 폴더로 끌어 놓습니다.</li>
-            <li><b>윈도우</b> — .exe 를 받아 실행하면 바로 설치되고 앱이 뜹니다. 내 계정에만 깔려 관리자 권한이 필요 없고, 바탕 화면과 시작 메뉴에 바로 가기가 생깁니다. 설치 없이 쓰려면 .zip 을 풀어 <b>HyperSeven Office.exe</b> 를 실행합니다.</li>
+            <li class="exe-only"><b>윈도우</b> — .exe 를 받아 실행하면 바로 설치되고 앱이 뜹니다. 내 계정에만 깔려 관리자 권한이 필요 없고, 바탕 화면과 시작 메뉴에 바로 가기가 생깁니다. 설치 없이 쓰려면 .zip 을 풀어 <b>HyperSeven Office.exe</b> 를 실행합니다.</li>
+            <li class="store-only"><b>윈도우</b> — <a href="office.html#download">내려받기</a>의 <b>Microsoft Store에서 설치</b>를 누르면 스토어가 설치하고 새 버전도 알아서 받습니다. 설치 파일(.exe)로 직접 설치해도 됩니다 — 내 계정에만 깔려 관리자 권한이 필요 없고, 바탕 화면과 시작 메뉴에 바로 가기가 생깁니다. 설치 없이 쓰려면 .zip 을 풀어 <b>HyperSeven Office.exe</b> 를 실행합니다.</li>
           </ul>
           <h3>처음 열 때</h3>
-          <p>윈도우에서 “Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 누릅니다. 아직 코드 서명 인증서가 없어서 뜨는 창입니다.</p>
+          <p class="store-only">설치 파일(.exe)로 설치했을 때 “Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 누릅니다. Microsoft Store에서 설치하면 이 창 없이 바로 열립니다.</p>
+          <p class="exe-only">윈도우에서 “Windows의 PC 보호” 창이 뜨면 <b>추가 정보 → 실행</b>을 누릅니다. 아직 코드 서명 인증서가 없어서 뜨는 창입니다.</p>
           <p>맥은 애플 공증을 받은 앱이라 바로 열립니다. 인터넷에서 받은 앱을 열지 묻는 창이 나오면 <b>열기</b>를 누릅니다.</p>
           <h3>업데이트</h3>
           <p>앱을 켜면 곧바로, 그 뒤로는 6시간마다 새 버전이 있는지 확인합니다. 새 버전이 있으면 ‘새 버전’ 창이 뜨고 상태 표시줄에도 표시됩니다. 창에서 <b>내려받기 페이지 열기</b>, <b>나중에</b>, <b>이 판은 건너뛰기</b> 가운데 고릅니다.</p>
