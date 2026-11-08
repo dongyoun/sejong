@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "2.0.3",
-  "date": "2026-11-07",
+  "version": "2.0.4",
+  "date": "2026-11-08",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "맥 앱이 애플 공증을 받았습니다. 내려받아 처음 열 때도 경고 없이 바로 열립니다.\n- 맥: 처음 열 때 나오던 '확인되지 않은 개발자' 경고와 '그래도 열기' 단계가 없어졌습니다.\n- 작업 창의 문단 왼쪽·오른쪽 여백에 음수도 넣을 수 있습니다. 문단을 본문 여백 밖으로 내밀 때 씁니다(문단 모양 창과 같습니다).\n- 윈도우: 새 버전 안내 창이 윈도우에 맞는 설치 방법을 알려 줍니다.",
+  "notes": "그림 넣기와 크기 맞추기가 훨씬 부드러워졌습니다.\n- 크기를 바꿀 때 미리 보여 주고, 손잡이가 커졌습니다.\n- 모서리를 끌면 가로·세로 비율이 그대로 유지됩니다.\n- 그림을 누른 채 바로 끌어 옮깁니다.\n- 화면 아래에 쪽 맞춤·폭 맞춤·확대 단추가 생겼습니다.\n- 인텔 맥용과 Microsoft Store(윈도우)에서도 받습니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-arm64.dmg",
-        "size": 135255160,
-        "sha256": "771d60e4932fd1edd77e73bd896edc5c3b787fc6d37b010800dcf19abfab6909"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-arm64.dmg",
+        "size": 149838676,
+        "sha256": "6b65e031600644c6858ff00abb49d426b52273bda41d1febb929410519911318"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-arm64.zip",
-        "size": 134791036,
-        "sha256": "0f5e7099586ed08023c696b96edda82b0e0e9add279d671a7197cda4eef91717"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-arm64.zip",
+        "size": 149366945,
+        "sha256": "5bae9da40cc50a7f0d98640a6d25c8faa38708f07f2c914f53a3f4499d0d58bc"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-x64.dmg",
-        "size": 157384767,
-        "sha256": "823537f1829c59f529300cdbf983bad6d0b08ba2b5d48c82bad6f838284f3925"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-x64.dmg",
+        "size": 157390229,
+        "sha256": "2fc293151748917b3dd6f2d961bdc48a2175a5f50364cb10f05a45f671a9d4af"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-x64.zip",
-        "size": 156963576,
-        "sha256": "691c96b95a545d73027dbb46f5771f13e3ee3e101547b44b35c84e97abc06d3c"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-x64.zip",
+        "size": 156966477,
+        "sha256": "381bf26d23b9a2a2594dc07e4ad9d50122e93d7de3e5cf74253a05049b19e839"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-win-x64.exe",
-        "size": 107891552,
-        "sha256": "fefc237efd01373ea87e76ddbc6be76a5d6d475b58935e62396449c42ed78c10"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-win-x64.exe",
+        "size": 118847412,
+        "sha256": "e9788f56feecea4d040eb1bb77465e856b1fad4680635503d2e9d6bc7499c1b2"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-win-x64.zip",
-        "size": 147478285,
-        "sha256": "520cd0d4b5e546ffed9263a1386e0b6a3bdbaff83b5ffb9acac5182a60dcced8"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-win-x64.zip",
+        "size": 161223353,
+        "sha256": "b5fb55d159806c4aafb99187516fd7d7565cf6c1102fe04f760dd1f20717441b"
       }
     }
   },
   "bundle": {
-    "version": "2.0.3",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-bundle-2.0.3.zip",
-    "size": 5216724,
-    "sha256": "a89a616d0f5b7b2c826f18ce8e0ca28e6878bed0c2c33132a255e8a1d505434d",
-    "shellMin": "2.0.0",
-    "notes": "맥 앱이 애플 공증을 받았습니다. 내려받아 처음 열 때도 경고 없이 바로 열립니다.\n- 맥: 처음 열 때 나오던 '확인되지 않은 개발자' 경고와 '그래도 열기' 단계가 없어졌습니다.\n- 작업 창의 문단 왼쪽·오른쪽 여백에 음수도 넣을 수 있습니다. 문단을 본문 여백 밖으로 내밀 때 씁니다(문단 모양 창과 같습니다).\n- 윈도우: 새 버전 안내 창이 윈도우에 맞는 설치 방법을 알려 줍니다."
+    "version": "2.0.4",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-bundle-2.0.4.zip",
+    "size": 5218675,
+    "sha256": "a783ff7bcd6ad05e5c1a375af0de1363d23846495e8729654f99b0952e75ab27",
+    "shellMin": "2.0.4",
+    "notes": "그림 넣기와 크기 맞추기가 훨씬 부드러워졌습니다.\n- 크기를 바꿀 때 미리 보여 주고, 손잡이가 커졌습니다.\n- 모서리를 끌면 가로·세로 비율이 그대로 유지됩니다.\n- 그림을 누른 채 바로 끌어 옮깁니다.\n- 화면 아래에 쪽 맞춤·폭 맞춤·확대 단추가 생겼습니다.\n- 인텔 맥용과 Microsoft Store(윈도우)에서도 받습니다."
   },
   "config": {
     "flags": {},
@@ -65,5 +65,5 @@
       "support": "https://github.com/dongyoun/sejong/issues"
     }
   },
-  "sig": "9iGj7hWnDc5cFO0pZ8bSeoVlbJHEVeDc3wgF6Ku8PDSlRLm+PjGV/0rA+FuAFXQgGkGLzsP35Q1jG3tP/LfBDw=="
+  "sig": "WOsLz6yGF1yQfuHb3uMBnrRVnF8qiXtambp8iLpRuhgu/9jFv4TNfnaDEcHEk1FYE66qSsaK/0Z+dQl4ZxccCA=="
 }
