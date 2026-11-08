@@ -2987,3 +2987,15 @@ footer [data-email] {
     padding: 0 22px;
   }
 }
+/* 맺음 문단 (2026-11-08): AI 와 함께 진화한다는 한 줄 */
+.end h2:has(+ .end-lead) {
+  margin-bottom: 18px;
+}
+.end-lead {
+  position: relative;
+  max-width: 34em;
+  margin: 0 auto 40px;
+  font-size: 17px;
+  color: var(--muted);
+  text-align: center;
+}
