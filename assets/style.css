@@ -3004,6 +3004,7 @@ footer [data-email] {
   display: none;
 }
 
-/* 캐드: 만든 사람 (2026-11-09) */
-#maker .maker p { font-size: 17px; line-height: 1.75; color: var(--text); }
-#maker .maker .maker-sign { margin-top: 18px; font-size: 13.5px; font-weight: 600; letter-spacing: 0.01em; color: var(--muted); }
+/* 캐드: AI와 말이 통하는 새 캐드 (2026-11-09) */
+#ai-cad .aicad p { font-size: 17px; line-height: 1.75; color: var(--text); }
+#ai-cad .aicad-points { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+#ai-cad .aicad-points li { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--soft); font-size: 13.5px; font-weight: 600; color: var(--ink); }
