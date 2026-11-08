@@ -17,6 +17,28 @@ const primary = (os) =>
     box.querySelectorAll('[data-os]').forEach((el) => (el.matches('.btn') ? el : el.querySelector('.btn'))?.classList.toggle('ghost', el.dataset.os !== os));
   });
 primary(ON_WIN ? 'win' : 'mac');
+// 복사 단추 (응원 쪽의 비트코인 주소): 누르면 data-copy 를 클립보드로, 잠깐 data-done 글로 바꿨다가 되돌린다
+document.querySelectorAll('[data-copy]').forEach((b) =>
+  b.addEventListener('click', async () => {
+    const was = b.textContent;
+    try {
+      await navigator.clipboard.writeText(b.dataset.copy);
+    } catch {
+      // 클립보드를 못 쓰면 주소 글자를 골라 옛 방식으로 복사해 보고, 그것도 안 되면 골라 둔 채로 (직접 복사하게)
+      const code = b.parentElement && b.parentElement.querySelector('code');
+      if (code) getSelection().selectAllChildren(code);
+      let ok = false;
+      try {
+        ok = document.execCommand('copy');
+      } catch {
+        /* 직접 복사 */
+      }
+      if (!ok) return;
+    }
+    b.textContent = b.dataset.done || was;
+    setTimeout(() => (b.textContent = was), 1800);
+  }),
+);
 // 명령 찾기 단축키: 맥 ⌘K, 윈도우 Ctrl+Shift+K
 if (ON_WIN) document.querySelectorAll('[data-k]').forEach((el) => (el.textContent = 'Ctrl+Shift+K'));
 // 언어를 직접 고르면 이 방문 동안만 기억한다 (한국어 쪽의 자동 언어 고르기가 그 뜻을 따르게 — build.mjs 의 langAuto).
@@ -133,6 +155,13 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
         if (/@/.test(s.contact)) el.textContent = s.contact;
         if (/@/.test(s.contact)) el.href = 'mailto:' + s.contact;
         else if (/^https?:/.test(s.contact)) el.href = s.contact;
+      });
+    }
+    // 이메일 연락처(협업·기술 지원): 주소는 site.json 에만 — 바닥글 글은 주소 그대로 보여 준다 (베껴 쓰기 쉽게)
+    if (/^[^@\s]+@[^@\s]+$/.test(s.email || '')) {
+      all('[data-email]').forEach((el) => {
+        el.href = 'mailto:' + s.email;
+        if (el.closest('footer')) el.textContent = s.email;
       });
     }
   } catch {

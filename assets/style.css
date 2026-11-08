@@ -2859,3 +2859,131 @@ html[data-store] .exe-only {
 .notes-page {
   padding-top: 36px;
 }
+/* 응원 링크 (2026-11-08): site.json 의 sponsor 가 있을 때만 <html data-sponsor>. 지금은 바닥글 한 줄과 업데이트 내역 끝 작은 글뿐 — 단추·팝업 없이 */
+html:not([data-sponsor]) .sponsor-only {
+  display: none !important;
+}
+html[data-sponsor] .notes-next {
+  margin-bottom: 16px;
+}
+.notes-sponsor {
+  max-width: 820px;
+  margin: 0 0 96px;
+  padding: 0 30px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.notes-sponsor a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--line);
+}
+.notes-sponsor a:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+/* 이메일 연락처 (2026-11-08): site.json 의 email 이 있을 때만 <html data-mail> */
+html:not([data-mail]) .mail-only {
+  display: none !important;
+}
+footer [data-email] {
+  word-break: break-all;
+}
+/* 응원 쪽 support.html (2026-11-08): 바닥글·업데이트 내역에서만 들어오는 조용한 쪽 — 커피 한 잔(Buy Me a Coffee) + 비트코인 */
+.give {
+  display: grid;
+  gap: 16px;
+  max-width: 820px;
+  padding: 36px 0 0;
+}
+.give-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 30px;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.give-card[hidden] {
+  display: none;
+}
+.give-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.give-body h2 {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.give-body p {
+  margin: 6px 0 18px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.give-qr {
+  flex: none;
+  width: 140px;
+  margin: 0;
+  text-align: center;
+}
+.give-qr img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+.give-qr figcaption {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.addr {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.addr code {
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  font-size: 14px;
+  word-break: break-all;
+  user-select: all;
+}
+.addr .btn {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+.give-note {
+  max-width: 820px;
+  margin: 28px 0 120px;
+  padding: 0 30px;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.give-note a {
+  color: var(--ink);
+}
+@media (max-width: 640px) {
+  .give-card {
+    padding: 24px 22px;
+  }
+  /* 휴대폰에서는 QR 을 찍을 일이 없다 — 단추·주소 복사만 */
+  .give-qr {
+    display: none;
+  }
+  /* 비트코인 주소(34자)가 한 줄에 들어가게 */
+  .addr code {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .give-note {
+    padding: 0 22px;
+  }
+}
