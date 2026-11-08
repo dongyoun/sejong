@@ -3003,3 +3003,7 @@ footer [data-email] {
 .get-intel.disabled {
   display: none;
 }
+
+/* 캐드: 만든 사람 (2026-11-09) */
+#maker .maker p { font-size: 17px; line-height: 1.75; color: var(--text); }
+#maker .maker .maker-sign { margin-top: 18px; font-size: 13.5px; font-weight: 600; letter-spacing: 0.01em; color: var(--muted); }

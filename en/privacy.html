@@ -46,7 +46,7 @@
     <div class="wrap doc-head">
       <div class="kicker">HyperSeven Office</div>
       <h1>Privacy Policy</h1>
-      <p>Effective November 7, 2026</p>
+      <p>Effective November 9, 2026</p>
     </div>
     <div class="wrap">
       <article class="manual policy">
@@ -54,7 +54,7 @@
           <h2>At a glance</h2>
           <ul>
             <li>Your documents are opened, edited and saved on your computer. The app only sends document content anywhere when you use the AI assistant or send a problem report yourself, as described below.</li>
-            <li>There's no account to create, and nothing is collected for advertising or usage analytics.</li>
+            <li>There are no accounts, and nothing is collected for advertising or marketing. Errors and friction signals are sent automatically without any document text, used only to fix the app, and can be turned off in Preferences.</li>
           </ul>
         </section>
         <section>
@@ -64,8 +64,11 @@
           <h3>AI assistant (only if you turn it on)</h3>
           <p>Only after you enter your own Anthropic API key and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
           <h3>Problem reports (only when you send one)</h3>
-          <p>When you send a report, it includes what you wrote plus the app version, operating system, recent error log, recent commands and a summary of the document's structure (no text). A copy of the document is attached only if you choose to, and only with its text scrambled. For now this opens a pre-filled GitHub issue page, and anything you post there is public on GitHub.</p>
-          <p>If you agree to automatic error reports when an error occurs, later errors send error information only, without document text. If you don't agree, nothing is sent.</p>
+          <p>When you send a report, it includes what you wrote plus the app version, operating system, recent error log, recent commands and a summary of the document's structure (no text). A copy of the document is attached only if you choose to, and only with its text scrambled.</p>
+          <p>Problem reports you send are stored in HyperSeven's report store (Cloudflare); only if it can't be reached does the app open a pre-filled GitHub issue instead.</p>
+          <h3>Automatic error and friction reports (can be turned off)</h3>
+          <p>After a few minutes of use the app tells you about this once; unless you turn it off, it sends a bundle once a day. It includes the app version, OS and language, error logs, document structure counts (sections, paragraphs, tables, objects — no text), recent command names, and friction signals (counts of things like searches in Find Command that found nothing, shortcuts that did nothing, commands undone right away, commands that weren't available, and file types that failed to open). Document text, file names and paths are never sent. You can see exactly what is sent, and turn it off, in Preferences › User › See what is sent.</p>
+          <p>This information is used only to fix the next version. IP addresses are not stored (a hashed value is kept for one hour only to prevent abuse).</p>
         </section>
         <section>
           <h2>What stays on your computer</h2>

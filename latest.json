@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "2.0.4",
-  "date": "2026-11-08",
+  "version": "2.0.5",
+  "date": "2026-11-09",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "그림 넣기와 크기 맞추기가 훨씬 부드러워졌습니다.\n- 크기를 바꿀 때 미리 보여 주고, 손잡이가 커졌습니다.\n- 모서리를 끌면 가로·세로 비율이 그대로 유지됩니다.\n- 그림을 누른 채 바로 끌어 옮깁니다.\n- 화면 아래에 쪽 맞춤·폭 맞춤·확대 단추가 생겼습니다.\n- 인텔 맥용과 Microsoft Store(윈도우)에서도 받습니다.",
+  "notes": "표 계산이 한글처럼 저절로 다시 계산되고, 손에 익은 동작이 훨씬 편해졌습니다.\n- 블록 합계·계산식이 칸을 고치면 따라 바뀝니다. 워드로 저장해도 계산식이 남습니다.\n- 엑셀에서 복사한 표를 표 칸에 붙이면 칸을 채웁니다.\n- 글자 색·형광펜 팔레트, 글자 크기 −/+ 단추와 목록, 표 크기 고르기가 생겼습니다.\n- 같은 파일은 한 번만 열리고, 맥 ⌘↑·⌘↓와 목록 Tab 수준이 익숙하게 동작합니다.\n- 오류와 불편한 순간을 글 내용 없이 알려 고칩니다(환경 설정에서 끌 수 있음).",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-arm64.dmg",
-        "size": 149838676,
-        "sha256": "6b65e031600644c6858ff00abb49d426b52273bda41d1febb929410519911318"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-arm64.dmg",
+        "size": 149881026,
+        "sha256": "7081b7c72b7713ad661f0408e441e5cca0fe942498e58c03e5edf4a97a5a6bda"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-arm64.zip",
-        "size": 149366945,
-        "sha256": "5bae9da40cc50a7f0d98640a6d25c8faa38708f07f2c914f53a3f4499d0d58bc"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-arm64.zip",
+        "size": 149381252,
+        "sha256": "7d01029aeeafcd2e79bfd80b15c8af18ca39b94f786f6858e2056e0cd9b628b0"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-x64.dmg",
-        "size": 157390229,
-        "sha256": "2fc293151748917b3dd6f2d961bdc48a2175a5f50364cb10f05a45f671a9d4af"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-x64.dmg",
+        "size": 157425128,
+        "sha256": "906b5241bb345328ccae833edf03fa466944713f94f173b13e6e2dd08f54de68"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-x64.zip",
-        "size": 156966477,
-        "sha256": "381bf26d23b9a2a2594dc07e4ad9d50122e93d7de3e5cf74253a05049b19e839"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-x64.zip",
+        "size": 156980767,
+        "sha256": "933e20c03135fe64024a07ba8ee9e27ee7b3bcad22dafda02e5ac3172c747dd7"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-win-x64.exe",
-        "size": 118847412,
-        "sha256": "e9788f56feecea4d040eb1bb77465e856b1fad4680635503d2e9d6bc7499c1b2"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-win-x64.exe",
+        "size": 118858853,
+        "sha256": "41a5cb02baa3c82f9370d1ffb13f9d1fc15517e9be3eba9d0e349c51131cfa6b"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-2.0.4-win-x64.zip",
-        "size": 161223353,
-        "sha256": "b5fb55d159806c4aafb99187516fd7d7565cf6c1102fe04f760dd1f20717441b"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-win-x64.zip",
+        "size": 161236523,
+        "sha256": "5638ac300f28cb155972fb07405edd8e8c44995b511e9e78bcd6889e2efa8c3e"
       }
     }
   },
   "bundle": {
-    "version": "2.0.4",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.4/HyperSeven-Office-bundle-2.0.4.zip",
-    "size": 5218675,
-    "sha256": "a783ff7bcd6ad05e5c1a375af0de1363d23846495e8729654f99b0952e75ab27",
-    "shellMin": "2.0.4",
-    "notes": "그림 넣기와 크기 맞추기가 훨씬 부드러워졌습니다.\n- 크기를 바꿀 때 미리 보여 주고, 손잡이가 커졌습니다.\n- 모서리를 끌면 가로·세로 비율이 그대로 유지됩니다.\n- 그림을 누른 채 바로 끌어 옮깁니다.\n- 화면 아래에 쪽 맞춤·폭 맞춤·확대 단추가 생겼습니다.\n- 인텔 맥용과 Microsoft Store(윈도우)에서도 받습니다."
+    "version": "2.0.5",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-bundle-2.0.5.zip",
+    "size": 5228581,
+    "sha256": "a368088cdeae453917cb8520885aa53addf96717676c612bf7b148ff09d0dc05",
+    "shellMin": "2.0.5",
+    "notes": "표 계산이 한글처럼 저절로 다시 계산되고, 손에 익은 동작이 훨씬 편해졌습니다.\n- 블록 합계·계산식이 칸을 고치면 따라 바뀝니다. 워드로 저장해도 계산식이 남습니다.\n- 엑셀에서 복사한 표를 표 칸에 붙이면 칸을 채웁니다.\n- 글자 색·형광펜 팔레트, 글자 크기 −/+ 단추와 목록, 표 크기 고르기가 생겼습니다.\n- 같은 파일은 한 번만 열리고, 맥 ⌘↑·⌘↓와 목록 Tab 수준이 익숙하게 동작합니다.\n- 오류와 불편한 순간을 글 내용 없이 알려 고칩니다(환경 설정에서 끌 수 있음)."
   },
   "config": {
     "flags": {},
@@ -62,8 +62,9 @@
       "org"
     ],
     "links": {
-      "support": "https://github.com/dongyoun/sejong/issues"
+      "support": "https://github.com/dongyoun/sejong/issues",
+      "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "WOsLz6yGF1yQfuHb3uMBnrRVnF8qiXtambp8iLpRuhgu/9jFv4TNfnaDEcHEk1FYE66qSsaK/0Z+dQl4ZxccCA=="
+  "sig": "4jRE8LEy+zG9Y7Dg2J3w7z1PejIyvjMK8brGOCihO6phqtKGHn38+aW+WI63NKZ3Qlh/PfjmSzNQGpuGcZ4bBQ=="
 }
