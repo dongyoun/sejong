@@ -51,10 +51,14 @@
         <p class="lead">Hangul・Word・Excel・PowerPoint・PDF。受け取った文書をそのまま開いて編集し、相手が使う形式で保存します。誰でも、すべての機能を、無料で。</p>
         <div class="get">
           <div class="get-btns">
-  <a class="btn os" href="office.html#download" data-dl="dmg" data-os="mac">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>macOS版をダウンロード<small data-dl-meta="mac">準備中</small></span>
-  </a>
+  <div class="get-win get-mac" data-os="mac">
+    <a class="btn os" href="office.html#download" data-dl="dmg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>macOS版をダウンロード<small data-dl-meta="mac">準備中</small></span>
+    </a>
+    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64 가 없으면 숨는다 (site.js) -->
+    <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">Intel Mac用をダウンロード</a>
+  </div>
   <div class="get-win store-only" data-os="win">
     <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
@@ -69,7 +73,7 @@
   </a>
 </div>
 
-          <p class="get-note">無料 · Apple Silicon搭載Mac · Windows 10・11 · <a href="#install">インストール方法</a></p>
+          <p class="get-note">無料 · Mac（Apple Silicon・Intel） · Windows 10・11 · <a href="#install">インストール方法</a></p>
         </div>
         <div class="fan" aria-hidden="true">
   <div class="fc f1"><div class="ln"><i class="h"></i><i></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">HWP</span></div>
@@ -198,10 +202,14 @@
         </div>
         <div class="get">
           <div class="get-btns">
-  <a class="btn os" href="office.html#download" data-dl="dmg" data-os="mac">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>macOS版をダウンロード<small data-dl-meta="mac">準備中</small></span>
-  </a>
+  <div class="get-win get-mac" data-os="mac">
+    <a class="btn os" href="office.html#download" data-dl="dmg">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>macOS版をダウンロード<small data-dl-meta="mac">準備中</small></span>
+    </a>
+    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64 가 없으면 숨는다 (site.js) -->
+    <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">Intel Mac用をダウンロード</a>
+  </div>
   <div class="get-win store-only" data-os="win">
     <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
@@ -268,7 +276,7 @@
           </details>
           <details>
             <summary>Intel Macでも使えますか？</summary>
-            <p>現在はApple Silicon搭載MacとWindowsに対応しています。Intel Mac版は準備中です。</p>
+            <p>はい。ダウンロードボタンの下の<b>Intel Mac用をダウンロード</b>からどうぞ。どちらのMacかわからないときは、画面左上のアップルメニュー › <b>このMacについて</b>で「チップ」がApple Mで始まればApple Silicon、「プロセッサ」にIntelとあればIntel Macです。</p>
           </details>
           <details>
             <summary>どの言語で使えますか？</summary>

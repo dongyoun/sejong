@@ -104,7 +104,8 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
     if (!mac.dmg && !win.exe) throw new Error('no-build');
     const os = ON_WIN && win.exe ? 'win' : 'mac';
     primary(os);
-    const FILE = { dmg: mac.dmg, zip: mac.zip || mac.dmg, exe: win.exe, winzip: win.zip || win.exe, auto: os === 'win' ? win.exe : mac.dmg };
+    const intel = (m.mac && m.mac.x64) || {};
+    const FILE = { dmg: mac.dmg, zip: mac.zip || mac.dmg, dmgx64: intel.dmg, exe: win.exe, winzip: win.zip || win.exe, auto: os === 'win' ? win.exe : mac.dmg };
     const META = { mac: mac.dmg && `${m.version} · ${mb(mac.dmg.size)} · Apple Silicon`, win: win.exe && `${m.version} · ${mb(win.exe.size)} · ${T.win}` };
     const which = (v) => (v === 'win' || v === 'mac' ? v : os);
     // 화면 묶음만 올린 판이 있으면 '고친 것'은 그 판을 보여 준다 (설치 파일을 받아도 처음 실행 때 그 판이 된다)

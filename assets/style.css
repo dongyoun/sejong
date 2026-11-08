@@ -2999,3 +2999,7 @@ footer [data-email] {
   color: var(--muted);
   text-align: center;
 }
+/* 인텔 맥용 받기 (2026-11-08): 맥 단추 아래 작은 링크 — 안내문에 인텔판이 없으면 숨김 */
+.get-intel.disabled {
+  display: none;
+}

@@ -17,6 +17,18 @@
         "size": 134791036,
         "sha256": "0f5e7099586ed08023c696b96edda82b0e0e9add279d671a7197cda4eef91717"
       }
+    },
+    "x64": {
+      "dmg": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-x64.dmg",
+        "size": 157384767,
+        "sha256": "823537f1829c59f529300cdbf983bad6d0b08ba2b5d48c82bad6f838284f3925"
+      },
+      "zip": {
+        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.3/HyperSeven-Office-2.0.3-x64.zip",
+        "size": 156963576,
+        "sha256": "691c96b95a545d73027dbb46f5771f13e3ee3e101547b44b35c84e97abc06d3c"
+      }
     }
   },
   "win": {
@@ -53,5 +65,5 @@
       "support": "https://github.com/dongyoun/sejong/issues"
     }
   },
-  "sig": "g8W4NMyy9XKDWQgn9hTUFn7wVCfnzxKYMEOXURaBUoLqeCtxOp2SgVicJP8oNPngcvcReAeWEt8dok0fqiAlCw=="
+  "sig": "9iGj7hWnDc5cFO0pZ8bSeoVlbJHEVeDc3wgF6Ku8PDSlRLm+PjGV/0rA+FuAFXQgGkGLzsP35Q1jG3tP/LfBDw=="
 }
