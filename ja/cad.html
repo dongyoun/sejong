@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
-  <title>HyperSeven CAD — 5つのソフトの代わりに、みんなのCADをひとつ（開発中）</title>
+  <title>HyperSeven CAD — 5つのソフトの代わりに、みんなのCADをひとつ（プレビュー）</title>
   <meta name="description" content="AutoCAD・SketchUp・Rhino・Revit・Archicadの作業とファイルを、ひとつのモデルで。誰でも無料で使える建築設計ツールになるHyperSeven CADを、いち早くご覧ください。" />
   <meta property="og:site_name" content="HyperSeven Labs" />
-  <meta property="og:title" content="HyperSeven CAD — 5つのソフトの代わりに、みんなのCADをひとつ（開発中）" />
+  <meta property="og:title" content="HyperSeven CAD — 5つのソフトの代わりに、みんなのCADをひとつ（プレビュー）" />
   <meta property="og:description" content="AutoCAD・SketchUp・Rhino・Revit・Archicadの作業とファイルを、ひとつのモデルで。誰でも無料で使える建築設計ツールになるHyperSeven CADを、いち早くご覧ください。" />
   <meta property="og:image" content="https://hyperseven.pages.dev/assets/og-ja.png" />
   <meta property="og:type" content="website" />
@@ -46,10 +46,22 @@
 <main>
     <section class="phero cad">
       <div class="wrap">
-        <div class="ptitle"><img src="../assets/brand/icon-cad.svg" alt="" width="60" height="60" /><div><b>HyperSeven CAD</b><span>図面 · 3D · 曲面 · ノード · BIM</span></div><span class="tag dev"><span class="dot"></span>開発中</span></div>
+        <div class="ptitle"><img src="../assets/brand/icon-cad.svg" alt="" width="60" height="60" /><div><b>HyperSeven CAD</b><span>図面 · 3D · 曲面 · ノード · BIM</span></div><span class="tag dev"><span class="dot"></span>プレビュー 0.1.0</span></div>
         <h1>5つのソフトの代わりに、<br />みんなのCADをひとつ<span class="blue">。</span></h1>
         <p class="lead">AutoCAD・SketchUp・Rhino・Revit・Archicadを行き来していた作業が、ひとつのモデルでつながります。図面からマス・曲面・ノード・BIMまで、誰でも無料で。</p>
-        <p class="draft">開発中の画面です。公開までに変わることがあります。</p>
+        <div class="get">
+          <div class="get-btns">
+            <div class="get-win get-mac">
+              <a class="btn os" href="https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-arm64.dmg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+                <span>Mac用をダウンロード<small>0.1.0 プレビュー · 73MB</small></span>
+              </a>
+              <a class="get-exe" href="https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-arm64.zip">.zipでダウンロード</a>
+            </div>
+          </div>
+          <p class="get-note">無料 · Apple Silicon搭載Mac · Appleの公証済みですぐに開けます · <a href="https://github.com/dongyoun/hyperseven-cad/releases">すべてのリリース</a></p>
+        </div>
+        <p class="draft">プレビュー版です。直しながら新しい版をこまめに出します。使いにくい点はアプリの <kbd>⌘⇧F</kbd> か <a href="https://github.com/dongyoun/hyperseven-cad/issues">GitHub</a> へ。</p>
       </div>
     </section>
 
@@ -90,19 +102,37 @@
     <section class="sec">
       <div class="wrap">
         <div class="sec-head">
-          <div class="kicker blue">開発中の画面</div>
+          <div class="kicker blue">プレビューの画面</div>
           <h2>図面はモデルから生まれる</h2>
-          <p>サンプルの家で見る、3D・平面図・コマンド検索。</p>
+          <p>サンプルで見る、3D・図面シート・コマンド検索。スタート画面の「サンプルを見る」から開けます。</p>
         </div>
-        <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-3d.webp" alt="HyperSeven CADの3D画面 — 切妻屋根のれんがの家と影、左に階の一覧、右にプロパティ" loading="lazy" width="1600" height="1012" /></div>
+        <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-3d.webp" alt="HyperSeven CADの3D画面 — 基壇の上に3 m間隔の列柱と薄い屋根スラブの美術館サンプル、左に階の一覧、右にプロパティ" loading="lazy" width="1600" height="1012" /></div>
         <div class="gallery" style="margin-top: 28px">
           <figure>
-            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-plan.webp" alt="1階平面図 1:100 — 寸法、通り芯、室面積、建具記号がついたサンプルの家" loading="lazy" width="1600" height="1012" /></div>
-            <figcaption>1階平面図 1:100。寸法や建具記号、室面積はモデルから自動でつきます。</figcaption>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-plan.webp" alt="美術館サンプルのA1シート — 1階平面図・断面図・南と東の立面図" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>A1シート1枚に平面・断面・立面。モデルを直すと図面がついてきます。</figcaption>
           </figure>
           <figure>
             <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-palette.webp" alt="コマンド検索 — 壁に関するコマンドが英語名とショートカット付きで並ぶ" loading="lazy" width="1600" height="1012" /></div>
             <figcaption>コマンド検索 <kbd>⌘K</kbd>。韓国語でも英語のコマンド名でも探せます。</figcaption>
+          </figure>
+        </div>
+        <div class="gallery" style="margin-top: 28px">
+          <figure>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-office.webp" alt="0.9 m間隔の縦フィンと3つの大きな抜けがある36 m立方体のオフィス" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>フィンファサードのオフィス。階ごとに積んだBIM要素です。</figcaption>
+          </figure>
+          <figure>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-detail.webp" alt="ファサード断面詳細1:20 — 石張り・断熱・コンクリート壁、窓、パラペット、屋根の構成" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>ファサード断面詳細1:20。レイヤー・ハッチ・引出線・寸法。</figcaption>
+          </figure>
+          <figure>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-house.webp" alt="白いコンクリート壁とガラスで囲んだ中庭、薄い庇の平屋" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>中庭のある家。壁を動かすと床と屋根がついてきます。</figcaption>
+          </figure>
+          <figure>
+            <div class="window dark"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/cad-freeform.webp" alt="ゆるやかに波打つ薄い曲面屋根と細い柱、ガラスの部屋のパビリオン" loading="lazy" width="1600" height="1012" /></div>
+            <figcaption>曲面屋根のパビリオン。非定形も描けます。</figcaption>
           </figure>
         </div>
       </div>
@@ -162,8 +192,8 @@
         </div>
         <div class="card">
           <div class="kicker blue">いま</div>
-          <h3>まずはMacから</h3>
-          <p>Apple Silicon搭載Macから先に提供し、WindowsとLinuxが続きます。</p>
+          <h3>Mac用プレビューをどうぞ</h3>
+          <p>Apple Silicon搭載Mac用の0.1.0プレビューを今すぐ使えます。新しい版が出るとアプリが知らせます。WindowsとLinuxが続きます。</p>
         </div>
       </div>
       <div class="wrap">
