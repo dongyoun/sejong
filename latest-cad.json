@@ -4,7 +4,7 @@
   "date": "2026-11-09",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev/cad.html",
-  "notes": "하이퍼세븐 캐드 첫 미리 보기입니다(Apple Silicon 맥, 윈도우 10·11 x64).\n\n- 예제 16가지: 열주 미술관·중정 주택·벽돌 주택·핀 파사드 오피스·곡면 지붕 파빌리온, A1 도면 묶음과 1:20 파사드 상세, 가구·그릇·지형 등.\n- 다섯 툴의 명령과 단축키, 한글로 찾기(⌘K). 키 습관(오토캐드·스케치업·라이노·레빗)을 설정에서 고릅니다.\n- 마우스·트랙패드는 모든 보기에서 같은 규칙: 굴리기 확대, Shift 이동, Option 돌려 보기.\n- 밀기·당기기는 당긴 면만, Option으로 대칭. 끄는 동안 바뀔 모양이 보입니다.\n- DWG·DXF를 열고 저장해도 층·종이 공간·유형 표·블록이 그대로 남습니다.\n- 문제·불편을 도면 내용 없이 자동으로 알릴 수 있습니다(처음 한 번 묻습니다). ⌘⇧F로 직접 남길 수도 있습니다.",
+  "notes": "하이퍼세븐 캐드 첫 미리 보기입니다(맥 — 애플 실리콘·인텔, 윈도우 10·11 x64).\n\n- 예제 16가지: 열주 미술관·중정 주택·벽돌 주택·핀 파사드 오피스·곡면 지붕 파빌리온, A1 도면 묶음과 1:20 파사드 상세, 가구·그릇·지형 등.\n- 다섯 툴의 명령과 단축키, 한글로 찾기(⌘K). 키 습관(오토캐드·스케치업·라이노·레빗)을 설정에서 고릅니다.\n- 마우스·트랙패드는 모든 보기에서 같은 규칙: 굴리기 확대, Shift 이동, Option 돌려 보기.\n- 밀기·당기기는 당긴 면만, Option으로 대칭. 끄는 동안 바뀔 모양이 보입니다.\n- DWG·DXF를 열고 저장해도 층·종이 공간·유형 표·블록이 그대로 남습니다.\n- 문제·불편을 도면 내용 없이 자동으로 알릴 수 있습니다(처음 한 번 묻습니다). ⌘⇧F로 직접 남길 수도 있습니다.",
   "mac": {
     "arm64": {
       "dmg": {
@@ -16,6 +16,18 @@
         "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-arm64.zip",
         "size": 69999090,
         "sha256": "64f041275caf572e7f7fa7e03c0503f871f4696a01e3ab72f4a1be95338eaceb"
+      }
+    },
+    "x64": {
+      "dmg": {
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-x64.dmg",
+        "size": 89440247,
+        "sha256": "427412dfd703b81c81f48baf504ce2dfa835896d493c2bda72bc8abebdec14e9"
+      },
+      "zip": {
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-x64.zip",
+        "size": 80249369,
+        "sha256": "cc19f5e6582ac0f4e1b4add1b7bf82caa2b1015d77c1e43b2c4c2d469fdef9ee"
       }
     }
   },
