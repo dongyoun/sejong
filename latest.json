@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "2.0.5",
-  "date": "2026-11-09",
+  "version": "3.0.0",
+  "date": "2026-11-10",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "표 계산이 한글처럼 저절로 다시 계산되고, 손에 익은 동작이 훨씬 편해졌습니다.\n- 블록 합계·계산식이 칸을 고치면 따라 바뀝니다. 워드로 저장해도 계산식이 남습니다.\n- 엑셀에서 복사한 표를 표 칸에 붙이면 칸을 채웁니다.\n- 글자 색·형광펜 팔레트, 글자 크기 −/+ 단추와 목록, 표 크기 고르기가 생겼습니다.\n- 같은 파일은 한 번만 열리고, 맥 ⌘↑·⌘↓와 목록 Tab 수준이 익숙하게 동작합니다.\n- 오류와 불편한 순간을 글 내용 없이 알려 고칩니다(환경 설정에서 끌 수 있음).",
+  "notes": "AI와 함께 쓰는 새로운 오피스. 빨간펜으로 표시하고 말로 시키면 AI가 고칠 곳을 제안합니다.\n- 빨간펜·형광펜 첨삭: 문서 위에 적고 “첨삭대로 고쳐 줘”. 인쇄되지 않는 별도 층입니다.\n- 말로 입력: AI 창의 마이크를 누르고 말하면 글이 됩니다.\n- AI 단계: 자동·빠르게·보통·꼼꼼하게·최고. 앱 기능은 단추와 단축키로 알려 줍니다.\n- 위쪽 신호등으로 글·셈·발표를 오가고, 발표에서 겹친 도형을 ⌥+클릭으로 고릅니다.\n- HWP 문서가 원본과 더 같게 보입니다. 없는 글꼴은 알려 드립니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-arm64.dmg",
-        "size": 149881026,
-        "sha256": "7081b7c72b7713ad661f0408e441e5cca0fe942498e58c03e5edf4a97a5a6bda"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-arm64.dmg",
+        "size": 149898743,
+        "sha256": "c04e78f0dac422090fbeca19d4ad4d8ce310875d59980a3d461f64d2b8c268ba"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-arm64.zip",
-        "size": 149381252,
-        "sha256": "7d01029aeeafcd2e79bfd80b15c8af18ca39b94f786f6858e2056e0cd9b628b0"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-arm64.zip",
+        "size": 149420664,
+        "sha256": "51eabb7ab847c2700b3933ae8385d4c67b7bd0942bfa2402df1d56154b7ac19a"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-x64.dmg",
-        "size": 157425128,
-        "sha256": "906b5241bb345328ccae833edf03fa466944713f94f173b13e6e2dd08f54de68"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-x64.dmg",
+        "size": 157455455,
+        "sha256": "11904e0aed06d24a8e244501afdbfa2c062c265788e6dc63bf38b37850492b11"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-x64.zip",
-        "size": 156980767,
-        "sha256": "933e20c03135fe64024a07ba8ee9e27ee7b3bcad22dafda02e5ac3172c747dd7"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-x64.zip",
+        "size": 157020176,
+        "sha256": "58a1e0f6d3f249e50b46d6af30b03b99f321b2077f4ccb256d25d1265646998a"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-win-x64.exe",
-        "size": 118858853,
-        "sha256": "41a5cb02baa3c82f9370d1ffb13f9d1fc15517e9be3eba9d0e349c51131cfa6b"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-win-x64.exe",
+        "size": 118902912,
+        "sha256": "8dc9e72bef38bf8dd966386b7ecc9ba649842276e27e171d2a2c69c6f7de73a2"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-2.0.5-win-x64.zip",
-        "size": 161236523,
-        "sha256": "5638ac300f28cb155972fb07405edd8e8c44995b511e9e78bcd6889e2efa8c3e"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-win-x64.zip",
+        "size": 161275450,
+        "sha256": "6bde27972edea4ed5d436f7d1e72834963498b54c902a2e29ac7f8ea60f5ede9"
       }
     }
   },
   "bundle": {
-    "version": "2.0.5",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v2.0.5/HyperSeven-Office-bundle-2.0.5.zip",
-    "size": 5228581,
-    "sha256": "a368088cdeae453917cb8520885aa53addf96717676c612bf7b148ff09d0dc05",
-    "shellMin": "2.0.5",
-    "notes": "표 계산이 한글처럼 저절로 다시 계산되고, 손에 익은 동작이 훨씬 편해졌습니다.\n- 블록 합계·계산식이 칸을 고치면 따라 바뀝니다. 워드로 저장해도 계산식이 남습니다.\n- 엑셀에서 복사한 표를 표 칸에 붙이면 칸을 채웁니다.\n- 글자 색·형광펜 팔레트, 글자 크기 −/+ 단추와 목록, 표 크기 고르기가 생겼습니다.\n- 같은 파일은 한 번만 열리고, 맥 ⌘↑·⌘↓와 목록 Tab 수준이 익숙하게 동작합니다.\n- 오류와 불편한 순간을 글 내용 없이 알려 고칩니다(환경 설정에서 끌 수 있음)."
+    "version": "3.0.0",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-bundle-3.0.0.zip",
+    "size": 5261784,
+    "sha256": "54f3396d5786a932c50059049ccf16e76e4c4d337245216ab1962b8d3f1ed9f2",
+    "shellMin": "3.0.0",
+    "notes": "AI와 함께 쓰는 새로운 오피스. 빨간펜으로 표시하고 말로 시키면 AI가 고칠 곳을 제안합니다.\n- 빨간펜·형광펜 첨삭: 문서 위에 적고 “첨삭대로 고쳐 줘”. 인쇄되지 않는 별도 층입니다.\n- 말로 입력: AI 창의 마이크를 누르고 말하면 글이 됩니다.\n- AI 단계: 자동·빠르게·보통·꼼꼼하게·최고. 앱 기능은 단추와 단축키로 알려 줍니다.\n- 위쪽 신호등으로 글·셈·발표를 오가고, 발표에서 겹친 도형을 ⌥+클릭으로 고릅니다.\n- HWP 문서가 원본과 더 같게 보입니다. 없는 글꼴은 알려 드립니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "4jRE8LEy+zG9Y7Dg2J3w7z1PejIyvjMK8brGOCihO6phqtKGHn38+aW+WI63NKZ3Qlh/PfjmSzNQGpuGcZ4bBQ=="
+  "sig": "v49GG/YZTdpLebL7O8SSVlOsik3S3eXlVSrow3rM+YCdlKXAdExVwZZHpXoQszmCvg7myBLA8ao71y8nIb82CA=="
 }
