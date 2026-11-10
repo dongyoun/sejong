@@ -54,7 +54,7 @@
           <h2>At a glance</h2>
           <ul>
             <li>Your documents are opened, edited and saved on your computer. The app only sends document content anywhere when you use the AI assistant or send a problem report yourself, as described below.</li>
-            <li>There are no accounts, and nothing is collected for advertising or marketing. Errors and friction signals are sent automatically without any document text, used only to fix the app, and can be turned off in Preferences.</li>
+            <li>The apps need no sign-up. A HyperSeven account is an option only for people who want the AI subscription (<a href="#account">below</a>), and nothing is collected for advertising or marketing. Errors and friction signals are sent automatically without any document text, used only to fix the app, and can be turned off in Preferences.</li>
           </ul>
         </section>
         <section>
@@ -63,7 +63,7 @@
           <p>When the app starts, and every 6 hours while it's open, it downloads one public file from the website (<code>latest.json</code>). This request carries no personal information or document content. Cloudflare and GitHub, which host the website, may process connection data such as your IP address, as with any web request. Update files are downloaded from GitHub. If you installed the app from the Microsoft Store, the Store keeps it up to date.</p>
           <p>When the app starts, it also asks the website once whether HyperSeven account sign-in is available. This request carries no personal information or document content either.</p>
           <h3>AI assistant (only if you turn it on)</h3>
-          <p>Only after you enter your own Anthropic API key and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
+          <p>Only when you use the AI subscription (<a href="#account">below</a>) or your own Anthropic API key and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
           <h3>Problem reports (only when you send one)</h3>
           <p>When you send a report, it includes what you wrote plus the app version, operating system, recent error log, recent commands and a summary of the document's structure (no text). A copy of the document is attached only if you choose to, and only with its text scrambled.</p>
           <p>Problem reports you send are stored in HyperSeven's report store (Cloudflare); only if it can't be reached does the app open a pre-filled GitHub issue instead.</p>
@@ -72,6 +72,33 @@
           <p>This information is used only to fix the next version. IP addresses are not stored (a hashed value is kept for one hour only to prevent abuse).</p>
           <h3>HyperSeven CAD</h3>
           <p>HyperSeven CAD works the same way. At start it fetches one public file from the website (<code>latest-cad.json</code>) to check for a new version. Automatic error and friction reports are offered once — the first time you use the app, or right after something goes wrong — and are sent only if you agree. They contain the version, OS, recent command names, error messages (with paths removed), counts of friction signals and the number of elements in the drawing; drawing content, file names and paths are never sent. See what is sent and turn it off in Settings › General › Fix it together. Screenshots from Feedback (<kbd>⌘⇧F</kbd>) stay on your computer.</p>
+        </section>
+        <section id="account">
+          <h2>HyperSeven account and AI subscription (only if you sign up)</h2>
+          <p>An account is optional; every editing feature works without one. The information below is handled only for people who create an account or subscribe to AI.</p>
+          <h3>What we receive</h3>
+          <ul>
+            <li>The name, email and unique ID shared by your sign-in provider (Apple or Google). With Apple's Hide My Email we receive the relay address.</li>
+            <li>The name of each signed-in device (for example “Mac · name”). Device tokens are stored only as hashes.</li>
+            <li>Subscription records: the subscribed app, status, billing period and the payment provider's subscription and customer IDs.</li>
+            <li>AI usage records: app, model, token counts, cost and time (used to count the fair-use allowance). Request and response text are not stored.</li>
+            <li>We never receive card numbers or similar payment details; Paddle processes payments.</li>
+          </ul>
+          <h3>What we use it for</h3>
+          <p>Sign-in, checking subscriptions and allowances, refunds, providing AI features and preventing abuse.</p>
+          <h3>How long we keep it</h3>
+          <p>When you delete your account, your name, email, sign-in methods and device tokens are deleted immediately. Subscription and usage records are kept, linked only to the account number, for the periods required by Korean e-commerce law (5 years for payment and supply records, 3 years for complaints and disputes), then deleted.</p>
+          <h3>Processors and international transfer</h3>
+          <p>Information is sent over the internet to these companies only when you use the account or AI subscription.</p>
+          <ul>
+            <li>Cloudflare, Inc. (US and the Cloudflare network) — account information, subscription and usage records — servers and database — for the periods above</li>
+            <li>Paddle.com Market Ltd (UK) — payment details you enter on Paddle's checkout, account number, subscribed app — recurring payments, receipts, taxes, refunds and subscription management (merchant of record) — under Paddle's policy</li>
+            <li>Anthropic, PBC (US) — AI requests and as much of the document as needed — generating AI responses — under Anthropic's policy (API data is not used for training)</li>
+          </ul>
+          <h3>Your rights</h3>
+          <p>You can ask to see, correct or delete your account information. Delete it right away with Delete account in the app<span class="mail-only">, or ask by <a data-email href="#">email</a></span>.</p>
+          <h3>Privacy officer</h3>
+          <p>신인수, HYSTERESIS<span class="mail-only"> · <a data-email href="#">email</a></span></p>
         </section>
         <section>
           <h2>What stays on your computer</h2>
@@ -100,6 +127,7 @@
         <a class="brand" href="index.html"><img src="../assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="199" height="22" /></a>
         <p class="tagline">From words to walls.</p>
         <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to Hancom’s published HWP document file format.) Hangul and HWP are trademarks of Hancom Inc.</p>
+        <p class="legal">Operated by HYSTERESIS (Republic of Korea) · Business reg. no. 729-75-00526</p>
         <p class="legal">© 2026 HyperSeven Labs</p>
       </div>
       <div class="cols">
@@ -108,6 +136,7 @@
           <ul>
             <li><a href="office.html">HyperSeven Office</a></li>
             <li><a href="cad.html">HyperSeven CAD</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div>
@@ -125,6 +154,7 @@
             <li><a data-contact href="https://github.com/dongyoun/sejong/issues">Report on GitHub</a></li>
             <li class="mail-only"><a data-email href="#">Email us</a></li>
             <li class="sponsor-only"><a href="support.html">Support development</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>

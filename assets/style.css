@@ -580,6 +580,35 @@ h2 {
   margin-top: 10px;
 }
 
+/* 요금 (pricing.html) */
+.plans {
+  margin-bottom: 8px;
+}
+.card .price {
+  margin: 2px 0 14px;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.card .price small {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.card.pick {
+  border-color: var(--ink);
+}
+.card h3 .tag {
+  margin-left: 6px;
+  padding: 1px 8px;
+  font-size: 12px;
+  vertical-align: 2px;
+}
+.plans-fine {
+  margin-top: 28px;
+}
+
 /* 매뉴얼 바로 가기 */
 .mgrid {
   display: grid;
