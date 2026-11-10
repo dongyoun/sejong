@@ -1,7 +1,7 @@
 {
   "product": "sejong",
   "version": "3.2.0",
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
   "notes": "펜으로 첨삭하면 AI 가 그대로 고칩니다.\n- 줄 긋기, 줄 긋고 고쳐 쓰기, ∨ 끼워 넣기·띄어 쓰기, ⌒ 붙여 쓰기 같은 교정 부호를 알아봅니다.\n- 여백에 적은 메모도 읽어 그 문단에 반영합니다.\n- 같은 낱말이 여러 곳에 있어도 표시한 자리만 고칩니다.\n- AI 도우미가 새 연결 방식으로 더 안정적으로 동작합니다.",
@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.2.3",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.3/HyperSeven-Office-bundle-3.2.3.zip",
-    "size": 5279957,
-    "sha256": "1afc76efb4d7ab6b2e071c1a196c1199890029bc6a0fbb16510dd5a391a60c3a",
+    "version": "3.2.4",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.4/HyperSeven-Office-bundle-3.2.4.zip",
+    "size": 5281888,
+    "sha256": "cbe56cdb6b46b6367bc91f4b332395ffe10e95fa8464ef63db577b3c6e3a6190",
     "shellMin": "3.2.0",
-    "notes": "AI 단계가 한눈에 보입니다.\n- 단계 목록에 중간·높은·가장 높은 지능이 보이고, 어느 요금에서 쓰는지 함께 나옵니다.\n- 응원해 주신 분께는 계정 단추에 작은 하트가 붙고, 맛보기를 바로 써 볼 수 있습니다."
+    "notes": "AI 제안이 한눈에 읽힙니다.\n- 바뀌는 말만 줄을 긋고 새 말을 나란히 보여 드립니다. 넣을 표는 작은 표로 미리 보입니다.\n- 보고서를 발표로 만들면 날짜 줄은 표지에 들어가고, 표는 슬라이드를 넉넉히 채웁니다.\n- 위쪽 신호등이 천천히 숨 쉬며 지금 쓰는 도구를 알려 줍니다.\n- 창이 좁아도 도구 막대가 다음 줄로 이어져 모든 단추가 보입니다.\n- 화면 곳곳의 문장을 자연스럽게 다듬었습니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "7c2XS/2GQkG9KwmxdeDZdsMLoxEBVU9V5iD5L/wIo2ZzhDeMhFHC1XWPO7Oda2eoN2SETLqi2ueqfHw6Dv+UDA=="
+  "sig": "+EEejR2FrCsL32vhYtNc4hzhnZCj/Q/LgZk6grfQVntYJs6XzE8X/actGEsAet1FqoC6Tr2gKuuaqKiwAOAWAA=="
 }

@@ -57,7 +57,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
       <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
     </a>
-    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64 가 없으면 숨는다 (site.js) -->
+    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64가 없으면 숨는다 (site.js) -->
     <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">인텔 맥용 다운로드</a>
   </div>
   <div class="get-win store-only" data-os="win">
@@ -94,6 +94,10 @@
           <h2>종이에 하듯 표시하고,<br />말하듯 시킵니다</h2>
           <p>문서 위에서 바로 일하는 AI. 바뀔 곳을 먼저 보여 드리고, 적용도 되돌리기도 한 번에.</p>
         </div>
+        <figure class="shot-lead">
+          <div class="window shot-ex"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/office-ink-ko.webp" alt="하이퍼세븐 오피스 — 보고서의 18%에 빨간 줄을 긋고 여백에 21%, 기간 끝에 ∨와 ‘7개월’을 손글씨로 적은 화면. 오른쪽 AI 도우미가 두 곳을 고치는 제안을 보여 준다" loading="lazy" width="1920" height="1080" /><span class="shot-tag">예시 장면</span></div>
+          <figcaption>빨간펜으로 줄을 긋고 ∨를 넣은 뒤 “첨삭대로 고쳐 줘”. 바뀔 말만 골라 보여 드리고, [적용]을 눌러야 바뀝니다.</figcaption>
+        </figure>
         <div class="pros">
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z" /><path d="M14.5 6.5l3 3" /></svg></span><b>빨간펜 첨삭</b><p>줄을 긋고, 밑줄을 치고, 형광펜을 칠한 뒤 “첨삭대로 고쳐 줘”. 첨삭은 인쇄되지 않는 별도의 층입니다.</p></div>
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></svg></span><b>말로 입력</b><p>마이크를 누르고 말하면 글이 됩니다. 말은 이 컴퓨터에서 글로 바뀝니다.</p></div>
@@ -102,7 +106,7 @@
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4" /><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" /></svg></span><b>기능을 알려 주는 AI</b><p>“차례 만들어 줘” 하면 그 기능을 단추로 꺼내 주고 단축키까지 알려 줍니다.</p></div>
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0z" /><path d="M12 18v4" /></svg></span><b>내 AI 에이전트와 연결</b><p>Claude 같은 에이전트가 MCP로 문서를 읽고 필요한 곳만 고칩니다.</p></div>
         </div>
-        <p class="note">AI 도우미는 무엇을 하는지 미리 보기로 먼저 보여 주고, 서포터 팩의 맛보기부터 일반·프로·맥스 <a href="pricing.html">구독</a>까지 필요한 만큼 최신 Claude 를 씁니다. 문서는 요청할 때만 보냅니다.</p>
+        <p class="note">AI 도우미는 무엇을 하는지 미리 보기로 먼저 보여 주고, 서포터 팩의 맛보기부터 일반·프로·맥스 <a href="pricing.html">구독</a>까지 필요한 만큼 최신 Claude를 씁니다. 문서는 요청할 때만 보냅니다.</p>
       </div>
     </section>
 
@@ -152,6 +156,25 @@
           <h2>네 가지 문서를 한 가지 사용법으로</h2>
           <p>위쪽 신호등 하나로 글·셈·발표를 오가고, 글로 쓴 내용을 발표로 바로 만듭니다.</p>
         </div>
+        <div class="gallery shots-office">
+          <figure>
+            <div class="window"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/office-ai-ko.webp" alt="AI 도우미에 추진 배경 보강과 분기별 일정 표를 요청하자, 넣을 문장과 4줄×5칸 표를 미리 보여 주는 화면" loading="lazy" width="1920" height="1080" /></div>
+            <figcaption>말로 시키면 넣을 문장과 표를 먼저 보여 드립니다. 문서는 [적용]을 누를 때 바뀝니다.</figcaption>
+          </figure>
+          <figure>
+            <div class="window"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/office-sheet-ko.webp" alt="시트 — 지역별 분기 매출 표와 막대 차트" loading="lazy" width="1920" height="1080" /></div>
+            <figcaption>시트 · 함수 420여 개, 피벗, 조건부 서식, 차트.</figcaption>
+          </figure>
+          <figure>
+            <div class="window"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/office-slides-ko.webp" alt="발표 — 보고서에서 만든 밤하늘 테마 발표의 분기별 추진 일정 표 슬라이드" loading="lazy" width="1920" height="1080" /></div>
+            <figcaption>발표 · 보고서를 한 번에 발표로. □ 제목마다 한 장, 문서의 표는 발표 표가 됩니다.</figcaption>
+          </figure>
+          <figure>
+            <div class="window"><div class="bar"><i></i><i></i><i></i></div><img src="assets/shots/office-themes-ko.webp" alt="발표 만들기 — 기본·밤하늘·한지·청자 테마를 고르는 창" loading="lazy" width="1920" height="1080" /></div>
+            <figcaption>테마를 고르고 [만들기]. 제목만, 또는 본문 첫 문장까지 담습니다.</figcaption>
+          </figure>
+        </div>
+        <p class="fine shots-fine">화면은 예시 문서로 찍었습니다.</p>
         <div class="grid3">
           <div class="card">
             <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v4h4M9 12h6M9 16h6" /></svg></div>
@@ -181,7 +204,7 @@
           <div class="card">
             <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" /></svg></div>
             <h3>AI 도우미</h3>
-            <p>자동·빠르게·보통·꼼꼼하게 단계를 고르고, 첨삭과 받아쓰기로 시킵니다. 내 Claude 열쇠나 내 컴퓨터의 모델로.</p>
+            <p>자동·빠르게·보통·꼼꼼하게 중에서 고르고, 첨삭과 받아쓰기로 시킵니다. 서포터 팩·구독으로, 또는 내 API 키나 내 컴퓨터의 모델로.</p>
           </div>
         </div>
       </div>
@@ -229,7 +252,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
       <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
     </a>
-    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64 가 없으면 숨는다 (site.js) -->
+    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64가 없으면 숨는다 (site.js) -->
     <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">인텔 맥용 다운로드</a>
   </div>
   <div class="get-win store-only" data-os="win">
@@ -278,7 +301,7 @@
         <div class="faq-list">
           <details>
             <summary>무료인가요?</summary>
-            <p>네. 모든 편집 기능을 누구나 무료로 씁니다. 학생도 회사도 같은 앱, 같은 기능입니다. AI 는 서포터 팩의 맛보기나 일반·프로·맥스 <a href="pricing.html">구독</a>으로 고릅니다.</p>
+            <p>네. 모든 편집 기능을 누구나 무료로 씁니다. 학생도 회사도 같은 앱, 같은 기능입니다. AI는 서포터 팩의 맛보기나 일반·프로·맥스 <a href="pricing.html">구독</a> 중에서 필요한 만큼 고릅니다.</p>
           </details>
           <details>
             <summary>왜 무료인가요?</summary>
@@ -298,7 +321,7 @@
           </details>
           <details>
             <summary>AI는 어떻게 쓰나요?</summary>
-            <p>AI 도우미는 하이퍼세븐 계정으로 로그인해 서포터 팩(AI 맛보기)이나 일반·프로·맥스 <a href="pricing.html">구독</a>으로 씁니다. 내 Claude API 열쇠나 내 컴퓨터의 모델(Ollama)은 연결로 씁니다 — 정식 결제를 열기 전까지 무료입니다. 문서는 요청할 때만, 처음 한 번 동의를 받은 뒤 보냅니다.</p>
+            <p>AI 도우미는 하이퍼세븐 계정으로 로그인해 서포터 팩(AI 맛보기)이나 일반·프로·맥스 <a href="pricing.html">구독</a>으로 씁니다. 내 Claude API 키나 내 컴퓨터의 모델(Ollama)은 ‘연결’로 씁니다. 정식 결제가 열리기 전까지는 무료입니다. 문서는 요청할 때만, 처음 한 번 동의를 받은 뒤 보냅니다.</p>
           </details>
           <details>
             <summary>빨간펜 첨삭은 인쇄되나요?</summary>
