@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko" data-store data-sponsor data-mail>
+<head>
+  <meta charset="utf-8" />
+  <script>if(location.host==="dongyoun.github.io")location.replace("https://hyperseven.pages.dev"+location.pathname.slice(7)+location.search+location.hash)</script>
+  <script>(function(){try{if(location.host==="dongyoun.github.io")return;try{localStorage.removeItem('hs.site.lang')}catch(e){}var a={"en":"en/pay.html","ja":"en/pay.html"},s='';try{s=sessionStorage.getItem('hs.site.lang')||''}catch(e){}if(s==='ko'||/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent))return;var w=a[s]?s:'';if(!w){var ls=[].concat(navigator.languages&&navigator.languages.length?[].slice.call(navigator.languages):[navigator.language||'']).map(function(x){return String(x).slice(0,2).toLowerCase()}),tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}if(ls.indexOf('ko')>=0||tz==='Asia/Seoul')return;for(var i=0;i<ls.length&&!w;i++)if(a[ls[i]])w=ls[i];if(!w)w=tz==='Asia/Tokyo'&&a.ja?'ja':'en'}if(a[w])location.replace(a[w]+location.search+location.hash)}catch(e){}})()</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>결제 — 하이퍼세븐</title>
+  <meta name="description" content="하이퍼세븐 AI 구독 결제." />
+  <meta property="og:site_name" content="HyperSeven Labs" />
+  <meta property="og:title" content="결제 — 하이퍼세븐" />
+  <meta property="og:description" content="하이퍼세븐 AI 구독 결제." />
+  <meta property="og:image" content="https://hyperseven.pages.dev/assets/og.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="noindex" />
+  
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="assets/brand/icon-labs.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="하이퍼세븐 랩스 처음 화면"><img src="assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="217" height="24" /></a>
+      <nav aria-label="주 메뉴">
+        <a href="office.html">오피스</a>
+        <a href="cad.html">캐드</a>
+        <a href="manual.html">매뉴얼</a>
+        <a href="notes.html">업데이트</a>
+        <a class="nav-cta" href="office.html#download">내려받기</a>
+      </nav>
+      <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="pay.html" hreflang="ko" lang="ko" data-l="ko" aria-current="true">한국어</a><a href="en/pay.html" hreflang="en" lang="en" data-l="en">English</a><a href="ja/index.html" hreflang="ja" lang="ja" data-l="ja">日本語</a></div></details>
+    </div>
+  </header>
+
+<main>
+    <div class="wrap doc-head pay">
+      <div class="kicker">하이퍼세븐 AI 구독</div>
+      <h1 id="pay-h">결제 화면을 여는 중…</h1>
+      <p id="pay-p">잠시만 기다려 주세요.</p>
+    </div>
+  </main>
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <script>
+    (function () {
+      var env = "sandbox", token = "";
+      var H = document.getElementById('pay-h'), P = document.getElementById('pay-p');
+      var say = function (h, p) { H.textContent = h; P.textContent = p; };
+      if (!/[?&]_ptxn=/.test(location.search)) return say('하이퍼세븐 AI 구독', '구독은 앱의 계정 단추에서 시작합니다.');
+      if (!token || !window.Paddle) return say('결제 준비 중', '구독은 곧 열립니다.');
+      if (env === 'sandbox') Paddle.Environment.set('sandbox');
+      Paddle.Initialize({
+        token: token,
+        checkout: { settings: { displayMode: 'overlay', locale: 'ko', allowLogout: false } },
+        eventCallback: function (e) {
+          if (e.name === 'checkout.loaded') say('결제', '결제를 마치면 앱으로 돌아가 주세요.');
+          if (e.name === 'checkout.completed') say('구독이 시작되었습니다', '앱으로 돌아가면 바로 쓸 수 있습니다. 이 창은 닫아도 됩니다.');
+          if (e.name === 'checkout.closed' && !/시작되었/.test(H.textContent)) say('결제를 닫았습니다', '앱의 계정 단추에서 언제든 다시 시작할 수 있습니다.');
+        },
+      });
+    })();
+  </script>
+
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="199" height="22" /></a>
+        <p class="tagline">글짓기부터 집짓기까지.</p>
+        <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. ‘한글’과 ‘HWP’는 한글과컴퓨터의 상표입니다.</p>
+        <p class="legal">히스테리시스 · 대표 신인수 · 사업자등록번호 729-75-00526 · 경기도 용인시 수지구 동천로178번길 22, 301호</p>
+        <p class="legal">© 2026 HyperSeven Labs</p>
+      </div>
+      <div class="cols">
+        <div>
+          <h4>도구</h4>
+          <ul>
+            <li><a href="office.html">하이퍼세븐 오피스</a></li>
+            <li><a href="cad.html">하이퍼세븐 캐드</a></li>
+            <li><a href="pricing.html">요금</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>지원</h4>
+          <ul>
+            <li><a href="manual.html">매뉴얼</a></li>
+            <li><a href="notes.html">업데이트 내역</a></li>
+            <li><a href="office.html#faq">자주 묻는 질문</a></li>
+            <li><a href="llms.txt">AI 에이전트용 안내</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>문의</h4>
+          <ul>
+            <li><a data-contact href="https://github.com/dongyoun/sejong/issues">GitHub에 남기기</a></li>
+            <li class="mail-only"><a data-email href="#">이메일로 연락하기</a></li>
+            <li class="sponsor-only"><a href="support.html">개발 응원하기</a></li>
+            <li><a href="terms.html">이용약관</a></li>
+            <li><a href="privacy.html">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js" data-root=""></script>
+</body>
+</html>
