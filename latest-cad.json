@@ -1,42 +1,42 @@
 {
   "product": "hyperseven-cad",
-  "version": "0.1.0",
-  "date": "2026-11-09",
+  "version": "1.1.0",
+  "date": "2026-11-11",
   "minVersion": "0.0.0",
-  "page": "https://hyperseven.pages.dev/cad.html",
-  "notes": "하이퍼세븐 캐드 첫 미리 보기입니다(맥 — 애플 실리콘·인텔, 윈도우 10·11 x64).\n\n- 예제 16가지: 열주 미술관·중정 주택·벽돌 주택·핀 파사드 오피스·곡면 지붕 파빌리온, A1 도면 묶음과 1:20 파사드 상세, 가구·그릇·지형 등.\n- 다섯 툴의 명령과 단축키, 한글로 찾기(⌘K). 키 습관(오토캐드·스케치업·라이노·레빗)을 설정에서 고릅니다.\n- 마우스·트랙패드는 모든 보기에서 같은 규칙: 굴리기 확대, Shift 이동, Option 돌려 보기.\n- 밀기·당기기는 당긴 면만, Option으로 대칭. 끄는 동안 바뀔 모양이 보입니다.\n- DWG·DXF를 열고 저장해도 층·종이 공간·유형 표·블록이 그대로 남습니다.\n- 문제·불편을 도면 내용 없이 자동으로 알릴 수 있습니다(처음 한 번 묻습니다). ⌘⇧F로 직접 남길 수도 있습니다.",
+  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.1.0",
+  "notes": "하이퍼세븐 캐드 1.1 (맥: 애플 실리콘·인텔, 윈도우 10·11 x64)\n\n**AI와 함께 설계하기**\n- 설계 자동화 카드: 대지 선 하나에서 법규 조건, 매스 대안 셋(낮고 넓게·단계형·높고 슬림), 점검, BIM, 도면 세트까지 카드로 이어서 실행합니다. 카드마다 신호등으로 진행을 보이고, 결과는 보라색 제안으로 남아 사람이 수락합니다. 카드는 AI 없이 돌아가며 무료입니다.\n- 대화로 시작: \"기획설계 해 줘, 건폐율 50%, 용적률 150, 3층\"처럼 쓰면 AI 없이도 자동화 보드가 열리고 조건이 채워집니다.\n- 내 템플릿: 카드의 지시·값·검토 방식을 고쳐 이름을 붙여 저장하고, 팀과 파일로 나눕니다.\n- AI 렌더: 지금 뷰의 형태를 바탕으로, 글로 적은 분위기대로 사진 같은 그림을 만듭니다. 이 컴퓨터의 ComfyUI(무료), Stability AI·OpenAI(내 API 키), 사용자 정의 API 중에서 고릅니다. 원본과 결과를 밀어서 비교합니다.\n- 노드 트리: '노드'를 '노드 트리'로 바꿨습니다. AI가 노드 트리를 짜서 저장하면 노드 트리 화면에 바로 열리고, 사람이 숫자를 바꿔 고칩니다.\n\n**요금과 응원**\n- 저작 도구는 모두 무료입니다. 요금은 AI와 연결에만 받습니다: 일반(중간 지능)·프로(높은 지능)·맥스(가장 높은 지능), 연결(내 API 키·외부 AI). 정식 결제를 시작하기 전까지 연결 기능은 무료입니다.\n- AI 창의 미리 보기: AI가 무엇을 하는지 미리 짠 장면으로 보여 줍니다(실제 AI가 아니라고 표시합니다).\n- 응원하기: 서포터 팩(감사 선물로 AI 맛보기), 커피 한 잔, 비트코인. 응원하지 않아도 모든 기능을 그대로 씁니다.\n\n**말과 화면**\n- 영어 화면: 설정 › 일반 › 언어에서 고릅니다(자동은 운영체제 언어를 따릅니다). 영어 화면에서 예제를 열면 실·저장한 시점·시트 이름도 영어로 만들어집니다.\n- 한국어 문장을 다듬었습니다: 합쇼체로 통일하고, 업계 용어(선택·입력·지정·실행·수락·거부)와 맞춤법을 바로잡았습니다.\n- 작업 공간 신호등이 천천히 숨쉬고, AI나 자동화가 일하는 동안에는 빨리 뜁니다(설정의 '움직임 줄이기'로 끕니다).\n\n**고친 것과 바뀐 것**\n- 자동 오류·불편 알림은 기본으로 켜져 있습니다. 처음 실제로 보낼 때만 한 줄로 알리고, 도면 내용·파일 이름·경로는 보내지 않습니다. 설정 › 일반 › 함께 고치기에서 끕니다.\n- 고성능 AI는 처음 쓰기 전에 고지를 확인합니다.\n- 벽을 떼었다 붙일 때 끝점이 조금 어긋나도 모서리·T 접합이 생깁니다. 층 구성 유형을 쓰는 벽의 두께를 바꾸면 그 두께의 유형으로 바뀝니다.\n\n**라이선스·고지**\n- 하이퍼세븐 캐드의 라이선스(Apache-2.0)와 함께 쓴 오픈소스 구성요소·글꼴의 라이선스 원문이 설치 묶음에 들어 있습니다(설정 › 정보 › 라이선스 보기).\n- SKP 보조 프로그램(supercad-skp)은 GPL-3.0이며, 전체 소스는 이 릴리스의 supercad-skp-1.1.0-source.tar.gz에 있습니다.\n- AI의 답과 AI 렌더는 틀릴 수 있습니다. 치수·법규 같은 사실은 확인하고 쓰세요. AI 렌더 서비스의 요금과 약관은 그 회사의 것입니다.\n\n**설치**\n- 맥: dmg를 열어 응용 프로그램 폴더로 옮깁니다(애플 공증).\n- 윈도우: zip을 풀고 supercad.exe를 엽니다. 아직 코드 서명 전이라 처음 열 때 '추가 정보 → 실행'을 누릅니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-arm64.dmg",
-        "size": 77051972,
-        "sha256": "81f9b448ff421219813cd8118432b4eca1cfeb6059db569a17de6e17fb839496"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.0/HyperSeven-CAD-1.1.0-arm64.dmg",
+        "size": 78515082,
+        "sha256": "14db3e0e11e5ac4bb2be1fe014c9cce5338ff6a60dca8a3b8494461c002564e6"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-arm64.zip",
-        "size": 69999090,
-        "sha256": "64f041275caf572e7f7fa7e03c0503f871f4696a01e3ab72f4a1be95338eaceb"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.0/HyperSeven-CAD-1.1.0-arm64.zip",
+        "size": 71205080,
+        "sha256": "0354dcd0322461bea5a34e97b67638a5283d4f9c431917eb8c252cacca90a170"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-x64.dmg",
-        "size": 89440247,
-        "sha256": "427412dfd703b81c81f48baf504ce2dfa835896d493c2bda72bc8abebdec14e9"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.0/HyperSeven-CAD-1.1.0-x64.dmg",
+        "size": 90786928,
+        "sha256": "5d2ad940cd251513b3d3fd4ffe7052b7acabdbd3c0024e4c0157e258053babdf"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-x64.zip",
-        "size": 80249369,
-        "sha256": "cc19f5e6582ac0f4e1b4add1b7bf82caa2b1015d77c1e43b2c4c2d469fdef9ee"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.0/HyperSeven-CAD-1.1.0-x64.zip",
+        "size": 81376804,
+        "sha256": "6b3438a6ee5602ed430b14fa5533aeec9eb5d63e0db3b44fb61b871a63cd081f"
       }
     }
   },
   "win": {
     "x64": {
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v0.1.0/HyperSeven-CAD-0.1.0-win-x64.zip",
-        "size": 89190021,
-        "sha256": "792760233629ec402db8e0a820467273b6b0479123e488493d1c61faf0eb183d"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.0/HyperSeven-CAD-1.1.0-win-x64.zip",
+        "size": 91994069,
+        "sha256": "a1b4508bb33918669662cd1507590c499cb29e4181ee35f198f528fe2534c144"
       }
     }
   }
