@@ -3137,3 +3137,15 @@ footer [data-email] {
     margin-bottom: 36px;
   }
 }
+
+/* 좁은 화면 머리 줄 (2026-11-11): 분홍 응원 단추가 내려받기 단추를 밀어내지 않게 ♥ 만 남긴다 (이름은 aria-label 로) */
+@media (max-width: 640px) {
+  .top nav .nav-support {
+    margin-left: 2px;
+    padding: 6px 11px;
+    font-size: 0;
+  }
+  .top nav .nav-support span {
+    font-size: 15px;
+  }
+}
