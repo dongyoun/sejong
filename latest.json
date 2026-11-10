@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.1.1",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.1/HyperSeven-Office-bundle-3.1.1.zip",
-    "size": 5266151,
-    "sha256": "4e1add563b5c1a0b7b82a0322f3abf594be57dca8961c371d37ce0ef01e037b2",
+    "version": "3.1.2",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.2/HyperSeven-Office-bundle-3.1.2.zip",
+    "size": 5269208,
+    "sha256": "b5bc0b39d9f99e86b090a48c65638f074116f9a5c3adb582cc4368860bdfda2f",
     "shellMin": "3.1.0",
-    "notes": "AI 도우미가 문서를 더 많이 직접 만들어 줍니다.\n- 빈 문서에도 바로 “소개 글 써 줘”, “표 만들어 줘”라고 하면 됩니다.\n- “표로 정리해 줘”라고 하면 내용을 채운 표를 만듭니다.\n- 문단 지우기, 문서 끝에 덧붙이기도 됩니다.\n- 초안은 바로 쓰고, 모르는 정보는 [회사명]처럼 빈칸으로 남깁니다."
+    "notes": "한글 입력이 더 매끄러워졌습니다.\n- “추천”처럼 받침이 다음 글자로 넘어가는 낱말도 빠르게 쳐도 그대로 들어갑니다.\n- 오류·불편 알림은 기본으로 켜져 조용히 동작합니다. 처음 보낼 때 한 번만 짧게 알립니다.\n- AI 도우미 안내를 새로 다듬었습니다. 처음 한 번 다시 동의해 주세요."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "j+QLRqcux62hAeWexAI9awgP+4j4nmLSLhg3TC2XLXG7JLxs4+79fHVttI/rJwy06T2ILg/Wf008J6uLbAG9AA=="
+  "sig": "GLEW3lVXCkn5/oQ6AOIooAK9LVD0zlcxJ57DXxcXZec0nGRstQrxQ11CtUGbV058L2sDDYu6yxqFJd658z63CA=="
 }
