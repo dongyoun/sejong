@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "date": "2026-11-10",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "AI와 함께 쓰는 새로운 오피스. 빨간펜으로 표시하고 말로 시키면 AI가 고칠 곳을 제안합니다.\n- 빨간펜·형광펜 첨삭: 문서 위에 적고 “첨삭대로 고쳐 줘”. 인쇄되지 않는 별도 층입니다.\n- 말로 입력: AI 창의 마이크를 누르고 말하면 글이 됩니다.\n- AI 단계: 자동·빠르게·보통·꼼꼼하게·최고. 앱 기능은 단추와 단축키로 알려 줍니다.\n- 위쪽 신호등으로 글·셈·발표를 오가고, 발표에서 겹친 도형을 ⌥+클릭으로 고릅니다.\n- HWP 문서가 원본과 더 같게 보입니다. 없는 글꼴은 알려 드립니다.",
+  "notes": "하이퍼세븐 계정으로 로그인하면 AI 도우미를 바로 씁니다.\n- 무료 AI: Google 로 로그인만 하면 하루 30회. 가볍게 써 보세요.\n- 고성능 AI: 최신 Claude 로 더 빠르고 정확하게, 긴 문서도 한 번에 — 오피스 AI 월 ₩9,900 (곧 시작).\n- 계정 하나로 하이퍼세븐 오피스와 캐드를 함께 씁니다.\n- 무료 답 아래 [고성능으로 다시 받기]로 같은 요청을 고성능으로 받습니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-arm64.dmg",
-        "size": 149898743,
-        "sha256": "c04e78f0dac422090fbeca19d4ad4d8ce310875d59980a3d461f64d2b8c268ba"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-arm64.dmg",
+        "size": 149906248,
+        "sha256": "4ebc0dedd29ca42d6dea2d4b6be73ad775329f9ea98fb672d8cfd711d464875d"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-arm64.zip",
-        "size": 149420664,
-        "sha256": "51eabb7ab847c2700b3933ae8385d4c67b7bd0942bfa2402df1d56154b7ac19a"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-arm64.zip",
+        "size": 149430240,
+        "sha256": "3641a876c641bcd706963d48eb6540b3e020df9e3ae9da4fc7cfe59126486b48"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-x64.dmg",
-        "size": 157455455,
-        "sha256": "11904e0aed06d24a8e244501afdbfa2c062c265788e6dc63bf38b37850492b11"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-x64.dmg",
+        "size": 157490099,
+        "sha256": "6558c03bbf86c31d7e94e8a2eefcb1f6d909401a176263deac7c9d60c6909f93"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-x64.zip",
-        "size": 157020176,
-        "sha256": "58a1e0f6d3f249e50b46d6af30b03b99f321b2077f4ccb256d25d1265646998a"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-x64.zip",
+        "size": 157029738,
+        "sha256": "cc9cb1cbd567ea7fdb1ad7437724206968ec5057407d0444c9f246d63aa0934f"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-win-x64.exe",
-        "size": 118902912,
-        "sha256": "8dc9e72bef38bf8dd966386b7ecc9ba649842276e27e171d2a2c69c6f7de73a2"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-win-x64.exe",
+        "size": 118909757,
+        "sha256": "75cf5767c4e952016bed7a2bf773ba98039332d29aa84bf25c1c240f69391f18"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-3.0.0-win-x64.zip",
-        "size": 161275450,
-        "sha256": "6bde27972edea4ed5d436f7d1e72834963498b54c902a2e29ac7f8ea60f5ede9"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-win-x64.zip",
+        "size": 161286244,
+        "sha256": "8cc61dbd9964508bb1204ff41ca4f59a9ebfbbf0c2d65b4adad3e3acd7e434e0"
       }
     }
   },
   "bundle": {
-    "version": "3.0.0",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.0.0/HyperSeven-Office-bundle-3.0.0.zip",
-    "size": 5261784,
-    "sha256": "54f3396d5786a932c50059049ccf16e76e4c4d337245216ab1962b8d3f1ed9f2",
-    "shellMin": "3.0.0",
-    "notes": "AI와 함께 쓰는 새로운 오피스. 빨간펜으로 표시하고 말로 시키면 AI가 고칠 곳을 제안합니다.\n- 빨간펜·형광펜 첨삭: 문서 위에 적고 “첨삭대로 고쳐 줘”. 인쇄되지 않는 별도 층입니다.\n- 말로 입력: AI 창의 마이크를 누르고 말하면 글이 됩니다.\n- AI 단계: 자동·빠르게·보통·꼼꼼하게·최고. 앱 기능은 단추와 단축키로 알려 줍니다.\n- 위쪽 신호등으로 글·셈·발표를 오가고, 발표에서 겹친 도형을 ⌥+클릭으로 고릅니다.\n- HWP 문서가 원본과 더 같게 보입니다. 없는 글꼴은 알려 드립니다."
+    "version": "3.1.0",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-bundle-3.1.0.zip",
+    "size": 5264097,
+    "sha256": "1dc93863c0f265f8f0dd67ae4bfe3b5cb0121c689c4dfc78ba6cd2f355f799d1",
+    "shellMin": "3.1.0",
+    "notes": "하이퍼세븐 계정으로 로그인하면 AI 도우미를 바로 씁니다.\n- 무료 AI: Google 로 로그인만 하면 하루 30회. 가볍게 써 보세요.\n- 고성능 AI: 최신 Claude 로 더 빠르고 정확하게, 긴 문서도 한 번에 — 오피스 AI 월 ₩9,900 (곧 시작).\n- 계정 하나로 하이퍼세븐 오피스와 캐드를 함께 씁니다.\n- 무료 답 아래 [고성능으로 다시 받기]로 같은 요청을 고성능으로 받습니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "v49GG/YZTdpLebL7O8SSVlOsik3S3eXlVSrow3rM+YCdlKXAdExVwZZHpXoQszmCvg7myBLA8ao71y8nIb82CA=="
+  "sig": "zqw02M+1o1ktBhEeKVc3Eyzf8YTF5Qby0ghmAYXHYnzswTpg5cXtxCMjcJKRN/8vSonHqGx79ajVI8ZTxOQ0DA=="
 }
