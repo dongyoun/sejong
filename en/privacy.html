@@ -63,7 +63,7 @@
           <p>When the app starts, and every 6 hours while it's open, it downloads one public file from the website (<code>latest.json</code>). This request carries no personal information or document content. Cloudflare and GitHub, which host the website, may process connection data such as your IP address, as with any web request. Update files are downloaded from GitHub. If you installed the app from the Microsoft Store, the Store keeps it up to date.</p>
           <p>When the app starts, it also asks the website once whether HyperSeven account sign-in is available. This request carries no personal information or document content either.</p>
           <h3>AI assistant (only if you turn it on)</h3>
-          <p>Only when you use the AI subscription (<a href="#account">below</a>) or your own Anthropic API key and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
+          <p>Only when you use the free AI or AI subscription (<a href="#account">below</a>), or your own Anthropic API key, and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
           <h3>Problem reports (only when you send one)</h3>
           <p>When you send a report, it includes what you wrote plus the app version, operating system, recent error log, recent commands and a summary of the document's structure (no text). A copy of the document is attached only if you choose to, and only with its text scrambled.</p>
           <p>Problem reports you send are stored in HyperSeven's report store (Cloudflare); only if it can't be reached does the app open a pre-filled GitHub issue instead.</p>
@@ -93,8 +93,9 @@
           <ul>
             <li>Cloudflare, Inc. (US and the Cloudflare network) — account information, subscription and usage records — servers and database — for the periods above</li>
             <li>Paddle.com Market Ltd (UK) — payment details you enter on Paddle's checkout, account number, subscribed app — recurring payments, receipts, taxes, refunds and subscription management (merchant of record) — under Paddle's policy</li>
-            <li>Anthropic, PBC (US) — AI requests and as much of the document as needed — generating AI responses — under Anthropic's policy (API data is not used for training)</li>
+            <li>Anthropic, PBC (US) — high-performance AI requests and as much of the document as needed — generating AI responses — under Anthropic's policy (API data is not used for training)</li>
           </ul>
+          <p>Free AI (ultra-low performance) requests and document text are processed by an open model on an AI server the Operator runs itself (Republic of Korea) and are not kept afterwards. Only request and token counts are recorded, to count the daily limit.</p>
           <h3>Your rights</h3>
           <p>You can ask to see, correct or delete your account information. Delete it right away with Delete account in the app<span class="mail-only">, or ask by <a data-email href="#">email</a></span>.</p>
           <h3>Privacy officer</h3>
@@ -127,7 +128,7 @@
         <a class="brand" href="index.html"><img src="../assets/brand/hyperseven-labs.svg" alt="HyperSeven Labs" width="199" height="22" /></a>
         <p class="tagline">From words to walls.</p>
         <p class="legal">본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다. (This product was developed with reference to Hancom’s published HWP document file format.) Hangul and HWP are trademarks of Hancom Inc.</p>
-        <p class="legal">Operated by HYSTERESIS (Republic of Korea) · Business reg. no. 729-75-00526</p>
+        <p class="legal">Operated by HYSTERESIS (Republic of Korea) · Business reg. no. 729-75-00526 · +82-10-5223-5369</p>
         <p class="legal">© 2026 HyperSeven Labs</p>
       </div>
       <div class="cols">
