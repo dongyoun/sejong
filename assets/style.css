@@ -159,6 +159,67 @@ code {
   background: #262a33;
   color: #fff;
 }
+/* 응원하기 — 따뜻한 분홍 (서포터 팩·커피·비트코인으로 이어지는 support.html) */
+.top nav .nav-support {
+  margin-left: 6px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #ff8fb1, #ffb37a);
+  color: #4a1424;
+  font-weight: 700;
+}
+.top nav .nav-support span {
+  color: #c2185b;
+}
+.top nav .nav-support:hover {
+  filter: brightness(1.04);
+  background: linear-gradient(135deg, #ff8fb1, #ffb37a);
+  color: #4a1424;
+}
+.btn.pink {
+  background: linear-gradient(135deg, #ff8fb1, #ffb37a);
+  color: #4a1424;
+  box-shadow: 0 10px 24px rgba(255, 143, 177, 0.35);
+}
+.btn.pink span[aria-hidden] {
+  color: #c2185b;
+}
+.btn.pink:hover {
+  background: linear-gradient(135deg, #ff8fb1, #ffb37a);
+  filter: brightness(1.04);
+}
+.btn.yellow {
+  background: #ffdd55;
+  color: #3a2a00;
+  box-shadow: 0 10px 24px rgba(255, 205, 60, 0.35);
+}
+.btn.yellow:hover {
+  background: #ffd83f;
+}
+.give-card.pack {
+  background: linear-gradient(135deg, rgba(255, 143, 177, 0.12), rgba(255, 179, 122, 0.14));
+  border-color: rgba(255, 143, 177, 0.45);
+}
+.warm-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+  padding: 22px 26px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 143, 177, 0.14), rgba(255, 221, 85, 0.18));
+}
+.warm-band p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--ink);
+}
+.warm-band .btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
 /* 단추·글줄 링크 */
 .btn {
