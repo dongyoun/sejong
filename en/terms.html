@@ -57,10 +57,10 @@
         <section>
           <h2>2. The Service</h2>
           <ol>
-            <li>All editing features of the apps are free and work without an account.</li>
-            <li>The AI assistant is subscribed separately for each app (HyperSeven Office AI, HyperSeven CAD AI). A subscription for one app does not cover the other.</li>
-            <li>A HyperSeven account is optional. One account signs you in to both apps, and subscriptions belong to that account.</li>
-            <li>Using the AI assistant with your own Anthropic API key is separate from subscriptions; its cost is between you and Anthropic.</li>
+            <li>All editing and drawing features of the apps are free and work without an account. The AI assistant shows what it does in a preview (a scripted scene, not the real AI).</li>
+            <li>Paid services are per app: the Supporter Pack (one-time, section 4-2), Connect (monthly, section 4-3) and the AI subscriptions General, Pro and Max (monthly, section 4). A purchase for one app does not cover the other.</li>
+            <li>A HyperSeven account is optional. One account signs you in to both apps, and subscriptions and Supporter Packs belong to that account.</li>
+            <li>AI is provided only as a feature inside the apps. AI usage (tokens or credits) is not sold separately.</li>
             <li>The Operator may improve and extend the Service. Changes to paid services that are unfavorable to users are announced in advance under section 12.</li>
           </ol>
         </section>
@@ -72,15 +72,34 @@
             <li>A subscription is for the person who subscribed. Accounts may not be shared or resold.</li>
           </ol>
         </section>
-        <section>
+        <section id="subscription">
           <h2>4. AI subscription</h2>
           <ol>
-            <li>The subscription fee is a fixed monthly amount per app, shown on the subscription and checkout screens. Displayed prices include VAT.</li>
-            <li>Subscriptions <strong>renew automatically</strong> every month from the payment date, charging the same payment method. The renewal date is shown in the app's account panel.</li>
-            <li>Each subscription has a <strong>fair-use allowance</strong> per billing period — generous for ordinary document work. When it is used up, AI requests pause until the next renewal, and the app tells you when they resume. The share you have used is always visible in the app.</li>
+            <li>AI subscriptions come in intelligence levels: General (medium), Pro (high) and Max (highest). Prices and contents per app are shown on the pricing page and on the subscription and checkout screens. Korean won prices include VAT; US dollar prices exclude tax, which is added for your country at checkout. AI subscriptions include Connect (section 4-3).</li>
+            <li>Subscriptions <strong>renew automatically</strong> every month from the payment date, charging the same payment method. Before each renewal we email you the date and amount, and the renewal date is always shown in the app's account panel.</li>
+            <li>Each subscription has a <strong>fair-use limit</strong> per billing period. When it is used up, you continue at the next lower intelligence level; when that share is used up too, AI requests pause until the next renewal and the app tells you when they resume. The share you have used is always visible in the app.</li>
+            <li>You can change level at any time. The price difference is prorated and charged or credited immediately.</li>
             <li>You can cancel at any time from Manage subscription in the app. No further payments are taken, and you keep access until the end of the paid period.</li>
             <li>If a payment fails, the payment provider retries and you keep access for up to 3 days. If payment still fails, the subscription is paused.</li>
             <li>Price increases are announced by email and in the app at least 30 days in advance and apply only from the renewal after you agree. If you do not agree, the subscription ends at the end of the current period.</li>
+          </ol>
+        </section>
+        <section id="supporter">
+          <h2>4-2. Supporter Pack</h2>
+          <ol>
+            <li>The Supporter Pack is a one-time product with which you support HyperSeven and receive a thank-you gift. You choose the amount, at or above the minimum for each app (Office $5 / ₩6,900, CAD $7 / ₩9,900).</li>
+            <li>The gift is an AI taste (below-medium intelligence) in the app you bought it for, for 90 days from payment and within a set usage limit. Buying again adds to what is left and restarts the 90 days from the new payment. The app shows how much you have used and how many days are left.</li>
+            <li>The Supporter Pack is processed as a product purchase, not a donation. No donation receipt is issued; the payment provider sends the receipt.</li>
+            <li>The AI taste is subject to section 7.</li>
+          </ol>
+        </section>
+        <section id="connect">
+          <h2>4-3. Connect</h2>
+          <ol>
+            <li>Connect is a monthly fee for the feature that connects your own AI API key or outside AI (such as MCP) to the app. The Operator's AI is not included.</li>
+            <li>The prices and terms of the AI company you connect are between you and that company.</li>
+            <li>Until paid plans open, Connect is free. If a free Connect becomes paid, we announce it 30 days in advance.</li>
+            <li>Automatic renewal, level changes, cancellation and failed payments follow section 4. AI subscriptions (General, Pro, Max) include Connect.</li>
           </ol>
         </section>
         <section>
@@ -93,8 +112,10 @@
         <section id="refund">
           <h2>6. Withdrawal and refunds</h2>
           <ol>
-            <li>Within 7 days of a payment, if you have not used the AI assistant in that billing period, you get a full refund.</li>
-            <li>Once the AI assistant has been used in a billing period, the digital service has been provided, so that period cannot be withdrawn. This is stated on the subscription screen before payment. You can still cancel, and you keep access until the period ends (section 4.4).</li>
+            <li>You may withdraw within 7 days of payment.</li>
+            <li>The Supporter Pack's AI taste and an AI subscription's usage limit for a billing period are digital content divided by use. The part already used cannot be withdrawn; the unused part can (Korean Act on Consumer Protection in Electronic Commerce, Article 17(2)(v), proviso). If you withdraw within 7 days, we refund the unused share, or the full amount if nothing was used. Connect is fully refunded within 7 days of payment.</li>
+            <li>What cannot be withdrawn is stated on the pricing page and at checkout before payment, and the AI preview lets you see what the assistant does first (same Article, paragraph 6).</li>
+            <li>After 7 days a subscription can only be cancelled; you keep access until the period ends (section 4.5).</li>
             <li>If the AI assistant was unavailable for a substantial part of a billing period through the Operator's fault (for example an outage), the unavailable days are refunded pro rata.</li>
             <li>Request refunds by email (see Seller information below). Refunds go back to the original payment method through Paddle. Where Paddle's buyer terms give wider refund rights in your country, those apply.</li>
           </ol>
@@ -104,7 +125,7 @@
           <ol>
             <li>AI answers can be wrong. Check facts, numbers, legal, medical and other important content before applying it. The app only proposes edits; your document changes only when you press Apply.</li>
             <li>To process an AI request, your request and as much of the document as needed are sent to Anthropic (Claude). The Operator does not store request or response text; it records only usage (token counts and cost).</li>
-            <li>The AI subscription works only through the AI assistant inside the apps. It may not be used to break the law or Anthropic's usage policies, to infringe others' rights, to call the AI in bulk through automation, or to use the Service outside the apps.</li>
+            <li>AI subscriptions and the Supporter Pack's AI taste work only through the AI assistant inside the apps. It may not be used to break the law or Anthropic's usage policies, to infringe others' rights, to call the AI in bulk through automation, or to use the Service outside the apps.</li>
             <li>If these rules are broken, the Operator may block the request or suspend the account. The remaining days of the subscription are then refunded pro rata, minus any damage the violation caused the Operator.</li>
           </ol>
         </section>
