@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.2.6",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.6/HyperSeven-Office-bundle-3.2.6.zip",
-    "size": 5286799,
-    "sha256": "278e11da9e6fd3d467ed230e9d26d064314c12664195ab5d45a01f543fef43be",
+    "version": "3.2.7",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.7/HyperSeven-Office-bundle-3.2.7.zip",
+    "size": 5287802,
+    "sha256": "ba0b9d7b8574db8cf29a64da6b63bad551ab436851b4bc45711420f260a259c8",
     "shellMin": "3.2.0",
-    "notes": "AI 가 하이퍼 AI 로 새로 태어났습니다.\n- 라이트·일반·프로·맥스가 일을 나눠 맡습니다. 가벼운 일은 가볍게, 어려운 일은 위 단계로 넘깁니다.\n- 긴 글은 프로가 계획하고 일반이 써서, 같은 결과를 더 적은 비용으로 냅니다. 맥스는 바뀐 곳만 다시 확인합니다.\n- 내 API 키는 로그인한 뒤 한 번만 넣으면 다음부터 바로 씁니다."
+    "notes": "하이퍼 AI 가 보고서를 더 반듯하게 씁니다.\n- 개조식 보고서(□ ○ -)에 새 절을 넣으면 문서의 기호와 줄 나눔을 그대로 따릅니다.\n- 하이퍼 AI 맥스는 맡긴 글을 다시 쓰지 않고 틀린 곳만 짚어 고쳐, 더 빠르고 적게 씁니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "NR+S2iR0Q+ghr9/uCkRfE5se2UcRdCPEruhGM8ugc8VpDBXDqkwUJCc9TRpAyzreaUMeTHdF7TaBnQN8cetjAA=="
+  "sig": "BMgClUJhNPW6aveb3QrHnav3vpFm+MjA8ayYDWp2LN5TZIk5/JWNsIn+deGyS0WKgBT47wpL25LG6QiOeMjACQ=="
 }
