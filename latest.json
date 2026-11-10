@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "date": "2026-11-10",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "하이퍼세븐 계정으로 로그인하면 AI 도우미를 바로 씁니다.\n- 무료 AI: Google 로 로그인만 하면 하루 30회. 가볍게 써 보세요.\n- 고성능 AI: 최신 Claude 로 더 빠르고 정확하게, 긴 문서도 한 번에 — 오피스 AI 월 ₩9,900 (곧 시작).\n- 계정 하나로 하이퍼세븐 오피스와 캐드를 함께 씁니다.\n- 무료 답 아래 [고성능으로 다시 받기]로 같은 요청을 고성능으로 받습니다.",
+  "notes": "펜으로 첨삭하면 AI 가 그대로 고칩니다.\n- 줄 긋기, 줄 긋고 고쳐 쓰기, ∨ 끼워 넣기·띄어 쓰기, ⌒ 붙여 쓰기 같은 교정 부호를 알아봅니다.\n- 여백에 적은 메모도 읽어 그 문단에 반영합니다.\n- 같은 낱말이 여러 곳에 있어도 표시한 자리만 고칩니다.\n- AI 도우미가 새 연결 방식으로 더 안정적으로 동작합니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-arm64.dmg",
-        "size": 149906248,
-        "sha256": "4ebc0dedd29ca42d6dea2d4b6be73ad775329f9ea98fb672d8cfd711d464875d"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-arm64.dmg",
+        "size": 149914434,
+        "sha256": "c5084ca33e4d0dde9c8c33482cbbf7480e2a9a68e28cf0844e9a53cf097bdbfd"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-arm64.zip",
-        "size": 149430240,
-        "sha256": "3641a876c641bcd706963d48eb6540b3e020df9e3ae9da4fc7cfe59126486b48"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-arm64.zip",
+        "size": 149450691,
+        "sha256": "b34bdbb1be0de82e0aaa75128679d6fd46199fee6937f05c5d238af901996cf7"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-x64.dmg",
-        "size": 157490099,
-        "sha256": "6558c03bbf86c31d7e94e8a2eefcb1f6d909401a176263deac7c9d60c6909f93"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-x64.dmg",
+        "size": 157491124,
+        "sha256": "53515920179675f9633667f788be12f95051943b4630f1db0c25af87aeab59d6"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-x64.zip",
-        "size": 157029738,
-        "sha256": "cc9cb1cbd567ea7fdb1ad7437724206968ec5057407d0444c9f246d63aa0934f"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-x64.zip",
+        "size": 157050215,
+        "sha256": "766051ba6c82d0f8c6968ba53ad67607d061a164e4f33e006a1bddc62e512e24"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-win-x64.exe",
-        "size": 118909757,
-        "sha256": "75cf5767c4e952016bed7a2bf773ba98039332d29aa84bf25c1c240f69391f18"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-win-x64.exe",
+        "size": 118923173,
+        "sha256": "05ffb7e7abd51a133da94252215620072766199e1e750f8300ed2e204a9450c6"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-3.1.0-win-x64.zip",
-        "size": 161286244,
-        "sha256": "8cc61dbd9964508bb1204ff41ca4f59a9ebfbbf0c2d65b4adad3e3acd7e434e0"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-win-x64.zip",
+        "size": 161300912,
+        "sha256": "d1838d314f27eaab45556010c23939058bbede81f8248b339dbdb44b8e423036"
       }
     }
   },
   "bundle": {
-    "version": "3.1.3",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.3/HyperSeven-Office-bundle-3.1.3.zip",
-    "size": 5270200,
-    "sha256": "4158b751a8327684061c6657ebc18e9e78a77f24c845b03900fbcade0bab5de6",
-    "shellMin": "3.1.0",
-    "notes": "AI 도우미가 보고서를 한 번에 써 줍니다.\n- “사업 계획서 초안 써 줘”라고 하면 제목·목록·표·굵은 글씨까지 한 번에 넣습니다.\n- 절을 새로 쓰거나 다시 써 달라는 요청도 모양을 갖춰 들어갑니다.\n- 빈 문서에도 바로 쓰고, 표를 만들어 내용까지 채웁니다."
+    "version": "3.2.0",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-bundle-3.2.0.zip",
+    "size": 5274778,
+    "sha256": "03cb025da8a45dff9ff644405aa1c12d2eb19ff5feca0cb1b5770fb169a41fe4",
+    "shellMin": "3.2.0",
+    "notes": "펜으로 첨삭하면 AI 가 그대로 고칩니다.\n- 줄 긋기, 줄 긋고 고쳐 쓰기, ∨ 끼워 넣기·띄어 쓰기, ⌒ 붙여 쓰기 같은 교정 부호를 알아봅니다.\n- 여백에 적은 메모도 읽어 그 문단에 반영합니다.\n- 같은 낱말이 여러 곳에 있어도 표시한 자리만 고칩니다.\n- AI 도우미가 새 연결 방식으로 더 안정적으로 동작합니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "aWcGqlpU6TQgSu241MCYpy5OMFXhybReWkBCaQrwbJ4UJU+TSgoLF/gGT+5tH7/ILaVTYBSUo2suJl05YY8bAA=="
+  "sig": "NntvSUv+pTyiavzMhOIJ7z6ouPuy/fFrw1s9+YmLraW1WF65otKYTdlb1/8mUYjsbb9x5nnsjBZoWbyWTidHAg=="
 }
