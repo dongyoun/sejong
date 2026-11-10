@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.2.5",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.5/HyperSeven-Office-bundle-3.2.5.zip",
-    "size": 5282019,
-    "sha256": "dac106a06e7880afb5de7e9b2b7d5f8fb9fee7207df4ba65d7482006e9f80cd4",
+    "version": "3.2.6",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.6/HyperSeven-Office-bundle-3.2.6.zip",
+    "size": 5286799,
+    "sha256": "278e11da9e6fd3d467ed230e9d26d064314c12664195ab5d45a01f543fef43be",
     "shellMin": "3.2.0",
-    "notes": "AI 도우미를 처음 쓰기가 쉬워졌습니다.\n- 처음 열어도 단계 이름(빠르게·보통·꼼꼼하게·최고)이 바로 보입니다.\n- 시작 안내가 깔끔해졌습니다. 내 API 키 칸과 단추가 한곳에 모였습니다.\n- 파일 메뉴의 새로 만들기가 HWP·XLSX·PPTX 형식 이름으로 맞춰졌습니다."
+    "notes": "AI 가 하이퍼 AI 로 새로 태어났습니다.\n- 라이트·일반·프로·맥스가 일을 나눠 맡습니다. 가벼운 일은 가볍게, 어려운 일은 위 단계로 넘깁니다.\n- 긴 글은 프로가 계획하고 일반이 써서, 같은 결과를 더 적은 비용으로 냅니다. 맥스는 바뀐 곳만 다시 확인합니다.\n- 내 API 키는 로그인한 뒤 한 번만 넣으면 다음부터 바로 씁니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "V7BXQDFjg9QWgaU4AzxsoLBhh24UjMoJRZ0Y2mxDSTY/RT89WBXSSuTBsTL7zKVsAsxPc8qWWMxi/GpUST3+Cw=="
+  "sig": "NR+S2iR0Q+ghr9/uCkRfE5se2UcRdCPEruhGM8ugc8VpDBXDqkwUJCc9TRpAyzreaUMeTHdF7TaBnQN8cetjAA=="
 }
