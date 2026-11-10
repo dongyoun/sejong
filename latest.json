@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.1.0",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.0/HyperSeven-Office-bundle-3.1.0.zip",
-    "size": 5264097,
-    "sha256": "1dc93863c0f265f8f0dd67ae4bfe3b5cb0121c689c4dfc78ba6cd2f355f799d1",
+    "version": "3.1.1",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.1.1/HyperSeven-Office-bundle-3.1.1.zip",
+    "size": 5266151,
+    "sha256": "4e1add563b5c1a0b7b82a0322f3abf594be57dca8961c371d37ce0ef01e037b2",
     "shellMin": "3.1.0",
-    "notes": "하이퍼세븐 계정으로 로그인하면 AI 도우미를 바로 씁니다.\n- 무료 AI: Google 로 로그인만 하면 하루 30회. 가볍게 써 보세요.\n- 고성능 AI: 최신 Claude 로 더 빠르고 정확하게, 긴 문서도 한 번에 — 오피스 AI 월 ₩9,900 (곧 시작).\n- 계정 하나로 하이퍼세븐 오피스와 캐드를 함께 씁니다.\n- 무료 답 아래 [고성능으로 다시 받기]로 같은 요청을 고성능으로 받습니다."
+    "notes": "AI 도우미가 문서를 더 많이 직접 만들어 줍니다.\n- 빈 문서에도 바로 “소개 글 써 줘”, “표 만들어 줘”라고 하면 됩니다.\n- “표로 정리해 줘”라고 하면 내용을 채운 표를 만듭니다.\n- 문단 지우기, 문서 끝에 덧붙이기도 됩니다.\n- 초안은 바로 쓰고, 모르는 정보는 [회사명]처럼 빈칸으로 남깁니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "zqw02M+1o1ktBhEeKVc3Eyzf8YTF5Qby0ghmAYXHYnzswTpg5cXtxCMjcJKRN/8vSonHqGx79ajVI8ZTxOQ0DA=="
+  "sig": "j+QLRqcux62hAeWexAI9awgP+4j4nmLSLhg3TC2XLXG7JLxs4+79fHVttI/rJwy06T2ILg/Wf008J6uLbAG9AA=="
 }
