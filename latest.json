@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.2.8",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.8/HyperSeven-Office-bundle-3.2.8.zip",
-    "size": 5287832,
-    "sha256": "3a626ede3511d176cf6dc19fd2f36a1b09a85485f1177ae4ab84ce0c974b67de",
+    "version": "3.2.9",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.9/HyperSeven-Office-bundle-3.2.9.zip",
+    "size": 5287926,
+    "sha256": "581881961749def82e7b30cbbc7fbab2cf1a164b87f25f5b1558c8d4539a86d7",
     "shellMin": "3.2.0",
-    "notes": "처음 열면 작업 창과 하이퍼 AI 가 함께 열립니다.\n- 필요 없으면 닫으면 되고, 닫은 상태는 다음에도 그대로입니다.\n- 응원 창이 더 단순해졌습니다."
+    "notes": "한글 입력을 고쳤습니다.\n- 인텔 맥처럼 조금 느린 컴퓨터에서 빠르게 칠 때 글자가 빠지던 문제(“취소하고”가 “취하”로)를 고쳤습니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "1gImpsNRC2bdRgELPSVBL+DJXj8QabJXd/jNecknPqSTDd6aIipNslUoMG0Fv05X9n0rhyH8IJFINiib0csGCQ=="
+  "sig": "uvl7SG2CtDgz+zsJi50NU/m9h7Q33eMSq+HRQsd7xvGUKc2uW8L3RxUgJ5hLI3MmqfnCLo8skPlebpDbBDc6Dg=="
 }
