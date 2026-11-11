@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "date": "2026-11-11",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "펜으로 첨삭하면 AI 가 그대로 고칩니다.\n- 줄 긋기, 줄 긋고 고쳐 쓰기, ∨ 끼워 넣기·띄어 쓰기, ⌒ 붙여 쓰기 같은 교정 부호를 알아봅니다.\n- 여백에 적은 메모도 읽어 그 문단에 반영합니다.\n- 같은 낱말이 여러 곳에 있어도 표시한 자리만 고칩니다.\n- AI 도우미가 새 연결 방식으로 더 안정적으로 동작합니다.",
+  "notes": "새 설치 파일입니다. 그동안 받은 기능이 처음부터 모두 들어 있습니다.\n- 하이퍼 AI 를 내 Anthropic API 키로 바로 씁니다.\n- 응원을 매달 또는 한 번으로 고를 수 있습니다.\n- 한글을 빠르게 쳐도 글자가 그대로 들어갑니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-arm64.dmg",
-        "size": 149914434,
-        "sha256": "c5084ca33e4d0dde9c8c33482cbbf7480e2a9a68e28cf0844e9a53cf097bdbfd"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-3.3.0-arm64.dmg",
+        "size": 149948095,
+        "sha256": "b5260658b226a27d363aa7158f96658f8a2be6c962aec59ec55155bea4679753"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-arm64.zip",
-        "size": 149450691,
-        "sha256": "b34bdbb1be0de82e0aaa75128679d6fd46199fee6937f05c5d238af901996cf7"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-3.3.0-arm64.zip",
+        "size": 149468887,
+        "sha256": "e50a5c520647f0f44784120f7ef8786f13330c186e8b867c54f7983f8deb06ed"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-x64.dmg",
-        "size": 157491124,
-        "sha256": "53515920179675f9633667f788be12f95051943b4630f1db0c25af87aeab59d6"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-3.3.0-x64.dmg",
+        "size": 157513729,
+        "sha256": "07b009fd243212e335e2519c019ad455b86b97e2eac80dceb91319abab90fe09"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-x64.zip",
-        "size": 157050215,
-        "sha256": "766051ba6c82d0f8c6968ba53ad67607d061a164e4f33e006a1bddc62e512e24"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-3.3.0-x64.zip",
+        "size": 157068358,
+        "sha256": "294d96b0eee16a0315f51a778dc423f154e48d92433250c3c1199cdee71d8cde"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-win-x64.exe",
-        "size": 118923173,
-        "sha256": "05ffb7e7abd51a133da94252215620072766199e1e750f8300ed2e204a9450c6"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-3.3.0-win-x64.exe",
+        "size": 118939502,
+        "sha256": "1c758152fb43617a826d094c9bea0d1afc13f6654f38c0cf8b7a221bb30ed2d8"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.0/HyperSeven-Office-3.2.0-win-x64.zip",
-        "size": 161300912,
-        "sha256": "d1838d314f27eaab45556010c23939058bbede81f8248b339dbdb44b8e423036"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-3.3.0-win-x64.zip",
+        "size": 161322638,
+        "sha256": "558b8047a96f9db44ddbb91d8909839e6bfc41772aef49b4f7e32523c7ac3829"
       }
     }
   },
   "bundle": {
-    "version": "3.2.11",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.11/HyperSeven-Office-bundle-3.2.11.zip",
-    "size": 5289910,
-    "sha256": "2d0a9931094882469d905b4e1e239f697b0850a6679bf074a4dfae94e0ffafa0",
-    "shellMin": "3.2.0",
-    "notes": "응원을 매달 또는 한 번, 고르기 쉽게 바꿨습니다.\n- 매달 응원은 프로그램 사용료처럼 월 ₩3,900로 꾸준히 응원합니다.\n- 한 번 응원은 ₩6,900부터 금액을 골라 응원합니다."
+    "version": "3.3.0",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-bundle-3.3.0.zip",
+    "size": 5289884,
+    "sha256": "e6d06c5c3626a43fb361ee213bd3a8b76e6872ef4926c149d3845aae6a6b017e",
+    "shellMin": "3.3.0",
+    "notes": "새 설치 파일입니다. 그동안 받은 기능이 처음부터 모두 들어 있습니다.\n- 하이퍼 AI 를 내 Anthropic API 키로 바로 씁니다.\n- 응원을 매달 또는 한 번으로 고를 수 있습니다.\n- 한글을 빠르게 쳐도 글자가 그대로 들어갑니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "Qe0Mg/JDxQB8pahE4Fe75nLBxfstnJLRxaxzc6INqX+9e7v+54uIz5XcqOfwVUsecWSuD7KUv4koflEkGacpCw=="
+  "sig": "gWx2GdrZmFjy22mOnazHYJClfF29HEuCwKfjq9FHISs7cRWkhtBtBhOyJvze35LksIi+9z8fJ0ks1cHrVhpJCQ=="
 }
