@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.2.10",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.10/HyperSeven-Office-bundle-3.2.10.zip",
-    "size": 5288706,
-    "sha256": "bc10bdb97583a31aa1623465d204d63923a58d9eef66db1f660bd1c3133370ba",
+    "version": "3.2.11",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.11/HyperSeven-Office-bundle-3.2.11.zip",
+    "size": 5289910,
+    "sha256": "2d0a9931094882469d905b4e1e239f697b0850a6679bf074a4dfae94e0ffafa0",
     "shellMin": "3.2.0",
-    "notes": "하이퍼 AI 를 내 Anthropic API 키로 바로 씁니다.\n- 로그인한 뒤 키를 한 번 넣으면, 다음부터는 로그인만 하면 됩니다.\n- 연결은 월 ₩6,900이고, 정식 결제를 열기 전까지는 무료입니다."
+    "notes": "응원을 매달 또는 한 번, 고르기 쉽게 바꿨습니다.\n- 매달 응원은 프로그램 사용료처럼 월 ₩3,900로 꾸준히 응원합니다.\n- 한 번 응원은 ₩6,900부터 금액을 골라 응원합니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "QC0RklRYi4WLfvkqMbAyvDf/dwECqXuFCrpWBOVrkyVOqTGmDZV+Fvw2Ef8q+HlFt3ksO6eOngnyrQW3vqkiAQ=="
+  "sig": "Qe0Mg/JDxQB8pahE4Fe75nLBxfstnJLRxaxzc6INqX+9e7v+54uIz5XcqOfwVUsecWSuD7KUv4koflEkGacpCw=="
 }
