@@ -1,42 +1,42 @@
 {
   "product": "hyperseven-cad",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "date": "2026-11-11",
   "minVersion": "0.0.0",
-  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.1.1",
-  "notes": "하이퍼세븐 캐드 1.1.1 (맥: 애플 실리콘·인텔, 윈도우 10·11 x64)\n\n**하이퍼 AI**\n- AI 의 이름이 하이퍼 AI 가 되었습니다: 하이퍼 AI 라이트 · 하이퍼 AI · 하이퍼 AI 프로 · 하이퍼 AI 맥스. 단계마다 맡는 일이 있고, 큰 일은 위 단계로 올리거나 아래 단계에 맡겨 함께 일합니다. AI 창에 그 차례의 협업 경로가 보입니다.\n- 지침과 도구를 캐드에 맞게 다듬어 같은 일을 더 적은 왕복과 토큰으로 정확하게 합니다. 명령 매개변수 설명을 보강했고(504곳), 명령 이름 색인을 넣었습니다. 질의에서 개수만·짧게 보기를 고를 수 있고, 여러 요소를 명령 하나로 바꿉니다.\n- 내 API 키는 하이퍼세븐 계정으로 로그인한 뒤에만 넣습니다. 이 컴퓨터의 키체인에 계정별로 저장되어 다시 넣지 않아도 됩니다.\n- 요금: 하이퍼 AI는 내 Anthropic API 키를 연결해 씁니다. 연결은 월 $10(₩13,900)이며, 정식 결제를 시작하기 전까지 무료입니다.\n- 응원: 매달 응원(월 $5 · ₩6,900, 프로그램 사용료처럼 부담 없이, 언제든 멈춤)과 한 번 응원(₩9,900부터)으로 나눴습니다. 기본은 매달 응원입니다. 커피·비트코인도 그대로입니다.\n\n**저장·내보내기**\n- 다른 이름으로 저장·내보내기에서 형식을 먼저 고르는 창이 열립니다. 맥의 저장 창에서 형식이 보이지 않아 .sdz·.ifc 만 되는 것처럼 보이던 문제를 고쳤습니다.\n- 내보내기 형식 22가지를 도면·BIM·교환·3D 모델·그림·웹으로 묶어 보입니다. BIM 요소가 있는 문서를 DWG·DXF 로 저장하면 그 자리에서 알립니다.\n\n**고친 것과 바뀐 것**\n- 미리 보기(계획)로 만든 요소의 id 가 확정한 뒤에도 같습니다.\n- 매스의 건축면적·부피가 물량에 나옵니다. 문·창은 걸린 벽의 층으로 셉니다.\n- 늘이기에서 옮기지 못한 요소를 까닭과 함께 알립니다.\n- 영어 화면을 다듬었습니다: 제안 막대·뷰 큐브·명령 찾기 칸이 겹치지 않고, 예제의 설명과 실·시점·시트 이름이 영어로 나옵니다.\n- 명령 찾기에서 '패밀리 만들기·편집·놓기·불러오기', 'Family Editor' 같은 이름으로도 정의(패밀리) 기능을 찾습니다.\n- 응원 카드는 오른쪽 위 ✕ 로 닫습니다.\n- 마이크로소프트 스토어판은 웹 새 판 알림을 띄우지 않습니다(스토어가 업데이트합니다).\n\n**라이선스·고지**\n- 하이퍼세븐 캐드의 라이선스(Apache-2.0)와 함께 쓴 오픈소스 구성요소·글꼴의 라이선스 원문이 설치 묶음에 들어 있습니다(설정 › 정보 › 라이선스 보기).\n- SKP 보조 프로그램(supercad-skp)은 GPL-3.0이며, 전체 소스는 이 릴리스의 supercad-skp-1.1.1-source.tar.gz에 있습니다.\n- AI의 답과 AI 렌더는 틀릴 수 있습니다. 치수·법규 같은 사실은 확인하고 쓰세요. 하이퍼 AI 는 Anthropic 의 모델로 동작합니다.\n\n**설치**\n- 맥: dmg를 열어 응용 프로그램 폴더로 옮깁니다(애플 공증).\n- 윈도우: zip을 풀고 supercad.exe를 엽니다. 아직 코드 서명 전이라 처음 열 때 '추가 정보 → 실행'을 누릅니다.",
+  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.1.2",
+  "notes": "하이퍼세븐 캐드 1.1.2 (맥: 애플 실리콘·인텔, 윈도우 10·11 x64)\n\n**요금은 두 가지**\n- 구독하기: 하이퍼 AI가 켜집니다(내 Anthropic API 키로 일하고, AI 사용료는 내 Anthropic 계정에서 나갑니다). 월 $10(₩13,900)이고 처음 7일은 무료입니다. 정식 결제를 시작하기 전까지는 무료입니다.\n- 응원하기: 매달(월 $5 · ₩6,900) 또는 한 번(₩9,900부터). 앱은 그대로이고, 다음 버전을 응원합니다.\n- 계정 창과 AI 창에는 '하이퍼 AI · 상태'와 [구독하기], [♥ 응원하기]만 둡니다. 상태 글은 '결제 준비 중 · 지금은 무료', '무료 체험 · N일 남음', '무료 체험이 끝났습니다', '구독 중' 가운데 하나입니다.\n\n**설계 자동화 카드를 하이퍼 AI가 수행합니다**\n- 카드는 하이퍼 AI에게 맡기는 업무 지시의 틀입니다. 대지 → 법규 조건 → 매스 대안 → 점검 → BIM → 도면 세트 카드를 하이퍼 AI가 차례로 수행합니다. 만든 것은 제안(보라)으로 남고, 카드가 멈추면 사람이 보고 [통과]를 누릅니다.\n- 매스 대안·다시 재기 점검·BIM 바꾸기·도면 세트 같은 계산은 하이퍼 AI가 부르는 도구가 되었습니다. 그래서 수치가 정확합니다.\n- 카드는 한 장씩 지시 하나로 보내므로 카드가 늘어도 토큰이 불어나지 않습니다. 대안을 고르는 일은 사람의 선택이라 AI를 다시 부르지 않습니다.\n- 구독하고 API 키를 연결하기 전에는 [시뮬레이션 보기]로 어떻게 도는지 예시를 보여 줍니다. 이때 모델은 바뀌지 않습니다.\n\n**둘러보기 고침**\n- 돌려 보기의 중심이 끌기를 시작한 곳 아래에 보이는 면이 됩니다. 멀리 있는 객체 위에서 Shift+오른쪽 끌기를 하면 그 객체를 중심으로 돕니다(SketchUp·Rhino 습관이면 그냥 끌기). 도는 동안 중심에 작은 점이 보입니다.\n- 이동은 잡은 곳이 커서를 그대로 따라옵니다. 가까운 것이 너무 빨리, 먼 것이 너무 느리게 움직이던 문제를 고쳤습니다.\n- 휠·꼬집기 확대는 커서 아래 점으로 다가갑니다. 멀리 있는 객체에도 바로 다가갑니다.\n- 숨긴 것·꺼진 레이어·단면에 잘린 쪽은 중심으로 잡지 않습니다. 빈 곳에서 시작하면 예전처럼 화면 가운데의 보는 점 둘레로 돕니다.\n- PAN·3DORBIT 명령, 트랙패드 두 손가락 이동·Option 돌려 보기, 옆 칸과 시트·단면 보기의 이동도 같은 규칙을 따릅니다.\n\n**저장**\n- SKP 로 저장한 파일의 저장 기록에 실제로 저장한 프로그램(하이퍼세븐 캐드와 판 번호)을 적습니다. 다른 프로그램 이름을 적지 않습니다.\n\n**라이선스·고지**\n- 하이퍼세븐 캐드의 라이선스(Apache-2.0)와 함께 쓴 오픈소스 구성요소·글꼴의 라이선스 원문이 설치 묶음에 들어 있습니다(설정 › 정보 › 라이선스 보기).\n- SKP 보조 프로그램(supercad-skp)은 GPL-3.0이며, 전체 소스는 이 릴리스의 supercad-skp-1.1.2-source.tar.gz에 있습니다.\n- AI의 답과 AI 렌더는 틀릴 수 있습니다. 치수·법규 같은 사실은 확인하고 쓰세요. 하이퍼 AI는 Anthropic의 모델로 동작합니다.\n\n**설치**\n- 맥: dmg를 열어 응용 프로그램 폴더로 옮깁니다(애플 공증).\n- 윈도우: zip을 풀고 supercad.exe를 엽니다. 아직 코드 서명 전이라 처음 열 때 '추가 정보 → 실행'을 누릅니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.1/HyperSeven-CAD-1.1.1-arm64.dmg",
-        "size": 79010101,
-        "sha256": "4d61e343fe1a83b2735b71f7dc485895cd3848488ec0374c8b9b4e2cdb884c84"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.2/HyperSeven-CAD-1.1.2-arm64.dmg",
+        "size": 78922446,
+        "sha256": "8e1d788cb3176b03e7582c37728bf462e45bd53fd490ef5ccbc37223d97c9b24"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.1/HyperSeven-CAD-1.1.1-arm64.zip",
-        "size": 71706411,
-        "sha256": "49ddc7ab597daa98dee2f1cbc5a5d532617923e0fdb766afd4147bbb8490ed17"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.2/HyperSeven-CAD-1.1.2-arm64.zip",
+        "size": 71660513,
+        "sha256": "c044d07f8199c4f92bdd959de1ee89a4220c981c69a6acf653a94f727e803976"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.1/HyperSeven-CAD-1.1.1-x64.dmg",
-        "size": 90842412,
-        "sha256": "2c3cc509dc0e02ab4b52ddabe9ef0179164c4ef93ea96f594bf4ccf39ce02177"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.2/HyperSeven-CAD-1.1.2-x64.dmg",
+        "size": 90882028,
+        "sha256": "4855630f242fb8ff3fc7fc5c149429ec8fa36c93cb07e312af0610b86f77f63c"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.1/HyperSeven-CAD-1.1.1-x64.zip",
-        "size": 81427768,
-        "sha256": "3dfd129023d00c8fbcda680e51fffc8dadb1e01aa32ac4dd311a9d2df1a2b1ab"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.2/HyperSeven-CAD-1.1.2-x64.zip",
+        "size": 81465421,
+        "sha256": "7861a7e08f8a42aa9a83fd3a6f947f46ef2e275edbec9c22cc091d964d4bd871"
       }
     }
   },
   "win": {
     "x64": {
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.1/HyperSeven-CAD-1.1.1-win-x64.zip",
-        "size": 90557248,
-        "sha256": "725e23ea6cc466a236ee9d2778414b3fbc967f2fb50dc91bc2759bfcecb4374e"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.1.2/HyperSeven-CAD-1.1.2-win-x64.zip",
+        "size": 90593757,
+        "sha256": "3589667a11758029bd1e658a84300885826e5b5e8768ad8b1a20a2b56dbc2140"
       }
     }
   }
