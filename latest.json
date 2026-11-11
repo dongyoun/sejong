@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.3.0",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.0/HyperSeven-Office-bundle-3.3.0.zip",
-    "size": 5289884,
-    "sha256": "e6d06c5c3626a43fb361ee213bd3a8b76e6872ef4926c149d3845aae6a6b017e",
-    "shellMin": "3.3.0",
-    "notes": "새 설치 파일입니다. 그동안 받은 기능이 처음부터 모두 들어 있습니다.\n- 하이퍼 AI 를 내 Anthropic API 키로 바로 씁니다.\n- 응원을 매달 또는 한 번으로 고를 수 있습니다.\n- 한글을 빠르게 쳐도 글자가 그대로 들어갑니다."
+    "version": "3.3.1",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.1/HyperSeven-Office-bundle-3.3.1.zip",
+    "size": 5290838,
+    "sha256": "3b480ed9e3f0384c3f472fadbbcbcc7d233e951b7a13e7eeb755257767e88350",
+    "shellMin": "3.2.0",
+    "notes": "구독과 응원, 두 가지로 간단해졌습니다.\n- 구독하기: 하이퍼 AI 연결이 켜집니다. 처음 7일은 무료입니다.\n- 응원하기: 앱은 그대로, 매달 또는 한 번 응원합니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "gWx2GdrZmFjy22mOnazHYJClfF29HEuCwKfjq9FHISs7cRWkhtBtBhOyJvze35LksIi+9z8fJ0ks1cHrVhpJCQ=="
+  "sig": "BhdqsL69gptjCDPQhT2AksDIIkyPtzHrZ3WsEh7JyEc6EVcekgR8pQUg/rHzAVFH0nwCaPRk4Wv4eefJBLz3Aw=="
 }
