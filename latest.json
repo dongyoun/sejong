@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.2.9",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.9/HyperSeven-Office-bundle-3.2.9.zip",
-    "size": 5287926,
-    "sha256": "581881961749def82e7b30cbbc7fbab2cf1a164b87f25f5b1558c8d4539a86d7",
+    "version": "3.2.10",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.2.10/HyperSeven-Office-bundle-3.2.10.zip",
+    "size": 5288706,
+    "sha256": "bc10bdb97583a31aa1623465d204d63923a58d9eef66db1f660bd1c3133370ba",
     "shellMin": "3.2.0",
-    "notes": "한글 입력을 고쳤습니다.\n- 인텔 맥처럼 조금 느린 컴퓨터에서 빠르게 칠 때 글자가 빠지던 문제(“취소하고”가 “취하”로)를 고쳤습니다."
+    "notes": "하이퍼 AI 를 내 Anthropic API 키로 바로 씁니다.\n- 로그인한 뒤 키를 한 번 넣으면, 다음부터는 로그인만 하면 됩니다.\n- 연결은 월 ₩6,900이고, 정식 결제를 열기 전까지는 무료입니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "uvl7SG2CtDgz+zsJi50NU/m9h7Q33eMSq+HRQsd7xvGUKc2uW8L3RxUgJ5hLI3MmqfnCLo8skPlebpDbBDc6Dg=="
+  "sig": "QC0RklRYi4WLfvkqMbAyvDf/dwECqXuFCrpWBOVrkyVOqTGmDZV+Fvw2Ef8q+HlFt3ksO6eOngnyrQW3vqkiAQ=="
 }
