@@ -3155,3 +3155,5 @@ footer [data-email] {
     font-size: 15px;
   }
 }
+
+.plans-legal { margin-top: 10px; font-size: 13px; opacity: 0.75; }
