@@ -8,10 +8,10 @@
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
   <title>Checkout — HyperSeven</title>
-  <meta name="description" content="HyperSeven AI subscription checkout." />
+  <meta name="description" content="HyperSeven checkout for subscriptions and support." />
   <meta property="og:site_name" content="HyperSeven Labs" />
   <meta property="og:title" content="Checkout — HyperSeven" />
-  <meta property="og:description" content="HyperSeven AI subscription checkout." />
+  <meta property="og:description" content="HyperSeven checkout for subscriptions and support." />
   <meta property="og:image" content="https://hyperseven.pages.dev/assets/og-en.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
@@ -42,7 +42,7 @@
 
 <main>
     <div class="wrap doc-head pay">
-      <div class="kicker">HyperSeven AI subscription</div>
+      <div class="kicker">HyperSeven</div>
       <h1 id="pay-h">Opening checkout…</h1>
       <p id="pay-p">One moment, please.</p>
     </div>
@@ -53,16 +53,16 @@
       var env = "sandbox", token = "";
       var H = document.getElementById('pay-h'), P = document.getElementById('pay-p');
       var say = function (h, p) { H.textContent = h; P.textContent = p; };
-      if (!/[?&]_ptxn=/.test(location.search)) return say('HyperSeven AI subscription', 'Start your subscription from the account button in the app.');
-      if (!token || !window.Paddle) return say('Checkout coming soon', 'Subscriptions open soon.');
+      if (!/[?&]_ptxn=/.test(location.search)) return say('HyperSeven checkout', 'Subscriptions and support start in the app.');
+      if (!token || !window.Paddle) return say('Checkout coming soon', 'Opening soon.');
       if (env === 'sandbox') Paddle.Environment.set('sandbox');
       Paddle.Initialize({
         token: token,
         checkout: { settings: { displayMode: 'overlay', locale: 'en', allowLogout: false } },
         eventCallback: function (e) {
           if (e.name === 'checkout.loaded') say('Checkout', 'When you are done, return to the app.');
-          if (e.name === 'checkout.completed') say('Your subscription has started', 'Return to the app and it is ready to use. You can close this window.');
-          if (e.name === 'checkout.closed' && !/started/.test(H.textContent)) say('Checkout closed', 'You can start again any time from the account button in the app.');
+          if (e.name === 'checkout.completed') say('Payment complete — thank you', 'Return to the app and it is ready. You can close this window.');
+          if (e.name === 'checkout.closed' && !/complete/.test(H.textContent)) say('Checkout closed', 'You can start again any time in the app.');
         },
       });
     })();

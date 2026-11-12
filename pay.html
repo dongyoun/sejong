@@ -8,10 +8,10 @@
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
   <title>결제 — 하이퍼세븐</title>
-  <meta name="description" content="하이퍼세븐 AI 구독 결제." />
+  <meta name="description" content="하이퍼세븐 구독·응원 결제." />
   <meta property="og:site_name" content="HyperSeven Labs" />
   <meta property="og:title" content="결제 — 하이퍼세븐" />
-  <meta property="og:description" content="하이퍼세븐 AI 구독 결제." />
+  <meta property="og:description" content="하이퍼세븐 구독·응원 결제." />
   <meta property="og:image" content="https://hyperseven.pages.dev/assets/og.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
@@ -42,7 +42,7 @@
 
 <main>
     <div class="wrap doc-head pay">
-      <div class="kicker">하이퍼세븐 AI 구독</div>
+      <div class="kicker">하이퍼세븐</div>
       <h1 id="pay-h">결제 화면을 여는 중…</h1>
       <p id="pay-p">잠시만 기다려 주세요.</p>
     </div>
@@ -53,16 +53,16 @@
       var env = "sandbox", token = "";
       var H = document.getElementById('pay-h'), P = document.getElementById('pay-p');
       var say = function (h, p) { H.textContent = h; P.textContent = p; };
-      if (!/[?&]_ptxn=/.test(location.search)) return say('하이퍼세븐 AI 구독', '구독은 앱의 계정 단추에서 시작합니다.');
-      if (!token || !window.Paddle) return say('결제 준비 중', '구독은 곧 열립니다.');
+      if (!/[?&]_ptxn=/.test(location.search)) return say('하이퍼세븐 결제', '구독과 응원은 앱에서 시작합니다.');
+      if (!token || !window.Paddle) return say('결제 준비 중', '곧 열립니다.');
       if (env === 'sandbox') Paddle.Environment.set('sandbox');
       Paddle.Initialize({
         token: token,
         checkout: { settings: { displayMode: 'overlay', locale: 'ko', allowLogout: false } },
         eventCallback: function (e) {
           if (e.name === 'checkout.loaded') say('결제', '결제를 마치면 앱으로 돌아가 주세요.');
-          if (e.name === 'checkout.completed') say('구독이 시작되었습니다', '앱으로 돌아가면 바로 쓸 수 있습니다. 이 창은 닫아도 됩니다.');
-          if (e.name === 'checkout.closed' && !/시작되었/.test(H.textContent)) say('결제를 닫았습니다', '앱의 계정 단추에서 언제든 다시 시작할 수 있습니다.');
+          if (e.name === 'checkout.completed') say('결제가 끝났습니다 — 고맙습니다', '앱으로 돌아가면 바로 반영됩니다. 이 창은 닫아도 됩니다.');
+          if (e.name === 'checkout.closed' && !/끝났습니다/.test(H.textContent)) say('결제를 닫았습니다', '앱에서 언제든 다시 시작할 수 있습니다.');
         },
       });
     })();
