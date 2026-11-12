@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.4.2",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-bundle-3.4.2.zip",
-    "size": 5294695,
-    "sha256": "781553e41cf6cca2fb15d1283ad64bba674b85d2ef7dcb49e772798dc5313c14",
+    "version": "3.4.3",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.3/HyperSeven-Office-bundle-3.4.3.zip",
+    "size": 5295025,
+    "sha256": "abe23359a6ada693631530d289cdd1740715e710490db6027f69c78bb0f7b242",
     "shellMin": "3.2.0",
-    "notes": "카카오와 애플로도 로그인합니다.\n- 하이퍼세븐 계정을 카카오·Apple·Google 가운데 편한 것으로 시작합니다."
+    "notes": "한글을 쓰고 Enter 를 누르면 줄이 한 번만 바뀝니다.\n- 맥 한글 입력기에서 글자를 쓰다 Enter 를 누를 때 빈 줄이 하나 더 생기던 것을 바로잡았습니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "EgsTwBuBX5s0vaY+tFChbwPzS6qrjMusDci1HP4RRKUeJ/T/ALFp6P6vVIKWZc0VsutydIJWAZbz32O0XbXHAg=="
+  "sig": "Wsadpz7Y0DNuvKypiwAmlAtJGnPmbO7TbeCMFiqVG0u8dYmTtVxDqVsCAZ/goNQw+WAcrxnHMtCcq0lZE8eUDw=="
 }
