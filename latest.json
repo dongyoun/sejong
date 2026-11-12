@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.3.2",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.2/HyperSeven-Office-bundle-3.3.2.zip",
-    "size": 5290698,
-    "sha256": "a25db35c4af6df3a3552deb5776e5c9a7332346a5dfb13efab15a223fbf71b30",
+    "version": "3.3.3",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.3.3/HyperSeven-Office-bundle-3.3.3.zip",
+    "size": 5292026,
+    "sha256": "f84b6294d7b24cf0d290d600901639eafa534390847ff9fbda277fcdf23884e8",
     "shellMin": "3.2.0",
-    "notes": "하이퍼 AI 를 더 빨리 시작합니다.\n- 처음 쓸 때 확인 체크 없이 바로 키를 넣고 씁니다."
+    "notes": "응원하기가 잘 보입니다.\n- 메뉴 막대 오른쪽 ♥ 응원, 작업 창 아래 띠에서 바로 응원할 수 있습니다.\n- 응원해 주신 분께는 고맙다는 인사가 보입니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "U/AEGSHebJUOvD5ImRQmK1zQHWxUqTTgBWv0Mm+szzuMmuLtaLvIurv8SLP/C8CLZ1mRnnAJbCxG4c6g0506Cw=="
+  "sig": "m7IQLHUfBvmtdBAZzHcdTOu8czOfNRX0oUcMXxRQyhi+rMCiMtxls6NrHsGXrn23qgIIffM6Cu69mcazUNgVBQ=="
 }
