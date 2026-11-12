@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.4.0",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-bundle-3.4.0.zip",
-    "size": 5293924,
-    "sha256": "251dafc9c3df2d88108abb3350432f5b5c301bfe175e67a987f454875cc6fda9",
+    "version": "3.4.1",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.1/HyperSeven-Office-bundle-3.4.1.zip",
+    "size": 5294372,
+    "sha256": "975c85168eacec486795075b0206387e626c6c489dadc82dc3413e9aceb460dd",
     "shellMin": "3.2.0",
-    "notes": "하이퍼 AI 를 더 쉽게, 더 정확하게 씁니다.\n- 내 API 키를 넣으면 바로 맞는 키인지 확인합니다. 키를 만드는 곳으로 가는 링크도 있습니다.\n- 로그인이나 키 넣기를 마치면 보내던 요청을 이어서 처리합니다.\n- 하이퍼 AI 맥스가 최신 모델로 더 똑똑하고 저렴해졌습니다.\n- 결제를 마치고 돌아오면 구독과 응원이 바로 반영됩니다.\n- 응원해 주신 분은 새 기능을 먼저 받습니다."
+    "notes": "하이퍼 AI 구독을 미리 알려 드립니다.\n- 하이퍼 AI는 12월 14일부터 구독(월 ₩6,900, 처음 7일 무료)으로 씁니다. 그때까지는 무료입니다.\n- 응원하기 아래에 서포터 혜택을 적었습니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "4veGVN6nlbdFunjGfjbsuoxJxTedicxd4UfXjYuNoXJImb/ZMZegdersG/Xbseop2YqmsStJXUn3+NuxpG65CQ=="
+  "sig": "xe4hDl/xasFT0x29pIIB/iRWhG6ahVZvTifIhnL/04V5l8VuWFBe0V4hteQcyG658md2Iom1KoejvKjvjndJDQ=="
 }
