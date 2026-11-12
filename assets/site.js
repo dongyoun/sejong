@@ -17,7 +17,7 @@ const primary = (os) =>
     box.querySelectorAll('[data-os]').forEach((el) => (el.matches('.btn') ? el : el.querySelector('.btn'))?.classList.toggle('ghost', el.dataset.os !== os));
   });
 primary(ON_WIN ? 'win' : 'mac');
-// 복사 단추 (응원 쪽의 비트코인 주소): 누르면 data-copy 를 클립보드로, 잠깐 data-done 글로 바꿨다가 되돌린다
+// 복사 단추: 누르면 data-copy 를 클립보드로, 잠깐 data-done 글로 바꿨다가 되돌린다
 document.querySelectorAll('[data-copy]').forEach((b) =>
   b.addEventListener('click', async () => {
     const was = b.textContent;

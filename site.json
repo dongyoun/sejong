@@ -6,9 +6,9 @@
   "downloadBase": "https://github.com/dongyoun/sejong/releases/download/v{version}",
   "contact": "https://github.com/dongyoun/sejong/issues",
   "minVersion": "0.0.0",
-  "sponsor": "https://buymeacoffee.com/hypersevenlabs",
+  "sponsor": "support.html",
   "email": "essay.archi@gmail.com",
-  "btc": "1PMxfoS1Lxm5vi4k7XDiHDD9Nfyu8me61Y",
+  "btc": "",
   "msStore": "https://apps.microsoft.com/detail/9NZLHSVCKQ55",
   "paddle": {
     "env": "production",
