@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "3.4.0",
+  "version": "3.4.2",
   "date": "2026-11-12",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "하이퍼 AI 를 더 쉽게, 더 정확하게 씁니다.\n- 내 API 키를 넣으면 바로 맞는 키인지 확인합니다. 키를 만드는 곳으로 가는 링크도 있습니다.\n- 로그인이나 키 넣기를 마치면 보내던 요청을 이어서 처리합니다.\n- 하이퍼 AI 맥스가 최신 모델로 더 똑똑하고 저렴해졌습니다.\n- 결제를 마치고 돌아오면 구독과 응원이 바로 반영됩니다.\n- 응원해 주신 분은 새 기능을 먼저 받습니다.",
+  "notes": "카카오와 애플로도 로그인합니다.\n- 하이퍼세븐 계정을 카카오·Apple·Google 가운데 편한 것으로 시작합니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-3.4.0-arm64.dmg",
-        "size": 149946698,
-        "sha256": "558bc645d2501e6f1be81f95e48dda018dc368fafd5ae8ed5a39a6949131e57d"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-arm64.dmg",
+        "size": 149958532,
+        "sha256": "546ad3f16aceb2b53c16937bdd8bbc17fe9759c44d478727aca1c14ea38151e2"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-3.4.0-arm64.zip",
-        "size": 149477505,
-        "sha256": "c38c5afd8c9f2712af63b79bd120f88c4fc73553e80a5ce0ff168572fbd2b14e"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-arm64.zip",
+        "size": 149478195,
+        "sha256": "da4f38ba57b7fd4486435333521bb36f6c7a4618568453f4b2ebc3c1b2e5be72"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-3.4.0-x64.dmg",
-        "size": 157512732,
-        "sha256": "618f306e5d28c1eb8a6a8e75df5fc198535071dc69b011649b7617157d551957"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-x64.dmg",
+        "size": 157517958,
+        "sha256": "5d64418403850b65d7c969b7147a36837c3f8062d45a61b9a48113ada0c5f32d"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-3.4.0-x64.zip",
-        "size": 157077036,
-        "sha256": "3326da19f0aea2b77c6abb2b29bdaeb4abc60cf6444aaaa67d2a51ac7be52fba"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-x64.zip",
+        "size": 157077717,
+        "sha256": "52c54f7d75bf443602dc33b37be0ee747cd7f997c6d38dfb19b44c60095ee212"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-3.4.0-win-x64.exe",
-        "size": 118949031,
-        "sha256": "82864701e09720536b85c1de1476f674cf287333db5eaddd6afa140f8ad88c46"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-win-x64.exe",
+        "size": 118945591,
+        "sha256": "1515dca2cb92053088b82c48d48da8080f54278f59f11ea21aec5698cfd52173"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.0/HyperSeven-Office-3.4.0-win-x64.zip",
-        "size": 161331207,
-        "sha256": "190bebf9b51c52e905af2ae5c9eded8722c9d3cc345dc98879349c405f0da6d9"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-win-x64.zip",
+        "size": 161330020,
+        "sha256": "6aede40a9872332033d9a557677f5190dc105f73ff30fe35c393c6b6e5793126"
       }
     }
   },
   "bundle": {
-    "version": "3.4.1",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.1/HyperSeven-Office-bundle-3.4.1.zip",
-    "size": 5294372,
-    "sha256": "975c85168eacec486795075b0206387e626c6c489dadc82dc3413e9aceb460dd",
+    "version": "3.4.2",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-bundle-3.4.2.zip",
+    "size": 5294695,
+    "sha256": "781553e41cf6cca2fb15d1283ad64bba674b85d2ef7dcb49e772798dc5313c14",
     "shellMin": "3.2.0",
-    "notes": "하이퍼 AI 구독을 미리 알려 드립니다.\n- 하이퍼 AI는 12월 14일부터 구독(월 ₩6,900, 처음 7일 무료)으로 씁니다. 그때까지는 무료입니다.\n- 응원하기 아래에 서포터 혜택을 적었습니다."
+    "notes": "카카오와 애플로도 로그인합니다.\n- 하이퍼세븐 계정을 카카오·Apple·Google 가운데 편한 것으로 시작합니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "xe4hDl/xasFT0x29pIIB/iRWhG6ahVZvTifIhnL/04V5l8VuWFBe0V4hteQcyG658md2Iom1KoejvKjvjndJDQ=="
+  "sig": "EgsTwBuBX5s0vaY+tFChbwPzS6qrjMusDci1HP4RRKUeJ/T/ALFp6P6vVIKWZc0VsutydIJWAZbz32O0XbXHAg=="
 }
