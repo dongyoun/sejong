@@ -9,5 +9,9 @@
   "sponsor": "https://buymeacoffee.com/hypersevenlabs",
   "email": "essay.archi@gmail.com",
   "btc": "1PMxfoS1Lxm5vi4k7XDiHDD9Nfyu8me61Y",
-  "msStore": "https://apps.microsoft.com/detail/9NZLHSVCKQ55"
+  "msStore": "https://apps.microsoft.com/detail/9NZLHSVCKQ55",
+  "paddle": {
+    "env": "production",
+    "token": "live_cabb4139eaefc5352ff10633596"
+  }
 }

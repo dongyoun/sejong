@@ -50,7 +50,7 @@
   <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
   <script>
     (function () {
-      var env = "sandbox", token = "";
+      var env = "production", token = "live_cabb4139eaefc5352ff10633596";
       var H = document.getElementById('pay-h'), P = document.getElementById('pay-p');
       var say = function (h, p) { H.textContent = h; P.textContent = p; };
       if (!/[?&]_ptxn=/.test(location.search)) return say('하이퍼세븐 결제', '구독과 응원은 앱에서 시작합니다.');
