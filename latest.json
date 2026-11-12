@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.4.4",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.4/HyperSeven-Office-bundle-3.4.4.zip",
-    "size": 5295097,
-    "sha256": "da8dee7e9c781604cfaf901af5288136f3faed51ab77e302eded8c82772ff710",
+    "version": "3.4.5",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.5/HyperSeven-Office-bundle-3.4.5.zip",
+    "size": 5295056,
+    "sha256": "231554abee25779fd70592212caaf4fda295fb37ccebda9bf9ec12479f8328ba",
     "shellMin": "3.2.0",
-    "notes": "하이퍼 AI와 응원하기 화면이 간결해졌습니다.\n- 꼭 필요한 값과 단추만 보이고, 약관은 작은 링크로 열어 봅니다."
+    "notes": "Enter 처리를 다듬었습니다.\n- 표 칸과 문단에서 Enter 를 누른 만큼 정확히 줄이 바뀝니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "Siqpp3pSRGs/XZgDpx9KRhwjTmqW8s05CQz4XWmFNcovRBWUeTsnig/2rMtaT/RXk9WaLkrKvLcrh5wW+umLAw=="
+  "sig": "yO/xSHFWCcF/m5lRtnjFZOs+AjLR9k9UK7xyC9Ct3soYReyXExt6OhwbplEH9bWDuRAb8s8MdhStaRVIeQSMDA=="
 }
