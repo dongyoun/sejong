@@ -1,7 +1,7 @@
 {
   "product": "sejong",
   "version": "3.4.2",
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
   "notes": "카카오와 애플로도 로그인합니다.\n- 하이퍼세븐 계정을 카카오·Apple·Google 가운데 편한 것으로 시작합니다.",
@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.4.3",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.3/HyperSeven-Office-bundle-3.4.3.zip",
-    "size": 5295025,
-    "sha256": "abe23359a6ada693631530d289cdd1740715e710490db6027f69c78bb0f7b242",
+    "version": "3.4.4",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.4/HyperSeven-Office-bundle-3.4.4.zip",
+    "size": 5295097,
+    "sha256": "da8dee7e9c781604cfaf901af5288136f3faed51ab77e302eded8c82772ff710",
     "shellMin": "3.2.0",
-    "notes": "한글을 쓰고 Enter 를 누르면 줄이 한 번만 바뀝니다.\n- 맥 한글 입력기에서 글자를 쓰다 Enter 를 누를 때 빈 줄이 하나 더 생기던 것을 바로잡았습니다."
+    "notes": "하이퍼 AI와 응원하기 화면이 간결해졌습니다.\n- 꼭 필요한 값과 단추만 보이고, 약관은 작은 링크로 열어 봅니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "Wsadpz7Y0DNuvKypiwAmlAtJGnPmbO7TbeCMFiqVG0u8dYmTtVxDqVsCAZ/goNQw+WAcrxnHMtCcq0lZE8eUDw=="
+  "sig": "Siqpp3pSRGs/XZgDpx9KRhwjTmqW8s05CQz4XWmFNcovRBWUeTsnig/2rMtaT/RXk9WaLkrKvLcrh5wW+umLAw=="
 }
