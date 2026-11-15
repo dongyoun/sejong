@@ -66,7 +66,9 @@
           <a href="#g-sheet-sum">Add a total and other functions</a>
           <a href="#g-sheet-chart">Make a chart</a>
           <a href="#g-slide-new">Create a presentation</a>
+          <a href="#g-pdf-sign">Edit and sign a PDF you received</a>
           <a href="#g-ai-connect">Turn on HyperAI</a>
+          <a href="#g-ai-mcp">Edit documents with an AI agent (MCP)</a>
           <a href="#g-report">Report a problem</a><!--/GTOC-->
           <div class="grp">Documents</div>
           <a href="#files">Opening and saving</a>
@@ -136,7 +138,7 @@
         <section>
           <h2 id="guides">Step by step</h2>
           <p>Follow common tasks from start to finish. Every step and picture here is replayed in the real app and re-captured for each release.</p>
-          <div class="g-index"><div><b>Docs</b><a href="#g-doc-letter">Write a one-page notice</a><a href="#g-doc-convert">Edit a received Hangul file and send it as Word</a><a href="#g-doc-table">Insert and fill a table</a><a href="#g-doc-ink">Mark up with the markup pen</a></div><div><b>Sheets</b><a href="#g-sheet-sum">Add a total and other functions</a><a href="#g-sheet-chart">Make a chart</a></div><div><b>Slides</b><a href="#g-slide-new">Create a presentation</a></div><div><b>HyperAI</b><a href="#g-ai-connect">Turn on HyperAI</a></div><div><b>Help</b><a href="#g-report">Report a problem</a></div></div>
+          <div class="g-index"><div><b>Docs</b><a href="#g-doc-letter">Write a one-page notice</a><a href="#g-doc-convert">Edit a received Hangul file and send it as Word</a><a href="#g-doc-table">Insert and fill a table</a><a href="#g-doc-ink">Mark up with the markup pen</a></div><div><b>Sheets</b><a href="#g-sheet-sum">Add a total and other functions</a><a href="#g-sheet-chart">Make a chart</a></div><div><b>Slides</b><a href="#g-slide-new">Create a presentation</a></div><div><b>PDF</b><a href="#g-pdf-sign">Edit and sign a PDF you received</a></div><div><b>AI</b><a href="#g-ai-connect">Turn on HyperAI</a><a href="#g-ai-mcp">Edit documents with an AI agent (MCP)</a></div><div><b>Help</b><a href="#g-report">Report a problem</a></div></div>
           <article class="guide" id="g-doc-letter">
             <div class="g-kicker">Docs</div>
             <h3>Write a one-page notice</h3>
@@ -214,8 +216,21 @@
             </ol>
             <div class="g-tips"><b>Good to know</b><ul><li>To turn a document into slides, choose <span class="menu">File › Make Slides from This Document…</span> in the document. Each heading becomes a slide.</li><li>When shapes overlap, hold <kbd>⌥</kbd> and click to select the shapes underneath in turn.</li></ul></div>
           </article>
+          <article class="guide" id="g-pdf-sign">
+            <div class="g-kicker">PDF</div>
+            <h3>Edit and sign a PDF you received</h3>
+            <p class="g-lead">Fix the text of a PDF right where it is, add a handwritten signature and save. No need to convert it to Hangul or Word first.</p>
+            <ol class="g-steps">
+              <li><p>When you open a PDF, a <b>PDF</b> menu appears and the toolbar switches to PDF tools.</p><figure><img src="../assets/manual/en/pdf-sign-window.webp" width="1280" height="800" alt="Edit and sign a PDF you received — 1" loading="lazy"></figure></li>
+              <li><p>To fix text, choose <span class="menu">PDF › Edit Text &amp; Images</span> and click the text. An edit box opens in place with the same font and size, with the cursor where you clicked. When you are done, click outside it or press <kbd>⌘Enter</kbd>.</p><figure><img src="../assets/manual/en/pdf-sign-edit.webp" width="569" height="134" alt="Edit and sign a PDF you received — 2" loading="lazy"></figure></li>
+              <li><p>For a signature, choose <span class="menu">PDF › Add Signature…</span>, sign in the box with your mouse or trackpad, then click <b>Place</b>. You can also type your name in a handwriting font or use a picture of a stamp. Signatures you make are remembered for next time.</p><figure><img src="../assets/manual/en/pdf-sign-signature.webp" width="588" height="402" alt="Edit and sign a PDF you received — 3" loading="lazy"></figure></li>
+              <li><p>Click where the signature goes. Drag the placed signature to move it, or drag a corner to resize it.</p><figure><img src="../assets/manual/en/pdf-sign-signed.webp" width="482" height="221" alt="Edit and sign a PDF you received — 4" loading="lazy"></figure></li>
+              <li><p>Press <kbd>⌘S</kbd> (<kbd>Ctrl+S</kbd> on Windows) to save. The edited text and the signature go into the PDF, so they look the same in any other PDF app.</p></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>For highlight, underline or strikethrough, drag over the text, then choose from <span class="menu">PDF › Mark Text</span>. Notes, pen, shapes and text boxes are in the <span class="menu">PDF</span> menu too.</li><li>Delete pages, insert pages from another PDF (merge) or extract chosen pages to a new PDF from <span class="menu">PDF › Organize Pages</span>.</li><li>For heavy changes, choose <span class="menu">PDF › Convert to Editable Document</span> and edit it freely as a document.</li><li>Scanned pages and vertical text can't be edited. Password-protected PDFs open for viewing only.</li></ul></div>
+          </article>
           <article class="guide" id="g-ai-connect">
-            <div class="g-kicker">HyperAI</div>
+            <div class="g-kicker">AI</div>
             <h3>Turn on HyperAI</h3>
             <p class="g-lead">HyperAI reads your document and proposes edits. Connect it with your own Claude API key or an AI model on your computer (Ollama).</p>
             <ol class="g-steps">
@@ -224,6 +239,17 @@
               <li><p>For a model on your computer, choose <b>Model on This Computer (Ollama)</b> in the level menu at the bottom of the panel. Install <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a> and download a model; then just enter its address. Running on this computer keeps your document on it, with no usage fees.</p><figure><img src="../assets/manual/en/ai-connect-local.webp" width="339" height="337" alt="Turn on HyperAI — 3" loading="lazy"></figure></li>
             </ol>
             <div class="g-tips"><b>Good to know</b><ul><li>Answers appear as they are written, and the <b>Send</b> button turns into <b>Stop</b> while it runs. Proposed edits only enter the document when you click <b>Apply</b>, and <kbd>⌘Z</kbd> undoes them.</li><li>Select text and right-click to polish it with HyperAI right away.</li><li>See <a href="pricing.html">Pricing</a>. AI usage is billed to your own key by Anthropic.</li></ul></div>
+          </article>
+          <article class="guide" id="g-ai-mcp">
+            <div class="g-kicker">AI</div>
+            <h3>Edit documents with an AI agent (MCP)</h3>
+            <p class="g-lead">Connect HyperSeven Office to an AI agent such as Claude Code or Claude Desktop, and the agent reads and edits Hangul, Word, Excel and PowerPoint files directly. It comes inside the app, so there is nothing else to install.</p>
+            <ol class="g-steps">
+              <li><p>Choose <span class="menu">Tools › Connect AI (MCP)…</span> to see the commands. For Claude Code, run the first command once in Terminal. For Claude Desktop, add the second box to mcpServers in its settings file (claude_desktop_config.json) and restart it. <b>Copy</b> next to each box copies it.</p><figure><img src="../assets/manual/en/ai-mcp-connect.webp" width="648" height="748" alt="Edit documents with an AI agent (MCP) — 1" loading="lazy"></figure></li>
+              <li><p>Ask the agent in plain words, for example <b>“In notice.hwp, change the move date to the 15th of next month.”</b> The agent looks at the document structure (office_outline), reads only the paragraphs it needs (office_read), changes just those spots (office_apply) and saves (office_save).</p></li>
+              <li><p>Open the edited file with <span class="menu">File › Open…</span>. Only what you asked for has changed; formatting such as the title size and bold stays as it was.</p><figure><img src="../assets/manual/en/ai-mcp-result.webp" width="404" height="109" alt="Edit documents with an AI agent (MCP) — 3" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>Saving over the original keeps the previous file as one .bak copy.</li><li>Excel and PowerPoint files use the same tools. The tool and command list and the command line are in <a href="#agents">AI agents</a>.</li><li>Documents are handled only on this computer. HyperSeven Office sends nothing out; only the text the agent reads goes to that agent's AI.</li></ul></div>
           </article>
           <article class="guide" id="g-report">
             <div class="g-kicker">Help</div>
@@ -423,7 +449,7 @@
 
         <section>
           <h2 id="pdf">PDF</h2>
-          <p>Opening a PDF adds a PDF menu.</p>
+          <p>Opening a PDF adds a PDF menu. For a walk-through, follow <a href="#g-pdf-sign">Edit and sign a PDF you received</a>.</p>
           <ul>
             <li><b>Annotations</b> — Mark Text (highlight, underline, strikethrough), comments, Draw (pen, rectangle, ellipse, line, arrow), text boxes, Add Image… and Add Signature…. Select an annotation to delete it with <kbd>Delete</kbd> or nudge it with the arrow keys.</li>
             <li><b>Edit Text &amp; Images</b> — change body text and find and replace it.</li>
@@ -478,7 +504,7 @@
 
         <section>
           <h2 id="agents">Connecting AI agents (MCP and the command line)</h2>
-          <p>A command-line tool and an MCP server run inside the app without opening a window; there's nothing else to install. Agents such as Claude Code and Claude Desktop read Hangul (HWP, HWPX), Word, Excel and PowerPoint files by their structure, change only what needs changing, and save.</p>
+          <p>A command-line tool and an MCP server run inside the app without opening a window; there's nothing else to install. Agents such as Claude Code and Claude Desktop read Hangul (HWP, HWPX), Word, Excel and PowerPoint files by their structure, change only what needs changing, and save. For the steps with pictures, see <a href="#g-ai-mcp">Edit documents with an AI agent</a>.</p>
           <h3>Connecting</h3>
           <p>Copy the command from <span class="menu">Tools › Connect AI (MCP)…</span>:</p>
           <pre class="code">claude mcp add hyperseven -- "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven" mcp</pre>

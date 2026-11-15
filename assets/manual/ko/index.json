@@ -1,5 +1,26 @@
 [
  {
+  "guide": "doc-letter",
+  "name": "title",
+  "file": "doc-letter-title.webp",
+  "w": 1280,
+  "h": 330
+ },
+ {
+  "guide": "doc-letter",
+  "name": "pagenum",
+  "file": "doc-letter-pagenum.webp",
+  "w": 388,
+  "h": 256
+ },
+ {
+  "guide": "doc-convert",
+  "name": "window",
+  "file": "doc-convert-window.webp",
+  "w": 1280,
+  "h": 800
+ },
+ {
   "guide": "doc-table",
   "name": "grid",
   "file": "doc-table-grid.webp",
@@ -19,6 +40,20 @@
   "file": "doc-spell-menu.webp",
   "w": 292,
   "h": 200
+ },
+ {
+  "guide": "doc-ink",
+  "name": "tools",
+  "file": "doc-ink-tools.webp",
+  "w": 392,
+  "h": 62
+ },
+ {
+  "guide": "doc-ink",
+  "name": "pen",
+  "file": "doc-ink-pen.webp",
+  "w": 355,
+  "h": 90
  },
  {
   "guide": "sheet-sum",
@@ -63,6 +98,34 @@
   "h": 800
  },
  {
+  "guide": "pdf-sign",
+  "name": "window",
+  "file": "pdf-sign-window.webp",
+  "w": 1280,
+  "h": 800
+ },
+ {
+  "guide": "pdf-sign",
+  "name": "edit",
+  "file": "pdf-sign-edit.webp",
+  "w": 537,
+  "h": 134
+ },
+ {
+  "guide": "pdf-sign",
+  "name": "signature",
+  "file": "pdf-sign-signature.webp",
+  "w": 588,
+  "h": 405
+ },
+ {
+  "guide": "pdf-sign",
+  "name": "signed",
+  "file": "pdf-sign-signed.webp",
+  "w": 438,
+  "h": 221
+ },
+ {
   "guide": "ai-connect",
   "name": "pane",
   "file": "ai-connect-pane.webp",
@@ -84,45 +147,24 @@
   "h": 320
  },
  {
+  "guide": "ai-mcp",
+  "name": "connect",
+  "file": "ai-mcp-connect.webp",
+  "w": 648,
+  "h": 735
+ },
+ {
+  "guide": "ai-mcp",
+  "name": "result",
+  "file": "ai-mcp-result.webp",
+  "w": 355,
+  "h": 109
+ },
+ {
   "guide": "report",
   "name": "dialog",
   "file": "report-dialog.webp",
   "w": 548,
   "h": 346
- },
- {
-  "guide": "doc-letter",
-  "name": "title",
-  "file": "doc-letter-title.webp",
-  "w": 1280,
-  "h": 330
- },
- {
-  "guide": "doc-letter",
-  "name": "pagenum",
-  "file": "doc-letter-pagenum.webp",
-  "w": 388,
-  "h": 256
- },
- {
-  "guide": "doc-convert",
-  "name": "window",
-  "file": "doc-convert-window.webp",
-  "w": 1280,
-  "h": 800
- },
- {
-  "guide": "doc-ink",
-  "name": "tools",
-  "file": "doc-ink-tools.webp",
-  "w": 392,
-  "h": 62
- },
- {
-  "guide": "doc-ink",
-  "name": "pen",
-  "file": "doc-ink-pen.webp",
-  "w": 355,
-  "h": 90
  }
 ]

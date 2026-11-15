@@ -35,6 +35,20 @@
   "h": 260
  },
  {
+  "guide": "doc-ink",
+  "name": "tools",
+  "file": "doc-ink-tools.webp",
+  "w": 392,
+  "h": 62
+ },
+ {
+  "guide": "doc-ink",
+  "name": "pen",
+  "file": "doc-ink-pen.webp",
+  "w": 441,
+  "h": 90
+ },
+ {
   "guide": "sheet-sum",
   "name": "list",
   "file": "sheet-sum-list.webp",
@@ -77,6 +91,34 @@
   "h": 800
  },
  {
+  "guide": "pdf-sign",
+  "name": "window",
+  "file": "pdf-sign-window.webp",
+  "w": 1280,
+  "h": 800
+ },
+ {
+  "guide": "pdf-sign",
+  "name": "edit",
+  "file": "pdf-sign-edit.webp",
+  "w": 569,
+  "h": 134
+ },
+ {
+  "guide": "pdf-sign",
+  "name": "signature",
+  "file": "pdf-sign-signature.webp",
+  "w": 588,
+  "h": 402
+ },
+ {
+  "guide": "pdf-sign",
+  "name": "signed",
+  "file": "pdf-sign-signed.webp",
+  "w": 482,
+  "h": 221
+ },
+ {
   "guide": "ai-connect",
   "name": "pane",
   "file": "ai-connect-pane.webp",
@@ -98,24 +140,24 @@
   "h": 337
  },
  {
+  "guide": "ai-mcp",
+  "name": "connect",
+  "file": "ai-mcp-connect.webp",
+  "w": 648,
+  "h": 748
+ },
+ {
+  "guide": "ai-mcp",
+  "name": "result",
+  "file": "ai-mcp-result.webp",
+  "w": 404,
+  "h": 109
+ },
+ {
   "guide": "report",
   "name": "dialog",
   "file": "report-dialog.webp",
   "w": 548,
   "h": 376
- },
- {
-  "guide": "doc-ink",
-  "name": "tools",
-  "file": "doc-ink-tools.webp",
-  "w": 392,
-  "h": 62
- },
- {
-  "guide": "doc-ink",
-  "name": "pen",
-  "file": "doc-ink-pen.webp",
-  "w": 441,
-  "h": 90
  }
 ]
