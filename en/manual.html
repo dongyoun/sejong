@@ -58,6 +58,16 @@
           <div class="grp">Start</div>
           <a href="#start">Getting started</a>
           <a href="#screen">The window</a>
+          <!--GTOC--><div class="grp">Step by step</div>
+          <a href="#g-doc-letter">Write a one-page notice</a>
+          <a href="#g-doc-convert">Edit a received Hangul file and send it as Word</a>
+          <a href="#g-doc-table">Insert and fill a table</a>
+          <a href="#g-doc-ink">Mark up with the markup pen</a>
+          <a href="#g-sheet-sum">Add a total and other functions</a>
+          <a href="#g-sheet-chart">Make a chart</a>
+          <a href="#g-slide-new">Create a presentation</a>
+          <a href="#g-ai-connect">Turn on HyperAI</a>
+          <a href="#g-report">Report a problem</a><!--/GTOC-->
           <div class="grp">Documents</div>
           <a href="#files">Opening and saving</a>
           <a href="#writer">Writing</a>
@@ -70,7 +80,8 @@
           <a href="#pdf">PDF</a>
           <div class="grp">Tools</div>
           <a href="#fonts">Fonts</a>
-          <a href="#assistant">AI assistant</a>
+          <a href="#assistant">HyperAI</a>
+          <a href="#account">Account and subscription</a>
           <a href="#agents">Connecting AI agents</a>
           <a href="#keys">Keyboard shortcuts</a>
           <a href="#prefs">Settings and info</a>
@@ -99,7 +110,7 @@
           <ul>
             <li>Fixes that don't need a new installer arrive as a “What's New” window. They take effect when you choose <b>Restart Now</b>, or the next time you open the app.</li>
             <li>Only when something must be fixed does an update window appear that can't be closed. Use <b>Save and Quit</b> to keep your work, then install the new version.</li>
-            <li>To check yourself, choose <span class="menu">HyperSeven Office › Check for Updates…</span> or <span class="menu">Tools › Check for Updates…</span>.</li>
+            <li>To check yourself, choose <span class="menu ui">HyperSeven Office › Check for Updates…</span> or <span class="menu">Tools › Check for Updates…</span>.</li>
             <li>Replacing the app in Applications with a new installer (on Windows, running the new .exe over the old one) keeps your documents and settings.</li>
           </ul>
         </section>
@@ -108,16 +119,123 @@
           <h2 id="screen">The window</h2>
           <p>From top to bottom: the <b>menu bar</b>, the <b>toolbar</b>, the <b>formatting bar</b>, <b>document tabs</b>, the <b>editing area with the task pane</b>, and the <b>status bar</b>.</p>
           <ul>
-            <li>The right end of the <b>menu bar</b> holds Find a Command, AI, Shortcuts and Task Pane buttons, plus the document name. Click the logo on the left for app info.</li>
+            <li><b>Mode lights</b> — <b>Docs</b> (blue), <b>Sheets</b> (green) and <b>Slides</b> (orange) at the left of the menu bar show the kind of the current document by color. Click one to go to an open document of that kind, or to create one; <kbd>Shift</kbd>-click always creates a new one.</li>
+            <li>The right end of the <b>menu bar</b> holds Find a Command, AI, Shortcuts, Task Pane and Supporter buttons, plus Sign in. Click the logo on the left for app info. Open this manual with <span class="menu">Tools › Manual</span>.</li>
             <li><b>Find a Command</b> <kbd>⌘K</kbd> — no need to know where a menu lives. Type a few letters of a command and run it. It's the same key in every HyperSeven tool.</li>
             <li><b>Menus change with the document.</b> Documents, Sheets and Slides each have their own menus. Inside a table a Table menu appears, selecting an object adds an Object menu, and PDFs get a PDF menu.</li>
             <li>The <b>formatting bar</b> has styles, font, size, bold, italic, underline, strikethrough, superscript and subscript, text color, highlight, alignment, line spacing, numbering and bullets.</li>
-            <li><b>Document tabs</b> appear once two or more documents are open. Each tab shows the format, and a ● marks unsaved changes.</li>
+            <li><b>Document tabs</b> appear once two or more documents are open. Each tab shows the format, and a ● marks unsaved changes. With many tabs they narrow, and the current document's tab always stays visible.</li>
+            <li><b>Markup pen</b> — draw and highlight on the document with the pen button at the bottom right of the document window. Markup stays on screen only; it is not printed or saved into the file.</li>
             <li>The <b>task pane</b> has Object, Table, Format, Styles and Outline tabs. Turn it on and off with <span class="menu">View › Task Pane</span>.</li>
             <li>The <b>status bar</b> shows page, column, line, cell and section, insert/overwrite mode and a zoom slider (10–400%). Click the page field to go to a page.</li>
           </ul>
           <div class="callout"><p>Right-click any menu item or toolbar button to change its shortcut on the spot. For a dark window, choose <span class="menu">View › Appearance</span>.</p></div>
         </section>
+
+        <!--GUIDES-->
+        <section>
+          <h2 id="guides">Step by step</h2>
+          <p>Follow common tasks from start to finish. Every step and picture here is replayed in the real app and re-captured for each release.</p>
+          <div class="g-index"><div><b>Docs</b><a href="#g-doc-letter">Write a one-page notice</a><a href="#g-doc-convert">Edit a received Hangul file and send it as Word</a><a href="#g-doc-table">Insert and fill a table</a><a href="#g-doc-ink">Mark up with the markup pen</a></div><div><b>Sheets</b><a href="#g-sheet-sum">Add a total and other functions</a><a href="#g-sheet-chart">Make a chart</a></div><div><b>Slides</b><a href="#g-slide-new">Create a presentation</a></div><div><b>HyperAI</b><a href="#g-ai-connect">Turn on HyperAI</a></div><div><b>Help</b><a href="#g-report">Report a problem</a></div></div>
+          <article class="guide" id="g-doc-letter">
+            <div class="g-kicker">Docs</div>
+            <h3>Write a one-page notice</h3>
+            <p class="g-lead">Make the title large and centered, add a page number, and save as a Hangul file and a PDF.</p>
+            <ol class="g-steps">
+              <li><p>Type the title and body in a new document. Each <kbd>Enter</kbd> starts a new paragraph.</p></li>
+              <li><p>Drag over the title to select it. On the formatting toolbar, click <b>Bold</b>, type <kbd>20</kbd> in the font size box, and click <b>Center</b>.</p><figure><img src="../assets/manual/en/doc-letter-title.webp" width="1280" height="330" alt="Write a one-page notice — 2" loading="lazy"></figure></li>
+              <li><p>Choose <span class="menu">Page › Page Numbers…</span>, pick the position and style, then click <b>Insert</b>.</p><figure><img src="../assets/manual/en/doc-letter-pagenum.webp" width="402" height="255" alt="Write a one-page notice — 3" loading="lazy"></figure></li>
+              <li><p>Press <kbd>⌘S</kbd> (<kbd>Ctrl+S</kbd> on Windows) to save. The first time, choose a name and a format (HWP, HWPX or DOCX). For a PDF, choose <span class="menu">File › Save as PDF…</span>.</p></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>Start from a ready-made form in <span class="menu">File › Templates…</span>.</li><li>Most Hancom Hangul shortcuts work the same way. See every shortcut in <span class="menu">Tools › Shortcut Help</span>.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-convert">
+            <div class="g-kicker">Docs</div>
+            <h3>Edit a received Hangul file and send it as Word</h3>
+            <p class="g-lead">Open HWP, HWPX and DOCX files directly, edit them, and save in the format the recipient uses. Formatting stays as it was.</p>
+            <ol class="g-steps">
+              <li><p>Double-click the file, drag it onto the app window, or press <kbd>⌘O</kbd> (<kbd>Ctrl+O</kbd> on Windows). The lights at the top show the kind of the current document (Docs, Sheets, Slides) by color.</p><figure><img src="../assets/manual/en/doc-convert-window.webp" width="1280" height="800" alt="Edit a received Hangul file and send it as Word — 1" loading="lazy"></figure></li>
+              <li><p>Click where you want to edit and type. <kbd>⌘S</kbd> saves in the original format (HWP).</p></li>
+              <li><p>To send it as Word, choose <span class="menu">File › Export As › Word Document (DOCX)</span>. The original HWP file stays as it is.</p></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>You can also save as PDF, HTML, TXT or an image (PNG), all from <span class="menu">File › Export As</span>.</li><li>Password-protected documents open too. Enter the password when asked.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-table">
+            <div class="g-kicker">Docs</div>
+            <h3>Insert and fill a table</h3>
+            <p class="g-lead">Pick the size on the table button's grid, then fill the cells, moving with <kbd>Tab</kbd>.</p>
+            <ol class="g-steps">
+              <li><p>Click <b>Insert</b> on the menu bar to switch the toolbox, then click the <b>Table</b> button. Click the size you want on the grid (here 3 × 2).</p><figure><img src="../assets/manual/en/doc-table-grid.webp" width="760" height="307" alt="Insert and fill a table — 1" loading="lazy"></figure></li>
+              <li><p>Type and press <kbd>Tab</kbd> to go to the next cell. <kbd>Tab</kbd> in the last cell adds a row.</p><figure><img src="../assets/manual/en/doc-table-filled.webp" width="968" height="260" alt="Insert and fill a table — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>Click inside a table and a <b>Table</b> menu appears on the menu bar, with row and column insertion, merging and formulas.</li><li>As in Hangul, select a cell block with <kbd>F5</kbd> and press <kbd>M</kbd> to merge the cells.</li><li>Text separated by tabs or commas becomes a table at once with <span class="menu">Insert › Text to Table…</span>.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-ink">
+            <div class="g-kicker">Docs</div>
+            <h3>Mark up with the markup pen</h3>
+            <p class="g-lead">Draw and highlight on the document as with a red pen on paper. Markup stays on screen only; it is not printed or saved into the file.</p>
+            <ol class="g-steps">
+              <li><p>Click the pen button at the bottom right of the document window, or <span class="menu">Insert › Markup Pen</span>, to show the pen tools. Choose the red pen, highlighter or eraser, and a color.</p><figure><img src="../assets/manual/en/doc-ink-tools.webp" width="392" height="62" alt="Mark up with the markup pen — 1" loading="lazy"></figure></li>
+              <li><p>Drag to draw under the words to fix. Strokes stick to the text and move with it. Press <kbd>Esc</kbd> to put the pen away.</p><figure><img src="../assets/manual/en/doc-ink-pen.webp" width="441" height="90" alt="Mark up with the markup pen — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>With markup in place, ask HyperAI to “apply my markup”; it reads where you drew and proposes edits.</li><li>To print the markup too, turn on <b>Print markup</b> in the print window.</li></ul></div>
+          </article>
+          <article class="guide" id="g-sheet-sum">
+            <div class="g-kicker">Sheets</div>
+            <h3>Add a total and other functions</h3>
+            <p class="g-lead">Type = in a cell and the first letters of a function name, and a list appears. Pick a function, then drag over cells to add the range.</p>
+            <ol class="g-steps">
+              <li><p>Enter the items and amounts. <kbd>Tab</kbd> moves to the cell on the right; <kbd>Enter</kbd> moves to the first cell of the next row.</p></li>
+              <li><p>In B5, type <kbd>=</kbd> and then <kbd>SU</kbd>. The function list appears.</p><figure><img src="../assets/manual/en/sheet-sum-list.webp" width="560" height="363" alt="Add a total and other functions — 2" loading="lazy"></figure></li>
+              <li><p>Click <b>SUM</b> in the list to insert <kbd>=SUM(</kbd>. Then drag from B2 to B4 to add the range. The hint above the cell says the same.</p><figure><img src="../assets/manual/en/sheet-sum-range.webp" width="560" height="183" alt="Add a total and other functions — 3" loading="lazy"></figure></li>
+              <li><p>Press <kbd>Enter</kbd> to get the total. The app adds the closing parenthesis. Change an amount and the total updates by itself.</p><figure><img src="../assets/manual/en/sheet-sum-done.webp" width="560" height="180" alt="Add a total and other functions — 4" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>Select the empty cell under the numbers and choose <span class="menu">Insert › AutoSum</span> to insert <kbd>=SUM(…)</kbd> automatically.</li><li>Not sure which function you need? Find it in <span class="menu">Insert › Function…</span>.</li><li>If Korean input is on and you type <kbd>=ㄴㅕㅡ</kbd>, it becomes <kbd>=SUM</kbd> right away. Korean text inside quotes stays as it is.</li></ul></div>
+          </article>
+          <article class="guide" id="g-sheet-chart">
+            <div class="g-kicker">Sheets</div>
+            <h3>Make a chart</h3>
+            <p class="g-lead">Select the data and pick a chart type; the chart appears at once and follows your edits.</p>
+            <ol class="g-steps">
+              <li><p>Enter the headers and values, then drag from A1 to B5 to select them.</p></li>
+              <li><p>Choose <span class="menu">Insert › Chart › Column</span>. Drag the chart to move it and drag a corner to resize it.</p><figure><img src="../assets/manual/en/sheet-chart-chart.webp" width="900" height="460" alt="Make a chart — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>Select the chart and change its type, title and legend in <span class="menu">Insert › Edit Chart…</span>.</li><li>To put a table or chart into a document or slides, use <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>; it updates when you change the values in the sheet.</li></ul></div>
+          </article>
+          <article class="guide" id="g-slide-new">
+            <div class="g-kicker">Slides</div>
+            <h3>Create a presentation</h3>
+            <p class="g-lead">Click <b>Slides</b> in the lights at the top and a new presentation opens at once. Click a title box once and start typing.</p>
+            <ol class="g-steps">
+              <li><p>Click the title and subtitle boxes and type.</p></li>
+              <li><p>In <span class="menu">Slide › Change Theme…</span>, pick a theme you like and click <b>Change</b>. You can change it again at any time.</p><figure><img src="../assets/manual/en/slide-new-themes.webp" width="708" height="437" alt="Create a presentation — 2" loading="lazy"></figure></li>
+              <li><p>Choose <span class="menu">Slide › New Slide</span> and type in the content box. Each <kbd>Enter</kbd> adds a bullet line; <kbd>Tab</kbd> indents it one level.</p><figure><img src="../assets/manual/en/slide-new-deck.webp" width="1280" height="800" alt="Create a presentation — 3" loading="lazy"></figure></li>
+              <li><p>Start the show with <span class="menu">Slide Show › From Beginning</span> (<kbd>F5</kbd>). Advance with the arrow keys or a click, and press <kbd>Esc</kbd> to end.</p></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>To turn a document into slides, choose <span class="menu">File › Make Slides from This Document…</span> in the document. Each heading becomes a slide.</li><li>When shapes overlap, hold <kbd>⌥</kbd> and click to select the shapes underneath in turn.</li></ul></div>
+          </article>
+          <article class="guide" id="g-ai-connect">
+            <div class="g-kicker">HyperAI</div>
+            <h3>Turn on HyperAI</h3>
+            <p class="g-lead">HyperAI reads your document and proposes edits. Connect it with your own Claude API key or an AI model on your computer (Ollama).</p>
+            <ol class="g-steps">
+              <li><p>Open the HyperAI panel on the right with the <b>AI</b> button on the menu bar or <span class="menu">Tools › HyperAI</span>.</p><figure><img src="../assets/manual/en/ai-connect-pane.webp" width="340" height="653" alt="Turn on HyperAI — 1" loading="lazy"></figure></li>
+              <li><p>Click the gear (⚙) at the top of the panel to open the connection screen. Sign in (Apple, Google or Kakao) and turn on the connection with <b>Subscribe</b>; the first 7 days are free. Then enter your Claude API key or choose a model on your computer.</p><figure><img src="../assets/manual/en/ai-connect-setup.webp" width="339" height="380" alt="Turn on HyperAI — 2" loading="lazy"></figure></li>
+              <li><p>For a model on your computer, choose <b>Model on This Computer (Ollama)</b> in the level menu at the bottom of the panel. Install <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a> and download a model; then just enter its address. Running on this computer keeps your document on it, with no usage fees.</p><figure><img src="../assets/manual/en/ai-connect-local.webp" width="339" height="337" alt="Turn on HyperAI — 3" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>Answers appear as they are written, and the <b>Send</b> button turns into <b>Stop</b> while it runs. Proposed edits only enter the document when you click <b>Apply</b>, and <kbd>⌘Z</kbd> undoes them.</li><li>Select text and right-click to polish it with HyperAI right away.</li><li>See <a href="pricing.html">Pricing</a>. AI usage is billed to your own key by Anthropic.</li></ul></div>
+          </article>
+          <article class="guide" id="g-report">
+            <div class="g-kicker">Help</div>
+            <h3>Report a problem</h3>
+            <p class="g-lead">If something looks wrong, report it from the app. A few lines on what you did help a lot.</p>
+            <ol class="g-steps">
+              <li><p>Choose <span class="menu">Tools › Report a Problem…</span>, describe what happened and click <b>Send</b>. Your document's content is not sent; you choose whether to attach a picture.</p><figure><img src="../assets/manual/en/report-dialog.webp" width="548" height="376" alt="Report a problem — 1" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>Good to know</b><ul><li>If the app closes before you save, it asks on the next start whether to restore. Click <b>Restore</b> to get back what you typed.</li></ul></div>
+          </article>
+        </section>
+        <!--/GUIDES-->
 
         <section>
           <h2 id="files">Opening and saving</h2>
@@ -157,13 +275,13 @@
           </ul>
           <h3>New documents and templates</h3>
           <ul>
-            <li><span class="menu">File › New Document</span> <kbd>⌘N</kbd> starts with Hamchorom Batang 10 pt, 160% line spacing, on A4.</li>
+            <li><span class="menu">File › New Document (HWP)</span> <kbd>⌘N</kbd> starts with Hamchorom Batang 10 pt, 160% line spacing, on A4.</li>
             <li><span class="menu">File › New Compatible Document…</span> <kbd>⌃N</kbd>, <kbd>D</kbd> lets you pick HWP, HWPX or DOCX up front.</li>
             <li><span class="menu">File › Templates…</span> <kbd>⌃⌥N</kbd> offers a blank document and seven Korean-format templates: official letter, bulleted report, meeting minutes, business trip request, leave request, résumé and notice. Preview the first page, double-click to open.</li>
-            <li><span class="menu">File › Create From This</span> turns the current document into slides, or opens a new deck or workbook.</li>
+            <li><span class="menu">File › Make Slides from This Document…</span> turns the current document into slides, and <span class="menu">File › New Presentation (PPTX)</span> and <span class="menu">File › New Workbook (XLSX)</span> open other kinds. The <b>Docs</b>, <b>Sheets</b> and <b>Slides</b> lights at the top do the same.</li>
           </ul>
           <h3>Autosave and recovery</h3>
-          <p>Changed documents are autosaved every minute by default; set 1–60 minutes in <span class="menu">Settings › File</span>. Autosaves stay on your Mac. If the app quits unexpectedly, a Document Recovery window appears the next time you open it. PDFs and password-protected documents aren't autosaved.</p>
+          <p>Changed documents are autosaved every minute by default; set 1–60 minutes in <span class="menu">Tools › Settings…</span> › <b>File</b>. Autosaves stay on your Mac. If the app quits unexpectedly, a Document Recovery window appears the next time you open it. PDFs and password-protected documents aren't autosaved.</p>
           <h3>Passwords</h3>
           <ul>
             <li>Opening a protected file asks for its password. This works for older doc/xls/ppt files, Office (DOCX, XLSX, PPTX) files and HWPX.</li>
@@ -198,7 +316,7 @@
             <li><b>Mail merge and labels</b> — <span class="menu">Tools › Mail Merge</span>.</li>
             <li><b>AutoFill My Info</b> — fills blanks such as name, department and phone number from what you saved in <span class="menu">Tools › My Info…</span>.</li>
             <li><b>Compare Documents</b> and <b>Redact Personal Info</b> — in the <span class="menu">Review</span> menu.</li>
-            <li><b>Linked sheet values</b> — in Sheets, <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>, then <span class="menu">Paste Link</span> in a document. When the sheet changes, <span class="menu">Tools › Update Links</span> brings it up to date.</li>
+            <li><b>Linked sheet values</b> — in Sheets, <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>, then <span class="menu">Edit › Paste Link (Sheet Values)</span> in a document. When the sheet changes, <span class="menu">Tools › Update Links (Sheet Values)</span> brings it up to date.</li>
             <li><b>Insert File…</b> <kbd>⌃O</kbd> — inserts another document at the cursor.</li>
           </ul>
         </section>
@@ -252,7 +370,7 @@
             <li><b>Data</b> — sorting, Filter <kbd>⌘⇧L</kbd>, Text to Columns…, Remove Duplicates…, Data Validation…, Name Manager… and PivotTable… (built with formulas such as SUMIFS).</li>
             <li><b>Charts</b> — column, bar, line, pie, area and scatter, saved as standard Excel charts.</li>
             <li><b>View</b> — Freeze Panes (top row, first column) and Gridlines. Right-click a sheet tab to move it or set a Tab Color.</li>
-            <li><b>Linking to documents</b> — <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>, paste into a document or deck, and <span class="menu">Update Links</span> keeps it current.</li>
+            <li><b>Linking to documents</b> — <span class="menu">Edit › Copy as Link (to Documents and Slides)</span>, paste into a document or deck, and <span class="menu">Tools › Update Links (Sheet Values)</span> keeps it current.</li>
             <li><b>Printing</b> — prints the current sheet using the paper, margins, scale and print titles saved in the file. In Sheets you can set the <span class="menu">File › Print Area</span>.</li>
           </ul>
           <div class="tbl">
@@ -281,7 +399,7 @@
           <p>PowerPoint files (PPTX, PPSX, POTX and older PPT) open in Slides. Older PPT files are saved as new PPTX files.</p>
           <ul>
             <li><b>New decks</b> start from four themes and seven layouts.</li>
-            <li><b>Slides from a document</b> — in a document, <span class="menu">File › Create From This › Make Slides from This Document…</span>. Headings and body text become slides; right-click a slide to jump to its source paragraph.</li>
+            <li><b>Slides from a document</b> — in a document, <span class="menu">File › Make Slides from This Document…</span>. Headings and body text become slides; right-click a slide to jump to its source paragraph.</li>
             <li><b>Editing</b> — add text boxes, shapes, pictures and tables; align, order, group and rotate. <kbd>⌘M</kbd> (or <kbd>⌃M</kbd>) adds a slide, <kbd>⌘D</kbd> duplicates, <kbd>⌘G</kbd>·<kbd>⌘⇧G</kbd> group and ungroup, <kbd>Return</kbd> or <kbd>F2</kbd> edits text. Arrow keys nudge, ten times farther with <kbd>⇧</kbd>.</li>
             <li><b>Animations</b> — five entrance, two emphasis and four exit effects, starting on click, with previous or after previous, plus eight Transitions.</li>
           </ul>
@@ -327,13 +445,34 @@
         </section>
 
         <section>
-          <h2 id="assistant">AI assistant</h2>
-          <p>Open it with the <b>AI</b> button in the menu bar (or <span class="menu">Tools › AI Assistant</span>) and ask in plain words to read or edit documents, sheets and slides.</p>
+          <h2 id="assistant">HyperAI</h2>
+          <p>Open it on the right with the <b>AI</b> button in the menu bar or <span class="menu">Tools › HyperAI</span>. It reads your documents, sheets and slides and turns plain-language requests into proposed edits. To set it up the first time, see <a href="#g-ai-connect">Turn on HyperAI</a>.</p>
+          <h3>Ways to connect</h3>
           <ul>
-            <li>The first time, agree to the notice and enter a Claude API key (<code>sk-ant-…</code>). The key is encrypted in your Mac's keychain. Usage is billed to your own Anthropic account.</li>
-            <li>To keep everything offline, choose a model on your Mac (Ollama) instead.</li>
-            <li>Edits arrive as suggestion cards. Nothing changes until you click <b>Apply</b>, and <b>Undo</b> takes it back.</li>
-            <li>You can send just a selection, and copy-protected distribution documents are never sent. In the English interface, the assistant answers in English.</li>
+            <li><b>Sign in and subscribe</b> — sign in with Apple, Google or Kakao and turn on the connection with <b>Subscribe</b>. The first 7 days are free; prices are on the <a href="pricing.html">Pricing</a> page.</li>
+            <li><b>Your Claude API key</b> — enter an Anthropic API key (<code>sk-ant-…</code>) in the settings under the gear (⚙) at the top of the panel. The key is encrypted in this computer's keychain, and usage is billed to your own Anthropic account.</li>
+            <li><b>A model on your computer</b> — choose <b>Model on This Computer (Ollama)</b> in the level menu at the bottom of the panel and enter the address of Ollama or LM Studio. Running on this computer keeps your document on it, with no usage fees. Another computer on your network (for example <code>http://192.168.0.10:11434</code>) works too.</li>
+          </ul>
+          <h3>Using it</h3>
+          <ul>
+            <li><b>Levels</b> — at the bottom of the panel choose <b>Auto</b>, <b>HyperAI Lite</b>, <b>HyperAI</b>, <b>HyperAI Pro</b> or <b>HyperAI Max</b>. Auto picks for each request; higher levels are more thorough but slower and cost more.</li>
+            <li><b>Live answers and Stop</b> — answers appear as they are written, and the <b>Send</b> button becomes <b>Stop</b> while it runs.</li>
+            <li><b>Apply</b> — proposed edits arrive as cards. Nothing changes until you pick one and click <b>Apply</b>; clicking a card jumps to that place in the document. <kbd>⌘Z</kbd> undoes it.</li>
+            <li><b>Right-click</b> — select text and right-click to polish just that part with HyperAI.</li>
+            <li><b>With markup</b> — mark up with the <a href="#g-doc-ink">review pen</a>, then ask to “apply my markup”; HyperAI reads where you drew.</li>
+            <li><b>Dictation</b> — use the microphone button to speak your request.</li>
+            <li>You can send just a selection, and copy-protected distribution documents are never sent. In the English interface, HyperAI answers in English.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="account">Account, subscription and supporters</h2>
+          <p>Every editing feature is free without signing in. You sign in only to connect HyperAI or to become a supporter.</p>
+          <ul>
+            <li><b>Sign in</b> — use <b>Sign in</b> at the right of the menu bar with Apple, Google or Kakao. HyperSeven Office and CAD share one account.</li>
+            <li><b>Subscribe</b> — turns on the HyperAI connection (first 7 days free). AI usage through your own key or model is separate.</li>
+            <li><b>Supporter membership</b> — <span class="menu">Tools › Supporter membership</span>. Monthly or a one-year pack: get new features early and priority replies.</li>
+            <li><b>Cancel and refunds</b> — stop any time from <b>Manage subscription (cancel, payment method, receipts)</b> in the account window. See the <a href="refund.html">Refund</a> page for refunds.</li>
           </ul>
         </section>
 

@@ -8,10 +8,10 @@
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
   <title>매뉴얼 — 하이퍼세븐 오피스</title>
-  <meta name="description" content="하이퍼세븐 오피스 매뉴얼: 설치와 처음 열기, 열기와 저장, 글 문서·표·쪽, 맞춤법, 셈터, 보임터, PDF, 글꼴, AI 도우미와 AI 에이전트 연결, 단축키." />
+  <meta name="description" content="하이퍼세븐 오피스 매뉴얼: 설치와 처음 열기, 열기와 저장, 글 문서·표·쪽, 맞춤법, 셈, 발표, PDF, 글꼴, 하이퍼 AI와 AI 에이전트 연결, 단축키." />
   <meta property="og:site_name" content="HyperSeven Labs" />
   <meta property="og:title" content="매뉴얼 — 하이퍼세븐 오피스" />
-  <meta property="og:description" content="하이퍼세븐 오피스 매뉴얼: 설치와 처음 열기, 열기와 저장, 글 문서·표·쪽, 맞춤법, 셈터, 보임터, PDF, 글꼴, AI 도우미와 AI 에이전트 연결, 단축키." />
+  <meta property="og:description" content="하이퍼세븐 오피스 매뉴얼: 설치와 처음 열기, 열기와 저장, 글 문서·표·쪽, 맞춤법, 셈, 발표, PDF, 글꼴, 하이퍼 AI와 AI 에이전트 연결, 단축키." />
   <meta property="og:image" content="https://hyperseven.pages.dev/assets/og.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
@@ -58,6 +58,17 @@
           <div class="grp">시작</div>
           <a href="#start">시작하기</a>
           <a href="#screen">화면 둘러보기</a>
+          <!--GTOC--><div class="grp">따라 하기</div>
+          <a href="#g-doc-letter">공문 한 장 쓰기</a>
+          <a href="#g-doc-convert">받은 한글 파일 고쳐 워드로 보내기</a>
+          <a href="#g-doc-table">표 넣고 채우기</a>
+          <a href="#g-doc-spell">맞춤법 고치기</a>
+          <a href="#g-doc-ink">첨삭 펜으로 표시하기</a>
+          <a href="#g-sheet-sum">합계와 함수 넣기</a>
+          <a href="#g-sheet-chart">차트 만들기</a>
+          <a href="#g-slide-new">새 발표 만들기</a>
+          <a href="#g-ai-connect">하이퍼 AI 켜기</a>
+          <a href="#g-report">문제 알리기</a><!--/GTOC-->
           <div class="grp">문서</div>
           <a href="#files">열기와 저장</a>
           <a href="#writer">글 문서 쓰기</a>
@@ -65,12 +76,13 @@
           <a href="#pages">쪽과 인쇄</a>
           <a href="#proof">맞춤법과 교정</a>
           <div class="grp">다른 문서</div>
-          <a href="#sheet">셈터 (엑셀)</a>
-          <a href="#slides">보임터 (파워포인트)</a>
+          <a href="#sheet">셈 (엑셀)</a>
+          <a href="#slides">발표 (파워포인트)</a>
           <a href="#pdf">PDF</a>
           <div class="grp">도구</div>
           <a href="#fonts">글꼴</a>
-          <a href="#assistant">AI 도우미</a>
+          <a href="#assistant">하이퍼 AI</a>
+          <a href="#account">계정·구독·서포터</a>
           <a href="#agents">AI 에이전트 연결</a>
           <a href="#keys">단축키</a>
           <a href="#prefs">설정과 정보</a>
@@ -99,7 +111,7 @@
           <ul>
             <li>설치 파일을 다시 받지 않아도 되는 고침은 ‘새 기능’ 창으로 알립니다. <b>지금 다시 시작</b>하거나 다음에 켤 때 적용됩니다.</li>
             <li>꼭 고쳐야 하는 문제가 있을 때만 닫을 수 없는 업데이트 창이 뜹니다. 이때는 <b>저장하고 종료</b>로 문서를 지킨 뒤 새 버전을 받습니다.</li>
-            <li>직접 확인하려면 앱 메뉴의 <span class="menu">HyperSeven Office › 새 버전 확인…</span> 또는 <span class="menu">도구 › 새 버전 확인…</span>을 고릅니다.</li>
+            <li>직접 확인하려면 맥 앱 메뉴의 <span class="menu ui">HyperSeven Office › 새 버전 확인…</span> 또는 <span class="menu">도구 › 새 버전 확인…</span>을 고릅니다.</li>
             <li>새 설치 파일로 응용 프로그램 폴더의 앱을 바꿔 넣어도(윈도우는 새 .exe를 실행해 그 위에 설치해도) 문서와 설정은 그대로입니다.</li>
           </ul>
         </section>
@@ -108,16 +120,133 @@
           <h2 id="screen">화면 둘러보기</h2>
           <p>위에서부터 <b>메뉴 막대</b>, <b>도구 상자</b>, <b>서식 도구 모음</b>, <b>문서 탭</b>, <b>편집 화면과 작업 창</b>, <b>상태 표시줄</b>이 차례로 있습니다.</p>
           <ul>
-            <li><b>메뉴 막대</b> 오른쪽에 AI · 단축키 · 작업 창 단추와 문서 이름이 있습니다. 왼쪽 로고를 누르면 앱 정보가 열립니다.</li>
-            <li><b>메뉴는 문서 종류에 따라 바뀝니다.</b> 글 문서, 셈터, 보임터가 각자 메뉴를 쓰고, 표 안에서는 ‘표’, 개체를 고르면 ‘개체’, PDF 에서는 ‘PDF’ 메뉴가 더 붙습니다.</li>
+            <li><b>신호등</b> — 메뉴 막대 왼쪽의 <b>글</b>(파랑)·<b>셈</b>(초록)·<b>발표</b>(주황)는 지금 문서의 종류를 색으로 알려 줍니다. 누르면 그 종류의 열린 문서로 가고, 없으면 새로 만듭니다. <kbd>Shift</kbd>를 누른 채 누르면 늘 새로 만듭니다.</li>
+            <li><b>메뉴 막대</b> 오른쪽에 명령 찾기 · AI · 단축키 · 작업 창 · 서포터 단추와 로그인이 있습니다. 왼쪽 로고를 누르면 앱 정보가 열립니다. 매뉴얼은 <span class="menu">도구 › 매뉴얼</span>로 엽니다.</li>
+            <li><b>메뉴는 문서 종류에 따라 바뀝니다.</b> 글 문서, 셈, 발표가 각자 메뉴를 쓰고, 표 안에서는 ‘표’, 개체를 고르면 ‘개체’, PDF 에서는 ‘PDF’ 메뉴가 더 붙습니다.</li>
             <li><b>서식 도구 모음</b>에는 스타일, 글꼴, 크기, 진하게·기울임·밑줄·취소선·위/아래 첨자, 글자 색, 형광펜, 정렬, 줄 간격, 문단 번호와 글머리표가 있습니다.</li>
-            <li><b>문서 탭</b>은 문서가 둘 이상 열리면 나타납니다. 형식(HWP·PDF 등)과, 고친 뒤 저장하지 않은 문서에는 ● 표시가 붙습니다.</li>
+            <li><b>문서 탭</b>은 문서가 둘 이상 열리면 나타납니다. 형식(HWP·PDF 등)과, 고친 뒤 저장하지 않은 문서에는 ● 표시가 붙습니다. 탭이 많으면 좁아지고, 지금 문서의 탭은 늘 보입니다.</li>
+            <li><b>첨삭 펜</b> — 문서 창 오른쪽 아래의 펜 단추로 문서 위에 긋고 칠합니다. 화면에만 남고 인쇄·저장 파일에는 들어가지 않습니다.</li>
             <li><b>작업 창</b>에는 개체 · 표 · 서식 · 스타일 · 개요 탭이 있습니다. <span class="menu">보기 › 작업 창</span>으로 켜고 끕니다.</li>
             <li><b>명령 찾기</b> <kbd>⌘K</kbd> — 메뉴가 어디 있는지 몰라도 이름이나 초성 몇 자로 명령을 찾아 바로 실행합니다. 하이퍼세븐의 다른 도구에서도 같은 키입니다.</li>
             <li><b>상태 표시줄</b>은 쪽·단·줄·칸·구역, 삽입/수정 상태와 확대 막대(10~400%)를 보여 줍니다. 쪽 칸을 누르면 찾아가기가 열립니다.</li>
           </ul>
           <div class="callout"><p>메뉴 항목이나 도구 단추를 오른쪽 단추로 누르면 그 기능의 단축키를 바로 바꿀 수 있습니다. 화면을 어둡게 쓰려면 <span class="menu">보기 › 화면 테마</span>에서 고릅니다.</p></div>
         </section>
+
+        <!--GUIDES-->
+        <section>
+          <h2 id="guides">따라 하기</h2>
+          <p>자주 하는 일을 처음부터 끝까지 따라 합니다. 여기 적힌 순서와 그림은 앱을 새로 낼 때마다 실제 앱에서 그대로 해 보고 다시 찍습니다.</p>
+          <div class="g-index"><div><b>글</b><a href="#g-doc-letter">공문 한 장 쓰기</a><a href="#g-doc-convert">받은 한글 파일 고쳐 워드로 보내기</a><a href="#g-doc-table">표 넣고 채우기</a><a href="#g-doc-spell">맞춤법 고치기</a><a href="#g-doc-ink">첨삭 펜으로 표시하기</a></div><div><b>셈</b><a href="#g-sheet-sum">합계와 함수 넣기</a><a href="#g-sheet-chart">차트 만들기</a></div><div><b>발표</b><a href="#g-slide-new">새 발표 만들기</a></div><div><b>하이퍼 AI</b><a href="#g-ai-connect">하이퍼 AI 켜기</a></div><div><b>도움</b><a href="#g-report">문제 알리기</a></div></div>
+          <article class="guide" id="g-doc-letter">
+            <div class="g-kicker">글</div>
+            <h3>공문 한 장 쓰기</h3>
+            <p class="g-lead">제목을 크게 가운데로 두고, 쪽 번호를 넣고, 한글 파일과 PDF 로 저장합니다.</p>
+            <ol class="g-steps">
+              <li><p>새 문서에 제목과 본문을 칩니다. <kbd>Enter</kbd> 를 한 번 누를 때마다 문단이 하나 생깁니다.</p></li>
+              <li><p>제목을 끌어서 고른 뒤 서식 도구 모음에서 <b>진하게</b>를 누르고, 글자 크기 칸에 <kbd>20</kbd> 을 넣고, <b>가운데 정렬</b>을 누릅니다.</p><figure><img src="assets/manual/ko/doc-letter-title.webp" width="1280" height="330" alt="공문 한 장 쓰기 — 2" loading="lazy"></figure></li>
+              <li><p><span class="menu">쪽 › 쪽 번호 매기기</span>를 누르고, 번호 자리와 모양을 고른 뒤 <b>넣기</b>를 누릅니다.</p><figure><img src="assets/manual/ko/doc-letter-pagenum.webp" width="388" height="256" alt="공문 한 장 쓰기 — 3" loading="lazy"></figure></li>
+              <li><p><kbd>⌘S</kbd>(윈도우는 <kbd>Ctrl+S</kbd>)로 저장합니다. 처음 저장할 때 이름과 형식(HWP·HWPX·DOCX)을 고릅니다. PDF 는 <span class="menu">파일 › PDF로 저장하기</span>로 만듭니다.</p></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>자주 쓰는 공문 틀은 <span class="menu">파일 › 문서마당</span>에서 골라 시작합니다.</li><li>한컴오피스 한글의 단축키 대부분이 그대로 됩니다. 모든 단축키는 <span class="menu">도구 › 단축키 도움말</span>에서 봅니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-convert">
+            <div class="g-kicker">글</div>
+            <h3>받은 한글 파일 고쳐 워드로 보내기</h3>
+            <p class="g-lead">HWP·HWPX·DOCX 파일을 바로 열어 고치고, 받는 사람이 쓰는 형식으로 저장합니다. 서식은 그대로 남습니다.</p>
+            <ol class="g-steps">
+              <li><p>파일을 두 번 누르거나 앱 창에 끌어다 놓거나, <kbd>⌘O</kbd>(윈도우는 <kbd>Ctrl+O</kbd>)로 엽니다. 위쪽 신호등은 지금 문서의 종류(글·셈·발표)를 색으로 알려 줍니다.</p><figure><img src="assets/manual/ko/doc-convert-window.webp" width="1280" height="800" alt="받은 한글 파일 고쳐 워드로 보내기 — 1" loading="lazy"></figure></li>
+              <li><p>고칠 곳을 눌러 그대로 씁니다. <kbd>⌘S</kbd> 를 누르면 받은 형식(HWP) 그대로 저장됩니다.</p></li>
+              <li><p>워드로 보낼 때는 <span class="menu">파일 › 다른 형식으로 저장하기 › Word 문서 (DOCX)</span>를 고릅니다. 원래 HWP 파일은 그대로 남습니다.</p></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>같은 내용을 PDF·HTML·TXT·그림(PNG)으로도 저장할 수 있습니다. 모두 <span class="menu">파일 › 다른 형식으로 저장하기</span>에 있습니다.</li><li>암호가 걸린 문서도 엽니다. 암호를 물으면 넣습니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-table">
+            <div class="g-kicker">글</div>
+            <h3>표 넣고 채우기</h3>
+            <p class="g-lead">표 단추의 격자에서 크기를 고르고, <kbd>Tab</kbd> 으로 칸을 옮겨 가며 채웁니다.</p>
+            <ol class="g-steps">
+              <li><p>메뉴 막대의 <b>입력</b>을 눌러 도구 상자를 바꾸고 <b>표</b> 단추를 누릅니다. 격자에서 원하는 크기(여기서는 3 × 2)를 누릅니다.</p><figure><img src="assets/manual/ko/doc-table-grid.webp" width="760" height="308" alt="표 넣고 채우기 — 1" loading="lazy"></figure></li>
+              <li><p>글을 치고 <kbd>Tab</kbd> 을 누르면 다음 칸으로 갑니다. 마지막 칸에서 <kbd>Tab</kbd> 을 누르면 줄이 하나 늘어납니다.</p><figure><img src="assets/manual/ko/doc-table-filled.webp" width="968" height="260" alt="표 넣고 채우기 — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>표 안을 누르면 메뉴 막대에 <b>표</b> 메뉴가 생깁니다. 줄·칸 넣기, 셀 합치기, 계산식이 거기 있습니다.</li><li>한글처럼 <kbd>F5</kbd> 로 셀 블록을 잡고 <kbd>M</kbd> 을 누르면 셀이 합쳐집니다.</li><li>탭이나 쉼표로 나눈 글은 <span class="menu">입력 › 문자열을 표로</span>로 한 번에 표가 됩니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-spell">
+            <div class="g-kicker">글</div>
+            <h3>맞춤법 고치기</h3>
+            <p class="g-lead">흔한 틀림은 띄어 쓰는 순간 저절로 고쳐지고, 나머지는 빨간 밑줄로 보입니다.</p>
+            <ol class="g-steps">
+              <li><p><kbd>몇일</kbd> 처럼 자주 틀리는 말은 띄어 쓰면 바로 <kbd>며칠</kbd> 로 바뀝니다.</p></li>
+              <li><p>빨간 밑줄이 그어진 말을 오른쪽 클릭하면 고칠 말이 위에 나옵니다. 골라 누르면 바뀝니다.</p><figure><img src="assets/manual/ko/doc-spell-menu.webp" width="292" height="200" alt="맞춤법 고치기 — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>문서 전체는 <span class="menu">검토 › 맞춤법</span>으로 한 번에 봅니다.</li><li>맞는 말인데 밑줄이 그어지면 오른쪽 클릭 › <b>사전에 더하기</b>로 내 사전에 넣습니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-doc-ink">
+            <div class="g-kicker">글</div>
+            <h3>첨삭 펜으로 표시하기</h3>
+            <p class="g-lead">종이에 빨간펜으로 쓰듯 문서 위에 긋고 칠합니다. 첨삭은 화면에만 남고 인쇄·저장 파일에는 들어가지 않습니다.</p>
+            <ol class="g-steps">
+              <li><p>문서 창 오른쪽 아래의 펜 단추나 <span class="menu">입력 › 첨삭 펜</span>을 누르면 펜 도구가 나옵니다. 빨간펜·형광펜·지우개와 색을 고릅니다.</p><figure><img src="assets/manual/ko/doc-ink-tools.webp" width="392" height="62" alt="첨삭 펜으로 표시하기 — 1" loading="lazy"></figure></li>
+              <li><p>고칠 말 아래를 끌어 긋습니다. 획은 그 글에 붙어 있어서 글이 밀려도 따라갑니다. <kbd>Esc</kbd> 를 누르면 펜이 꺼집니다.</p><figure><img src="assets/manual/ko/doc-ink-pen.webp" width="355" height="90" alt="첨삭 펜으로 표시하기 — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>첨삭을 한 채로 하이퍼 AI 에게 '첨삭대로 고쳐 줘'라고 하면, 그은 자리를 읽고 고칠 안을 냅니다.</li><li>인쇄할 때 첨삭도 함께 찍으려면 인쇄 창에서 <b>첨삭 함께 찍기</b>를 켭니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-sheet-sum">
+            <div class="g-kicker">셈</div>
+            <h3>합계와 함수 넣기</h3>
+            <p class="g-lead">칸에 = 를 치고 함수 이름을 몇 글자만 치면 목록이 뜹니다. 함수를 고른 뒤 칸을 끌면 범위가 들어갑니다.</p>
+            <ol class="g-steps">
+              <li><p>품목과 금액을 넣습니다. <kbd>Tab</kbd> 을 누르면 오른쪽 칸으로, <kbd>Enter</kbd> 를 누르면 다음 줄의 처음 칸으로 갑니다.</p></li>
+              <li><p>B5 에서 <kbd>=</kbd> 를 치고 <kbd>SU</kbd> 까지 치면 함수 목록이 뜹니다.</p><figure><img src="assets/manual/ko/sheet-sum-list.webp" width="560" height="368" alt="합계와 함수 넣기 — 2" loading="lazy"></figure></li>
+              <li><p>목록에서 <b>SUM</b> 을 누르면 <kbd>=SUM(</kbd> 이 들어갑니다. 그대로 B2 부터 B4 까지 끌면 범위가 들어갑니다. 칸 위의 안내도 이렇게 알려 줍니다.</p><figure><img src="assets/manual/ko/sheet-sum-range.webp" width="560" height="184" alt="합계와 함수 넣기 — 3" loading="lazy"></figure></li>
+              <li><p><kbd>Enter</kbd> 를 누르면 합계가 나옵니다. 닫는 괄호는 앱이 채웁니다. 금액을 고치면 합계도 저절로 다시 계산됩니다.</p><figure><img src="assets/manual/ko/sheet-sum-done.webp" width="560" height="180" alt="합계와 함수 넣기 — 4" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>숫자 아래 빈칸을 고르고 <span class="menu">입력 › 자동 합계</span>를 누르면 <kbd>=SUM(…)</kbd> 이 저절로 들어갑니다.</li><li>어떤 함수가 있는지 모르면 <span class="menu">입력 › 함수…</span>에서 찾아 고릅니다.</li><li>한글 입력 상태로 <kbd>=ㄴㅕㅡ</kbd> 처럼 쳐도 <kbd>=SUM</kbd> 으로 바로 바뀝니다. 따옴표 안의 한글은 그대로 둡니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-sheet-chart">
+            <div class="g-kicker">셈</div>
+            <h3>차트 만들기</h3>
+            <p class="g-lead">표를 골라 차트 종류를 누르면 바로 그려집니다. 값을 고치면 차트도 따라 바뀝니다.</p>
+            <ol class="g-steps">
+              <li><p>머리글과 값을 넣고 A1 부터 B5 까지 끌어 고릅니다.</p></li>
+              <li><p><span class="menu">입력 › 차트 › 세로 막대형</span>을 누릅니다. 차트를 끌어 옮기고, 모서리를 끌어 크기를 바꿉니다.</p><figure><img src="assets/manual/ko/sheet-chart-chart.webp" width="900" height="460" alt="차트 만들기 — 2" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>차트를 고른 뒤 <span class="menu">입력 › 차트 고치기…</span>에서 종류·제목·범례를 바꿉니다.</li><li>셈의 표나 차트를 글 문서·발표에 붙일 때 <span class="menu">편집 › 연결하여 복사 (한글·발표로)</span>를 쓰면, 셈에서 값을 고칠 때 함께 바뀝니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-slide-new">
+            <div class="g-kicker">발표</div>
+            <h3>새 발표 만들기</h3>
+            <p class="g-lead">위쪽 신호등의 <b>발표</b>를 누르면 새 발표가 바로 열립니다. 제목 칸을 한 번 누르고 바로 씁니다.</p>
+            <ol class="g-steps">
+              <li><p>제목 칸과 부제목 칸을 누르고 그대로 씁니다.</p></li>
+              <li><p><span class="menu">슬라이드 › 테마 바꾸기…</span>에서 마음에 드는 테마를 고르고 <b>바꾸기</b>를 누릅니다. 언제든 다시 바꿀 수 있습니다.</p><figure><img src="assets/manual/ko/slide-new-themes.webp" width="708" height="440" alt="새 발표 만들기 — 2" loading="lazy"></figure></li>
+              <li><p><span class="menu">슬라이드 › 새 슬라이드</span>를 누르고 내용 칸에 씁니다. <kbd>Enter</kbd> 를 누를 때마다 글머리표 한 줄이 생기고, <kbd>Tab</kbd> 을 누르면 한 수준 들어갑니다.</p><figure><img src="assets/manual/ko/slide-new-deck.webp" width="1280" height="800" alt="새 발표 만들기 — 3" loading="lazy"></figure></li>
+              <li><p><span class="menu">쇼 › 처음부터</span>(<kbd>F5</kbd>)로 발표를 시작합니다. 화살표 키나 누르기로 넘기고, <kbd>Esc</kbd> 로 끝냅니다.</p></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>글 문서를 발표로 바꾸려면 글 문서에서 <span class="menu">파일 › 이 문서로 발표 만들기…</span>를 누릅니다. 제목마다 슬라이드가 생깁니다.</li><li>개체가 겹쳐 아래 것이 안 눌리면 <kbd>⌥</kbd> 를 누른 채 누르면 차례로 아래 개체가 골라집니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-ai-connect">
+            <div class="g-kicker">하이퍼 AI</div>
+            <h3>하이퍼 AI 켜기</h3>
+            <p class="g-lead">하이퍼 AI 는 문서를 읽고 고칠 안을 냅니다. 내 Claude API 키, 내 컴퓨터의 AI 모델(올라마), 둘 중 하나로 연결합니다.</p>
+            <ol class="g-steps">
+              <li><p>메뉴 막대의 <b>AI</b> 단추나 <span class="menu">도구 › 하이퍼 AI</span>로 오른쪽에 하이퍼 AI 창을 엽니다.</p><figure><img src="assets/manual/ko/ai-connect-pane.webp" width="340" height="653" alt="하이퍼 AI 켜기 — 1" loading="lazy"></figure></li>
+              <li><p>창 위의 톱니(⚙)를 누르면 연결 화면이 나옵니다. 로그인(애플·구글·카카오)하고 <b>구독하기</b>로 연결을 켭니다. 처음 7일은 무료입니다. 그다음 내 Claude API 키를 넣거나 내 컴퓨터 모델을 고릅니다.</p><figure><img src="assets/manual/ko/ai-connect-setup.webp" width="339" height="382" alt="하이퍼 AI 켜기 — 2" loading="lazy"></figure></li>
+              <li><p>내 컴퓨터 모델은 창 아래 단계 고르기에서 <b>내 컴퓨터 모델 (Ollama)</b>을 고르면 설정이 나옵니다. <a href="https://ollama.com" target="_blank" rel="noopener">Ollama</a>를 설치하고 모델을 받아 두면 주소만 적어 연결됩니다. 이 컴퓨터에서 돌리면 문서가 밖으로 나가지 않고, 사용료도 없습니다.</p><figure><img src="assets/manual/ko/ai-connect-local.webp" width="339" height="320" alt="하이퍼 AI 켜기 — 3" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>답이 오는 대로 보이고, 도는 동안 <b>보내기</b> 단추가 <b>멈춤</b>으로 바뀝니다. 고칠 안은 <b>적용</b>을 눌러야 문서에 들어가고, <kbd>⌘Z</kbd> 로 되돌립니다.</li><li>글을 고르고 오른쪽 클릭하면 하이퍼 AI 로 바로 다듬을 수 있습니다.</li><li>요금은 <a href="pricing.html">요금</a> 쪽에 있습니다. AI 사용료는 내 키로 Anthropic 에 따로 냅니다.</li></ul></div>
+          </article>
+          <article class="guide" id="g-report">
+            <div class="g-kicker">도움</div>
+            <h3>문제 알리기</h3>
+            <p class="g-lead">이상한 점이 보이면 앱에서 바로 알립니다. 무엇을 했는지 몇 줄 적으면 고치는 데 큰 도움이 됩니다.</p>
+            <ol class="g-steps">
+              <li><p><span class="menu">도구 › 문제 알리기…</span>를 누르고, 겪은 일을 적어 <b>보내기</b>를 누릅니다. 문서 내용은 보내지 않습니다. 그림을 붙일지는 직접 고릅니다.</p><figure><img src="assets/manual/ko/report-dialog.webp" width="548" height="346" alt="문제 알리기 — 1" loading="lazy"></figure></li>
+            </ol>
+            <div class="g-tips"><b>알아 두면 좋은 것</b><ul><li>저장하지 않고 앱이 꺼져도, 다시 켜면 되찾을지 묻습니다. <b>되찾기</b>를 누르면 마지막으로 친 글이 돌아옵니다.</li></ul></div>
+          </article>
+        </section>
+        <!--/GUIDES-->
 
         <section>
           <h2 id="files">열기와 저장</h2>
@@ -157,13 +286,13 @@
           </ul>
           <h3>새 문서와 문서마당</h3>
           <ul>
-            <li><span class="menu">파일 › 새 문서</span> <kbd>⌘N</kbd>는 함초롬바탕 10pt, 줄 간격 160%, A4로 시작합니다.</li>
+            <li><span class="menu">파일 › 새 문서 (HWP)</span> <kbd>⌘N</kbd>는 함초롬바탕 10pt, 줄 간격 160%, A4로 시작합니다.</li>
             <li><span class="menu">파일 › 호환 문서</span> <kbd>⌃N</kbd>, <kbd>D</kbd>로 HWP · HWPX · DOCX 가운데 형식을 정해 새로 만듭니다.</li>
             <li><span class="menu">파일 › 문서마당</span> <kbd>⌃⌥N</kbd>에는 빈 문서, 공문(기안문), 보고서(개조식), 회의록, 출장 신청서, 휴가 신청서, 이력서, 안내문이 있습니다. 첫 쪽을 미리 보고 두 번 누르면 엽니다.</li>
-            <li><span class="menu">파일 › 다른 문서 만들기</span>에서 이 문서로 발표를 만들거나, 새 발표·새 통합 문서를 엽니다.</li>
+            <li><span class="menu">파일 › 이 문서로 발표 만들기…</span>로 이 문서를 발표로 만들고, <span class="menu">파일 › 새 발표 (PPTX)</span>·<span class="menu">파일 › 새 통합 문서 (XLSX)</span>로 다른 종류를 새로 엽니다. 위쪽 신호등의 <b>글</b>·<b>셈</b>·<b>발표</b>를 눌러도 됩니다.</li>
           </ul>
           <h3>자동 저장과 복구</h3>
-          <p>기본으로 1분마다 자동 저장하고, <span class="menu">환경 설정 › 파일</span>에서 1~60분으로 바꿉니다. 자동 저장본은 이 맥 안에만 둡니다. 앱이 갑자기 꺼졌다면 다음에 켤 때 ‘문서 복구’ 창이 뜹니다. 복구한 글 문서는 ‘…(복구됨)’이라는 이름으로 열립니다. PDF와 암호 문서는 자동 저장하지 않습니다.</p>
+          <p>기본으로 1분마다 자동 저장하고, <span class="menu">도구 › 환경 설정...</span>의 <b>파일</b>에서 1~60분으로 바꿉니다. 자동 저장본은 이 맥 안에만 둡니다. 앱이 갑자기 꺼졌다면 다음에 켤 때 ‘문서 복구’ 창이 뜹니다. 복구한 글 문서는 ‘…(복구됨)’이라는 이름으로 열립니다. PDF와 암호 문서는 자동 저장하지 않습니다.</p>
           <h3>문서 암호</h3>
           <ul>
             <li>암호 문서를 열면 암호를 묻습니다. 옛 doc·xls·ppt, 오피스(DOCX·XLSX·PPTX) 암호 문서, HWPX 암호 문서를 엽니다.</li>
@@ -198,7 +327,7 @@
             <li><b>메일 머지와 라벨</b> — <span class="menu">도구 › 메일 머지</span>.</li>
             <li><b>서식 자동 채우기</b> — 성명·소속·연락처 같은 빈칸을 <span class="menu">도구 › 내 정보…</span>에 적어 둔 값으로 채웁니다.</li>
             <li><b>문서 비교</b>와 <b>개인 정보 찾아서 가리기</b> — <span class="menu">검토</span> 메뉴에 있습니다.</li>
-            <li><b>시트 값 연결</b> — 셈터에서 <span class="menu">편집 › 연결하여 복사</span>한 값을 문서에 <span class="menu">연결하여 붙이기</span>하고, 시트가 바뀌면 <span class="menu">도구 › 연결 갱신</span>으로 맞춥니다.</li>
+            <li><b>시트 값 연결</b> — 셈에서 <span class="menu">편집 › 연결하여 복사 (한글·발표로)</span>한 값을 문서에 <span class="menu">편집 › 연결하여 붙이기 (시트 값)</span>하고, 시트가 바뀌면 <span class="menu">도구 › 연결 갱신 (시트 값)</span>으로 맞춥니다.</li>
             <li><b>문서 끼워 넣기</b> <kbd>⌃O</kbd> — 다른 문서를 지금 자리에 넣습니다.</li>
           </ul>
         </section>
@@ -239,12 +368,12 @@
             <li><b>빠른 교정</b>과 <b>한/영 자동 전환</b> — 기본으로 켜져 있습니다. 빠른 교정 내용은 <kbd>⇧F8</kbd>.</li>
             <li><b>글자 수 세기</b> — <span class="menu">검토 › 글자 수 세기</span>.</li>
           </ul>
-          <div class="callout"><p>맞춤법은 글 문서에서만 봅니다(셈터·보임터·PDF는 아직). 낱말 하나하나를 사전에 비추는 방식이라 문맥에 따른 교정과 띄어쓰기 전반은 보지 않습니다. 사전은 hunspell-dict-ko 0.7.94 입니다.</p></div>
+          <div class="callout"><p>맞춤법은 글 문서에서만 봅니다(셈·발표·PDF는 아직). 낱말 하나하나를 사전에 비추는 방식이라 문맥에 따른 교정과 띄어쓰기 전반은 보지 않습니다. 사전은 hunspell-dict-ko 0.7.94 입니다.</p></div>
         </section>
 
         <section>
-          <h2 id="sheet">셈터 (엑셀)</h2>
-          <p>엑셀 파일(XLSX·XLSM·XLS·ODS·CSV, 은행에서 받은 HTML 표)은 셈터로 열립니다. 저장하면 손대지 않은 칸과 서식은 원본 그대로 남습니다.</p>
+          <h2 id="sheet">셈 (엑셀)</h2>
+          <p>엑셀 파일(XLSX·XLSM·XLS·ODS·CSV, 은행에서 받은 HTML 표)은 셈로 열립니다. 저장하면 손대지 않은 칸과 서식은 원본 그대로 남습니다.</p>
           <ul>
             <li><b>함수</b> — 420여 개. 목록에 없는 함수가 든 칸은 파일에 저장된 값을 그대로 보여 줍니다. XLSX는 열 때 다시 계산하지 않고 저장된 값을 씁니다.</li>
             <li><b>셀 서식</b> <kbd>⌘1</kbd> — 표시 형식 · 맞춤 · 글꼴 · 테두리 · 채우기. 금액을 한글로 쓰는 표시 형식도 있습니다.</li>
@@ -252,12 +381,12 @@
             <li><b>데이터</b> — 정렬, 필터 <kbd>⌘⇧L</kbd>, 텍스트 나누기, 중복된 항목 제거, 데이터 유효성 검사, 이름 관리자, 피벗 테이블(SUMIFS 같은 수식으로 만들어집니다).</li>
             <li><b>차트</b> — 세로 막대 · 가로 막대 · 꺾은선 · 원 · 영역 · 분산형. 엑셀의 표준 차트로 저장됩니다.</li>
             <li><b>보기</b> — 틀 고정(첫 행·첫 열), 눈금선. 시트 탭을 오른쪽 단추로 누르면 이동·탭 색.</li>
-            <li><b>문서로 연결</b> — <span class="menu">편집 › 연결하여 복사 (한글·발표로)</span> 한 뒤 문서나 발표에 붙이면, 시트가 바뀔 때 <span class="menu">연결 갱신</span>으로 따라옵니다.</li>
-            <li><b>인쇄</b> — 지금 시트만 찍고, 파일에 저장된 용지·여백·배율·인쇄 제목을 따릅니다. 셈터에서 정할 수 있는 것은 <span class="menu">파일 › 인쇄 영역</span>입니다.</li>
+            <li><b>문서로 연결</b> — <span class="menu">편집 › 연결하여 복사 (한글·발표로)</span> 한 뒤 문서나 발표에 붙이면, 시트가 바뀔 때 <span class="menu">도구 › 연결 갱신 (시트 값)</span>으로 따라옵니다.</li>
+            <li><b>인쇄</b> — 지금 시트만 찍고, 파일에 저장된 용지·여백·배율·인쇄 제목을 따릅니다. 셈에서 정할 수 있는 것은 <span class="menu">파일 › 인쇄 영역</span>입니다.</li>
           </ul>
           <div class="tbl">
             <table>
-              <thead><tr><th>셈터 키</th><th>기능</th></tr></thead>
+              <thead><tr><th>셈 키</th><th>기능</th></tr></thead>
               <tbody>
                 <tr><td><kbd>⌘</kbd>+방향 · <kbd>⇧</kbd>+방향</td><td>자료 끝으로 가기 · 고른 범위 넓히기</td></tr>
                 <tr><td><kbd>F2</kbd> · <kbd>Delete</kbd></td><td>칸 고치기 · 내용 지우기</td></tr>
@@ -273,15 +402,15 @@
               </tbody>
             </table>
           </div>
-          <p class="muted small">셈터에서는 <kbd>⌘</kbd>와 <kbd>⌃</kbd>가 같은 일을 합니다.</p>
+          <p class="muted small">셈에서는 <kbd>⌘</kbd>와 <kbd>⌃</kbd>가 같은 일을 합니다.</p>
         </section>
 
         <section>
-          <h2 id="slides">보임터 (파워포인트)</h2>
-          <p>파워포인트 파일(PPTX·PPSX·POTX, 옛 PPT)은 보임터로 열립니다. 옛 PPT는 PPTX로 새로 저장합니다.</p>
+          <h2 id="slides">발표 (파워포인트)</h2>
+          <p>파워포인트 파일(PPTX·PPSX·POTX, 옛 PPT)은 발표로 열립니다. 옛 PPT는 PPTX로 새로 저장합니다.</p>
           <ul>
             <li><b>새 발표</b> — 테마 네 가지(기본·밤하늘·한지·청자)와 레이아웃 일곱 가지로 시작합니다.</li>
-            <li><b>한글 문서로 발표 만들기</b> — 글 문서에서 <span class="menu">파일 › 다른 문서 만들기 › 이 문서로 발표 만들기…</span>. 제목과 본문이 슬라이드가 되고, 슬라이드를 오른쪽 단추로 누르면 원본 문단으로 갑니다.</li>
+            <li><b>한글 문서로 발표 만들기</b> — 글 문서에서 <span class="menu">파일 › 이 문서로 발표 만들기…</span>. 제목과 본문이 슬라이드가 되고, 슬라이드를 오른쪽 단추로 누르면 원본 문단으로 갑니다.</li>
             <li><b>편집</b> — 글상자, 도형, 그림, 표를 넣고 맞춤·앞뒤 순서·묶기·회전을 씁니다. <kbd>⌘M</kbd>(또는 <kbd>⌃M</kbd>) 새 슬라이드, <kbd>⌘D</kbd> 복제, <kbd>⌘G</kbd>·<kbd>⌘⇧G</kbd> 묶기·풀기, <kbd>Return</kbd>이나 <kbd>F2</kbd>로 글 고치기. 방향키로 옮기고 <kbd>⇧</kbd>를 함께 누르면 10배씩 움직입니다.</li>
             <li><b>애니메이션</b> — 나타내기 다섯, 강조 둘, 끝내기 네 가지. 클릭할 때 · 이전 효과와 함께 · 이전 효과 다음에 시작합니다. 화면 전환은 여덟 가지입니다.</li>
           </ul>
@@ -327,13 +456,34 @@
         </section>
 
         <section>
-          <h2 id="assistant">AI 도우미</h2>
-          <p>메뉴 막대의 <b>AI</b> 단추(또는 <span class="menu">도구 › AI 도우미</span>)로 엽니다. 문서·시트·발표를 읽고 고치는 일을 말로 시킵니다.</p>
+          <h2 id="assistant">하이퍼 AI</h2>
+          <p>메뉴 막대의 <b>AI</b> 단추나 <span class="menu">도구 › 하이퍼 AI</span>로 오른쪽에 엽니다. 문서·셈·발표를 읽고, 말로 시킨 일을 고칠 안으로 냅니다. 처음 켜는 법은 <a href="#g-ai-connect">하이퍼 AI 켜기</a>에 있습니다.</p>
+          <h3>연결하는 법</h3>
           <ul>
-            <li>처음 쓸 때 안내에 동의하고 Claude API 열쇠(<code>sk-ant-…</code>)를 넣습니다. 열쇠는 맥의 열쇠고리로 암호화해 둡니다. 쓴 만큼의 요금은 내 Anthropic 계정에 붙습니다.</li>
-            <li>인터넷으로 보내고 싶지 않으면 내 컴퓨터의 모델(Ollama)을 고릅니다.</li>
-            <li>AI가 낸 고침은 제안 카드로 나옵니다. <b>적용</b>을 눌러야 문서가 바뀌고, <b>되돌리기</b>로 돌아옵니다.</li>
+            <li><b>로그인하고 구독하기</b> — 애플·구글·카카오로 로그인하고 <b>구독하기</b>로 연결을 켭니다. 처음 7일은 무료이고, 값은 <a href="pricing.html">요금</a> 쪽에 있습니다.</li>
+            <li><b>내 Claude API 키</b> — 창 위 톱니(⚙)의 설정에 Anthropic API 키(<code>sk-ant-…</code>)를 넣습니다. 키는 이 컴퓨터의 열쇠고리에 암호화해 두고, 쓴 만큼의 사용료는 내 Anthropic 계정에 붙습니다.</li>
+            <li><b>내 컴퓨터 모델</b> — 창 아래 단계 고르기에서 <b>내 컴퓨터 모델 (Ollama)</b>를 고르고 Ollama·LM Studio 의 주소를 적습니다. 이 컴퓨터에서 돌리면 문서가 밖으로 나가지 않고 사용료가 없습니다. 같은 망의 다른 컴퓨터(예: <code>http://192.168.0.10:11434</code>)도 됩니다.</li>
+          </ul>
+          <h3>쓰는 법</h3>
+          <ul>
+            <li><b>단계</b> — 창 아래에서 <b>자동</b>·<b>하이퍼 AI 라이트</b>·<b>하이퍼 AI</b>·<b>하이퍼 AI 프로</b>·<b>하이퍼 AI 맥스</b>를 고릅니다. 자동이면 요청을 보고 고르고, 높을수록 꼼꼼하지만 오래 걸리고 사용료가 큽니다.</li>
+            <li><b>실시간 답과 멈춤</b> — 답이 쓰는 대로 보이고, 도는 동안 <b>보내기</b> 단추가 <b>멈춤</b>이 됩니다.</li>
+            <li><b>적용</b> — 고칠 안은 카드로 나옵니다. 하나씩 골라 <b>적용</b>을 눌러야 문서가 바뀌고, 카드를 누르면 문서의 그 자리로 갑니다. <kbd>⌘Z</kbd>로 되돌립니다.</li>
+            <li><b>오른쪽 클릭</b> — 글을 고르고 오른쪽 클릭하면 그 부분만 하이퍼 AI 로 다듬습니다.</li>
+            <li><b>첨삭과 함께</b> — <a href="#g-doc-ink">첨삭 펜</a>으로 표시한 뒤 ‘첨삭대로 고쳐 줘’라고 하면 표시한 자리를 읽습니다.</li>
+            <li><b>말로 시키기</b> — 마이크 단추로 받아쓰기합니다.</li>
             <li>고른 부분만 보낼 수 있고, 복사를 막은 배포용 문서는 보내지 않습니다.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 id="account">계정·구독·서포터</h2>
+          <p>편집 기능은 모두 로그인 없이 무료로 씁니다. 로그인은 하이퍼 AI 연결과 서포터에만 씁니다.</p>
+          <ul>
+            <li><b>로그인</b> — 메뉴 막대 오른쪽의 <b>로그인</b>에서 애플·구글·카카오 중 하나로 합니다. 오피스와 캐드는 같은 계정을 씁니다.</li>
+            <li><b>구독하기</b> — 하이퍼 AI 연결을 켭니다(처음 7일 무료). 내 키나 내 컴퓨터 모델로 쓰는 AI 사용료는 따로입니다.</li>
+            <li><b>서포터 멤버십</b> — <span class="menu">도구 › 서포터 멤버십</span>. 매달 또는 1년 팩으로, 새 기능을 먼저 받고 문의에 먼저 답을 받습니다.</li>
+            <li><b>해지·환불</b> — 계정 창의 <b>구독 관리 (해지·결제 수단·영수증)</b>에서 언제든 멈춥니다. 환불 기준은 <a href="refund.html">환불</a> 쪽에 있습니다.</li>
           </ul>
         </section>
 
@@ -461,9 +611,9 @@ hyperseven apply 문서.hwp 명령.json -o 결과.hwp     # --dry로 미리 보�
           <h3>앱이 열리지 않아요</h3>
           <p><a href="#start">처음 열 때</a>의 순서를 따릅니다. “이 Mac에서 지원되지 않음”이라고 나오면 인텔 맥에 Apple Silicon용을 받은 것입니다. 홈페이지 내려받기 단추 아래의 <b>인텔 맥용 다운로드</b>로 다시 받아 바꿔 넣습니다.</p>
           <h3>문서가 한글과 다르게 보여요</h3>
-          <p>대개 글꼴 때문입니다. 문서에 쓴 글꼴을 이 맥에 넣으면 더 비슷해집니다. 그래도 다르면 문서와 함께 알려 주세요. 고치는 데 가장 큰 도움이 됩니다.</p>
+          <p>대개 글꼴 때문입니다. 문서에 쓴 글꼴을 이 컴퓨터에 넣으면 더 비슷해집니다. 한컴 글꼴(함초롬체 등)은 한컴 누리집에서 무료로 받습니다. 그래도 다르면 문서와 함께 알려 주세요. 고치는 데 가장 큰 도움이 됩니다.</p>
           <h3>문제 알리기</h3>
-          <p><span class="menu">도구 › 문제 알리기…</span>(또는 <kbd>⌘K</kbd> 에서 ‘문제 알리기’)를 누르고 한 줄만 쓰면 됩니다. 비워 둬도 됩니다. 앱 판과 오류 기록, 최근에 쓴 명령은 저절로 붙고, 문서 글은 가지 않습니다.</p>
+          <p><span class="menu">도구 › 문제 알리기…</span>(또는 <kbd>⌘K</kbd> 에서 ‘문제 알리기’)를 누르고 한 줄만 쓰면 됩니다. 비워 둬도 됩니다. 앱 판과 오류 기록, 최근에 쓴 명령과 키 순서(무슨 글자를 쳤는지는 없음)가 저절로 붙고, 문서 글은 가지 않습니다.</p>
           <ul>
             <li>문서 모양이 문제라면 ‘내용 지운 사본’을 붙여 주세요. 글자는 아무 글자로, 그림은 회색으로 바뀌고 쪽 배치만 남습니다. 보내기 전에 첫 쪽을 미리 봅니다.</li>
             <li>오류가 나면 뜨는 알림의 <b>알리기</b>로도 보냅니다. 자동 알림을 켜 두면 다음부터는 오류 정보만 저절로 갑니다.</li>

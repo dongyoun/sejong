@@ -1252,6 +1252,100 @@ kbd {
   font-weight: 600;
   color: var(--ink);
 }
+/* 매뉴얼 따라 하기 (2026-11-15) — scripts/site/manual.mjs 가 만든다. 그림은 실제 앱에서 따라 하며 찍은 것 */
+.g-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px 22px;
+  margin: 18px 0 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--soft);
+  font-size: 15px;
+}
+.g-index b {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.g-index a {
+  display: block;
+  padding: 2px 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+.g-index a:hover {
+  color: var(--blue-ink);
+}
+.guide {
+  margin: 44px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 92px;
+}
+.g-kicker {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.manual .guide h3 {
+  margin: 4px 0 8px;
+}
+.g-lead {
+  color: var(--muted);
+}
+.manual ol.g-steps {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: gs;
+}
+.manual ol.g-steps > li {
+  position: relative;
+  margin: 0 0 18px;
+  padding-left: 38px;
+  counter-increment: gs;
+}
+.g-steps > li::before {
+  content: counter(gs);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font: 700 13px/26px var(--font);
+  text-align: center;
+}
+.g-steps figure {
+  margin: 12px 0 4px;
+}
+.g-steps img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(17, 19, 24, 0.04), 0 8px 24px rgba(17, 19, 24, 0.06);
+}
+.g-tips {
+  margin: 8px 0 0;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: var(--soft);
+  font-size: 15px;
+}
+.g-tips b {
+  font-size: 13px;
+  color: var(--muted);
+}
+.manual .g-tips ul {
+  margin: 6px 0 0;
+}
 .callout {
   margin: 18px 0;
   padding: 16px 18px;
