@@ -2,3 +2,12 @@
 # 중국어 쪽은 없앴다 (2026-11-06) — 이미 알려진 /zh/ 주소는 같은 쪽의 영어판으로
 /zh /en/ 301
 /zh/* /en/:splat 301
+# 무료 공개(2026-11-17): 요금·환불 쪽은 가려 둠 — 결제를 열면 이 네 줄을 지운다 (site-src/paid/README.md)
+/pricing /support 302
+/pricing.html /support 302
+/en/pricing /en/support 302
+/en/pricing.html /en/support 302
+/refund /terms 302
+/refund.html /terms 302
+/en/refund /en/terms 302
+/en/refund.html /en/terms 302
