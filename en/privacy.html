@@ -36,7 +36,7 @@
         <a href="cad.html">CAD</a>
         <a href="manual.html">Manual</a>
         
-        <a class="nav-support sponsor-only" href="support.html" aria-label="Supporter"><span aria-hidden="true">♥</span> Supporter</a>
+        <a class="nav-support sponsor-only" href="support.html" aria-label="Support"><span aria-hidden="true">♥</span> Support</a>
         <a class="nav-cta" href="office.html#download">Download</a>
       </nav>
       <details class="lang"><summary aria-label="Change language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>English</span></summary><div class="lang-list"><a href="../privacy.html" hreflang="ko" lang="ko" data-l="ko">한국어</a><a href="../en/privacy.html" hreflang="en" lang="en" data-l="en" aria-current="true">English</a><a href="../ja/index.html" hreflang="ja" lang="ja" data-l="ja">日本語</a></div></details>
@@ -47,16 +47,16 @@
     <div class="wrap doc-head">
       <div class="kicker">HyperSeven</div>
       <h1>Privacy Policy</h1>
-      <p>Effective November 16, 2026. This is a translation; the <a href="../privacy.html">Korean version</a> governs.</p>
+      <p>Effective November 18, 2026. This is a translation; the <a href="../privacy.html">Korean version</a> governs.</p>
     </div>
     <div class="wrap">
       <article class="manual policy">
         <section>
           <h2>At a glance</h2>
-          <p>This policy applies to HyperSeven Office and HyperSeven CAD and to the HyperSeven account and subscriptions, provided by the business HYSTERESIS (representative 신인수, the “Operator”) under the name HyperSeven.</p>
+          <p>This policy applies to HyperSeven Office and HyperSeven CAD and to the HyperSeven account and support, provided by the business HYSTERESIS (representative 신인수, the “Operator”) under the name HyperSeven.</p>
           <ul>
             <li>Your documents are opened, edited and saved on your computer. The app only sends document content anywhere when you use the AI assistant or send a problem report yourself, as described below.</li>
-            <li>The apps need no sign-up. A HyperSeven account is an option only for people who want AI or a subscription (<a href="#account">below</a>), and nothing is collected for advertising or marketing. Errors and friction signals are sent automatically without any document text, used only to fix the app, and can be turned off in Preferences.</li>
+            <li>The apps need no sign-up. A HyperSeven account is an option only for people who want AI (<a href="#account">below</a>), and nothing is collected for advertising or marketing. Errors and friction signals are sent automatically without any document text, used only to fix the app, and can be turned off in Preferences.</li>
           </ul>
         </section>
         <section>
@@ -65,7 +65,7 @@
           <p>When the app starts, and every 6 hours while it's open, it downloads one public file from the website (<code>latest.json</code>). This request carries no personal information or document content. Cloudflare and GitHub, which host the website, may process connection data such as your IP address, as with any web request. Installers and update files are downloaded from GitHub (GitHub, Inc., US); connection data at that point is handled under GitHub's privacy statement. If you installed the app from the Microsoft Store, the Store keeps it up to date.</p>
           <p>When the app starts, it also asks the website once whether HyperSeven account sign-in is available. This request carries no personal information or document content either.</p>
           <h3>AI assistant (only if you turn it on)</h3>
-          <p>Only when you use the AI subscription (<a href="#account">below</a>), or your own Anthropic API key, and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
+          <p>Only when you use your own Anthropic API key and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
           <h3>Problem reports (only when you send one)</h3>
           <p>When you send a report, it includes what you wrote plus the app version, operating system, recent error log, recent commands, the order of recent key actions (key types such as Enter or Delete and the time between them — never what you typed) and a summary of the document's structure (no text). A copy of the document is attached only if you choose to, and only with its text scrambled.</p>
           <p>Problem reports you send are stored in HyperSeven's report store (Cloudflare); only if it can't be reached does the app open a pre-filled GitHub issue instead.</p>
@@ -75,44 +75,49 @@
           <h3>HyperSeven CAD</h3>
           <p>HyperSeven CAD works the same way. At start it fetches one public file from the website (<code>latest-cad.json</code>) to check for a new version. Automatic error and friction reports are on by default. The first time one is actually sent, a one-line notice appears at the bottom right (with links to see what was sent and to turn it off); once turned off, nothing is sent. They contain the version, OS, recent command names, error messages (with paths removed), counts of friction signals and the number of elements in the drawing; drawing content, file names and paths are never sent. See what is sent and turn it off in Settings › General › Fix it together. Screenshots from Feedback (<kbd>⌘⇧F</kbd>) stay on your computer.</p>
           <p><b>Site map and address lookup (CAD, signed-in users only)</b> — When you search an address or click a parcel on the site card or map, the map view area, the address you searched and the parcel number go through the Operator's server to the Korean Ministry of Land's spatial information platform (VWorld) to get the map, parcel boundary and zoning. The Operator does not store addresses, coordinates or parcel numbers; it only counts daily uses per account number.</p>
-          <p><b>Design briefs and task documents (CAD)</b> — When you attach a file, the app extracts only the text on your computer (the original file is not sent) and masks phone numbers, emails and resident registration numbers by default. HyperAI reads only the parts it needs and includes that text in the AI request. With your own Anthropic API key (subscription or trial), the app sends the request directly to Anthropic without passing through the Operator's server; the Operator neither receives nor stores it.</p>
+          <p><b>Design briefs and task documents (CAD)</b> — When you attach a file, the app extracts only the text on your computer (the original file is not sent) and masks phone numbers, emails and resident registration numbers by default. HyperAI reads only the parts it needs and includes that text in the AI request. With your own Anthropic API key, the app sends the request directly to Anthropic without passing through the Operator's server; the Operator neither receives nor stores it.</p>
           <p><b>AI render (CAD, only if you turn it on)</b> — The current view image and description are sent directly, with your own key, to the render service you choose (ComfyUI on your computer, Stability AI, OpenAI or an address you enter). Faces are masked just before sending. Nothing passes through the Operator's server, and the service handles the data under its own policy.</p>
         </section>
         <section id="account">
-          <h2>HyperSeven account and subscriptions (only if you sign up)</h2>
-          <p>An account is optional; every editing feature works without one. The information below is handled only for people who create an account or subscribe to AI.</p>
+          <h2>HyperSeven account (only if you sign up)</h2>
+          <p>An account is optional; every editing feature works without one. The information below is handled only for people who create an account.</p>
           <h3>What we receive</h3>
           <ul>
             <li>The name (or nickname), email and unique ID shared by your sign-in provider (Apple, Google or Kakao). With Kakao we receive only the items you agree to share (your nickname). With Apple's Hide My Email we receive the relay address.</li>
             <li>The name of each signed-in device (for example “Mac · name”; on Windows, the computer name). Device tokens are stored only as hashes.</li>
-            <li>Subscription records: the subscribed app, status, billing period and the payment provider's subscription and customer IDs.</li>
-            <li>AI usage records: app, model, token counts, cost and time (used to count the fair-use allowance). Request and response text are not stored.</li>
-            <li>We never receive card numbers or similar payment details; Paddle processes payments.</li>
+            <li>Usage records: app, model, token counts, cost and time of AI requests that pass through the Operator’s server, and how many times you opened the site map (per day). Request and response text are not stored.</li>
           </ul>
           <h3>Children under 14</h3>
           <p>People under 14 may not create a HyperSeven account, and the Operator does not collect personal information from children under 14. If we learn an account belongs to someone under 14, we delete its information without delay. The apps' editing features, used without an account, are available at any age.</p>
           <h3>What we use it for</h3>
-          <p>Sign-in, checking subscriptions and allowances, refunds, providing AI features and preventing abuse.</p>
+          <p>Sign-in, providing AI and map features, and preventing excessive requests and abuse.</p>
           <h3>How long we keep it</h3>
-          <p>When you delete your account, your name, email, sign-in methods and device tokens are deleted immediately. Subscription and usage records are kept, linked only to the account number, for the periods required by Korean e-commerce law (5 years for payment and supply records, 3 years for complaints and disputes), then deleted.</p>
+          <p>When you delete your account, your name, email, sign-in methods and device tokens are deleted immediately. Usage records remain linked only to the account number and are deleted after one year.</p>
           <h3>Destruction</h3>
           <p>Information whose retention period has ended, or that is no longer needed, is deleted from the database so it cannot be restored. No personal information is kept on paper.</p>
           <h3>Processors (entrusted processing) and international transfer</h3>
-          <p>Information is sent over an encrypted internet connection to these companies each time you use the account, a subscription or AI features, and not otherwise. To refuse, simply don't use those features; only those features become unavailable and the apps' editing features keep working.</p>
+          <p>Information is sent over an encrypted internet connection to these companies each time you use the account or AI features, and not otherwise. To refuse, simply don't use those features; only those features become unavailable and the apps' editing features keep working.</p>
           <ul>
-            <li><b>Cloudflare, Inc.</b> (US and the Cloudflare network, <a href="https://www.cloudflare.com/privacypolicy/">policy and contact</a>) — account information, subscription and usage records, automatic and problem reports — servers and database — for the periods above</li>
+            <li><b>Cloudflare, Inc.</b> (US and the Cloudflare network, <a href="https://www.cloudflare.com/privacypolicy/">policy and contact</a>) — account information, usage records, automatic and problem reports — servers and database — for the periods above</li>
             <li><b>Anthropic, PBC</b> (US, <a href="https://www.anthropic.com/legal/privacy">policy and contact</a>) — the text of AI requests that pass through the Operator's server, with as much document or attachment content as needed — generating AI responses — under Anthropic's policy (API data is not used for training). When you use your own API key, the app sends requests to Anthropic directly under your own agreement.</li>
           </ul>
-          <h3>Provision to third parties and international transfer</h3>
-          <ul>
-            <li><b>Paddle.com Market Ltd</b> (UK, <a href="https://www.paddle.com/legal/privacy">policy and contact</a>) — over the internet when you pay — account number and the subscribed app and product (the email, country and payment method you enter on Paddle's checkout go to Paddle directly) — used by Paddle as merchant of record for payments, receipts, taxes, refunds, subscription management and fraud prevention — for the periods set by Paddle's policy and applicable law. Nothing is provided if you don't pay; only paid services become unavailable.</li>
-          </ul>
+          <h3>Provision to third parties</h3>
+          <p>The Operator does not provide personal information to third parties.</p>
           <h3>Your rights</h3>
           <p>You can ask to see, correct or delete your account information. Delete it right away with Delete account in the app<span class="mail-only">, or ask by <a data-email href="#">email</a></span>.</p>
           <h3>How we protect it</h3>
           <p>All transfers use encrypted connections (HTTPS), device tokens are stored only as hashes, and database access is limited to the representative alone. We never receive card numbers or similar payment details. The website and apps use no advertising or tracking cookies.</p>
           <h3>Privacy officer</h3>
           <p>신인수, HYSTERESIS<span class="mail-only"> · <a data-email href="#">email</a></span></p>
+        </section>
+        <section id="support">
+          <h2>Support (only if you support us)</h2>
+          <p>Support is optional. The information below is handled only for people who support us through Buy Me a Coffee or Bitcoin.</p>
+          <ul>
+            <li><b>Buy Me a Coffee</b> — Buy Me a Coffee tells the Operator the name (or nickname), email and message you entered there and the amount. Payments are processed by Buy Me a Coffee and its payment providers (<a href="https://www.buymeacoffee.com/privacy-policy">privacy policy</a>); we never receive card numbers or similar payment details.</li>
+            <li><b>Bitcoin</b> — we receive nothing beyond the sending address and amount that are public on the blockchain.</li>
+          </ul>
+          <p>Used for: replying with thanks, returning support sent by mistake, and tax filing. Kept until the bookkeeping period required by Korean tax law (5 years) ends. If you ask us to delete your support records, we delete everything except what tax law requires us to keep.</p>
         </section>
         <section>
           <h2>What stays on your computer</h2>
@@ -154,7 +159,6 @@
           <ul>
             <li><a href="office.html">HyperSeven Office</a></li>
             <li><a href="cad.html">HyperSeven CAD</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div>
@@ -171,10 +175,9 @@
           <ul>
             <li><a data-contact href="https://github.com/dongyoun/sejong/issues">Report on GitHub</a></li>
             <li class="mail-only"><a data-email href="#">Email us</a></li>
-            <li class="sponsor-only"><a href="support.html">Supporter membership</a></li>
+            <li class="sponsor-only"><a href="support.html">Support HyperSeven</a></li>
             <li><a href="terms.html">Terms of service</a></li>
             <li><a href="privacy.html">Privacy policy</a></li>
-            <li><a href="refund.html">Refund policy</a></li>
           </ul>
         </div>
       </div>

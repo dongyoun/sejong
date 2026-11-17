@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "3.4.2",
-  "date": "2026-11-13",
+  "version": "3.5.0",
+  "date": "2026-11-18",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "카카오와 애플로도 로그인합니다.\n- 하이퍼세븐 계정을 카카오·Apple·Google 가운데 편한 것으로 시작합니다.",
+  "notes": "하이퍼 AI 의 답이 쓰는 대로 보이고, 내 컴퓨터의 AI 도 연결됩니다.\n- 답이 실시간으로 흐르고, [멈춤]으로 언제든 멈춥니다.\n- 올라마 같은 내 컴퓨터의 AI 모델을 주소만 적어 연결합니다.\n- 제안을 하나씩 골라 적용하고, 누르면 문서의 그 자리로 갑니다.\n- 글을 고르고 오른쪽 클릭하면 하이퍼 AI 로 바로 다듬습니다.\n- 셈에서 함수를 고른 뒤 칸을 누르거나 끌어 범위를 넣습니다. 한글 상태로 친 수식도 바로 영문으로 바뀝니다.\n- 새 발표가 바로 열리고, 테마는 언제든 바꿉니다.\n- 탭이 많아도 지금 문서가 늘 보이고, 좁은 창에서는 서식 단추가 » 안에 모입니다.\n- 한글 입력 뒤 Enter, 셈의 Tab·Enter, 발표 글 상자 입력이 더 매끄럽습니다.\n- PDF 글을 고칠 때 누른 자리에 바로 커서가 놓입니다.\n- 영어 문장 첫머리의 The 같은 낱말이 한글로 바뀌지 않습니다. 영어 화면에서는 한/영 자동 전환이 처음부터 꺼져 있습니다.\n- 윈도우에서 하이퍼 AI 창이나 서식 칸에 커서가 있어도 저장·열기 단축키가 됩니다.\n- 도구 › 매뉴얼에서 그림과 함께 따라 하는 매뉴얼을 엽니다.\n- 맥에서 ⌘Q 로 앱을 완전히 끝냅니다.\n- 하이퍼 AI 연결을 포함해 모든 기능이 무료입니다. 메뉴 막대의 ♥ 응원에서 커피 한 잔으로 응원할 수 있습니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-arm64.dmg",
-        "size": 149958532,
-        "sha256": "546ad3f16aceb2b53c16937bdd8bbc17fe9759c44d478727aca1c14ea38151e2"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-arm64.dmg",
+        "size": 150180586,
+        "sha256": "15e97aa74fa9babcd5e7875c1ce2857e2db3cada0c9237aa4e55e435d77266e8"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-arm64.zip",
-        "size": 149478195,
-        "sha256": "da4f38ba57b7fd4486435333521bb36f6c7a4618568453f4b2ebc3c1b2e5be72"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-arm64.zip",
+        "size": 149710422,
+        "sha256": "82964ec6e0222bdf4560126ee5a8645f063c695a8afafd42601dcb746a692ad0"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-x64.dmg",
-        "size": 157517958,
-        "sha256": "5d64418403850b65d7c969b7147a36837c3f8062d45a61b9a48113ada0c5f32d"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-x64.dmg",
+        "size": 157727352,
+        "sha256": "b0562bd85195714b14b6b36614a699c00eb7978558ff5a738355c4022b571923"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-x64.zip",
-        "size": 157077717,
-        "sha256": "52c54f7d75bf443602dc33b37be0ee747cd7f997c6d38dfb19b44c60095ee212"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-x64.zip",
+        "size": 157309947,
+        "sha256": "01e2c4575a041ee2f03828f4d36d342fe36d4c1577b4ecbc3f65a073a0771360"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-win-x64.exe",
-        "size": 118945591,
-        "sha256": "1515dca2cb92053088b82c48d48da8080f54278f59f11ea21aec5698cfd52173"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-win-x64.exe",
+        "size": 119132012,
+        "sha256": "709601b1fe2d946a1de6905fb94f903c3346908bbb63657ec97c6514ed9e36f6"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.2/HyperSeven-Office-3.4.2-win-x64.zip",
-        "size": 161330020,
-        "sha256": "6aede40a9872332033d9a557677f5190dc105f73ff30fe35c393c6b6e5793126"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-win-x64.zip",
+        "size": 167284365,
+        "sha256": "f19fb2fd856f944fa77cc08ae312a516767b74a6ba262599196dd6011772a137"
       }
     }
   },
   "bundle": {
-    "version": "3.4.5",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.4.5/HyperSeven-Office-bundle-3.4.5.zip",
-    "size": 5295056,
-    "sha256": "231554abee25779fd70592212caaf4fda295fb37ccebda9bf9ec12479f8328ba",
+    "version": "3.5.0",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-bundle-3.5.0.zip",
+    "size": 5313186,
+    "sha256": "30a46e2efe2e61e956e85097b57bcbb849b39700e8c1d4e9618b90643f00a0c5",
     "shellMin": "3.2.0",
-    "notes": "Enter 처리를 다듬었습니다.\n- 표 칸과 문단에서 Enter 를 누른 만큼 정확히 줄이 바뀝니다."
+    "notes": "하이퍼 AI 의 답이 쓰는 대로 보이고, 내 컴퓨터의 AI 도 연결됩니다.\n- 답이 실시간으로 흐르고, [멈춤]으로 언제든 멈춥니다.\n- 올라마 같은 내 컴퓨터의 AI 모델을 주소만 적어 연결합니다.\n- 제안을 하나씩 골라 적용하고, 누르면 문서의 그 자리로 갑니다.\n- 글을 고르고 오른쪽 클릭하면 하이퍼 AI 로 바로 다듬습니다.\n- 셈에서 함수를 고른 뒤 칸을 누르거나 끌어 범위를 넣습니다. 한글 상태로 친 수식도 바로 영문으로 바뀝니다.\n- 새 발표가 바로 열리고, 테마는 언제든 바꿉니다.\n- 탭이 많아도 지금 문서가 늘 보이고, 좁은 창에서는 서식 단추가 » 안에 모입니다.\n- 한글 입력 뒤 Enter, 셈의 Tab·Enter, 발표 글 상자 입력이 더 매끄럽습니다.\n- PDF 글을 고칠 때 누른 자리에 바로 커서가 놓입니다.\n- 영어 문장 첫머리의 The 같은 낱말이 한글로 바뀌지 않습니다. 영어 화면에서는 한/영 자동 전환이 처음부터 꺼져 있습니다.\n- 윈도우에서 하이퍼 AI 창이나 서식 칸에 커서가 있어도 저장·열기 단축키가 됩니다.\n- 도구 › 매뉴얼에서 그림과 함께 따라 하는 매뉴얼을 엽니다.\n- 맥에서 ⌘Q 로 앱을 완전히 끝냅니다.\n- 하이퍼 AI 연결을 포함해 모든 기능이 무료입니다. 메뉴 막대의 ♥ 응원에서 커피 한 잔으로 응원할 수 있습니다."
   },
   "config": {
     "flags": {},
@@ -66,5 +66,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "yO/xSHFWCcF/m5lRtnjFZOs+AjLR9k9UK7xyC9Ct3soYReyXExt6OhwbplEH9bWDuRAb8s8MdhStaRVIeQSMDA=="
+  "sig": "GGLrb2loLGDRxMugDPOz0hngIlqGt7FNHkLvPR0+X42eV6QhRgFMQJqnDFfa+HBromdZ9XrI5I1pZZrsMHYWAA=="
 }
