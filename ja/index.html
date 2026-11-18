@@ -48,9 +48,9 @@
     <section class="hero menu">
       <div class="wrap">
         <div class="menu-head">
-          <span class="eyebrow"><img src="../assets/brand/hyperseven-mark.svg" alt="" width="18" height="18" />HyperSeven</span>
+          <span class="eyebrow"><img src="../assets/brand/hyperseven-mark.svg" alt="" width="18" height="18" />AI時代の新しい制作ツール</span>
           <h1>いい道具を、<br />垣根なく<span class="ver">。</span></h1>
-          <p class="lead">いつものファイルをそのまま開き、編集し、保存できるオフィスとCAD。<br />すべての機能を無料で使えます。</p>
+          <p class="lead">いつものファイルと使い方はそのままに、AIと一緒に書いて描けるオフィスとCAD。<br />すべての機能を無料で使えます。</p>
           <div class="fmts hero-fmts" aria-label="開ける形式">
             <span class="fmt o">HWP</span><span class="fmt o">HWPX</span><span class="fmt o">DOCX</span><span class="fmt o">XLSX</span><span class="fmt o">PPTX</span><span class="fmt o">PDF</span><span class="fmt c">DWG</span><span class="fmt c">SKP</span><span class="fmt c">3DM</span><span class="fmt c">IFC</span><span class="fmt c">RVT</span>
           </div>
@@ -74,26 +74,98 @@
       </div>
     </section>
 
-    <section class="sec" id="why">
+    <section class="sec" id="bridge">
       <div class="wrap">
-        <div class="mani">
-          <div class="kicker">なぜ無料なのか</div>
-          <h2>同じファイルを開くために、<br />同じソフトを買う必要はありません<span class="ver">。</span></h2>
-          <p class="mani-p">HyperSevenは、オフィスとCADを一からつくりました。課題を書く学生も、立ち上げたばかりの一人事務所も、経験を重ねた設計者も、同じ道具で仕事をしています。</p>
+        <div class="sec-head">
+          <div class="kicker">いつもどおり + AI</div>
+          <h2>いつものやり方はそのまま、<br />AIはすぐ隣に</h2>
+          <p>ファイルも、メニューとショートカットも、赤ペンの添削も、いつものままです。そのうえでAIが同じ文書を読み、直すところを提案します。番号を押してみてください。</p>
         </div>
-        <div class="points vows">
-          <div class="point"><span class="n">01</span><b>すべての機能が無料</b><p>学生も企業も、同じアプリ、同じ機能。インストールすればすぐに始められます。</p></div>
-          <div class="point"><span class="n">02</span><b>いつものファイルのまま</b><p>HWP・DOCX・XLSX・PPTX・DWG・SKP・IFC。やり取りしてきた形式のまま開いて保存します。</p></div>
-          <div class="point"><span class="n">03</span><b>オープン標準で保存</b><p>HWPX・DOCX・IFC・glTFなどのオープン標準で書き出します。</p></div>
-          <div class="point"><span class="n">04</span><b>自分のAIをつなぐ</b><p>自分のAnthropic APIキーや、手元のパソコンのモデルでHyperAIを使えます。ClaudeなどのエージェントもMCPでつなげます。</p></div>
-        </div>
+        <!-- 첫 화면 '그대로 + AI': 실제 앱 화면 위에 번호(검정 = 익숙한 그대로, 보라 = AI와 함께)를 찍고 옆에 풀이. 오피스·캐드는 위 단추로 바꿔 본다 (site.js) -->
+<div class="bridge">
+  <div class="seg" role="tablist" aria-label="表示を選ぶ">
+    <button type="button" role="tab" class="on" aria-selected="true" data-tab="office">オフィス</button>
+    <button type="button" role="tab" aria-selected="false" data-tab="cad">CAD</button>
+  </div>
+
+  <div class="anno-pane" data-pane="office">
+    <div class="window anno-shot">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="anno-img">
+        <img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office：HWPの報告書に赤ペンで直す箇所を書き込むと、右のAIアシスタントが2か所の変更を提案し、適用ボタンを表示している画面" loading="lazy" width="1920" height="1080" />
+        <span class="pin" data-pin="1" style="left: 93.5%; top: 4.5%">1</span>
+        <span class="pin" data-pin="2" style="left: 4.8%; top: 7.5%">2</span>
+        <span class="pin" data-pin="3" style="left: 65%; top: 50.5%">3</span>
+        <span class="pin ai" data-pin="4" style="left: 97%; top: 24%">4</span>
+        <span class="pin ai" data-pin="5" style="left: 82%; top: 40.8%">5</span>
+      </div>
+    </div>
+    <div class="anno-legend">
+      <div class="anno-group">
+        <h3>いつもどおり</h3>
+        <ol>
+          <li data-pin="1"><span class="pin">1</span><div><b>HWPファイルをそのまま</b><p>受け取ったファイルをそのまま開き、同じ形式で保存します。</p></div></li>
+          <li data-pin="2"><span class="pin">2</span><div><b>いつものメニューとショートカット</b><p>文字、段落、Ctrl+S。名前もキーも慣れたままです。</p></div></li>
+          <li data-pin="3"><span class="pin">3</span><div><b>紙と同じ赤ペン</b><p>線を引いて、余白に直す言葉を書きます。</p></div></li>
+        </ol>
+      </div>
+      <div class="anno-group ai">
+        <h3>AIと一緒に</h3>
+        <ol>
+          <li data-pin="4"><span class="pin ai">4</span><div><b>AIが添削を読む</b><p>「添削どおりに直して」のひと言で、変わるところだけを見せます。</p></div></li>
+          <li data-pin="5"><span class="pin ai">5</span><div><b>適用するのは人</b><p>[Apply]を押すまで変わらず、元に戻すのも一度で。</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="anno-pane" data-pane="cad" hidden>
+    <div class="window dark anno-shot">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="anno-img">
+        <img src="../assets/shots/cad-ai-en.webp" alt="HyperSeven CAD：言葉で指示すると、AIが屋上に太陽光パネル104枚を紫の提案として置き、上に承認・破棄ボタンが表示されている画面" loading="lazy" width="1600" height="1000" />
+        <span class="pin" data-pin="1" style="left: 23.5%; top: 2.8%">1</span>
+        <span class="pin" data-pin="2" style="left: 8.5%; top: 26%">2</span>
+        <span class="pin ai" data-pin="3" style="left: 76%; top: 27%">3</span>
+        <span class="pin ai" data-pin="4" style="left: 50%; top: 40%">4</span>
+        <span class="pin ai" data-pin="5" style="left: 62%; top: 21.5%">5</span>
+      </div>
+    </div>
+    <div class="anno-legend">
+      <div class="anno-group">
+        <h3>いつもどおり</h3>
+        <ol>
+          <li data-pin="1"><span class="pin">1</span><div><b>2D製図からBIMまで</b><p>図面・3D・曲面・BIMを、慣れたやり方で行き来します。</p></div></li>
+          <li data-pin="2"><span class="pin">2</span><div><b>いつものコマンド名</b><p>壁・ドア・窓。慣れたコマンド名とショートカットのままです。</p></div></li>
+        </ol>
+      </div>
+      <div class="anno-group ai">
+        <h3>AIと一緒に</h3>
+        <ol>
+          <li data-pin="3"><span class="pin ai">3</span><div><b>言葉で指示</b><p>「屋上に南向きの太陽光パネルを並べて」</p></div></li>
+          <li data-pin="4"><span class="pin ai">4</span><div><b>紫の提案</b><p>モデルを変える前に、提案として先に見せます。</p></div></li>
+          <li data-pin="5"><span class="pin ai">5</span><div><b>確定するのは人</b><p>チェックを通った提案だけを[Accept]で確定します。</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="flow" aria-label="AIと仕事をする流れ">
+    <div><b>書き込む・話す</b><span>赤ペン · 声 · 文字</span></div>
+    <i aria-hidden="true">→</i>
+    <div class="ai"><b>AIが提案する</b><span>変わるところだけを先に</span></div>
+    <i aria-hidden="true">→</i>
+    <div><b>人が決める</b><span>適用するか、破棄するか</span></div>
+  </div>
+</div>
+
       </div>
     </section>
 
     <section class="sec soft" id="compat">
       <div class="wrap">
         <div class="sec-head">
-          <div class="kicker">互換性</div>
+          <div class="kicker">いつもどおり · ファイル</div>
           <h2>相手が何を使っていても、<br />ファイルはそのまま行き来します</h2>
           <p>受け取ったファイルをそのまま開いて編集し、相手が使う形式で保存します。</p>
         </div>
@@ -127,7 +199,7 @@
     <section class="sec" id="platform">
       <div class="wrap duo">
         <div>
-          <div class="kicker">ひとつのプラットフォーム</div>
+          <div class="kicker">いつもどおり · 使い方</div>
           <h2>書く仕事から建てる仕事まで、<br />使い方はひとつ</h2>
           <div class="pros">
             <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><b>形式を変えても書式はそのまま</b><p>Hangulで開いてWordで保存しても、表・フォント・ページのレイアウトはそのままです。</p></div>
@@ -158,7 +230,7 @@
     <section class="sec soft" id="ai">
       <div class="wrap">
         <div class="sec-head">
-          <div class="kicker">AIネイティブ</div>
+          <div class="kicker">AIと一緒に · エージェント</div>
           <h2>AIがすぐに使いこなせるツール</h2>
           <p>AIエージェントがファイルの構造を読み取り、必要な箇所だけを直して保存します。同じ仕事を、ずっと少ないトークンで。</p>
         </div>
@@ -182,7 +254,23 @@
       </div>
     </section>
 
-    <section class="sec" id="together">
+    <section class="sec" id="why">
+      <div class="wrap">
+        <div class="mani">
+          <div class="kicker">なぜ無料なのか</div>
+          <h2>同じファイルを開くために、<br />同じソフトを買う必要はありません<span class="ver">。</span></h2>
+          <p class="mani-p">HyperSevenは、オフィスとCADを一からつくりました。課題を書く学生も、立ち上げたばかりの一人事務所も、経験を重ねた設計者も、同じ道具で仕事をしています。</p>
+        </div>
+        <div class="points vows">
+          <div class="point"><span class="n">01</span><b>すべての機能が無料</b><p>学生も企業も、同じアプリ、同じ機能。インストールすればすぐに始められます。</p></div>
+          <div class="point"><span class="n">02</span><b>いつものファイルのまま</b><p>HWP・DOCX・XLSX・PPTX・DWG・SKP・IFC。やり取りしてきた形式のまま開いて保存します。</p></div>
+          <div class="point"><span class="n">03</span><b>オープン標準で保存</b><p>HWPX・DOCX・IFC・glTFなどのオープン標準で書き出します。</p></div>
+          <div class="point"><span class="n">04</span><b>自分のAIをつなぐ</b><p>自分のAnthropic APIキーや、手元のパソコンのモデルでHyperAIを使えます。ClaudeなどのエージェントもMCPでつなげます。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec soft" id="together">
       <div class="wrap duo">
         <div>
           <div class="kicker">一緒につくる</div>
@@ -204,7 +292,7 @@
       </div>
     </section>
 
-    <section class="sec soft" id="end">
+    <section class="sec" id="end">
       <div class="wrap">
         <div class="end">
           <img class="end-mark" src="../assets/brand/hyperseven-mark.svg" alt="" width="96" height="93" />

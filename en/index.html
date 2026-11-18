@@ -48,9 +48,9 @@
     <section class="hero menu">
       <div class="wrap">
         <div class="menu-head">
-          <span class="eyebrow"><img src="../assets/brand/hyperseven-mark.svg" alt="" width="18" height="18" />HyperSeven</span>
+          <span class="eyebrow"><img src="../assets/brand/hyperseven-mark.svg" alt="" width="18" height="18" />A new authoring tool for the AI era</span>
           <h1>Good tools,<br />without barriers<span class="ver">.</span></h1>
-          <p class="lead">An office suite and a CAD app that open, edit and save the files you already use.<br />Every feature is free.</p>
+          <p class="lead">An office suite and CAD that keep your files and habits, and work alongside AI.<br />Every feature is free.</p>
           <div class="fmts hero-fmts" aria-label="Formats it opens">
             <span class="fmt o">HWP</span><span class="fmt o">HWPX</span><span class="fmt o">DOCX</span><span class="fmt o">XLSX</span><span class="fmt o">PPTX</span><span class="fmt o">PDF</span><span class="fmt c">DWG</span><span class="fmt c">SKP</span><span class="fmt c">3DM</span><span class="fmt c">IFC</span><span class="fmt c">RVT</span>
           </div>
@@ -74,26 +74,98 @@
       </div>
     </section>
 
-    <section class="sec" id="why">
+    <section class="sec" id="bridge">
       <div class="wrap">
-        <div class="mani">
-          <div class="kicker">Why free</div>
-          <h2>Opening the same file<br />shouldn't mean buying<br />the same program<span class="ver">.</span></h2>
-          <p class="mani-p">HyperSeven built its office suite and CAD from the ground up. Students writing assignments, one-person studios just starting out and architects with decades behind them all work with the same tools.</p>
+        <div class="sec-head">
+          <div class="kicker">Familiar + AI</div>
+          <h2>Work the way you already do,<br />with AI right beside you</h2>
+          <p>Your files, menus, shortcuts and red-pen markup all stay as they are. On top of that, AI reads the same document and proposes what to change. Tap a number to see where.</p>
         </div>
-        <div class="points vows">
-          <div class="point"><span class="n">01</span><b>Every feature, free</b><p>Students and companies get the same app and the same features. Install it and start.</p></div>
-          <div class="point"><span class="n">02</span><b>Your files, as they are</b><p>HWP, DOCX, XLSX, PPTX, DWG, SKP, IFC. Open and save in the formats you already exchange.</p></div>
-          <div class="point"><span class="n">03</span><b>Saves to open standards</b><p>Export to open standards such as HWPX, DOCX, IFC and glTF.</p></div>
-          <div class="point"><span class="n">04</span><b>Bring your own AI</b><p>Use HyperAI with your own Anthropic API key or a model on your computer. Connect agents such as Claude over MCP.</p></div>
-        </div>
+        <!-- 첫 화면 '그대로 + AI': 실제 앱 화면 위에 번호(검정 = 익숙한 그대로, 보라 = AI와 함께)를 찍고 옆에 풀이. 오피스·캐드는 위 단추로 바꿔 본다 (site.js) -->
+<div class="bridge">
+  <div class="seg" role="tablist" aria-label="Choose a view">
+    <button type="button" role="tab" class="on" aria-selected="true" data-tab="office">Office</button>
+    <button type="button" role="tab" aria-selected="false" data-tab="cad">CAD</button>
+  </div>
+
+  <div class="anno-pane" data-pane="office">
+    <div class="window anno-shot">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="anno-img">
+        <img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office: red-pen marks on an HWP report, and the AI assistant on the right proposing two changes with an Apply button" loading="lazy" width="1920" height="1080" />
+        <span class="pin" data-pin="1" style="left: 93.5%; top: 4.5%">1</span>
+        <span class="pin" data-pin="2" style="left: 4.8%; top: 7.5%">2</span>
+        <span class="pin" data-pin="3" style="left: 65%; top: 50.5%">3</span>
+        <span class="pin ai" data-pin="4" style="left: 97%; top: 24%">4</span>
+        <span class="pin ai" data-pin="5" style="left: 82%; top: 40.8%">5</span>
+      </div>
+    </div>
+    <div class="anno-legend">
+      <div class="anno-group">
+        <h3>As you know it</h3>
+        <ol>
+          <li data-pin="1"><span class="pin">1</span><div><b>Your HWP file, as is</b><p>Open what you receive and save it back in the same format.</p></div></li>
+          <li data-pin="2"><span class="pin">2</span><div><b>Familiar menus and shortcuts</b><p>Character, Paragraph, Ctrl+S — the names and keys you already know.</p></div></li>
+          <li data-pin="3"><span class="pin">3</span><div><b>A red pen, like on paper</b><p>Strike through and write the fix in the margin.</p></div></li>
+        </ol>
+      </div>
+      <div class="anno-group ai">
+        <h3>With AI</h3>
+        <ol>
+          <li data-pin="4"><span class="pin ai">4</span><div><b>AI reads your markup</b><p>Say “Apply my red-pen markup” and see only what will change.</p></div></li>
+          <li data-pin="5"><span class="pin ai">5</span><div><b>You apply it</b><p>Nothing changes until you click Apply, and one Undo puts it back.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="anno-pane" data-pane="cad" hidden>
+    <div class="window dark anno-shot">
+      <div class="bar"><i></i><i></i><i></i></div>
+      <div class="anno-img">
+        <img src="../assets/shots/cad-ai-en.webp" alt="HyperSeven CAD: after a spoken request, AI places 104 solar panels on the roof as purple proposals, with Accept and Discard buttons above" loading="lazy" width="1600" height="1000" />
+        <span class="pin" data-pin="1" style="left: 23.5%; top: 2.8%">1</span>
+        <span class="pin" data-pin="2" style="left: 8.5%; top: 26%">2</span>
+        <span class="pin ai" data-pin="3" style="left: 76%; top: 27%">3</span>
+        <span class="pin ai" data-pin="4" style="left: 50%; top: 40%">4</span>
+        <span class="pin ai" data-pin="5" style="left: 62%; top: 21.5%">5</span>
+      </div>
+    </div>
+    <div class="anno-legend">
+      <div class="anno-group">
+        <h3>As you know it</h3>
+        <ol>
+          <li data-pin="1"><span class="pin">1</span><div><b>From 2D drafting to BIM</b><p>Move between drawings, 3D, surfaces and BIM the way you are used to.</p></div></li>
+          <li data-pin="2"><span class="pin">2</span><div><b>The commands you know</b><p>Wall, Door, Window — familiar command names and shortcuts.</p></div></li>
+        </ol>
+      </div>
+      <div class="anno-group ai">
+        <h3>With AI</h3>
+        <ol>
+          <li data-pin="3"><span class="pin ai">3</span><div><b>Say what you want</b><p>“Lay out south-facing solar panels on the roof.”</p></div></li>
+          <li data-pin="4"><span class="pin ai">4</span><div><b>Purple proposals</b><p>Changes show up as proposals before they touch the model.</p></div></li>
+          <li data-pin="5"><span class="pin ai">5</span><div><b>You accept it</b><p>Only proposals that pass the checks become real when you click Accept.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="flow" aria-label="How you work with AI">
+    <div><b>Mark it or say it</b><span>Red pen · voice · text</span></div>
+    <i aria-hidden="true">→</i>
+    <div class="ai"><b>AI proposes</b><span>Only what will change</span></div>
+    <i aria-hidden="true">→</i>
+    <div><b>You decide</b><span>Apply or discard</span></div>
+  </div>
+</div>
+
       </div>
     </section>
 
     <section class="sec soft" id="compat">
       <div class="wrap">
         <div class="sec-head">
-          <div class="kicker">Compatibility</div>
+          <div class="kicker">As you know it · Files</div>
           <h2>Whatever anyone uses,<br />files move as they are</h2>
           <p>Open what you receive, edit it, and save it in the format the other side uses.</p>
         </div>
@@ -127,7 +199,7 @@
     <section class="sec" id="platform">
       <div class="wrap duo">
         <div>
-          <div class="kicker">One platform</div>
+          <div class="kicker">As you know it · Habits</div>
           <h2>From writing to building,<br />learn it once</h2>
           <div class="pros">
             <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 2 4 4-4 4" /><path d="M3 11v-1a4 4 0 0 1 4-4h14" /><path d="m7 22-4-4 4-4" /><path d="M21 13v1a4 4 0 0 1-4 4H3" /></svg></span><b>Formatting survives every save</b><p>Open a Hangul file, save it as Word, and the tables, fonts and page layout stay intact.</p></div>
@@ -158,7 +230,7 @@
     <section class="sec soft" id="ai">
       <div class="wrap">
         <div class="sec-head">
-          <div class="kicker">AI-native</div>
+          <div class="kicker">With AI · Agents</div>
           <h2>Where AI gets right to work</h2>
           <p>AI agents read files by their structure, change only what needs changing, and save. The same work, for far fewer tokens.</p>
         </div>
@@ -182,7 +254,23 @@
       </div>
     </section>
 
-    <section class="sec" id="together">
+    <section class="sec" id="why">
+      <div class="wrap">
+        <div class="mani">
+          <div class="kicker">Why free</div>
+          <h2>Opening the same file<br />shouldn't mean buying<br />the same program<span class="ver">.</span></h2>
+          <p class="mani-p">HyperSeven built its office suite and CAD from the ground up. Students writing assignments, one-person studios just starting out and architects with decades behind them all work with the same tools.</p>
+        </div>
+        <div class="points vows">
+          <div class="point"><span class="n">01</span><b>Every feature, free</b><p>Students and companies get the same app and the same features. Install it and start.</p></div>
+          <div class="point"><span class="n">02</span><b>Your files, as they are</b><p>HWP, DOCX, XLSX, PPTX, DWG, SKP, IFC. Open and save in the formats you already exchange.</p></div>
+          <div class="point"><span class="n">03</span><b>Saves to open standards</b><p>Export to open standards such as HWPX, DOCX, IFC and glTF.</p></div>
+          <div class="point"><span class="n">04</span><b>Bring your own AI</b><p>Use HyperAI with your own Anthropic API key or a model on your computer. Connect agents such as Claude over MCP.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec soft" id="together">
       <div class="wrap duo">
         <div>
           <div class="kicker">Built together</div>
@@ -204,7 +292,7 @@
       </div>
     </section>
 
-    <section class="sec soft" id="end">
+    <section class="sec" id="end">
       <div class="wrap">
         <div class="end">
           <img class="end-mark" src="../assets/brand/hyperseven-mark.svg" alt="" width="96" height="93" />
