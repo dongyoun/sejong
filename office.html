@@ -38,7 +38,7 @@
         <a href="manual.html">매뉴얼</a>
         <a href="notes.html">업데이트</a>
         <a class="nav-support sponsor-only" href="support.html" aria-label="응원하기"><span aria-hidden="true">♥</span> 응원하기</a>
-        <a class="nav-cta" href="office.html#download">내려받기</a>
+        <a class="nav-cta" href="office.html#download">다운로드</a>
       </nav>
       <details class="lang"><summary aria-label="언어 바꾸기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z" /></svg><span>한국어</span></summary><div class="lang-list"><a href="office.html" hreflang="ko" lang="ko" data-l="ko" aria-current="true">한국어</a><a href="en/office.html" hreflang="en" lang="en" data-l="en">English</a><a href="ja/office.html" hreflang="ja" lang="ja" data-l="ja">日本語</a></div></details>
     </div>
@@ -52,29 +52,28 @@
         <p class="lead">빨간펜으로 표시하고, 말로 시키면 AI가 고칠 곳을 제안합니다. HWP·DOCX·XLSX·PPTX·PDF를 한 앱에서, 누구나 무료로.</p>
         <div class="get">
           <div class="get-btns">
-  <div class="get-win get-mac" data-os="mac">
+  <!-- 왼쪽 윈도우, 오른쪽 맥. 순서는 고정이고, 이 컴퓨터의 운영체제 단추만 진하게 (site.js). 큰 단추 아래 작은 줄 하나만 -->
+  <div class="get-os" data-os="win">
+    <a class="btn os store-only" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>윈도우용 다운로드<small data-dl-meta="store">준비 중</small></span>
+    </a>
+    <a class="btn os exe-only" href="office.html#download" data-dl="exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>윈도우용 다운로드<small data-dl-meta="win">준비 중</small></span>
+    </a>
+    <a class="get-alt store-only" href="office.html#install" data-dl="exe">설치 파일로 받기 (.exe)</a>
+  </div>
+  <div class="get-os" data-os="mac">
     <a class="btn os" href="office.html#download" data-dl="dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-      <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
+      <span>맥용 다운로드<small data-dl-meta="mac">준비 중</small></span>
     </a>
-    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64가 없으면 숨는다 (site.js) -->
-    <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">인텔 맥용 다운로드</a>
+    <a class="get-alt get-intel disabled" href="office.html#install" data-dl="dmgx64">인텔 맥용</a>
   </div>
-  <div class="get-win store-only" data-os="win">
-    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
-      <span>Microsoft Store에서 설치<small>Windows 10·11 · 무료 · 자동 업데이트</small></span>
-    </a>
-    <a class="get-exe" href="office.html#install" data-dl="exe">Windows 설치 파일 직접 다운로드 (.exe)</a>
-    <small class="get-exe-note">처음 실행할 때 ‘Windows의 PC 보호’ 경고가 나오면 추가 정보 › 실행을 누르세요.</small>
-  </div>
-  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>Windows 다운로드<small data-dl-meta="win">준비 중</small></span>
-  </a>
 </div>
 
-          <p class="get-note">무료 · 맥(Apple Silicon·인텔) · 윈도우 10·11 · <a href="#install">설치 안내</a></p>
+          <p class="get-note">무료 · <a href="#install">설치 안내</a></p>
         </div>
         <div class="fan" aria-hidden="true">
   <div class="fc f1"><div class="ln"><i class="h"></i><i></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">HWP</span></div>
@@ -106,7 +105,7 @@
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4" /><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" /></svg></span><b>기능을 알려 주는 AI</b><p>“차례 만들어 줘” 하면 그 기능을 단추로 꺼내 주고 단축키까지 알려 줍니다.</p></div>
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0z" /><path d="M12 18v4" /></svg></span><b>내 AI 에이전트와 연결</b><p>Claude 같은 에이전트가 MCP로 문서를 읽고 필요한 곳만 고칩니다.</p></div>
         </div>
-        <p class="note">AI 도우미는 무엇을 하는지 미리 보기로 먼저 보여 주고, 로그인하고 내 Anthropic API 키를 연결하면 최신 Claude를 씁니다. AI 사용료는 내 키로 Anthropic에 냅니다. 문서는 요청할 때만 보냅니다.</p>
+        <p class="note">하이퍼 AI는 로그인한 뒤 내 Anthropic API 키나 내 컴퓨터의 모델을 연결해 씁니다. API 사용료는 Anthropic에 직접 냅니다.</p>
       </div>
     </section>
 
@@ -117,7 +116,7 @@
           <div class="kicker">호환</div>
           <h2>누구와도<br />그대로 주고받습니다</h2>
           <p>받은 문서를 그대로 열고, 상대가 쓰는 형식으로 저장해 보냅니다. 상대는 쓰던 프로그램에서 그대로 엽니다.</p>
-          <p class="cnote">표시가 없는 형식은 열고 저장합니다.</p>
+          <p class="cnote">표시가 없는 형식은 열기와 저장을 모두 지원합니다.</p>
         </div>
         <div class="cbox office">
           <dl class="crows">
@@ -174,7 +173,6 @@
             <figcaption>테마를 고르고 [만들기]. 제목만, 또는 본문 첫 문장까지 담습니다.</figcaption>
           </figure>
         </div>
-        <p class="fine shots-fine">화면은 예시 문서로 찍었습니다.</p>
         <div class="grid3">
           <div class="card">
             <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v4h4M9 12h6M9 16h6" /></svg></div>
@@ -247,48 +245,47 @@
         </div>
         <div class="get">
           <div class="get-btns">
-  <div class="get-win get-mac" data-os="mac">
+  <!-- 왼쪽 윈도우, 오른쪽 맥. 순서는 고정이고, 이 컴퓨터의 운영체제 단추만 진하게 (site.js). 큰 단추 아래 작은 줄 하나만 -->
+  <div class="get-os" data-os="win">
+    <a class="btn os store-only" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>윈도우용 다운로드<small data-dl-meta="store">준비 중</small></span>
+    </a>
+    <a class="btn os exe-only" href="office.html#download" data-dl="exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>윈도우용 다운로드<small data-dl-meta="win">준비 중</small></span>
+    </a>
+    <a class="get-alt store-only" href="office.html#install" data-dl="exe">설치 파일로 받기 (.exe)</a>
+  </div>
+  <div class="get-os" data-os="mac">
     <a class="btn os" href="office.html#download" data-dl="dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-      <span>macOS 다운로드<small data-dl-meta="mac">준비 중</small></span>
+      <span>맥용 다운로드<small data-dl-meta="mac">준비 중</small></span>
     </a>
-    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64가 없으면 숨는다 (site.js) -->
-    <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">인텔 맥용 다운로드</a>
+    <a class="get-alt get-intel disabled" href="office.html#install" data-dl="dmgx64">인텔 맥용</a>
   </div>
-  <div class="get-win store-only" data-os="win">
-    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
-      <span>Microsoft Store에서 설치<small>Windows 10·11 · 무료 · 자동 업데이트</small></span>
-    </a>
-    <a class="get-exe" href="office.html#install" data-dl="exe">Windows 설치 파일 직접 다운로드 (.exe)</a>
-    <small class="get-exe-note">처음 실행할 때 ‘Windows의 PC 보호’ 경고가 나오면 추가 정보 › 실행을 누르세요.</small>
-  </div>
-  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>Windows 다운로드<small data-dl-meta="win">준비 중</small></span>
-  </a>
 </div>
 
         </div>
         <div class="install">
           <div class="box">
-            <h3>맥</h3>
-            <ol class="steps">
-              <li><b>.dmg</b>를 열고 <b>HyperSeven Office</b>를 <b>응용 프로그램</b> 폴더로 옮깁니다.</li>
-              <li>애플 공증을 받은 앱이라 바로 열립니다.</li>
-            </ol>
-          </div>
-          <div class="box">
             <h3>윈도우</h3>
             <ol class="steps">
-              <li class="store-only"><b>Microsoft Store에서 설치</b>를 누르면 스토어가 설치하고, 새 버전도 알아서 받습니다.</li>
-              <li class="store-only">설치 파일(<b>.exe</b>)로 직접 설치할 때 “Windows의 PC 보호” 창이 나오면 <b>추가 정보 › 실행</b>을 누릅니다.</li>
+              <li class="store-only"><b>윈도우용 다운로드</b>를 누르면 Microsoft Store에서 설치하고, 새 버전도 자동으로 받습니다.</li>
+              <li class="store-only"><b>설치 파일로 받기 (.exe)</b>로 설치할 때 “Windows의 PC 보호” 창이 나오면 <b>추가 정보 › 실행</b>을 누릅니다.</li>
               <li class="exe-only"><b>.exe</b>를 실행하면 설치가 끝나고 바로 앱이 열립니다.</li>
               <li class="exe-only">“Windows의 PC 보호” 창이 나오면 <b>추가 정보 › 실행</b>을 누릅니다.</li>
             </ol>
           </div>
+          <div class="box">
+            <h3>맥</h3>
+            <ol class="steps">
+              <li><b>.dmg</b>를 열고 <b>HyperSeven Office</b>를 <b>응용 프로그램</b> 폴더로 옮깁니다.</li>
+              <li>응용 프로그램 폴더에서 열면 바로 시작합니다.</li>
+            </ol>
+          </div>
         </div>
-        <p class="fine">새 버전이 나오면 앱이 알려 드립니다. 설치 없이 쓰는 윈도우용 <a href="#install" data-dl="winzip">.zip</a>과 맥용 <a href="#install" data-dl="zip">.zip</a>도 있습니다.</p>
+        <p class="fine">새 버전이 나오면 앱이 알려 드립니다.</p>
       </div>
     </section>
 
@@ -301,11 +298,11 @@
         <div class="faq-list">
           <details>
             <summary>무료인가요?</summary>
-            <p>네. 모든 편집 기능을 누구나 무료로 씁니다. 학생도 회사도 같은 앱, 같은 기능입니다. 하이퍼 AI도 로그인하고 내 Anthropic API 키나 내 컴퓨터 모델을 연결해 무료로 씁니다. AI 사용료는 내 키로 Anthropic에 냅니다.</p>
+            <p>네. 모든 기능을 무료로 씁니다. 하이퍼 AI는 내 Anthropic API 키나 내 컴퓨터의 모델을 연결해 쓰고, API 사용료는 Anthropic에 직접 냅니다.</p>
           </details>
           <details>
             <summary>왜 무료인가요?</summary>
-            <p>같은 파일을 열려고 같은 프로그램을 살 필요는 없다고 믿기 때문입니다. 자세한 생각은 <a href="index.html#why">첫 화면</a>에 적어 두었습니다.</p>
+            <p>같은 파일을 열려고 같은 프로그램을 살 필요는 없다고 생각하기 때문입니다.</p>
           </details>
           <details>
             <summary>다른 프로그램을 쓰는 사람과 문서를 주고받아도 되나요?</summary>
@@ -321,7 +318,7 @@
           </details>
           <details>
             <summary>AI는 어떻게 쓰나요?</summary>
-            <p>AI 도우미는 하이퍼세븐 계정으로 로그인한 뒤 내 Anthropic API 키를 한 번 넣어 씁니다. 키는 그 컴퓨터의 열쇠고리에 남아 다시 넣지 않습니다. 내 컴퓨터의 모델(Ollama)도 같은 방법으로 연결해 씁니다. 문서는 요청할 때만, 처음 한 번 동의를 받은 뒤 보냅니다.</p>
+            <p>하이퍼세븐 계정으로 로그인한 뒤 내 Anthropic API 키를 한 번 넣으면 됩니다. 내 컴퓨터의 모델(Ollama)도 주소만 적어 연결합니다. 문서는 AI에게 요청할 때만 보냅니다.</p>
           </details>
           <details>
             <summary>빨간펜 첨삭은 인쇄되나요?</summary>
@@ -329,7 +326,7 @@
           </details>
           <details>
             <summary>인텔 맥에서도 되나요?</summary>
-            <p>네. 내려받기 단추 아래의 <b>인텔 맥용 다운로드</b>를 받으면 됩니다. 내 맥이 어느 쪽인지 모르겠다면 화면 왼쪽 위 애플 메뉴 › <b>이 Mac에 관하여</b>에서 ‘칩’이 Apple M으로 시작하면 Apple Silicon, ‘프로세서’에 Intel이 보이면 인텔 맥입니다.</p>
+            <p>네. <b>맥용 다운로드</b> 단추 아래의 <b>인텔 맥용</b>을 받으면 됩니다. 내 맥이 어느 쪽인지 모르겠다면 화면 왼쪽 위 애플 메뉴 › <b>이 Mac에 관하여</b>에서 ‘칩’이 Apple M으로 시작하면 Apple Silicon, ‘프로세서’에 Intel이 보이면 인텔 맥입니다.</p>
           </details>
           <details>
             <summary>영어로도 쓸 수 있나요?</summary>
@@ -360,7 +357,7 @@
           <p class="more"><a class="link" href="notes.html">전체 업데이트 내역 <span aria-hidden="true">→</span></a></p>
         </div>
         <div class="warm-band sponsor-only">
-          <p><span aria-hidden="true" style="color:#c2185b">♥</span> 하이퍼세븐은 모든 기능을 누구나 무료로 씁니다. 쓸모 있었다면 커피 한 잔으로 응원해 주세요.</p>
+          <p><span aria-hidden="true" style="color:#c2185b">♥</span> 도움이 되셨다면 커피 한 잔으로 응원해 주세요.</p>
           <div class="btns"><a class="btn pink" href="support.html"><span aria-hidden="true">♥</span> 응원하기</a></div>
         </div>
       </div>

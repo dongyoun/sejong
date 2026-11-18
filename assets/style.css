@@ -2342,47 +2342,41 @@ body:lang(ja) {
   color: var(--muted);
 }
 .get-btns {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 12px;
-}
-.get-btns .btn {
-  min-width: 232px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 248px));
+  gap: 14px;
 }
 /* 스토어 공개 전후: site.json 의 msStore 가 있으면 <html data-store> — 스토어 단추·글을 보이고, 없으면 .exe 단추·글 */
 html:not([data-store]) .store-only,
 html[data-store] .exe-only {
   display: none !important;
 }
-/* 윈도우: Microsoft Store 단추(큰 것) + 바로 아래 설치 파일 직접 받기(작은 링크·주의) */
-.get-win {
+/* 운영체제 한 칸: 큰 단추(판 번호 · 받는 곳) + 그 아래 작은 링크 하나. 왼쪽 윈도우, 오른쪽 맥 */
+.get-os {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
+  align-items: stretch;
+  gap: 8px;
+  text-align: center;
 }
-.get-exe {
-  margin-top: 4px;
-  font-size: 14px;
-  font-weight: 600;
+.get-os .btn {
+  justify-content: center;
+  text-align: left;
+}
+.get-alt {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+}
+.get-alt:hover {
   color: var(--ink);
   text-decoration: underline;
-  text-decoration-color: #c4c9d2;
   text-underline-offset: 3px;
 }
-.get-exe:hover {
-  text-decoration-color: currentColor;
-}
-.get-exe-note {
-  max-width: 300px;
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-.phero .get-win {
-  align-items: center;
-  text-align: center;
+.get-alt.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .btn.ghost {
   background: #fff;
@@ -2640,15 +2634,8 @@ html[data-store] .exe-only {
   .install {
     grid-template-columns: 1fr;
   }
-  .get-btns .btn {
-    flex: 1 1 100%;
-    min-width: 0;
-  }
-  .get-win {
-    flex: 1 1 100%;
-  }
-  .get-win .btn {
-    align-self: stretch;
+  .get-btns {
+    grid-template-columns: 1fr;
   }
   .kchip,
   .aichip {
@@ -3189,8 +3176,8 @@ footer [data-email] {
   color: var(--muted);
   text-align: center;
 }
-/* 인텔 맥용 받기 (2026-11-08): 맥 단추 아래 작은 링크 — 안내문에 인텔판이 없으면 숨김 */
-.get-intel.disabled {
+/* 인텔 맥용 받기: 맥 단추 아래 작은 링크 — 안내문에 인텔판이 없으면 숨김 */
+.get-alt.get-intel.disabled {
   display: none;
 }
 

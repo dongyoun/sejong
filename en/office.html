@@ -52,29 +52,28 @@
         <p class="lead">Mark it up with a red pen, say what you want, and AI proposes the edits. HWP, DOCX, XLSX, PPTX and PDF in one app, free for everyone.</p>
         <div class="get">
           <div class="get-btns">
-  <div class="get-win get-mac" data-os="mac">
+  <!-- 왼쪽 윈도우, 오른쪽 맥. 순서는 고정이고, 이 컴퓨터의 운영체제 단추만 진하게 (site.js). 큰 단추 아래 작은 줄 하나만 -->
+  <div class="get-os" data-os="win">
+    <a class="btn os store-only" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>Download for Windows<small data-dl-meta="store">Getting ready</small></span>
+    </a>
+    <a class="btn os exe-only" href="office.html#download" data-dl="exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>Download for Windows<small data-dl-meta="win">Getting ready</small></span>
+    </a>
+    <a class="get-alt store-only" href="office.html#install" data-dl="exe">Installer file (.exe)</a>
+  </div>
+  <div class="get-os" data-os="mac">
     <a class="btn os" href="office.html#download" data-dl="dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-      <span>Download for macOS<small data-dl-meta="mac">Getting ready</small></span>
+      <span>Download for Mac<small data-dl-meta="mac">Getting ready</small></span>
     </a>
-    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64가 없으면 숨는다 (site.js) -->
-    <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">Download for Intel Mac</a>
+    <a class="get-alt get-intel disabled" href="office.html#install" data-dl="dmgx64">Intel Mac</a>
   </div>
-  <div class="get-win store-only" data-os="win">
-    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
-      <span>Get it from Microsoft Store<small>Windows 10/11 · Free · Updates automatically</small></span>
-    </a>
-    <a class="get-exe" href="office.html#install" data-dl="exe">Download the Windows installer (.exe)</a>
-    <small class="get-exe-note">If “Windows protected your PC” appears the first time, click More info › Run anyway.</small>
-  </div>
-  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>Download for Windows<small data-dl-meta="win">Getting ready</small></span>
-  </a>
 </div>
 
-          <p class="get-note">Free · Mac (Apple Silicon and Intel) · Windows 10/11 · <a href="#install">How to install</a></p>
+          <p class="get-note">Free · <a href="#install">How to install</a></p>
         </div>
         <div class="fan" aria-hidden="true">
   <div class="fc f1"><div class="ln"><i class="h"></i><i></i><i></i><i class="s"></i><i></i><i></i></div><span class="badge">HWP</span></div>
@@ -106,7 +105,7 @@
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4" /><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z" /></svg></span><b>AI that teaches the app</b><p>Ask for a table of contents and it hands you the button and the shortcut for next time.</p></div>
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6" /><path d="M6 8h12v4a6 6 0 0 1-12 0z" /><path d="M12 18v4" /></svg></span><b>Connect your AI agents</b><p>Agents like Claude read your documents over MCP and edit only what needs to change.</p></div>
         </div>
-        <p class="note">The AI assistant first shows what it does in a preview; sign in and connect your own Anthropic API key to use the latest Claude, with AI usage billed to your key by Anthropic. Documents are sent only when you ask.</p>
+        <p class="note">Sign in and connect your own Anthropic API key or a model on your computer to use HyperAI. API usage is billed directly by Anthropic.</p>
       </div>
     </section>
 
@@ -117,7 +116,7 @@
           <div class="kicker">Compatibility</div>
           <h2>Swap files<br />with anyone</h2>
           <p>Open what you receive and send it back in the format the other side uses. They open it in the program they already have.</p>
-          <p class="cnote">Formats without a label open and save.</p>
+          <p class="cnote">Formats without a label both open and save.</p>
         </div>
         <div class="cbox office">
           <dl class="crows">
@@ -174,7 +173,6 @@
             <figcaption>Pick a theme and click Create. Headings only, or with the first sentence of each section.</figcaption>
           </figure>
         </div>
-        <p class="fine shots-fine">Screens show example documents.</p>
         <div class="grid3">
           <div class="card">
             <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z" /><path d="M14 3v4h4M9 12h6M9 16h6" /></svg></div>
@@ -247,48 +245,47 @@
         </div>
         <div class="get">
           <div class="get-btns">
-  <div class="get-win get-mac" data-os="mac">
+  <!-- 왼쪽 윈도우, 오른쪽 맥. 순서는 고정이고, 이 컴퓨터의 운영체제 단추만 진하게 (site.js). 큰 단추 아래 작은 줄 하나만 -->
+  <div class="get-os" data-os="win">
+    <a class="btn os store-only" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>Download for Windows<small data-dl-meta="store">Getting ready</small></span>
+    </a>
+    <a class="btn os exe-only" href="office.html#download" data-dl="exe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
+      <span>Download for Windows<small data-dl-meta="win">Getting ready</small></span>
+    </a>
+    <a class="get-alt store-only" href="office.html#install" data-dl="exe">Installer file (.exe)</a>
+  </div>
+  <div class="get-os" data-os="mac">
     <a class="btn os" href="office.html#download" data-dl="dmg">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-      <span>Download for macOS<small data-dl-meta="mac">Getting ready</small></span>
+      <span>Download for Mac<small data-dl-meta="mac">Getting ready</small></span>
     </a>
-    <!-- 인텔 맥용: 대부분은 애플 실리콘이라 .exe 링크처럼 작게 (사용자 지시 2026-11-08). 안내문에 mac.x64가 없으면 숨는다 (site.js) -->
-    <a class="get-exe get-intel disabled" href="office.html#install" data-dl="dmgx64">Download for Intel Mac</a>
+    <a class="get-alt get-intel disabled" href="office.html#install" data-dl="dmgx64">Intel Mac</a>
   </div>
-  <div class="get-win store-only" data-os="win">
-    <a class="btn os" href="https://apps.microsoft.com/detail/9NZLHSVCKQ55" target="_blank" rel="noopener" data-store>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
-      <span>Get it from Microsoft Store<small>Windows 10/11 · Free · Updates automatically</small></span>
-    </a>
-    <a class="get-exe" href="office.html#install" data-dl="exe">Download the Windows installer (.exe)</a>
-    <small class="get-exe-note">If “Windows protected your PC” appears the first time, click More info › Run anyway.</small>
-  </div>
-  <a class="btn os exe-only" href="office.html#download" data-dl="exe" data-os="win">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M4 19h16" /></svg>
-    <span>Download for Windows<small data-dl-meta="win">Getting ready</small></span>
-  </a>
 </div>
 
         </div>
         <div class="install">
           <div class="box">
-            <h3>Mac</h3>
-            <ol class="steps">
-              <li>Open the <b>.dmg</b> and drag <b>HyperSeven Office</b> into the <b>Applications</b> folder.</li>
-              <li>It's notarized by Apple, so it opens right away.</li>
-            </ol>
-          </div>
-          <div class="box">
             <h3>Windows</h3>
             <ol class="steps">
-              <li class="store-only">Click <b>Get it from Microsoft Store</b> — the Store installs the app and keeps it up to date.</li>
-              <li class="store-only">If you install with the <b>.exe</b> instead and “Windows protected your PC” appears, click <b>More info › Run anyway</b>.</li>
+              <li class="store-only">Click <b>Download for Windows</b> — the Microsoft Store installs the app and keeps it up to date.</li>
+              <li class="store-only">If you install with the <b>Installer file (.exe)</b> instead and “Windows protected your PC” appears, click <b>More info › Run anyway</b>.</li>
               <li class="exe-only">Run the <b>.exe</b>, and the app installs and opens right away.</li>
               <li class="exe-only">If “Windows protected your PC” appears, click <b>More info › Run anyway</b>.</li>
             </ol>
           </div>
+          <div class="box">
+            <h3>Mac</h3>
+            <ol class="steps">
+              <li>Open the <b>.dmg</b> and drag <b>HyperSeven Office</b> into the <b>Applications</b> folder.</li>
+              <li>Open it from Applications and you’re ready to go.</li>
+            </ol>
+          </div>
         </div>
-        <p class="fine">The app lets you know when a new version is out. There's also a portable <a href="#install" data-dl="winzip">.zip</a> for Windows and a <a href="#install" data-dl="zip">.zip</a> for Mac.</p>
+        <p class="fine">The app lets you know when a new version is out.</p>
       </div>
     </section>
 
@@ -301,11 +298,11 @@
         <div class="faq-list">
           <details>
             <summary>Is it free?</summary>
-            <p>Yes. Every editing feature is free for everyone. Students and companies get the same app and the same features. HyperAI is free too: sign in and connect your own Anthropic API key or a model on your computer. AI usage is billed to your key by Anthropic.</p>
+            <p>Yes. Every feature is free. HyperAI runs on your own Anthropic API key or a model on your computer, and API usage is billed directly by Anthropic.</p>
           </details>
           <details>
             <summary>Why is it free?</summary>
-            <p>Because opening the same file shouldn't mean buying the same program. We wrote down why on the <a href="index.html#why">home page</a>.</p>
+            <p>Because opening the same file shouldn't mean buying the same program.</p>
           </details>
           <details>
             <summary>Can I exchange documents with people who use other programs?</summary>
@@ -321,7 +318,7 @@
           </details>
           <details>
             <summary>How do I use the AI?</summary>
-            <p>Sign in with a HyperSeven account and add your own Anthropic API key once. The key stays in that computer’s keychain, so you never enter it again. A model on your computer (Ollama) connects the same way. Documents are sent only when you ask, after you agree once.</p>
+            <p>Sign in with a HyperSeven account and add your own Anthropic API key once. A model on your computer (Ollama) connects by its address. Documents are sent only when you ask the AI.</p>
           </details>
           <details>
             <summary>Does red-pen markup print?</summary>
@@ -329,7 +326,7 @@
           </details>
           <details>
             <summary>Does it run on Intel Macs?</summary>
-            <p>Yes. Use <b>Download for Intel Mac</b> under the download button. Not sure which Mac you have? Open the Apple menu › <b>About This Mac</b>: if “Chip” starts with Apple M, it's Apple Silicon; if “Processor” says Intel, it's an Intel Mac.</p>
+            <p>Yes. Use <b>Intel Mac</b> under the <b>Download for Mac</b> button. Not sure which Mac you have? Open the Apple menu › <b>About This Mac</b>: if “Chip” starts with Apple M, it's Apple Silicon; if “Processor” says Intel, it's an Intel Mac.</p>
           </details>
           <details>
             <summary>Can I use it in English?</summary>
@@ -360,7 +357,7 @@
           <p class="more"><a class="link" href="../notes.html">All release notes (Korean) <span aria-hidden="true">→</span></a></p>
         </div>
         <div class="warm-band sponsor-only">
-          <p><span aria-hidden="true" style="color:#c2185b">♥</span> Every HyperSeven feature is free for everyone. If it helped you, buy us a coffee.</p>
+          <p><span aria-hidden="true" style="color:#c2185b">♥</span> If it helped you, buy us a coffee.</p>
           <div class="btns"><a class="btn pink" href="support.html"><span aria-hidden="true">♥</span> Support HyperSeven</a></div>
         </div>
       </div>

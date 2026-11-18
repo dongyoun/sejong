@@ -7,16 +7,24 @@ const T = {
   en: { prep: 'Getting the download ready', win: 'Windows 10/11', notesBelow: 'See the full release notes below.', notesNone: 'See the release notes below.' },
   ja: { prep: '準備中', win: 'Windows 10・11', notesBelow: '更新内容は下で見られます。', notesNone: '更新内容は下で見られます。' },
 }[LANG] || {};
-// 이 컴퓨터가 윈도우인가 (받기 단추는 이 컴퓨터용을 앞에, 진하게)
-const ON_WIN = /win/i.test((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent);
-// 윈도우 쪽은 묶음(.get-win: 스토어 단추 + 설치 파일 링크) — 진하게/연하게는 그 안의 단추에
+// 이 컴퓨터의 운영체제: 'win' | 'mac' | '' (휴대폰·태블릿·리눅스 등은 '' — 두 단추를 같게 둔다)
+const OS = (() => {
+  const p = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
+  const ua = navigator.userAgent || '';
+  if (/android|iphone|ipad|ipod/i.test(ua) || (/mac/i.test(p) && navigator.maxTouchPoints > 1)) return '';
+  if (/win/i.test(p) || (!p && /windows/i.test(ua))) return 'win';
+  if (/mac/i.test(p) || (!p && /macintosh/i.test(ua))) return 'mac';
+  return '';
+})();
+const ON_WIN = OS === 'win';
+// 받기 단추: 순서는 그대로(왼쪽 윈도우, 오른쪽 맥), 이 컴퓨터용만 진하게 — 다른 쪽은 연하게(ghost)
 const primary = (os) =>
-  document.querySelectorAll('.get-btns').forEach((box) => {
-    // 윈도우는 스토어 묶음과 .exe 단추 둘 다 data-os="win" (하나는 숨어 있다 — style.css 의 html[data-store]) — 둘 다 앞으로
-    [...box.querySelectorAll(`[data-os="${os}"]`)].reverse().forEach((el) => box.prepend(el));
-    box.querySelectorAll('[data-os]').forEach((el) => (el.matches('.btn') ? el : el.querySelector('.btn'))?.classList.toggle('ghost', el.dataset.os !== os));
+  document.querySelectorAll('.get-btns [data-os]').forEach((el) => {
+    const mine = !os || el.dataset.os === os;
+    el.classList.toggle('mine', !!os && mine);
+    (el.matches('.btn') ? [el] : el.querySelectorAll('.btn')).forEach((b) => b.classList.toggle('ghost', !mine));
   });
-primary(ON_WIN ? 'win' : 'mac');
+primary(OS);
 // 복사 단추: 누르면 data-copy 를 클립보드로, 잠깐 data-done 글로 바꿨다가 되돌린다
 document.querySelectorAll('[data-copy]').forEach((b) =>
   b.addEventListener('click', async () => {
@@ -103,11 +111,11 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
     const win = (m.win && m.win.x64) || {};
     if (!mac.dmg && !win.exe) throw new Error('no-build');
     const os = ON_WIN && win.exe ? 'win' : 'mac';
-    primary(os);
     const intel = (m.mac && m.mac.x64) || {};
     const FILE = { dmg: mac.dmg, zip: mac.zip || mac.dmg, dmgx64: intel.dmg, exe: win.exe, winzip: win.zip || win.exe, auto: os === 'win' ? win.exe : mac.dmg };
-    const META = { mac: mac.dmg && `${m.version} · ${mb(mac.dmg.size)} · Apple Silicon`, win: win.exe && `${m.version} · ${mb(win.exe.size)} · ${T.win}` };
-    const which = (v) => (v === 'win' || v === 'mac' ? v : os);
+    // 단추 아래 작은 줄: 판 번호 · 어디서 받는지(칩) — 두 단추가 같은 꼴
+    const META = { mac: mac.dmg && `${m.version} · Apple Silicon`, win: win.exe && `${m.version} · ${T.win}`, store: `${m.version} · Microsoft Store` };
+    const which = (v) => (v === 'win' || v === 'mac' || v === 'store' ? v : os);
     // 화면 묶음만 올린 판이 있으면 '고친 것'은 그 판을 보여 준다 (설치 파일을 받아도 처음 실행 때 그 판이 된다)
     const newest = m.bundle && m.bundle.notes ? m.bundle : m;
     all('[data-ver]').forEach((el) => (el.textContent = newest.version));
@@ -143,7 +151,7 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
       notes.appendChild(ul);
     }
   } catch {
-    all('[data-dl-meta]').forEach((el) => (el.textContent = T.prep));
+    all('[data-dl-meta]').forEach((el) => (el.textContent = el.dataset.dlMeta === 'store' ? 'Microsoft Store' : T.prep));
     all('[data-dl]').forEach((el) => el.classList.add('disabled'));
     const notes = $('[data-notes]');
     if (notes) notes.replaceChildren(Object.assign(document.createElement('p'), { className: 'muted', textContent: T.notesNone }));
