@@ -56,37 +56,26 @@
           <h2>맞춤 개발</h2>
           <p>기관·회사의 양식과 업무 흐름에 맞춘 기능을 만들어 드립니다.</p>
           <ul><li>사내 양식 자동 채우기, 반복 문서 일괄 처리</li><li>사내 AI 모델·서버와 연결</li><li>설계 사무소 표준과 자동화 카드</li><li>필요한 파일 형식과 기능 추가</li></ul><p class="track-foot">범위와 일정은 이야기를 듣고 함께 정합니다.</p>
-          <a class="link" href="#ask" data-kind="custom">이 내용으로 문의 <span aria-hidden="true">→</span></a>
+          <a class="link" data-email data-subject="[맞춤 개발] " href="#">이메일로 문의 <span aria-hidden="true">→</span></a>
         </section>
         <section class="track" id="partner">
           <h2>후원·협력</h2>
           <p>기업·기관의 개발 후원, 학교 수업과 연구 협력, 기술 제휴를 반깁니다.</p>
           
-          <a class="link" href="#ask" data-kind="partner">이 내용으로 문의 <span aria-hidden="true">→</span></a>
+          <a class="link" data-email data-subject="[후원·협력] " href="#">이메일로 문의 <span aria-hidden="true">→</span></a>
         </section>
         <section class="track" id="invest">
           <h2>투자</h2>
           <p>하이퍼세븐이 가려는 방향에 관심 있는 투자자의 연락을 받습니다.</p>
           
-          <a class="link" href="#ask" data-kind="invest">이 내용으로 문의 <span aria-hidden="true">→</span></a>
+          <a class="link" data-email data-subject="[투자] " href="#">이메일로 문의 <span aria-hidden="true">→</span></a>
         </section>
       </div>
 
-      <form class="inq" id="ask" data-inquiry novalidate data-sent="보냈습니다. 이메일로 답을 드리겠습니다." data-fail="보내지 못했습니다. 잠시 뒤 다시 하거나 이메일로 보내 주세요." data-missing="이름, 이메일, 내용을 적고 동의에 표시해 주세요." data-busy="보내는 중…">
-        <h2>문의하기</h2>
-        <fieldset><legend>무엇을 문의하시나요?</legend><div class="chips"><label class="chip-opt"><input type="radio" name="kind" value="custom" checked /><span>맞춤 개발</span></label><label class="chip-opt"><input type="radio" name="kind" value="partner" /><span>후원·협력</span></label><label class="chip-opt"><input type="radio" name="kind" value="invest" /><span>투자</span></label></div></fieldset>
-        <fieldset><legend>제품</legend><div class="chips"><label class="chip-opt"><input type="radio" name="product" value="office" /><span>오피스</span></label><label class="chip-opt"><input type="radio" name="product" value="cad" /><span>캐드</span></label><label class="chip-opt"><input type="radio" name="product" value="both" checked /><span>둘 다</span></label><label class="chip-opt"><input type="radio" name="product" value="other" /><span>기타</span></label></div></fieldset>
-        <div class="inq-row">
-          <label>이름<input name="name" required maxlength="80" autocomplete="name" /></label>
-          <label>소속 (선택)<input name="org" maxlength="120" autocomplete="organization" /></label>
-        </div>
-        <label>이메일<input type="email" name="email" required maxlength="160" autocomplete="email" /></label>
-        <label>내용<textarea name="message" required rows="7" maxlength="5000" placeholder="필요한 기능, 쓰는 곳, 일정 같은 것을 적어 주세요."></textarea></label>
-        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <label class="agree"><input type="checkbox" name="agree" required /><span>문의에 답하기 위해 이름·소속·이메일·내용을 받고, 받은 날부터 1년 동안 보관한 뒤 지웁니다. 동의하지 않으면 양식으로는 보낼 수 없고, 이메일로 직접 보내셔도 됩니다. <a href="privacy.html#inquiry">개인정보 처리방침</a></span></label>
-        <div class="inq-send"><button class="btn" type="submit">보내기</button><p class="inq-status" role="status"></p></div>
-      </form>
-      <p class="give-note mail-only">이메일로 직접 보내셔도 됩니다: <a data-email href="#">이메일</a></p>
+      <div class="mail-box mail-only">
+        <p>이메일 한 통이면 됩니다. 조직 이름, 필요한 것, 일정을 적어 주시면 답을 드립니다.</p>
+        <a class="mail-addr" data-email data-email-text href="#">이메일</a>
+      </div>
     </div>
   </main>
 

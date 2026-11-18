@@ -56,37 +56,26 @@
           <h2>カスタム開発</h2>
           <p>組織の書式や業務の流れに合わせた機能をつくります。</p>
           <ul><li>社内書式の自動入力、繰り返し文書の一括処理</li><li>社内のAIモデル・サーバーとの接続</li><li>設計事務所の標準と自動化カード</li><li>必要なファイル形式や機能の追加</li></ul><p class="track-foot">範囲と日程は、お話を伺って一緒に決めます。</p>
-          <a class="link" href="#ask" data-kind="custom">この内容で問い合わせる <span aria-hidden="true">→</span></a>
+          <a class="link" data-email data-subject="[カスタム開発] " href="#">メールで問い合わせる <span aria-hidden="true">→</span></a>
         </section>
         <section class="track" id="partner">
           <h2>スポンサー・協業</h2>
           <p>企業・機関による開発スポンサー、学校の授業や研究での協力、技術提携を歓迎します。</p>
           
-          <a class="link" href="#ask" data-kind="partner">この内容で問い合わせる <span aria-hidden="true">→</span></a>
+          <a class="link" data-email data-subject="[スポンサー・協業] " href="#">メールで問い合わせる <span aria-hidden="true">→</span></a>
         </section>
         <section class="track" id="invest">
           <h2>投資</h2>
           <p>HyperSevenの目指す方向に関心のある投資家の方からのご連絡を受け付けています。</p>
           
-          <a class="link" href="#ask" data-kind="invest">この内容で問い合わせる <span aria-hidden="true">→</span></a>
+          <a class="link" data-email data-subject="[投資] " href="#">メールで問い合わせる <span aria-hidden="true">→</span></a>
         </section>
       </div>
 
-      <form class="inq" id="ask" data-inquiry novalidate data-sent="送信しました。メールでご返信します。" data-fail="送信できませんでした。少し時間をおいて再度お試しいただくか、メールでお送りください。" data-missing="お名前、メールアドレス、内容を入力し、同意にチェックしてください。" data-busy="送信中…">
-        <h2>お問い合わせ</h2>
-        <fieldset><legend>ご用件</legend><div class="chips"><label class="chip-opt"><input type="radio" name="kind" value="custom" checked /><span>カスタム開発</span></label><label class="chip-opt"><input type="radio" name="kind" value="partner" /><span>スポンサー・協業</span></label><label class="chip-opt"><input type="radio" name="kind" value="invest" /><span>投資</span></label></div></fieldset>
-        <fieldset><legend>製品</legend><div class="chips"><label class="chip-opt"><input type="radio" name="product" value="office" /><span>オフィス</span></label><label class="chip-opt"><input type="radio" name="product" value="cad" /><span>CAD</span></label><label class="chip-opt"><input type="radio" name="product" value="both" checked /><span>両方</span></label><label class="chip-opt"><input type="radio" name="product" value="other" /><span>その他</span></label></div></fieldset>
-        <div class="inq-row">
-          <label>お名前<input name="name" required maxlength="80" autocomplete="name" /></label>
-          <label>所属（任意）<input name="org" maxlength="120" autocomplete="organization" /></label>
-        </div>
-        <label>メールアドレス<input type="email" name="email" required maxlength="160" autocomplete="email" /></label>
-        <label>内容<textarea name="message" required rows="7" maxlength="5000" placeholder="必要な機能、使う場面、日程などをお書きください。"></textarea></label>
-        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <label class="agree"><input type="checkbox" name="agree" required /><span>お問い合わせに回答するため、お名前・所属・メールアドレス・内容を受け取り、受け取った日から1年間保管したのち削除します。同意いただけない場合はこのフォームでは送れませんが、メールで直接お送りいただけます。 <a href="../en/privacy.html#inquiry">プライバシーポリシー</a></span></label>
-        <div class="inq-send"><button class="btn" type="submit">送信</button><p class="inq-status" role="status"></p></div>
-      </form>
-      <p class="give-note mail-only">メールで直接お送りいただくこともできます： <a data-email href="#">メール</a></p>
+      <div class="mail-box mail-only">
+        <p>メール1通で十分です。組織名、必要なこと、日程をお書きいただければご返信します。</p>
+        <a class="mail-addr" data-email data-email-text href="#">メール</a>
+      </div>
     </div>
   </main>
 

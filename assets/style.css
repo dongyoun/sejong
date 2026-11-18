@@ -3548,131 +3548,31 @@ footer [data-email] {
   font-weight: 600;
   font-size: 14.5px;
 }
-.inq {
-  display: grid;
-  gap: 16px;
-  max-width: 760px;
-  padding: 30px 28px;
+.mail-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding: 24px 28px;
   border: 1px solid var(--line);
   border-radius: var(--r);
   background: var(--soft);
 }
-.inq h2 {
-  margin: 0 0 2px;
-  font-size: 22px;
-}
-.inq fieldset {
+.mail-box p {
   margin: 0;
-  padding: 0;
-  border: 0;
+  font-size: 15.5px;
+  color: var(--text);
 }
-.inq legend,
-.inq label {
-  font-size: 14px;
-  font-weight: 600;
+.mail-addr {
+  font-size: 20px;
+  font-weight: 700;
   color: var(--ink);
+  text-decoration: none;
 }
-.inq legend {
-  margin-bottom: 8px;
-}
-.inq label {
-  display: grid;
-  gap: 6px;
-}
-.inq input:not([type='radio']):not([type='checkbox']),
-.inq textarea {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 11px 13px;
-  border: 1px solid #d5d9e1;
-  border-radius: 10px;
-  background: #fff;
-  font: inherit;
-  font-size: 15px;
-  font-weight: 400;
-  color: var(--ink);
-}
-.inq textarea {
-  resize: vertical;
-  min-height: 140px;
-}
-.inq input:focus,
-.inq textarea:focus {
-  outline: 2px solid var(--ink);
-  outline-offset: 1px;
-}
-.inq-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.chip-opt {
-  display: inline-flex !important;
-  cursor: pointer;
-}
-.chip-opt input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-.chip-opt span {
-  padding: 8px 15px;
-  border: 1px solid #d5d9e1;
-  border-radius: 999px;
-  background: #fff;
-  font-size: 14px;
-  font-weight: 500;
-}
-.chip-opt input:checked + span {
-  border-color: var(--ink);
-  background: var(--ink);
-  color: #fff;
-}
-.chip-opt input:focus-visible + span {
-  outline: 2px solid var(--ink);
-  outline-offset: 2px;
-}
-.inq .agree {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  font-weight: 400;
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: var(--muted);
-}
-.inq .agree input {
-  margin-top: 3px;
-  flex: none;
-}
-.inq .hp {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-}
-.inq-send {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 14px;
-}
-.inq-status {
-  margin: 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-.inq-status.ok {
-  color: #13804b;
-  font-weight: 600;
-}
-.inq-status.bad {
-  color: var(--ver-ink);
+.mail-addr:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .biz-band {
   display: flex;
@@ -3693,14 +3593,6 @@ footer [data-email] {
 }
 @media (max-width: 900px) {
   .tracks {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 640px) {
-  .inq {
-    padding: 22px 18px;
-  }
-  .inq-row {
     grid-template-columns: 1fr;
   }
 }

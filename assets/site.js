@@ -169,8 +169,9 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
     // 이메일 연락처(협업·기술 지원): 주소는 site.json 에만 — 바닥글 글은 주소 그대로 보여 준다 (베껴 쓰기 쉽게)
     if (/^[^@\s]+@[^@\s]+$/.test(s.email || '')) {
       all('[data-email]').forEach((el) => {
-        el.href = 'mailto:' + s.email;
-        if (el.closest('footer')) el.textContent = s.email;
+        // data-subject 가 있으면 메일 제목을 채워 연다('함께 일하기' 갈래별)
+        el.href = 'mailto:' + s.email + (el.dataset.subject ? '?subject=' + encodeURIComponent(el.dataset.subject) : '');
+        if (el.closest('footer') || el.hasAttribute('data-email-text')) el.textContent = s.email;
       });
     }
   } catch {
@@ -202,48 +203,3 @@ document.querySelectorAll('.bridge').forEach((box) => {
   );
 });
 
-// '함께 일하기' 문의 양식: /api/inquiry 로 보내면 서버가 쌓고 운영자 메일로 전달한다. ?kind=custom|partner|invest 로 종류를 미리 고른다
-document.querySelectorAll('form[data-inquiry]').forEach((form) => {
-  const pick = (k) => {
-    const r = form.querySelector(`input[name="kind"][value="${k}"]`);
-    if (r) r.checked = true;
-  };
-  const q = new URLSearchParams(location.search).get('kind');
-  if (q) pick(q);
-  document.querySelectorAll('[data-kind]').forEach((a) => a.addEventListener('click', () => pick(a.dataset.kind)));
-  const status = form.querySelector('.inq-status');
-  const say = (key, ok) => {
-    status.textContent = form.dataset[key] || '';
-    status.className = 'inq-status' + (ok ? ' ok' : key === 'busy' ? '' : ' bad');
-  };
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const f = new FormData(form);
-    const body = {
-      kind: f.get('kind'),
-      product: f.get('product'),
-      name: String(f.get('name') || '').trim(),
-      org: String(f.get('org') || '').trim(),
-      email: String(f.get('email') || '').trim(),
-      message: String(f.get('message') || '').trim(),
-      website: String(f.get('website') || ''),
-      agree: form.querySelector('input[name="agree"]').checked,
-      lang: LANG,
-    };
-    if (!body.name || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(body.email) || body.message.length < 5 || !body.agree) return say('missing');
-    const btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    say('busy');
-    try {
-      const r = await fetch(ROOT + 'api/inquiry', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
-      if (!r.ok) throw new Error(String(r.status));
-      form.querySelectorAll('input:not([type=radio]):not([type=checkbox]), textarea').forEach((el) => (el.value = ''));
-      form.querySelector('input[name="agree"]').checked = false;
-      say('sent', true);
-    } catch {
-      say('fail');
-    } finally {
-      btn.disabled = false;
-    }
-  });
-});
