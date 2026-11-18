@@ -30,7 +30,7 @@ Both apps ship with an MCP server and a command line, so there is nothing extra 
 - 오피스 설치 파일: 이 저장소의 [Releases](../../releases)
 - 버그 알리기: [Issues](../../issues)
 - 문의: essay.archi@gmail.com
-  - 회사·기관·단체에 맞춘 기능 조정이나 도입, 후원·투자 이야기도 편하게 보내 주세요.
+  - 회사·기관·단체에 맞춘 기능 조정이나 도입, 후원·투자 이야기도 편하게 보내 주세요. 자세한 안내는 [함께 일하기](https://hyperseven.pages.dev/business.html)에 있습니다.
 
 이 저장소에는 오피스 설치 파일과 홈페이지 사본만 있습니다. 앱이 새 버전을 확인하는 안내문(latest.json)도 이 저장소의 GitHub Pages 에 함께 둡니다.
 

@@ -62,5 +62,6 @@
   - 회사·기관·단체에 맞춘 기능 조정이나 도입
   - 후원과 투자
   - 그 밖의 물음
+- 맞춤 개발·후원·협력·투자 안내: business.html (English en/business.html)
 - 버그·제안: 앱의 도구 › 문제 알리기, 또는 https://github.com/dongyoun/sejong/issues
-- Email essay.archi@gmail.com for tailoring the apps to an organization's needs, sponsorship or investment, or anything else.
+- Email essay.archi@gmail.com for tailoring the apps to an organization's needs, sponsorship or investment, or anything else. Details: en/business.html
