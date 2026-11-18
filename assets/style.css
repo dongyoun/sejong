@@ -3459,3 +3459,48 @@ footer [data-email] {
     transform: rotate(90deg);
   }
 }
+/* 번호 그림의 '예시 장면' 표는 왼쪽 아래 (오른쪽 위 번호와 겹치지 않게) */
+.anno-shot .shot-tag {
+  top: auto;
+  right: auto;
+  bottom: 12px;
+  left: 12px;
+  z-index: 1;
+}
+.anno-wrap[hidden] {
+  display: none;
+}
+/* AI에게 시킬 말 예시 (오피스·캐드 쪽 번호 그림 아래) */
+.asks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  margin: 28px 0 48px;
+}
+.asks-h {
+  margin-right: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ai);
+}
+.ask {
+  padding: 8px 14px;
+  border: 1px solid var(--ai-line);
+  border-radius: 999px;
+  background: var(--ai-soft);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+#ai-cad .ask {
+  background: #fff;
+}
+@media (max-width: 640px) {
+  .asks {
+    margin-bottom: 36px;
+  }
+  .ask {
+    font-size: 13px;
+  }
+}

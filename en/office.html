@@ -93,10 +93,40 @@
           <h2>Mark it up like paper.<br />Ask like you talk.</h2>
           <p>AI that works right on the page. See every change first, apply it in one step, undo it in one step.</p>
         </div>
-        <figure class="shot-lead">
-          <div class="window shot-ex"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office — a report with 18% struck through in red, 21% written in the margin and a ∨ with “7 months” after the period. The AI Assistant on the right proposes the two edits" loading="lazy" width="1920" height="1080" /><span class="shot-tag">Example scene</span></div>
-          <figcaption>Strike through and add a ∨ in red pen, then say “Apply my red-pen markup”. You see just the words that change, and nothing changes until you click Apply.</figcaption>
-        </figure>
+        <!-- 오피스 번호 그림: 실제 화면 위 번호(검정 = 익숙한 그대로, 보라 = AI와 함께) + 옆 풀이. 첫 화면(bridge)과 오피스 쪽이 같이 쓴다 -->
+<div class="anno-pane">
+  <div class="window anno-shot shot-ex">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <span class="shot-tag">Example scene</span>
+    <div class="anno-img">
+      <img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office: red-pen marks on an HWP report, and the AI assistant on the right proposing two changes with an Apply button" loading="lazy" width="1920" height="1080" />
+      <span class="pin" data-pin="1" style="left: 93.5%; top: 4.5%">1</span>
+      <span class="pin" data-pin="2" style="left: 4.8%; top: 7.5%">2</span>
+      <span class="pin" data-pin="3" style="left: 65%; top: 50.5%">3</span>
+      <span class="pin ai" data-pin="4" style="left: 97%; top: 24%">4</span>
+      <span class="pin ai" data-pin="5" style="left: 82%; top: 40.8%">5</span>
+    </div>
+  </div>
+  <div class="anno-legend">
+    <div class="anno-group">
+      <h3>As you know it</h3>
+      <ol>
+        <li data-pin="1"><span class="pin">1</span><div><b>Your HWP file, as is</b><p>Open what you receive and save it back in the same format.</p></div></li>
+        <li data-pin="2"><span class="pin">2</span><div><b>Familiar menus and shortcuts</b><p>Character, Paragraph, Ctrl+S — the names and keys you already know.</p></div></li>
+        <li data-pin="3"><span class="pin">3</span><div><b>A red pen, like on paper</b><p>Strike through and write the fix in the margin.</p></div></li>
+      </ol>
+    </div>
+    <div class="anno-group ai">
+      <h3>With AI</h3>
+      <ol>
+        <li data-pin="4"><span class="pin ai">4</span><div><b>AI reads your markup</b><p>Say “Apply my red-pen markup” and see only what will change.</p></div></li>
+        <li data-pin="5"><span class="pin ai">5</span><div><b>You apply it</b><p>Nothing changes until you click Apply, and one Undo puts it back.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+        <div class="asks"><span class="asks-h">Just ask</span><span class="ask">“Apply my red-pen markup”</span><span class="ask">“Fill in the blanks”</span><span class="ask">“Rewrite this paragraph in a formal style”</span><span class="ask">“Add a quarterly schedule as a table”</span><span class="ask">“Make 3 slides from this”</span><span class="ask">“Fix the spelling”</span></div>
         <div class="pros">
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z" /><path d="M14.5 6.5l3 3" /></svg></span><b>Red-pen markup</b><p>Strike through, underline and highlight, then say “apply my markup”. Markup lives on its own layer and never prints.</p></div>
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></svg></span><b>Speak to type</b><p>Press the mic and talk. Your words turn into text right on this computer.</p></div>
@@ -299,10 +329,6 @@
           <details>
             <summary>Is it free?</summary>
             <p>Yes. Every feature is free. HyperAI runs on your own Anthropic API key or a model on your computer, and API usage is billed directly by Anthropic.</p>
-          </details>
-          <details>
-            <summary>Why is it free?</summary>
-            <p>Because opening the same file shouldn't mean buying the same program.</p>
           </details>
           <details>
             <summary>Can I exchange documents with people who use other programs?</summary>

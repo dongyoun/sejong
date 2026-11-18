@@ -93,10 +93,40 @@
           <h2>紙のように印をつけて、<br />話すように頼む</h2>
           <p>文書の上でそのまま働くAI。変わるところを先に見せて、適用も元に戻すのもワンステップ。</p>
         </div>
-        <figure class="shot-lead">
-          <div class="window shot-ex"><div class="bar"><i></i><i></i><i></i></div><img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office — 報告書の18%に赤い取り消し線、余白に21%、期間の後ろに∨と「7 months」の手書き。右のAIアシスタントが2か所の修正を提案している" loading="lazy" width="1920" height="1080" /><span class="shot-tag">サンプル場面</span></div>
-          <figcaption>赤ペンで線を引き∨を書き込んで「添削どおりに直して」。変わる言葉だけを見せ、［適用］を押すまで文書はそのままです。</figcaption>
-        </figure>
+        <!-- 오피스 번호 그림: 실제 화면 위 번호(검정 = 익숙한 그대로, 보라 = AI와 함께) + 옆 풀이. 첫 화면(bridge)과 오피스 쪽이 같이 쓴다 -->
+<div class="anno-pane">
+  <div class="window anno-shot shot-ex">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <span class="shot-tag">サンプル場面</span>
+    <div class="anno-img">
+      <img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office：HWPの報告書に赤ペンで直す箇所を書き込むと、右のAIアシスタントが2か所の変更を提案し、適用ボタンを表示している画面" loading="lazy" width="1920" height="1080" />
+      <span class="pin" data-pin="1" style="left: 93.5%; top: 4.5%">1</span>
+      <span class="pin" data-pin="2" style="left: 4.8%; top: 7.5%">2</span>
+      <span class="pin" data-pin="3" style="left: 65%; top: 50.5%">3</span>
+      <span class="pin ai" data-pin="4" style="left: 97%; top: 24%">4</span>
+      <span class="pin ai" data-pin="5" style="left: 82%; top: 40.8%">5</span>
+    </div>
+  </div>
+  <div class="anno-legend">
+    <div class="anno-group">
+      <h3>いつもどおり</h3>
+      <ol>
+        <li data-pin="1"><span class="pin">1</span><div><b>HWPファイルをそのまま</b><p>受け取ったファイルをそのまま開き、同じ形式で保存します。</p></div></li>
+        <li data-pin="2"><span class="pin">2</span><div><b>いつものメニューとショートカット</b><p>文字、段落、Ctrl+S。名前もキーも慣れたままです。</p></div></li>
+        <li data-pin="3"><span class="pin">3</span><div><b>紙と同じ赤ペン</b><p>線を引いて、余白に直す言葉を書きます。</p></div></li>
+      </ol>
+    </div>
+    <div class="anno-group ai">
+      <h3>AIと一緒に</h3>
+      <ol>
+        <li data-pin="4"><span class="pin ai">4</span><div><b>AIが添削を読む</b><p>「添削どおりに直して」のひと言で、変わるところだけを見せます。</p></div></li>
+        <li data-pin="5"><span class="pin ai">5</span><div><b>適用するのは人</b><p>[Apply]を押すまで変わらず、元に戻すのも一度で。</p></div></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+        <div class="asks"><span class="asks-h">こう頼みます</span><span class="ask">「添削どおりに直して」</span><span class="ask">「空欄を埋めて」</span><span class="ask">「この段落を公文書の文体に整えて」</span><span class="ask">「四半期の日程を表で入れて」</span><span class="ask">「この内容でスライドを3枚つくって」</span><span class="ask">「表記を整えて」</span></div>
         <div class="pros">
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z" /><path d="M14.5 6.5l3 3" /></svg></span><b>赤ペン添削</b><p>線を引き、下線を引き、蛍光ペンを塗って「添削どおりに直して」。添削は印刷されない別のレイヤーです。</p></div>
           <div class="pro"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></svg></span><b>話して入力</b><p>マイクを押して話せば文字になります。音声はこのパソコンの中で文字に変わります。</p></div>
@@ -299,10 +329,6 @@
           <details>
             <summary>無料ですか？</summary>
             <p>はい。すべての機能を無料で使えます。HyperAIは自分のAnthropic APIキーか手元のパソコンのモデルをつないで使い、APIの利用料はAnthropicに直接支払います。</p>
-          </details>
-          <details>
-            <summary>なぜ無料なのですか？</summary>
-            <p>同じファイルを開くために、同じソフトを買う必要はないと考えているからです。</p>
           </details>
           <details>
             <summary>ほかのソフトを使う人と、文書をやり取りできますか？</summary>

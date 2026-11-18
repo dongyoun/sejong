@@ -178,7 +178,16 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
   }
 })();
 
-// 첫 화면 '그대로 + AI': 오피스·캐드 바꿔 보기, 번호와 풀이를 서로 짚기(올리거나 누르면 짝이 진해진다)
+// 번호 그림(첫 화면 '그대로 + AI'·오피스·캐드 쪽): 번호와 풀이를 서로 짚기(올리거나 누르면 짝이 진해진다)
+document.querySelectorAll('.anno-pane').forEach((pane) => {
+  const mark = (n) => pane.querySelectorAll('[data-pin]').forEach((el) => el.classList.toggle('hot', el.dataset.pin === n));
+  pane.querySelectorAll('[data-pin]').forEach((el) => {
+    el.addEventListener('mouseenter', () => mark(el.dataset.pin));
+    el.addEventListener('mouseleave', () => mark(''));
+    el.addEventListener('click', () => mark(el.dataset.pin));
+  });
+});
+// 첫 화면: 오피스·캐드 바꿔 보기
 document.querySelectorAll('.bridge').forEach((box) => {
   const tabs = [...box.querySelectorAll('[data-tab]')];
   const panes = [...box.querySelectorAll('[data-pane]')];
@@ -191,12 +200,4 @@ document.querySelectorAll('.bridge').forEach((box) => {
       panes.forEach((p) => (p.hidden = p.dataset.pane !== t.dataset.tab));
     }),
   );
-  panes.forEach((pane) => {
-    const mark = (n) => pane.querySelectorAll('[data-pin]').forEach((el) => el.classList.toggle('hot', el.dataset.pin === n));
-    pane.querySelectorAll('[data-pin]').forEach((el) => {
-      el.addEventListener('mouseenter', () => mark(el.dataset.pin));
-      el.addEventListener('mouseleave', () => mark(''));
-      el.addEventListener('click', () => mark(el.dataset.pin));
-    });
-  });
 });

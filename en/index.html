@@ -88,67 +88,72 @@
     <button type="button" role="tab" aria-selected="false" data-tab="cad">CAD</button>
   </div>
 
-  <div class="anno-pane" data-pane="office">
-    <div class="window anno-shot">
-      <div class="bar"><i></i><i></i><i></i></div>
-      <div class="anno-img">
-        <img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office: red-pen marks on an HWP report, and the AI assistant on the right proposing two changes with an Apply button" loading="lazy" width="1920" height="1080" />
-        <span class="pin" data-pin="1" style="left: 93.5%; top: 4.5%">1</span>
-        <span class="pin" data-pin="2" style="left: 4.8%; top: 7.5%">2</span>
-        <span class="pin" data-pin="3" style="left: 65%; top: 50.5%">3</span>
-        <span class="pin ai" data-pin="4" style="left: 97%; top: 24%">4</span>
-        <span class="pin ai" data-pin="5" style="left: 82%; top: 40.8%">5</span>
-      </div>
-    </div>
-    <div class="anno-legend">
-      <div class="anno-group">
-        <h3>As you know it</h3>
-        <ol>
-          <li data-pin="1"><span class="pin">1</span><div><b>Your HWP file, as is</b><p>Open what you receive and save it back in the same format.</p></div></li>
-          <li data-pin="2"><span class="pin">2</span><div><b>Familiar menus and shortcuts</b><p>Character, Paragraph, Ctrl+S — the names and keys you already know.</p></div></li>
-          <li data-pin="3"><span class="pin">3</span><div><b>A red pen, like on paper</b><p>Strike through and write the fix in the margin.</p></div></li>
-        </ol>
-      </div>
-      <div class="anno-group ai">
-        <h3>With AI</h3>
-        <ol>
-          <li data-pin="4"><span class="pin ai">4</span><div><b>AI reads your markup</b><p>Say “Apply my red-pen markup” and see only what will change.</p></div></li>
-          <li data-pin="5"><span class="pin ai">5</span><div><b>You apply it</b><p>Nothing changes until you click Apply, and one Undo puts it back.</p></div></li>
-        </ol>
-      </div>
+  <div class="anno-wrap" data-pane="office"><!-- 오피스 번호 그림: 실제 화면 위 번호(검정 = 익숙한 그대로, 보라 = AI와 함께) + 옆 풀이. 첫 화면(bridge)과 오피스 쪽이 같이 쓴다 -->
+<div class="anno-pane">
+  <div class="window anno-shot shot-ex">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <span class="shot-tag">Example scene</span>
+    <div class="anno-img">
+      <img src="../assets/shots/office-ink-en.webp" alt="HyperSeven Office: red-pen marks on an HWP report, and the AI assistant on the right proposing two changes with an Apply button" loading="lazy" width="1920" height="1080" />
+      <span class="pin" data-pin="1" style="left: 93.5%; top: 4.5%">1</span>
+      <span class="pin" data-pin="2" style="left: 4.8%; top: 7.5%">2</span>
+      <span class="pin" data-pin="3" style="left: 65%; top: 50.5%">3</span>
+      <span class="pin ai" data-pin="4" style="left: 97%; top: 24%">4</span>
+      <span class="pin ai" data-pin="5" style="left: 82%; top: 40.8%">5</span>
     </div>
   </div>
-
-  <div class="anno-pane" data-pane="cad" hidden>
-    <div class="window dark anno-shot">
-      <div class="bar"><i></i><i></i><i></i></div>
-      <div class="anno-img">
-        <img src="../assets/shots/cad-ai-en.webp" alt="HyperSeven CAD: after a spoken request, AI places 104 solar panels on the roof as purple proposals, with Accept and Discard buttons above" loading="lazy" width="1600" height="1000" />
-        <span class="pin" data-pin="1" style="left: 23.5%; top: 2.8%">1</span>
-        <span class="pin" data-pin="2" style="left: 8.5%; top: 26%">2</span>
-        <span class="pin ai" data-pin="3" style="left: 76%; top: 27%">3</span>
-        <span class="pin ai" data-pin="4" style="left: 50%; top: 40%">4</span>
-        <span class="pin ai" data-pin="5" style="left: 62%; top: 21.5%">5</span>
-      </div>
+  <div class="anno-legend">
+    <div class="anno-group">
+      <h3>As you know it</h3>
+      <ol>
+        <li data-pin="1"><span class="pin">1</span><div><b>Your HWP file, as is</b><p>Open what you receive and save it back in the same format.</p></div></li>
+        <li data-pin="2"><span class="pin">2</span><div><b>Familiar menus and shortcuts</b><p>Character, Paragraph, Ctrl+S — the names and keys you already know.</p></div></li>
+        <li data-pin="3"><span class="pin">3</span><div><b>A red pen, like on paper</b><p>Strike through and write the fix in the margin.</p></div></li>
+      </ol>
     </div>
-    <div class="anno-legend">
-      <div class="anno-group">
-        <h3>As you know it</h3>
-        <ol>
-          <li data-pin="1"><span class="pin">1</span><div><b>From 2D drafting to BIM</b><p>Move between drawings, 3D, surfaces and BIM the way you are used to.</p></div></li>
-          <li data-pin="2"><span class="pin">2</span><div><b>The commands you know</b><p>Wall, Door, Window — familiar command names and shortcuts.</p></div></li>
-        </ol>
-      </div>
-      <div class="anno-group ai">
-        <h3>With AI</h3>
-        <ol>
-          <li data-pin="3"><span class="pin ai">3</span><div><b>Say what you want</b><p>“Lay out south-facing solar panels on the roof.”</p></div></li>
-          <li data-pin="4"><span class="pin ai">4</span><div><b>Purple proposals</b><p>Changes show up as proposals before they touch the model.</p></div></li>
-          <li data-pin="5"><span class="pin ai">5</span><div><b>You accept it</b><p>Only proposals that pass the checks become real when you click Accept.</p></div></li>
-        </ol>
-      </div>
+    <div class="anno-group ai">
+      <h3>With AI</h3>
+      <ol>
+        <li data-pin="4"><span class="pin ai">4</span><div><b>AI reads your markup</b><p>Say “Apply my red-pen markup” and see only what will change.</p></div></li>
+        <li data-pin="5"><span class="pin ai">5</span><div><b>You apply it</b><p>Nothing changes until you click Apply, and one Undo puts it back.</p></div></li>
+      </ol>
     </div>
   </div>
+</div>
+</div>
+  <div class="anno-wrap" data-pane="cad" hidden><!-- 캐드 번호 그림: 첫 화면(bridge)과 캐드 쪽이 같이 쓴다 -->
+<div class="anno-pane">
+  <div class="window dark anno-shot shot-ex">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <span class="shot-tag">Example scene</span>
+    <div class="anno-img">
+      <img src="../assets/shots/cad-ai-en.webp" alt="HyperSeven CAD: after a spoken request, AI places 104 solar panels on the roof as purple proposals, with Accept and Discard buttons above" loading="lazy" width="1600" height="1000" />
+      <span class="pin" data-pin="1" style="left: 23.5%; top: 2.8%">1</span>
+      <span class="pin" data-pin="2" style="left: 8.5%; top: 26%">2</span>
+      <span class="pin ai" data-pin="3" style="left: 76%; top: 27%">3</span>
+      <span class="pin ai" data-pin="4" style="left: 50%; top: 40%">4</span>
+      <span class="pin ai" data-pin="5" style="left: 62%; top: 21.5%">5</span>
+    </div>
+  </div>
+  <div class="anno-legend">
+    <div class="anno-group">
+      <h3>As you know it</h3>
+      <ol>
+        <li data-pin="1"><span class="pin">1</span><div><b>From 2D drafting to BIM</b><p>Move between drawings, 3D, surfaces and BIM the way you are used to.</p></div></li>
+        <li data-pin="2"><span class="pin">2</span><div><b>The commands you know</b><p>Wall, Door, Window — familiar command names and shortcuts.</p></div></li>
+      </ol>
+    </div>
+    <div class="anno-group ai">
+      <h3>With AI</h3>
+      <ol>
+        <li data-pin="3"><span class="pin ai">3</span><div><b>Say what you want</b><p>“Lay out south-facing solar panels on the roof.”</p></div></li>
+        <li data-pin="4"><span class="pin ai">4</span><div><b>Purple proposals</b><p>Changes show up as proposals before they touch the model.</p></div></li>
+        <li data-pin="5"><span class="pin ai">5</span><div><b>You accept it</b><p>Only proposals that pass the checks become real when you click Accept.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</div>
 
   <div class="flow" aria-label="How you work with AI">
     <div><b>Mark it or say it</b><span>Red pen · voice · text</span></div>
@@ -254,23 +259,7 @@
       </div>
     </section>
 
-    <section class="sec" id="why">
-      <div class="wrap">
-        <div class="mani">
-          <div class="kicker">Why free</div>
-          <h2>Opening the same file<br />shouldn't mean buying<br />the same program<span class="ver">.</span></h2>
-          <p class="mani-p">HyperSeven built its office suite and CAD from the ground up. Students writing assignments, one-person studios just starting out and architects with decades behind them all work with the same tools.</p>
-        </div>
-        <div class="points vows">
-          <div class="point"><span class="n">01</span><b>Every feature, free</b><p>Students and companies get the same app and the same features. Install it and start.</p></div>
-          <div class="point"><span class="n">02</span><b>Your files, as they are</b><p>HWP, DOCX, XLSX, PPTX, DWG, SKP, IFC. Open and save in the formats you already exchange.</p></div>
-          <div class="point"><span class="n">03</span><b>Saves to open standards</b><p>Export to open standards such as HWPX, DOCX, IFC and glTF.</p></div>
-          <div class="point"><span class="n">04</span><b>Bring your own AI</b><p>Use HyperAI with your own Anthropic API key or a model on your computer. Connect agents such as Claude over MCP.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="sec soft" id="together">
+    <section class="sec" id="together">
       <div class="wrap duo">
         <div>
           <div class="kicker">Built together</div>
@@ -292,7 +281,7 @@
       </div>
     </section>
 
-    <section class="sec" id="end">
+    <section class="sec soft" id="end">
       <div class="wrap">
         <div class="end">
           <img class="end-mark" src="../assets/brand/hyperseven-mark.svg" alt="" width="96" height="93" />
