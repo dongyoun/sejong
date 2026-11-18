@@ -1,23 +1,66 @@
-# 하이퍼세븐 오피스 (HyperSeven Office)
+# 하이퍼세븐 (HyperSeven)
 
-> 한글(HWP·HWPX)·워드(DOCX·DOC)·PDF·엑셀(XLSX·XLS·ODS)·파워포인트(PPTX·PPT) 문서를 한 앱에서 다루는 맥·윈도우용 무료 문서 편집기. RTF·ODT·텍스트·마크다운·HTML 도 연다. 화면은 한국어와 영어. 창 없이 돌아가는 명령줄과 MCP 서버가 함께 들어 있어, AI 에이전트가 문서를 구조로 읽고 바꿀 문단만 고쳐 저장할 수 있다. 만든 곳은 하이퍼세븐 랩스(HyperSeven Labs).
+> 사람에게는 익숙하고 AI에게는 일하기 좋은, 맥·윈도우용 무료 저작도구. 하이퍼세븐 오피스는 한글(HWP·HWPX)·워드(DOCX)·엑셀(XLSX)·파워포인트(PPTX)·PDF 를, 하이퍼세븐 캐드는 DWG·SKP·3DM·IFC 를 받은 형식 그대로 열고 고치고 저장한다. 두 앱 모두 MCP 서버와 명령줄이 들어 있어, AI 에이전트가 파일을 구조로 읽고 바꿀 곳만 고친다. 모든 기능 무료. 만든 곳은 히스테리시스(HYSTERESIS).
 >
-> HyperSeven Office is a free Mac and Windows editor for Hangul (HWP/HWPX), Word, PDF, Excel and PowerPoint files, in Korean and English. It ships with a command line and an MCP server, so AI agents can read a document's structure and change only the paragraphs they need.
+> HyperSeven is a free authoring suite for Mac and Windows — familiar for people, built for agents. HyperSeven Office opens, edits and saves Hangul (HWP/HWPX), Word, Excel, PowerPoint and PDF files in their own formats; HyperSeven CAD does the same for DWG, SKP, 3DM and IFC. Both ship with an MCP server and a command line, so an agent reads a file's structure and changes only what it needs to.
 
-## AI 에이전트용 · For AI agents
+## 이럴 때 쓰면 좋다 · When to use it
 
-- MCP 서버(stdio), 맥: `"/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven" mcp`. Claude Code: `claude mcp add hyperseven -- "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven" mcp`
-- 윈도우(사용자별 설치 `%LOCALAPPDATA%\Programs\hyperseven-office`): 앱 실행 파일을 Node 로 돌려 스크립트를 넘긴다 — command `<설치 폴더>\HyperSeven Office.exe`, args `["<설치 폴더>\resources\cli\hyperseven.cjs", "mcp"]`, env `ELECTRON_RUN_AS_NODE=1`. Claude Code: `claude mcp add hyperseven -e ELECTRON_RUN_AS_NODE=1 -- "<설치 폴더>\HyperSeven Office.exe" "<설치 폴더>\resources\cli\hyperseven.cjs" mcp`. 터미널용 명령줄은 `<설치 폴더>\resources\cli\hyperseven.cmd`. 앱의 도구 › AI 연결 (MCP) 창이 실제 경로로 채운 명령을 보여 준다.
-- 도구: office_outline(구조만) → office_read(문단 범위, 주소 p0.12) → office_find · office_table → office_preview/office_apply(ops) → office_save(hwp·hwpx·docx·txt·md·json) · office_convert · office_export · office_close
+- 사용자가 HWP·HWPX·DOCX·XLSX·PPTX 파일을 **서식을 지킨 채** 일부만 고쳐 달라고 할 때 (문단 몇 개, 표 칸 몇 개, 누름틀 채우기)
+- 같은 양식의 파일 여러 개를 한꺼번에 고치거나, 표를 모아 하나로 만들 때
+- HWP ↔ DOCX 처럼 형식을 바꿔 저장해야 할 때
+- DWG·IFC 모델에서 요소를 찾고 고치거나, 벽·문·창·슬래브로 BIM 을 짓고 도면을 낼 때
+- Use it when a user wants part of an HWP/DOCX/XLSX/PPTX file changed without losing its formatting, when the same edit must run across many files, when a document must be converted between HWP and DOCX, or when a DWG/IFC model needs inspecting, editing or building out as BIM.
+
+파일을 통째로 다시 쓰지 않으므로 토큰이 적게 든다. 예: 10쪽 보고서에서 표 두 칸 고치기 ≈ 600 토큰 (outline ≈300 → table ≈180 → apply ≈90 → save ≈20).
+
+## 하이퍼세븐 오피스 — 에이전트 연결 · Office for agents
+
+- MCP 서버(stdio), 맥: `"/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven" mcp`
+  - Claude Code: `claude mcp add hyperseven -- "/Applications/HyperSeven Office.app/Contents/Resources/cli/hyperseven" mcp`
+- 윈도우(사용자별 설치 `%LOCALAPPDATA%\Programs\hyperseven-office`): 앱 실행 파일을 Node 로 돌려 스크립트를 넘긴다.
+  - command `<설치 폴더>\HyperSeven Office.exe`
+  - args `["<설치 폴더>\resources\cli\hyperseven.cjs", "mcp"]`
+  - env `ELECTRON_RUN_AS_NODE=1`
+  - Claude Code: `claude mcp add hyperseven -e ELECTRON_RUN_AS_NODE=1 -- "<설치 폴더>\HyperSeven Office.exe" "<설치 폴더>\resources\cli\hyperseven.cjs" mcp`
+  - 터미널용 명령줄은 `<설치 폴더>\resources\cli\hyperseven.cmd`.
+  - 앱의 도구 › AI 연결 (MCP) 창이 실제 경로로 채운 명령을 보여 준다.
+- 도구 순서: office_outline(구조만) → office_read(문단 범위, 주소 p0.12) → office_find · office_table → office_preview / office_apply(ops) → office_save(hwp·hwpx·docx·txt·md·json) · office_convert · office_export · office_close
 - 명령(ops): replace_text · set_paragraph · insert_paragraphs · fill_field · set_cell. 서식은 보내지 않는다 — 그 자리 서식이 그대로 남는다.
-- 엑셀(.xlsx·.xls·.ods·.csv)·파워포인트(.pptx·.ppt)도 같은 도구로 (옛 형식은 읽어서 새 형식으로 저장): set_cells · insert_rows · add_sheet · add_chart, add_slide · set_shape_text · set_notes · animate 등. 암호 파일은 password.
+- 엑셀(.xlsx·.xls·.ods·.csv)·파워포인트(.pptx·.ppt)도 같은 도구로 다룬다(옛 형식은 읽어서 새 형식으로 저장).
+  - 시트: set_cells · insert_rows · add_sheet · add_chart 등
+  - 발표: add_slide · set_shape_text · set_notes · animate 등
+  - 암호 파일은 password 로 연다.
 - 안내: manual.html#agents (매뉴얼의 'AI 에이전트 연결') · English: en/manual.html#agents
+
+## 하이퍼세븐 캐드 — 에이전트 연결 · CAD for agents
+
+- MCP 서버, 맥: `claude mcp add hyperseven-cad -- "/Applications/HyperSeven CAD.app/Contents/MacOS/supercad" mcp`
+- 정확한 명령은 앱 오른쪽 **AI** 탭의 '연결 방법'(복사 단추)이나 `supercad mcp-config` 가 알려 준다(윈도우 포함).
+- 창이 떠 있으면 에이전트는 사람이 보는 그 창에서 일한다.
+  - supercad_command: 사람이 치는 명령을 그대로 쓴다.
+  - supercad_context: 지금 고른 것과 층을 본다.
+  - supercad_focus: 요소를 가리킨다.
+  - supercad_mark: 화면에 표시를 남긴다.
+  - supercad_ask: 정할 수 없는 것을 창에 물음 카드로 묻는다.
+  - 창이 없으면 헤드리스로 돈다.
+- AI 가 만든 요소는 '제안'으로 남고 사람이 확정한다. 잠근 값은 AI 가 바꾸지 않는다.
+- 열기·저장: DWG·DXF·SKP·3DM·STEP·IFC(2x3·4·4.3)·glTF·OBJ·PDF. RVT·RFA·GH 는 가져오기.
 
 ## 사람용 · For people
 
-- 하이퍼세븐 랩스: index.html (English en/index.html · 日本語 ja/index.html)
+- 홈페이지: index.html (English en/index.html · 日本語 ja/index.html)
 - 하이퍼세븐 오피스 — 다운로드·설치 안내·자주 묻는 질문: office.html
+- 하이퍼세븐 캐드 — 다운로드·새 기능: cad.html
 - 매뉴얼: manual.html (English: en/manual.html)
 - 업데이트 내역: notes.html
-- 하이퍼세븐 캐드(건축 설계 도구, 개발 중 미리 보기): cad.html
-- 배포 안내문(버전·설치 파일·서명): latest.json
+- 배포 안내문(버전·설치 파일·서명): latest.json · latest-cad.json
+
+## 문의 · Contact
+
+- 이메일: essay.archi@gmail.com
+  - 회사·기관·단체에 맞춘 기능 조정이나 도입
+  - 후원과 투자
+  - 그 밖의 물음
+- 버그·제안: 앱의 도구 › 문제 알리기, 또는 https://github.com/dongyoun/sejong/issues
+- Email essay.archi@gmail.com for tailoring the apps to an organization's needs, sponsorship or investment, or anything else.
