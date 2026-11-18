@@ -3596,3 +3596,8 @@ footer [data-email] {
     grid-template-columns: 1fr;
   }
 }
+
+/* 창 막대 없이 쓴 그림(캐드 매뉴얼 등)의 '예시 장면' 표는 그림 위 모서리에 — 막대 아래 자리(38px)를 쓰지 않는다 */
+.shot-ex:not(:has(> .bar)) > .shot-tag {
+  top: 12px;
+}
