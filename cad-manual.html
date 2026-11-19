@@ -260,7 +260,7 @@
           <h2 id="assistant">하이퍼 AI 켜기</h2>
           <p>하이퍼 AI 는 모델을 읽고, 말로 시킨 일을 보라색 제안으로 냅니다. 로그인하고 내 Anthropic API 키를 연결하면 씁니다.</p>
           <ol class="g-steps">
-            <li data-script="fixF2_05_signed_out_free_ai_panel"><p>위 막대의 AI 단추를 누르면 오른쪽에 <b>하이퍼 AI</b> 창이 열립니다. 아래의 <b>카카오 로그인</b>, <b>Apple로 로그인</b>, <b>Google 계정으로 로그인</b> 가운데 하나로 로그인합니다.</p><figure><div class="window dark"><img src="assets/manual/cad/ko/ai-login.webp" loading="lazy" width="1184" height="524" alt="하이퍼 AI 창. 미리 보기 카드 아래에 로그인 단추 셋이 있다"></div><figcaption>로그인하기 전의 하이퍼 AI 창.</figcaption></figure></li>
+            <li data-script="fixF2_05_signed_out_free_ai_panel"><p>위 막대의 AI 단추를 누르면 오른쪽에 <b>하이퍼 AI</b> 창이 열립니다. 아래의 <b>카카오 로그인</b>, <b>Apple로 로그인</b>, <b>Google 계정으로 로그인</b> 가운데 하나로 로그인합니다.</p><figure><div class="window dark"><img src="assets/manual/cad/ko/ai-login.webp" loading="lazy" width="1184" height="524" alt="하이퍼 AI 창. 하이퍼 AI 안내 아래에 로그인 단추 셋이 있다"></div><figcaption>로그인하기 전의 하이퍼 AI 창.</figcaption></figure></li>
             <li><p>로그인하면 같은 자리에 키를 넣는 칸이 나옵니다. Anthropic 콘솔에서 만든 API 키(<kbd>sk-ant-</kbd> 로 시작)를 붙여 넣고 <b>저장</b>을 누릅니다. 키는 이 컴퓨터의 키체인에 저장되어 다음부터는 다시 넣지 않습니다.</p><figure><div class="window dark"><img src="assets/manual/cad/ko/ai-key.webp" loading="lazy" width="1184" height="524" alt="로그인한 뒤의 하이퍼 AI 창. sk-ant- 로 시작하는 키를 넣는 칸과 저장 단추가 있다"></div><figcaption>로그인한 뒤. 키 칸에 내 API 키를 넣습니다.</figcaption></figure></li>
             <li><p>창 아래 칸에 할 일을 말로 적고 <b>보내기</b>를 누릅니다. AI 가 만든 것은 보라색 제안으로 화면에 놓이고, 캔버스 위 띠에 몇 개가 들어오는지와 점검 결과가 보입니다. <b>수락</b>을 눌러야 모델이 바뀌고, <b>거부</b>를 누르면 사라집니다.</p><figure><div class="window dark shot-ex"><span class="shot-tag">예시 장면</span><img src="assets/manual/cad/ko/ai-proposal.webp" loading="lazy" width="1600" height="1012" alt="옥상에 태양광 패널을 놓아 달라는 말에 AI 가 패널 104장을 보라색 제안으로 놓은 화면. 캔버스 위 띠에 수락과 거부 단추가 있다"></div><figcaption>말로 시키면 결과가 보라색 제안으로 남습니다. 미리 짠 대화로 찍은 예시 장면입니다.</figcaption></figure></li>
           </ol>
@@ -283,12 +283,13 @@
 
         <section>
           <h2 id="report">문제 알리기</h2>
-          <p>쓰다가 걸리면 그 자리에서 알립니다. <span class="menu">도움말 › 불편 신고…</span>(<kbd>⌘⇧F</kbd>, 윈도우 <kbd>Ctrl+Shift+F</kbd>)를 누르고, 무엇이 불편했는지 한 줄 적어 <b>남기기</b>를 누릅니다. 비워 둬도 됩니다.</p>
-          <ul>
-            <li>지금 화면과 맥락(탭 · 층 · 고른 것 · 최근 명령)이 이 컴퓨터에 남습니다.</li>
-            <li><b>개발팀에도 보낸다</b>를 켜면 메모와 최근 명령 이름만 갑니다. 그림과 도면은 이 컴퓨터에만 있습니다.</li>
-            <li><span class="menu">설정 › 일반</span>의 <b>보내는 내용 보기…</b>에서 무엇이 가는지 미리 봅니다.</li>
-          </ul>
+          <p>쓰다가 잘못된 것을 보면 그 자리에서 알립니다. 개발팀이 읽고 다음 판에서 고칩니다.</p>
+          <ol>
+            <li><span class="menu">도움말 › 문제 알리기…</span>를 누릅니다(<kbd>⌘⇧F</kbd>, 윈도우 <kbd>Ctrl+Shift+F</kbd>, 또는 <kbd>⌘K</kbd> 에서 ‘문제 알리기’). 지금 화면이 함께 찍혀 창 안에 미리 보입니다.</li>
+            <li>한 칸에 <b>무엇을 하다가 무엇이 잘못됐는지</b> 적고 <b>보내기</b>를 누릅니다. 화면 그림을 보내고 싶지 않으면 체크를 끕니다. 답을 받고 싶으면 메일을 적습니다(선택).</li>
+            <li><b>신고 번호</b>가 나옵니다. 인터넷이 없으면 이 컴퓨터에 모아 두었다가 다음에 앱을 열 때 보냅니다. 고치면 다음에 앱을 열 때 알려 드립니다.</li>
+          </ol>
+          <p>판 · 운영체제 · 작업 공간 · 도구 · 최근 명령 · 마지막 메시지 · 오류가 함께 갑니다. 도면 파일은 보내지 않습니다. 오류와 막힌 순간을 도면 내용 없이 알리는 자동 알림은 <span class="menu">설정 › 일반</span>에서 끌 수 있습니다.</p>
         </section>
 
         <section>
