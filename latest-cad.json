@@ -4,8 +4,8 @@
   "date": "2026-11-19",
   "minVersion": "0.0.0",
   "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.3",
-  "notes": "하이퍼세븐 캐드 1.3.3: 사용자가 알려 준 세 가지를 고쳤습니다. 3D 에서 줌아웃해도 모델에 붙은 글자가 건물보다 크게 부풀지 않고 모델과 같이 커지고 작아집니다. 회전할 때 아래 입력줄의 X축·Y축·Z축 칩으로 회전축을 고르고, 방향키(→ X · ← Y · ↑ Z · ↓ 풀기)로 선·이동·복사의 기준 축을 묶습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
-  "notes_en": "HyperSeven CAD 1.3.3: we fixed three things users told us about. Text attached to the model no longer swells bigger than the building when you zoom out in 3D; it grows and shrinks with the model. When rotating, pick the rotation axis with the X, Y and Z axis chips in the command line, and lock Line, Move and Copy to an axis with the arrow keys (→ X · ← Y · ↑ Z · ↓ release). Details are on the download page.",
+  "notes": "하이퍼세븐 캐드 1.3.3: 직접 써 보다가 걸린 세 가지를 고쳤습니다. 3D 에서 줌아웃해도 모델에 붙은 글자가 건물보다 크게 부풀지 않고 모델과 같이 커지고 작아집니다. 3D 에서 회전할 때 아래 입력줄의 X축·Y축·Z축 칩으로 회전축을 고르고, 방향키(→ X · ← Y · ↑ Z · ↓ 풀기)로 선·이동·복사의 기준 축을 묶습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
+  "notes_en": "HyperSeven CAD 1.3.3: we fixed three things that got in our way while using it ourselves. Text attached to the model no longer swells bigger than the building when you zoom out in 3D; it grows and shrinks with the model. When rotating in 3D, pick the rotation axis with the X, Y and Z axis chips in the command line, and lock Line, Move and Copy to an axis with the arrow keys (→ X · ← Y · ↑ Z · ↓ release). Details are on the download page.",
   "mac": {
     "arm64": {
       "dmg": {
