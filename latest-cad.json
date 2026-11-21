@@ -1,43 +1,43 @@
 {
   "product": "hyperseven-cad",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "date": "2026-11-21",
   "minVersion": "0.0.0",
-  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.4",
-  "notes": "하이퍼세븐 캐드 1.3.4: 다른 프로그램 파일을 열 때의 보고를 분명하게 했습니다. SketchUp 의 글자 파일과 재료만 든 파일을 읽고, 찾지 못한 USD 참조는 파일 이름으로, DWG 외부 참조는 이름만 카드에 보입니다. 평면 탭을 1:50 처럼 바꿔도 손 치수가 화면에서 출력과 같은 크기이고, 좁은 창에서는 위 띠 이름이 짧아져 겹치지 않습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
-  "notes_en": "HyperSeven CAD 1.3.4: clearer reports when you open files from other programs. SketchUp text files and material-only files now open, a missing USD reference is named, and a missing DWG external reference shows only its name on the card. Hand-placed dimensions in a plan set to a scale such as 1:50 show at print size on screen, and in narrow windows the top-bar names get shorter so nothing overlaps. Details are on the download page.",
+  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.5",
+  "notes": "하이퍼세븐 캐드 1.3.5: 치수 단위를 고르기 쉽게 했습니다. 치수를 그리거나 고르면 검사기의 '치수 단위'에서 mm(소수 없음, 기본) · 0.0 · 0.00 · 피트·인치 · 인치를 고르고, 문서의 치수가 모두 바뀝니다(되돌리기 한 번). DWG 로 내보내면 치수 스타일이 함께 나가 AutoCAD 에서 고쳐도 같은 글자입니다. 단위 없는 STL·OBJ·PLY 는 열기 보고 카드에서 단위를 고르고 다음에도 그 단위로 읽습니다. 응원하기에 카카오페이, 도움말에 하이퍼세븐 소식·주변에 알리기를 더했습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
+  "notes_en": "HyperSeven CAD 1.3.5: dimension units are easy to choose. While you draw or select a dimension, pick mm (no decimals, the default) · 0.0 · 0.00 · feet-inches · inches under Dimension units in the inspector, and every dimension in the document changes (one undo). DWG exports carry the dimension style, so dimensions keep their text when edited in AutoCAD. For unitless STL, OBJ and PLY files, pick the unit on the open report card. Help now has Follow HyperSeven and Tell Others. Details are on the download page.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.4/HyperSeven-CAD-1.3.4-arm64.dmg",
-        "size": 81268997,
-        "sha256": "cf386a80f9157b675f4641048a099665e5c2b059fd0ee772eb20f562e7a378c3"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.5/HyperSeven-CAD-1.3.5-arm64.dmg",
+        "size": 81713311,
+        "sha256": "34e7efa49680312bb517a705bd9e87a56c9a2391df478235ef6c80941a48e20f"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.4/HyperSeven-CAD-1.3.4-arm64.zip",
-        "size": 73760782,
-        "sha256": "fdd617d8ad81fc3d1ff98f325526586267d3ddbf10727cb615c2806a5b6f7778"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.5/HyperSeven-CAD-1.3.5-arm64.zip",
+        "size": 74166690,
+        "sha256": "68bf599ebcd53afa8232fd63ce817589eb5e0d758d534691af2fc16945bdf7fa"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.4/HyperSeven-CAD-1.3.4-x64.dmg",
-        "size": 95352350,
-        "sha256": "c7ad125c5fecc9fe66f259cbb00981bd880e0715604920bf235b42702e913295"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.5/HyperSeven-CAD-1.3.5-x64.dmg",
+        "size": 94943077,
+        "sha256": "a01b2d5bdbba9c98cf75d0fbbf22f25ab787f7c7ef155122bba942d21d01e64b"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.4/HyperSeven-CAD-1.3.4-x64.zip",
-        "size": 85499240,
-        "sha256": "7f0c50ad90509d87faa0520c48fc16edaad45eb20082f62068b22f1893cfd8f6"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.5/HyperSeven-CAD-1.3.5-x64.zip",
+        "size": 85167911,
+        "sha256": "25bb2e9b61f5ee8d276eb494114a6cd304ad0ed88769570a570f0f44f648f97c"
       }
     }
   },
   "win": {
     "x64": {
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.4/HyperSeven-CAD-1.3.4-win-x64.zip",
-        "size": 93380263,
-        "sha256": "9d48480cb47a1753f81e490debe6e4700f2e529d7da37f3ae7237959ab9356b9"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.5/HyperSeven-CAD-1.3.5-win-x64.zip",
+        "size": 93335181,
+        "sha256": "381688ef9f591019a50c0f448a683d604731f89978e1386e5964402e5fb2c126"
       }
     }
   }
