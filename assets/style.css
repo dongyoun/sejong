@@ -3748,8 +3748,25 @@ footer [data-email] {
 .ref-zoom img {
   display: block;
 }
-.shot-tag.ai {
-  background: rgba(201, 56, 15, 0.88);
+.ref-tag {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: 1px;
+  color: var(--muted);
+}
+.ref-tag.ai {
+  border-color: var(--ver-line);
+  background: var(--ver-soft);
+  color: var(--ver-ink);
+}
+.ref-card .ref-tag {
+  margin-top: 6px;
 }
 .ref-info {
   display: grid;

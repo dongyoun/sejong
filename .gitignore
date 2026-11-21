@@ -1,2 +1,4 @@
-# 레퍼런스 모델 예제 파일은 Cloudflare Pages 에만 올린다 (scripts/site/reference-media.cjs) — GitHub 사본에는 넣지 않는다
+# 레퍼런스 갤러리 — 받을 파일(reference/)과 그림(assets/reference/)은 Cloudflare Pages 에만 올린다 (scripts/site/reference-media.cjs, publish.mjs)
+# GitHub 사본(옛 1.x 앱이 안내문을 읽는 곳)에는 넣지 않는다 — 쪽은 대표 주소로 넘어가니 필요 없다
 /reference/
+/assets/reference/

@@ -243,8 +243,7 @@ document.querySelectorAll('.bridge').forEach((box) => {
       img.alt = small ? small.alt : '';
       // 그림 표(실제 화면·앱 렌더·AI 렌더)도 크게 볼 때 함께 — 어떤 그림인지 늘 밝힌다
       const fc = a.closest('figure')?.querySelector('figcaption');
-      const tg = a.parentElement?.querySelector('.shot-tag');
-      cap.textContent = [tg && tg.textContent, fc ? fc.textContent : img.alt].filter(Boolean).join(' · ');
+      cap.textContent = fc ? fc.textContent.trim() : img.alt; // 설명 줄 앞의 표(.ref-tag)도 함께
       x.setAttribute('aria-label', a.dataset.zoom || 'Close');
       d.showModal();
     }),
