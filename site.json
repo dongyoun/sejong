@@ -1,6 +1,7 @@
 {
   "name": "HyperSeven Office",
   "homepage": "https://hyperseven.pages.dev",
+  "canonical": "https://hypersevenlabs.com",
   "mirror": "https://dongyoun.github.io/sejong",
   "pagesProject": "hyperseven",
   "downloadBase": "https://github.com/dongyoun/sejong/releases/download/v{version}",

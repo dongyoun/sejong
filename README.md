@@ -17,20 +17,20 @@ claude mcp add hyperseven -- "/Applications/HyperSeven Office.app/Contents/Resou
 claude mcp add hyperseven-cad -- "/Applications/HyperSeven CAD.app/Contents/MacOS/supercad" mcp
 ```
 
-윈도우 명령은 앱 안에서 바로 복사할 수 있습니다. 오피스는 도구 › AI 연결 (MCP) 창, 캐드는 AI 탭의 '연결 방법'에 있습니다. 도구 목록과 쓰는 순서는 [llms.txt](https://hyperseven.pages.dev/llms.txt)와 [매뉴얼](https://hyperseven.pages.dev/manual.html#agents)에 있습니다.
+윈도우 명령은 앱 안에서 바로 복사할 수 있습니다. 오피스는 도구 › AI 연결 (MCP) 창, 캐드는 AI 탭의 '연결 방법'에 있습니다. 도구 목록과 쓰는 순서는 [llms.txt](https://hypersevenlabs.com/llms.txt)와 [매뉴얼](https://hypersevenlabs.com/manual#agents)에 있습니다.
 
 ## Using it with AI agents (MCP)
 
-Both apps ship with an MCP server and a command line, so there is nothing extra to install. Instead of rewriting a whole file, an agent reads its structure first and then changes only the paragraphs, cells or elements it needs. Formatting stays where it was. Setup commands and the tool list are in [llms.txt](https://hyperseven.pages.dev/llms.txt).
+Both apps ship with an MCP server and a command line, so there is nothing extra to install. Instead of rewriting a whole file, an agent reads its structure first and then changes only the paragraphs, cells or elements it needs. Formatting stays where it was. Setup commands and the tool list are in [llms.txt](https://hypersevenlabs.com/llms.txt).
 
 ## 바로 가기
 
-- 홈페이지: https://hyperseven.pages.dev/
-- 매뉴얼: https://hyperseven.pages.dev/manual.html
+- 홈페이지: https://hypersevenlabs.com/
+- 매뉴얼: https://hypersevenlabs.com/manual
 - 오피스 설치 파일: 이 저장소의 [Releases](../../releases)
 - 버그 알리기: [Issues](../../issues)
 - 문의: essay.archi@gmail.com
-  - 회사·기관·단체에 맞춘 기능 조정이나 도입, 후원·투자 이야기도 편하게 보내 주세요. 자세한 안내는 [함께 일하기](https://hyperseven.pages.dev/business.html)에 있습니다.
+  - 회사·기관·단체에 맞춘 기능 조정이나 도입, 후원·투자 이야기도 편하게 보내 주세요. 자세한 안내는 [함께 일하기](https://hypersevenlabs.com/business)에 있습니다.
 
 이 저장소에는 오피스 설치 파일과 홈페이지 사본만 있습니다. 앱이 새 버전을 확인하는 안내문(latest.json)도 이 저장소의 GitHub Pages 에 함께 둡니다.
 
