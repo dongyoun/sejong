@@ -1390,6 +1390,26 @@ footer .tagline {
   font-weight: 600;
   color: var(--ink);
 }
+footer .social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 16px;
+  margin-top: 14px;
+}
+footer .social span {
+  font-size: 13px;
+}
+footer .social a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+footer .social a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 footer .legal {
   margin-top: 12px;
   font-size: 13px;
