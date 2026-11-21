@@ -215,3 +215,38 @@ document.querySelectorAll('.bridge').forEach((box) => {
   );
 });
 
+// 레퍼런스 갤러리 (2026-11-22): 그림을 누르면 크게 — <dialog> 하나를 같이 쓴다. 스크립트가 없거나 새 탭으로 열면 원본 그림이 열린다
+(() => {
+  const links = document.querySelectorAll('a[data-zoom]');
+  if (!links.length || typeof HTMLDialogElement !== 'function') return;
+  const d = document.createElement('dialog');
+  d.className = 'ref-lightbox';
+  const x = document.createElement('button');
+  x.type = 'button';
+  x.className = 'ref-x';
+  x.textContent = '×';
+  const img = document.createElement('img');
+  const cap = document.createElement('p');
+  d.append(x, img, cap);
+  document.body.append(d);
+  x.addEventListener('click', () => d.close());
+  d.addEventListener('click', (e) => {
+    if (e.target === d) d.close();
+  });
+  d.addEventListener('close', () => img.removeAttribute('src'));
+  links.forEach((a) =>
+    a.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      e.preventDefault();
+      const small = a.querySelector('img');
+      img.src = a.href;
+      img.alt = small ? small.alt : '';
+      // 그림 표(실제 화면·앱 렌더·AI 렌더)도 크게 볼 때 함께 — 어떤 그림인지 늘 밝힌다
+      const fc = a.closest('figure')?.querySelector('figcaption');
+      const tg = a.parentElement?.querySelector('.shot-tag');
+      cap.textContent = [tg && tg.textContent, fc ? fc.textContent : img.alt].filter(Boolean).join(' · ');
+      x.setAttribute('aria-label', a.dataset.zoom || 'Close');
+      d.showModal();
+    }),
+  );
+})();
