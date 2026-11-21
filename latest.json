@@ -55,16 +55,10 @@
   },
   "config": {
     "flags": {},
-    "plans": {},
-    "tiers": [
-      "free",
-      "pro",
-      "org"
-    ],
     "links": {
       "support": "https://github.com/dongyoun/sejong/issues",
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "H0ocbq/0ea8fNU4s2YaKuVIlPayjecCoY3k3tJ2I83TOLpbqK1qDtu2wkt/I5RrjEAx+72tR1OVrSyotsfk2Aw=="
+  "sig": "lUEbbUhvV4lnbKWVR4a4WUn6oBG4MX7J11hVJz2alWzkLizuNsus1PsSuLyGaEX/Jk31Lmy8aIOj0ZP+jHjcBQ=="
 }

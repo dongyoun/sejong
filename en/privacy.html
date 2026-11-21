@@ -62,7 +62,7 @@
         <section>
           <h2>When the app connects to the internet</h2>
           <h3>Checking for updates</h3>
-          <p>When the app starts, and every 6 hours while it's open, it downloads one public file from the website (<code>latest.json</code>). This request carries no personal information or document content. Cloudflare and GitHub, which host the website, may process connection data such as your IP address, as with any web request. Installers and update files are downloaded from GitHub (GitHub, Inc., US); connection data at that point is handled under GitHub's privacy statement. If you installed the app from the Microsoft Store, the Store keeps it up to date.</p>
+          <p>When the app starts, and every 6 hours while it's open, it downloads one public file from the website (<code>latest.json</code>). This request carries no personal information or document content, and the number of requests is only counted as daily totals (<a href="#counts">below</a>). Cloudflare and GitHub, which host the website, may process connection data such as your IP address, as with any web request. Installers and update files are downloaded from GitHub (GitHub, Inc., US); connection data at that point is handled under GitHub's privacy statement. If you installed the app from the Microsoft Store, the Store keeps it up to date.</p>
           <p>When the app starts, it also asks the website once whether HyperSeven account sign-in is available. This request carries no personal information or document content either.</p>
           <h3>AI assistant (only if you turn it on)</h3>
           <p>Only when you use your own Anthropic API key and agree, each request you send — together with as much of the open document's text as it needs — goes to Anthropic, which handles it under Anthropic's privacy policy. Your API key is encrypted with your operating system's keychain on this computer and is never sent to HyperSeven. If you choose a model on your own computer, requests stay on your computer.</p>
@@ -78,6 +78,15 @@
           <p><b>Site map and address lookup (CAD, signed-in users only)</b> — When you search an address or click a parcel on the site card or map, the map view area, the address you searched and the parcel number go through the Operator's server to the Korean Ministry of Land's spatial information platform (VWorld) to get the map, parcel boundary and zoning. The Operator does not store addresses, coordinates or parcel numbers; it only counts daily uses per account number.</p>
           <p><b>Design briefs and task documents (CAD)</b> — When you attach a file, the app extracts only the text on your computer (the original file is not sent) and masks phone numbers, emails and resident registration numbers by default. HyperAI reads only the parts it needs and includes that text in the AI request. With your own Anthropic API key, the app sends the request directly to Anthropic without passing through the Operator's server; the Operator neither receives nor stores it.</p>
           <p><b>AI render (CAD, only if you turn it on)</b> — The current view image and description are sent directly, with your own key, to the render service you choose (ComfyUI on your computer, Stability AI, OpenAI or an address you enter). Faces are masked just before sending. Nothing passes through the Operator's server, and the service handles the data under its own policy.</p>
+        </section>
+        <section id="counts">
+          <h2>Visit and update-check counts</h2>
+          <p>To see how much the website and apps are used, we count daily totals only. We use no cookies and store no IP addresses or anything that could identify a person or device.</p>
+          <ul>
+            <li><b>Website</b> — when a page is opened, its address and whether the visitor came from another site are added to that day’s totals.</li>
+            <li><b>Update checks</b> — when an app downloads its update file (<code>latest.json</code> or <code>latest-cad.json</code>), the app version and operating system (Mac or Windows), read from the user agent the app sends, are added to that day’s totals.</li>
+          </ul>
+          <p>The totals are kept in a database at Cloudflare (our processor). Because they cannot identify anyone, they have no separate deletion period.</p>
         </section>
         <section id="account">
           <h2>HyperSeven account (only if you sign up)</h2>

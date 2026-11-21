@@ -2,6 +2,17 @@
 // 모든 쪽이 함께 쓴다 — 없는 자리는 건너뛴다. en/·ja/ 쪽은 <script data-root="../"> 로 안내문 자리를 알려 준다.
 const ROOT = (document.currentScript && document.currentScript.dataset.root) || '';
 const LANG = (document.documentElement.lang || 'ko').slice(0, 2);
+// 쪽 보기 세기 (2026-11-21, 개인정보 처리방침 '방문·새 판 확인 횟수'): 본 주소에서만, 쿠키·저장소 없이 쪽 경로와
+// '다른 사이트에서 들어왔는지'만 보낸다 — 서버(/api/pv)는 날짜별 합계만 남긴다.
+try {
+  if (/(^|\.)hyperseven\.pages\.dev$/.test(location.hostname) && navigator.sendBeacon) {
+    let fromOutside = 1;
+    try {
+      fromOutside = document.referrer && new URL(document.referrer).hostname === location.hostname ? 0 : 1;
+    } catch (e) {}
+    navigator.sendBeacon('/api/pv?p=' + encodeURIComponent(location.pathname) + '&n=' + fromOutside);
+  }
+} catch (e) {}
 const T = {
   ko: { prep: '내려받기 준비 중', win: '윈도우 10·11', notesBelow: '이 버전의 업데이트 내역은 아래에서 봅니다.', notesNone: '업데이트 내역은 아래에서 봅니다.' },
   en: { prep: 'Getting the download ready', win: 'Windows 10/11', notesBelow: 'See the full release notes below.', notesNone: 'See the release notes below.' },
