@@ -2,10 +2,11 @@
 // 모든 쪽이 함께 쓴다 — 없는 자리는 건너뛴다. en/·ja/ 쪽은 <script data-root="../"> 로 안내문 자리를 알려 준다.
 const ROOT = (document.currentScript && document.currentScript.dataset.root) || '';
 const LANG = (document.documentElement.lang || 'ko').slice(0, 2);
-// 쪽 보기 세기 (2026-11-21, 개인정보 처리방침 '방문·새 판 확인 횟수'): 본 주소(hypersevenlabs.com·hyperseven.pages.dev)에서만, 쿠키·저장소 없이 쪽 경로와
+// 쪽 보기 세기 (2026-11-21, 개인정보 처리방침 '방문·새 판 확인 횟수'): 대표 주소 hypersevenlabs.com 에서만 — 옛 주소(pages.dev)의 쪽은 머리에서
+// 새 주소로 넘기므로 거기서도 세면 한 사람이 두 번 잡힌다. 쿠키·저장소 없이 쪽 경로와
 // '다른 사이트에서 들어왔는지'만 보낸다 — 서버(/api/pv)는 날짜별 합계만 남긴다.
 try {
-  if (/(^|\.)hyperseven\.pages\.dev$|^(www\.)?hypersevenlabs\.com$/.test(location.hostname) && navigator.sendBeacon) {
+  if (/^(www\.)?hypersevenlabs\.com$/.test(location.hostname) && navigator.sendBeacon) {
     let fromOutside = 1;
     try {
       fromOutside = document.referrer && new URL(document.referrer).hostname === location.hostname ? 0 : 1;
