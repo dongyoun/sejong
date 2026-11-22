@@ -1,43 +1,43 @@
 {
   "product": "hyperseven-cad",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "date": "2026-11-22",
   "minVersion": "0.0.0",
-  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.6",
-  "notes": "하이퍼세븐 캐드 1.3.6: 새 판 확인 요청이 앱 판과 운영체제 이름(macOS 또는 Windows)을 함께 보냅니다. 그 밖의 정보는 보내지 않습니다. 도움말의 '주변에 알리기' 글과 정보 창의 누리집 주소가 대표 주소 hypersevenlabs.com 으로 바뀌었습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
+  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.7",
+  "notes": "하이퍼세븐 캐드 1.3.7: 면 나누기가 NURBS 곡면을 나누고, 일람표가 패널 수·넓이·비평면을 셉니다. 승강기·세로 루버 부품이 생겼고, 놓은 부품과 직접 만든 컴포넌트가 IFC 에서 제 클래스로 나갑니다. 파일이 지은 사람이 고른 3D 장면으로 열리고, 장면이 화각을 되살립니다. 노드 그래프에 '층 자동' 굽기와 계단·실 노드가 생겼습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.6/HyperSeven-CAD-1.3.6-arm64.dmg",
-        "size": 81770093,
-        "sha256": "f7b10adfea14c06e5fb5902b64cbe59987014a005f248b7fecf20f6f253b59fb"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.7/HyperSeven-CAD-1.3.7-arm64.dmg",
+        "size": 81751640,
+        "sha256": "dce65ebb8d7e01f1d60e56687777b771b902bded63f99b4716ece92650c99bd4"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.6/HyperSeven-CAD-1.3.6-arm64.zip",
-        "size": 74242056,
-        "sha256": "d17c8644c82259dc3e8a435127a1ba4ce1cf9c102476e2ac84b124846c5d19ad"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.7/HyperSeven-CAD-1.3.7-arm64.zip",
+        "size": 74214413,
+        "sha256": "479c6be70534c7315c4d07027a02b7a90707a7db5830ffab729122d3477775d0"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.6/HyperSeven-CAD-1.3.6-x64.dmg",
-        "size": 95156287,
-        "sha256": "d04fb8a6319fa973634b9e17c99b903e8802d95e99ff317419289dd5ee86f34c"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.7/HyperSeven-CAD-1.3.7-x64.dmg",
+        "size": 95069403,
+        "sha256": "45520bb908b6ace066f145e020a3263418c4bd6d8b93ee124d777ba0a45a62ae"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.6/HyperSeven-CAD-1.3.6-x64.zip",
-        "size": 85330452,
-        "sha256": "edf12d5839d4cd917361627f4eeba64668ccc6c590d00e588dff98ba6a960cfb"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.7/HyperSeven-CAD-1.3.7-x64.zip",
+        "size": 85207341,
+        "sha256": "51dd6fe31f817e254583620147794a180f12b7ff39537bb504bfc941b70791c7"
       }
     }
   },
-  "notes_en": "HyperSeven CAD 1.3.6: the update check now sends the app version and the operating system name (macOS or Windows), and nothing else. Tell Others in Help and the website line in About now use our main address, hypersevenlabs.com. Details are on the download page.",
+  "notes_en": "HyperSeven CAD 1.3.7: Divide Surface now works on NURBS surfaces, and schedules count panels, their area and how far they are out of plane. New elevator and vertical louver parts; placed parts and your own components export to IFC as their class. Files open at the 3D scene their author chose, and scenes restore their field of view. The node graph gains automatic levels on bake and Stair and Room nodes. Details are on the download page.",
   "win": {
     "x64": {
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.6/HyperSeven-CAD-1.3.6-win-x64.zip",
-        "size": 93339822,
-        "sha256": "8881249c67dfc5de28fb97ebc81ba67edf68f515d8fa2f9082db72bfa12463e2"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.7/HyperSeven-CAD-1.3.7-win-x64.zip",
+        "size": 93430800,
+        "sha256": "49b9c1d86de5e175cb1969cf5a75b2d1c10876144f4c1e4cc1730bde82f77e75"
       }
     }
   }
