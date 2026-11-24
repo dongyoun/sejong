@@ -1,7 +1,7 @@
 {
   "product": "sejong",
   "version": "3.5.0",
-  "date": "2026-11-21",
+  "date": "2026-11-24",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
   "notes": "하이퍼 AI 의 답이 쓰는 대로 보이고, 내 컴퓨터의 AI 도 연결됩니다.\n- 답이 실시간으로 흐르고, [멈춤]으로 언제든 멈춥니다.\n- 올라마 같은 내 컴퓨터의 AI 모델을 주소만 적어 연결합니다.\n- 제안을 하나씩 골라 적용하고, 누르면 문서의 그 자리로 갑니다.\n- 글을 고르고 오른쪽 클릭하면 하이퍼 AI 로 바로 다듬습니다.\n- 셈에서 함수를 고른 뒤 칸을 누르거나 끌어 범위를 넣습니다. 한글 상태로 친 수식도 바로 영문으로 바뀝니다.\n- 새 발표가 바로 열리고, 테마는 언제든 바꿉니다.\n- 탭이 많아도 지금 문서가 늘 보이고, 좁은 창에서는 서식 단추가 » 안에 모입니다.\n- 한글 입력 뒤 Enter, 셈의 Tab·Enter, 발표 글 상자 입력이 더 매끄럽습니다.\n- PDF 글을 고칠 때 누른 자리에 바로 커서가 놓입니다.\n- 영어 문장 첫머리의 The 같은 낱말이 한글로 바뀌지 않습니다. 영어 화면에서는 한/영 자동 전환이 처음부터 꺼져 있습니다.\n- 윈도우에서 하이퍼 AI 창이나 서식 칸에 커서가 있어도 저장·열기 단축키가 됩니다.\n- 도구 › 매뉴얼에서 그림과 함께 따라 하는 매뉴얼을 엽니다.\n- 맥에서 ⌘Q 로 앱을 완전히 끝냅니다.\n- 하이퍼 AI 연결을 포함해 모든 기능이 무료입니다. 메뉴 막대의 ♥ 응원에서 커피 한 잔으로 응원할 수 있습니다.",
@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.5.2",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.2/HyperSeven-Office-bundle-3.5.2.zip",
-    "size": 5313875,
-    "sha256": "55fae448b3209aecaaf51c5a9ddc0170fc0bf67531d8f525d1d0546ac7445521",
+    "version": "3.5.3",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.3/HyperSeven-Office-bundle-3.5.3.zip",
+    "size": 5313915,
+    "sha256": "62908060c54ee26ac46085ebd2ce1d0d3d403fcd1d92510c0a379fb8dfcfa528",
     "shellMin": "3.2.0",
-    "notes": "하이퍼세븐 소식을 앱에서 바로 봅니다.\n- 도구 › 하이퍼세븐 소식에서 X·인스타그램·스레드를 엽니다.\n- 도구 › 주변에 알리기로 X·스레드에 하이퍼세븐을 소개합니다.\n- 응원하기에서 카카오페이로도 응원합니다."
+    "notes": "PDF 양식을 바로 채웁니다.\n- PDF 의 입력란·확인란·목록을 눌러 바로 채우고, 저장하면 값이 그대로 들어갑니다.\n- 윈도우에서 PDF 입력란에 커서가 있어도 저장·열기 단축키가 됩니다."
   },
   "config": {
     "flags": {},
@@ -60,5 +60,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "lUEbbUhvV4lnbKWVR4a4WUn6oBG4MX7J11hVJz2alWzkLizuNsus1PsSuLyGaEX/Jk31Lmy8aIOj0ZP+jHjcBQ=="
+  "sig": "JrRYxK46v4LbIxb6qn4M7Rnn+X0BrYGTqFPXC+Uid9ljiJeb8XpimJa7fpjtBC9y2kM1/Vf8StrKiD4T1x9hDg=="
 }
