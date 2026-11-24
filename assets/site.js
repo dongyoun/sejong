@@ -5,13 +5,19 @@ const LANG = (document.documentElement.lang || 'ko').slice(0, 2);
 // 쪽 보기 세기 (2026-11-21, 개인정보 처리방침 '방문·새 판 확인 횟수'): 대표 주소 hypersevenlabs.com 에서만 — 옛 주소(pages.dev)의 쪽은 머리에서
 // 새 주소로 넘기므로 거기서도 세면 한 사람이 두 번 잡힌다. 쿠키·저장소 없이 쪽 경로와
 // '다른 사이트에서 들어왔는지'만 보낸다 — 서버(/api/pv)는 날짜별 합계만 남긴다.
+// 주소에 채널 꼬리표 ?s=… 가 붙어 있으면(홍보 링크, 2026-11-24 사용자 "달고 세라") 그 값도 함께 — 서버가 알려진 값만 남기고 나머지는 'other'.
+const PV_ON = /^(www\.)?hypersevenlabs\.com$/.test(location.hostname) && !!navigator.sendBeacon;
+let PV_S = '';
 try {
-  if (/^(www\.)?hypersevenlabs\.com$/.test(location.hostname) && navigator.sendBeacon) {
+  PV_S = (new URLSearchParams(location.search).get('s') || '').slice(0, 20);
+} catch (e) {}
+try {
+  if (PV_ON) {
     let fromOutside = 1;
     try {
       fromOutside = document.referrer && new URL(document.referrer).hostname === location.hostname ? 0 : 1;
     } catch (e) {}
-    navigator.sendBeacon('/api/pv?p=' + encodeURIComponent(location.pathname) + '&n=' + fromOutside);
+    navigator.sendBeacon('/api/pv?p=' + encodeURIComponent(location.pathname) + '&n=' + fromOutside + (PV_S ? '&s=' + encodeURIComponent(PV_S) : ''));
   }
 } catch (e) {}
 const T = {
@@ -37,6 +43,18 @@ const primary = (os) =>
     (el.matches('.btn') ? [el] : el.querySelectorAll('.btn')).forEach((b) => b.classList.toggle('ghost', !mine));
   });
 primary(OS);
+// 받기 단추 누른 수 (쪽·윈도우/맥·꼬리표의 날짜별 합계) — 처리방침 #counts 에 한 줄을 더한 뒤에만 켠다(지금 꺼 둠). 서버 pv.js 의 DL_ON 도 함께 켤 것.
+const DL_ON = false;
+if (DL_ON && PV_ON)
+  document.querySelectorAll('.get-btns [data-os] a[href]').forEach((a) =>
+    a.addEventListener('click', () => {
+      try {
+        const os = a.closest('[data-os]').dataset.os;
+        const via = /apps\.microsoft\.com/.test(a.href) ? 'store' : 'file';
+        navigator.sendBeacon('/api/pv?dl=' + encodeURIComponent(os + '-' + via) + '&p=' + encodeURIComponent(location.pathname) + (PV_S ? '&s=' + encodeURIComponent(PV_S) : ''));
+      } catch (e) {}
+    }),
+  );
 // 복사 단추: 누르면 data-copy 를 클립보드로, 잠깐 data-done 글로 바꿨다가 되돌린다
 document.querySelectorAll('[data-copy]').forEach((b) =>
   b.addEventListener('click', async () => {
