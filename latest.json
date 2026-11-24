@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.5.3",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.3/HyperSeven-Office-bundle-3.5.3.zip",
-    "size": 5313915,
-    "sha256": "62908060c54ee26ac46085ebd2ce1d0d3d403fcd1d92510c0a379fb8dfcfa528",
+    "version": "3.5.4",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.4/HyperSeven-Office-bundle-3.5.4.zip",
+    "size": 5313920,
+    "sha256": "5c66bbda2fad90d0be75e12f373d9e2151615b23d47164d0fcb868ba61279592",
     "shellMin": "3.2.0",
-    "notes": "PDF 양식을 바로 채웁니다.\n- PDF 의 입력란·확인란·목록을 눌러 바로 채우고, 저장하면 값이 그대로 들어갑니다.\n- 윈도우에서 PDF 입력란에 커서가 있어도 저장·열기 단축키가 됩니다."
+    "notes": "PDF 확인란에 체크 표시가 바로 보입니다.\n- PDF 의 확인란을 누르면 그 자리에 체크 표시가 나타나고, 저장한 뒤 다시 열어도 그대로 보입니다."
   },
   "config": {
     "flags": {},
@@ -60,5 +60,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "JrRYxK46v4LbIxb6qn4M7Rnn+X0BrYGTqFPXC+Uid9ljiJeb8XpimJa7fpjtBC9y2kM1/Vf8StrKiD4T1x9hDg=="
+  "sig": "FT9JLjvL1/1DXX0rXbqiILa7yQPGlZrgRc0xIxNB4faLd6+9Tr9vUdvoJUPQHeEZqCC8ojdekH1xshz+owLaCg=="
 }
