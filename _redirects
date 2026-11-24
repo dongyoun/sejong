@@ -15,3 +15,8 @@
 /pay.html /support 302
 /en/pay /en/support 302
 /en/pay.html /en/support 302
+# 11-16 약관은 11-25 무료판 시행으로 내렸다 (보관: site-src/paid/*/terms-2026-11-16.html) — 옛 주소는 지금 약관으로
+/terms-2026-11-16 /terms 302
+/terms-2026-11-16.html /terms 302
+/en/terms-2026-11-16 /en/terms 302
+/en/terms-2026-11-16.html /en/terms 302
