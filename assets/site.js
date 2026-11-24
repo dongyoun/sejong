@@ -7,9 +7,13 @@ const LANG = (document.documentElement.lang || 'ko').slice(0, 2);
 // '다른 사이트에서 들어왔는지'만 보낸다 — 서버(/api/pv)는 날짜별 합계만 남긴다.
 // 주소에 채널 꼬리표 ?s=… 가 붙어 있으면(홍보 링크, 2026-11-24 사용자 "달고 세라") 그 값도 함께 — 서버가 알려진 값만 남기고 나머지는 'other'.
 const PV_ON = /^(www\.)?hypersevenlabs\.com$/.test(location.hostname) && !!navigator.sendBeacon;
+// ?s= 가 없으면 utm_source(스레드 등이 링크에 저절로 붙이는 것, 11-24)를 u= 로 — 서버가 같은 이름(th·ig·fb…)으로 바꾼다.
 let PV_S = '';
 try {
-  PV_S = (new URLSearchParams(location.search).get('s') || '').slice(0, 20);
+  const q = new URLSearchParams(location.search);
+  const s = (q.get('s') || '').slice(0, 20);
+  const u = (q.get('utm_source') || '').slice(0, 30);
+  PV_S = s ? 's=' + encodeURIComponent(s) : u ? 'u=' + encodeURIComponent(u) : '';
 } catch (e) {}
 try {
   if (PV_ON) {
@@ -17,7 +21,7 @@ try {
     try {
       fromOutside = document.referrer && new URL(document.referrer).hostname === location.hostname ? 0 : 1;
     } catch (e) {}
-    navigator.sendBeacon('/api/pv?p=' + encodeURIComponent(location.pathname) + '&n=' + fromOutside + (PV_S ? '&s=' + encodeURIComponent(PV_S) : ''));
+    navigator.sendBeacon('/api/pv?p=' + encodeURIComponent(location.pathname) + '&n=' + fromOutside + (PV_S ? '&' + PV_S : ''));
   }
 } catch (e) {}
 const T = {
@@ -51,7 +55,7 @@ if (DL_ON && PV_ON)
       try {
         const os = a.closest('[data-os]').dataset.os;
         const via = /apps\.microsoft\.com/.test(a.href) ? 'store' : 'file';
-        navigator.sendBeacon('/api/pv?dl=' + encodeURIComponent(os + '-' + via) + '&p=' + encodeURIComponent(location.pathname) + (PV_S ? '&s=' + encodeURIComponent(PV_S) : ''));
+        navigator.sendBeacon('/api/pv?dl=' + encodeURIComponent(os + '-' + via) + '&p=' + encodeURIComponent(location.pathname) + (PV_S ? '&' + PV_S : ''));
       } catch (e) {}
     }),
   );
