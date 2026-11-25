@@ -1,7 +1,7 @@
 {
   "product": "sejong",
   "version": "3.5.0",
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
   "notes": "하이퍼 AI 의 답이 쓰는 대로 보이고, 내 컴퓨터의 AI 도 연결됩니다.\n- 답이 실시간으로 흐르고, [멈춤]으로 언제든 멈춥니다.\n- 올라마 같은 내 컴퓨터의 AI 모델을 주소만 적어 연결합니다.\n- 제안을 하나씩 골라 적용하고, 누르면 문서의 그 자리로 갑니다.\n- 글을 고르고 오른쪽 클릭하면 하이퍼 AI 로 바로 다듬습니다.\n- 셈에서 함수를 고른 뒤 칸을 누르거나 끌어 범위를 넣습니다. 한글 상태로 친 수식도 바로 영문으로 바뀝니다.\n- 새 발표가 바로 열리고, 테마는 언제든 바꿉니다.\n- 탭이 많아도 지금 문서가 늘 보이고, 좁은 창에서는 서식 단추가 » 안에 모입니다.\n- 한글 입력 뒤 Enter, 셈의 Tab·Enter, 발표 글 상자 입력이 더 매끄럽습니다.\n- PDF 글을 고칠 때 누른 자리에 바로 커서가 놓입니다.\n- 영어 문장 첫머리의 The 같은 낱말이 한글로 바뀌지 않습니다. 영어 화면에서는 한/영 자동 전환이 처음부터 꺼져 있습니다.\n- 윈도우에서 하이퍼 AI 창이나 서식 칸에 커서가 있어도 저장·열기 단축키가 됩니다.\n- 도구 › 매뉴얼에서 그림과 함께 따라 하는 매뉴얼을 엽니다.\n- 맥에서 ⌘Q 로 앱을 완전히 끝냅니다.\n- 하이퍼 AI 연결을 포함해 모든 기능이 무료입니다. 메뉴 막대의 ♥ 응원에서 커피 한 잔으로 응원할 수 있습니다.",
@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.5.4",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.4/HyperSeven-Office-bundle-3.5.4.zip",
-    "size": 5313920,
-    "sha256": "5c66bbda2fad90d0be75e12f373d9e2151615b23d47164d0fcb868ba61279592",
+    "version": "3.5.5",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.5/HyperSeven-Office-bundle-3.5.5.zip",
+    "size": 5315151,
+    "sha256": "1e15115c1028babcb3df398af3c42598c64961ecbadac48891738b605233f51d",
     "shellMin": "3.2.0",
-    "notes": "PDF 확인란에 체크 표시가 바로 보입니다.\n- PDF 의 확인란을 누르면 그 자리에 체크 표시가 나타나고, 저장한 뒤 다시 열어도 그대로 보입니다."
+    "notes": "한글을 빨리 쳐도 친 그대로 들어갑니다.\n- 앱이 바쁠 때 한글을 빨리 쳐도 자모 하나 빠짐없이 들어갑니다.\n- 새 기능 안내 창은 치기를 멈춘 뒤에 뜹니다.\n- 하이퍼 AI 설정(⚙)에서 넣어 둔 API 키를 바로 바꾸고 지웁니다.\n- API 키의 크레딧·권한 문제를 우리말로 알려 줍니다."
   },
   "config": {
     "flags": {},
@@ -60,5 +60,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "FT9JLjvL1/1DXX0rXbqiILa7yQPGlZrgRc0xIxNB4faLd6+9Tr9vUdvoJUPQHeEZqCC8ojdekH1xshz+owLaCg=="
+  "sig": "Yvn3tH9QPQaRwfciwlEiy5h4SZBE00LQ0ls5dQpZKTUO0ObyH44OiLpspw/JrJ+yca9Xqd5y01hzDt1lGxOLCA=="
 }
