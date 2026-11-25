@@ -46,12 +46,12 @@
     }
   },
   "bundle": {
-    "version": "3.5.5",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.5/HyperSeven-Office-bundle-3.5.5.zip",
-    "size": 5315151,
-    "sha256": "1e15115c1028babcb3df398af3c42598c64961ecbadac48891738b605233f51d",
+    "version": "3.5.6",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.6/HyperSeven-Office-bundle-3.5.6.zip",
+    "size": 5316464,
+    "sha256": "5af7b23c32b65f5ce04426cb5c2c3cf69d1432b5dddc040ef9f1a05fb829e7b5",
     "shellMin": "3.2.0",
-    "notes": "한글을 빨리 쳐도 친 그대로 들어갑니다.\n- 앱이 바쁠 때 한글을 빨리 쳐도 자모 하나 빠짐없이 들어갑니다.\n- 새 기능 안내 창은 치기를 멈춘 뒤에 뜹니다.\n- 하이퍼 AI 설정(⚙)에서 넣어 둔 API 키를 바로 바꾸고 지웁니다.\n- API 키의 크레딧·권한 문제를 우리말로 알려 줍니다."
+    "notes": "하이퍼 AI를 쓰는 세 가지 길이 한눈에 보입니다.\n- 내 API 키, 밖의 AI(키 없이, MCP), 내 컴퓨터 AI(무료, Ollama) 가운데 편한 길을 고릅니다.\n- [연결 설정 복사] 한 번으로 Claude 데스크톱에서 하이퍼세븐 오피스를 씁니다."
   },
   "config": {
     "flags": {},
@@ -60,5 +60,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "Yvn3tH9QPQaRwfciwlEiy5h4SZBE00LQ0ls5dQpZKTUO0ObyH44OiLpspw/JrJ+yca9Xqd5y01hzDt1lGxOLCA=="
+  "sig": "/eIT+4cza+yhtq15OA84gZjkD09sX7+p/905TlYVIn92OfX9Ixa7JThi6EbzgBNB6+UUEfqnSwWTmytdlcG/Bw=="
 }
