@@ -81,7 +81,7 @@
           <p>HyperSeven CAD runs on Macs (Apple Silicon and Intel) and on Windows 10 and 11 (64-bit).</p>
           <ul>
             <li><b>Mac</b> — Get the .dmg from <a href="cad.html#download">Download</a>, open it and drag <b>HyperSeven CAD</b> into the <b>Applications</b> folder. For an Intel Mac, use <b>Intel Mac</b> under the download button.</li>
-            <li><b>Windows</b> — Click <b>Download for Windows</b> to install from the Microsoft Store. If you use <b>Zip file (.zip)</b> below it, unzip the file and open <b>supercad.exe</b>.</li>
+            <li><b>Windows</b> — Click <b>Download for Windows</b>, unzip the .zip file and open <b>supercad.exe</b>. To install from the store instead, click <b>Microsoft Store</b> below it.</li>
           </ul>
           <h3>First launch</h3>
           <p>On the Mac, if macOS asks whether to open an app downloaded from the internet, click <b>Open</b>. On Windows, if you opened the app from the .zip and see “Windows protected your PC”, click <b>More info → Run anyway</b>.</p>
@@ -258,13 +258,13 @@
 
         <section>
           <h2 id="assistant">Turn on Hyper AI</h2>
-          <p>Hyper AI reads the model and turns what you ask for into purple proposals. Sign in and connect your own Anthropic API key to use it.</p>
+          <p>HyperSeven CAD is free, and you use AI whichever way suits you. Hyper AI inside the app works after you sign in and enter your own Anthropic API key. To use AI without a key, connect an outside AI such as Claude through the built-in connector (MCP) — see Connecting AI agents below. Hyper AI reads the model and turns what you ask for into purple proposals.</p>
           <ol class="g-steps">
-            <li data-script="fixF2_05_signed_out_free_ai_panel"><p>Click the AI button in the top bar to open the <b>Hyper AI</b> panel on the right. Sign in with one of the buttons at the bottom: <b>Sign in with Apple</b>, <b>Sign in with Google</b> or <b>Login with Kakao</b>.</p><figure><div class="window dark"><img src="../assets/manual/cad/en/ai-login.webp" loading="lazy" width="1184" height="588" alt="The Hyper AI panel with three sign-in buttons"></div><figcaption>The Hyper AI panel before signing in.</figcaption></figure></li>
-            <li><p>After you sign in, a box for the key appears in the same place. Paste an API key made in the Anthropic Console (it starts with <kbd>sk-ant-</kbd>) and click <b>Save</b>. The key is stored in this computer's keychain, so you enter it only once.</p><figure><div class="window dark"><img src="../assets/manual/cad/en/ai-key.webp" loading="lazy" width="1184" height="476" alt="The Hyper AI panel after signing in, with a box for a key that starts with sk-ant- and a Save button"></div><figcaption>After signing in. Put your API key in the key box.</figcaption></figure></li>
+            <li data-script="fixF2_05_signed_out_free_ai_panel"><p>Click the AI button in the top bar to open the <b>Hyper AI</b> panel on the right. The card at the top shows both ways. Under <b>Your API key</b>, sign in with one of the buttons: <b>Sign in with Apple</b>, <b>Sign in with Google</b> or <b>Login with Kakao</b>.</p><figure><div class="window dark"><img src="../assets/manual/cad/en/ai-login.webp" loading="lazy" width="1184" height="960" alt="The Hyper AI panel. The card &#x27;HyperSeven CAD is free&#x27; shows Your API key with three sign-in buttons, and Outside AI with a Copy connection settings button"></div><figcaption>The Hyper AI panel before signing in. The app is free, and AI comes two ways.</figcaption></figure></li>
+            <li><p>After you sign in, a box for the key appears below the card. Paste an API key made in the Anthropic Console (it starts with <kbd>sk-ant-</kbd>) and click <b>Save</b>. The key is stored in this computer's keychain, so you enter it only once.</p><figure><div class="window dark"><img src="../assets/manual/cad/en/ai-key.webp" loading="lazy" width="1184" height="800" alt="The Hyper AI panel after signing in, with a box for a key that starts with sk-ant- and a Save button"></div><figcaption>After signing in. Put your API key in the key box.</figcaption></figure></li>
             <li><p>Type what you want in the box at the bottom of the panel and click <b>Send</b>. What the AI makes is placed on screen as purple proposals, and a strip above the canvas shows how many there are and the result of the checks. The model changes only when you click <b>Accept</b>; <b>Discard</b> removes the proposals.</p><figure><div class="window dark shot-ex"><span class="shot-tag">Example scene</span><img src="../assets/manual/cad/en/ai-proposal.webp" loading="lazy" width="1600" height="1012" alt="After a request to put solar panels on the roof, the AI has placed 104 panels as purple proposals. The strip above the canvas has Accept and Discard buttons"></div><figcaption>Ask in words and the result stays as purple proposals. This example scene was captured with a scripted conversation.</figcaption></figure></li>
           </ol>
-          <div class="g-tips"><b>Good to know</b><ul><li>Connecting Hyper AI is free. AI usage is billed to your own API key by Anthropic.</li><li>AI answers can be wrong, so check before you accept.</li><li>Sign-in uses the same account as HyperSeven Office.</li></ul></div>
+          <div class="g-tips"><b>Good to know</b><ul><li>The app is free. Hyper AI usage is billed to your own API key by Anthropic. An outside AI over MCP needs no key.</li><li>AI answers can be wrong, so check before you accept.</li><li>Sign-in uses the same account as HyperSeven Office.</li></ul></div>
         </section>
 
         <section>
@@ -274,9 +274,10 @@
           <p>For Claude Code on a Mac, run this one line in Terminal once.</p>
           <pre class="code">claude mcp add hyperseven-cad -- "/Applications/HyperSeven CAD.app/Contents/MacOS/supercad" mcp</pre>
           <ul>
-            <li><b>Windows</b> — Click <b>How to connect</b> at the top of the Hyper AI panel to see the command for this computer. Use <b>Copy</b> and paste it into a terminal.</li>
-            <li><b>Claude Desktop</b> — Copy the second block in the same place, add it to <code>mcpServers</code> under Settings ▸ Developer ▸ Edit Config, and restart Claude Desktop.</li>
+            <li><b>Claude Desktop</b> — in the card of the Hyper AI panel, click <b>Copy connection settings</b> under <b>Outside AI</b>. Paste it in Claude Desktop under Settings › Developer › Edit Config, then restart Claude.</li>
+            <li><b>Claude Code on Windows</b> — click <b>Connect another AI app</b> in the same place to see the command for this computer. Click <b>Copy</b> and paste it into a terminal. After you add your own key, the same is under <b>How to connect</b> at the top of the panel.</li>
           </ul>
+          <p>An outside AI connects without a HyperSeven sign-in or an API key.</p>
           <h3>Changes stay as proposals</h3>
           <p>While the app window is open, the agent edits the same document you are looking at. What the agent makes stays as purple proposals, and you choose <b>Accept</b> or <b>Discard</b>. The green dot at the top of the Hyper AI panel means an external AI can connect to this window.</p>
         </section>
@@ -306,6 +307,7 @@
                 <tr><td>Export · Output</td><td><kbd>⇧⌘E</kbd> · <kbd>⌘P</kbd> (<kbd>Ctrl+Shift+E</kbd> · <kbd>Ctrl+P</kbd>)</td></tr>
                 <tr><td>Undo</td><td><kbd>⌘Z</kbd> (<kbd>Ctrl+Z</kbd>)</td></tr>
                 <tr><td>Close tab</td><td><kbd>⌘W</kbd> (<kbd>Ctrl+W</kbd>)</td></tr>
+                <tr><td>Switch between open documents (previous · next)</td><td><kbd>⇧⌘[</kbd> · <kbd>⇧⌘]</kbd> (<kbd>Ctrl+Shift+[</kbd> · <kbd>Ctrl+Shift+]</kbd>)</td></tr>
                 <tr><td>Settings</td><td><kbd>⌘,</kbd> (<kbd>Ctrl+,</kbd>)</td></tr>
                 <tr><td>Focus mode</td><td><kbd>⌘0</kbd> (<kbd>Ctrl+0</kbd>)</td></tr>
                 <tr><td>Feedback</td><td><kbd>⌘⇧F</kbd> (<kbd>Ctrl+Shift+F</kbd>)</td></tr>
