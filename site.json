@@ -15,5 +15,6 @@
   "paddle": {
     "env": "production",
     "token": "live_cabb4139eaefc5352ff10633596"
-  }
+  },
+  "storeVersion": "3.5.0"
 }

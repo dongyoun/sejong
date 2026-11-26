@@ -159,7 +159,8 @@ document.querySelectorAll('.lang-list a[data-l]').forEach((a) =>
       if (f) el.href = f.url;
       el.classList.toggle('disabled', !f);
     });
-    all('[data-dl-meta]').forEach((el) => (el.textContent = META[which(el.dataset.dlMeta)] || T.prep));
+    // 스토어 단추는 스토어에 실제로 있는 판(build.mjs 가 data-store-ver 에 적음 — 새 판이 인증 중이면 옛 판)
+    all('[data-dl-meta]').forEach((el) => (el.textContent = el.dataset.dlMeta === 'store' && el.dataset.storeVer ? `${el.dataset.storeVer} · Microsoft Store` : META[which(el.dataset.dlMeta)] || T.prep));
     all('[data-sha]').forEach((el) => {
       const f = which(el.dataset.sha) === 'win' ? win.exe : mac.dmg;
       el.textContent = f ? f.sha256 : '—';
