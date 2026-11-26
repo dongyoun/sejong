@@ -1,57 +1,57 @@
 {
   "product": "sejong",
-  "version": "3.5.0",
-  "date": "2026-11-25",
+  "version": "3.5.7",
+  "date": "2026-11-26",
   "minVersion": "0.0.0",
   "page": "https://hyperseven.pages.dev",
-  "notes": "하이퍼 AI 의 답이 쓰는 대로 보이고, 내 컴퓨터의 AI 도 연결됩니다.\n- 답이 실시간으로 흐르고, [멈춤]으로 언제든 멈춥니다.\n- 올라마 같은 내 컴퓨터의 AI 모델을 주소만 적어 연결합니다.\n- 제안을 하나씩 골라 적용하고, 누르면 문서의 그 자리로 갑니다.\n- 글을 고르고 오른쪽 클릭하면 하이퍼 AI 로 바로 다듬습니다.\n- 셈에서 함수를 고른 뒤 칸을 누르거나 끌어 범위를 넣습니다. 한글 상태로 친 수식도 바로 영문으로 바뀝니다.\n- 새 발표가 바로 열리고, 테마는 언제든 바꿉니다.\n- 탭이 많아도 지금 문서가 늘 보이고, 좁은 창에서는 서식 단추가 » 안에 모입니다.\n- 한글 입력 뒤 Enter, 셈의 Tab·Enter, 발표 글 상자 입력이 더 매끄럽습니다.\n- PDF 글을 고칠 때 누른 자리에 바로 커서가 놓입니다.\n- 영어 문장 첫머리의 The 같은 낱말이 한글로 바뀌지 않습니다. 영어 화면에서는 한/영 자동 전환이 처음부터 꺼져 있습니다.\n- 윈도우에서 하이퍼 AI 창이나 서식 칸에 커서가 있어도 저장·열기 단축키가 됩니다.\n- 도구 › 매뉴얼에서 그림과 함께 따라 하는 매뉴얼을 엽니다.\n- 맥에서 ⌘Q 로 앱을 완전히 끝냅니다.\n- 하이퍼 AI 연결을 포함해 모든 기능이 무료입니다. 메뉴 막대의 ♥ 응원에서 커피 한 잔으로 응원할 수 있습니다.",
+  "notes": "내 컴퓨터 AI가 긴 문서도 끝까지 읽습니다.\n- Ollama로 쓰는 내 컴퓨터 AI가 문서 크기에 맞춰 읽을 자리를 넓혀, 첨삭 그림이 붙은 공문이나 20쪽 넘는 보고서도 빠짐없이 읽고 고칠 안을 냅니다.\n- 한 번에 읽기엔 너무 긴 문서는 고칠 부분을 골라 보내라고 우리말로 알려 줍니다.\n- 윈도우 설치 파일이 최신 윈도우 11에서도 한 번에 설치됩니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-arm64.dmg",
-        "size": 150180586,
-        "sha256": "15e97aa74fa9babcd5e7875c1ce2857e2db3cada0c9237aa4e55e435d77266e8"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-3.5.7-arm64.dmg",
+        "size": 150184463,
+        "sha256": "e8a651d9bdc0cf471e8b97251d822ee7acb4e3260dd076da3a8411a76b9d284d"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-arm64.zip",
-        "size": 149710422,
-        "sha256": "82964ec6e0222bdf4560126ee5a8645f063c695a8afafd42601dcb746a692ad0"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-3.5.7-arm64.zip",
+        "size": 144380276,
+        "sha256": "1bdb84fee2f85598628e6960e62c2aa89b50a9626b394249286a778b9d0c8810"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-x64.dmg",
-        "size": 157727352,
-        "sha256": "b0562bd85195714b14b6b36614a699c00eb7978558ff5a738355c4022b571923"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-3.5.7-x64.dmg",
+        "size": 157748677,
+        "sha256": "675d77e178792b8969bebeaaf6f91e66b5d836d9d378040b796307e9e9355201"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-x64.zip",
-        "size": 157309947,
-        "sha256": "01e2c4575a041ee2f03828f4d36d342fe36d4c1577b4ecbc3f65a073a0771360"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-3.5.7-x64.zip",
+        "size": 151951834,
+        "sha256": "a668f8292fdcbbf234a46390e45261c292d077bf2dd94bc75bf1ba2659cc1001"
       }
     }
   },
   "win": {
     "x64": {
       "exe": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-win-x64.exe",
-        "size": 119132012,
-        "sha256": "709601b1fe2d946a1de6905fb94f903c3346908bbb63657ec97c6514ed9e36f6"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-3.5.7-win-x64.exe",
+        "size": 124503758,
+        "sha256": "91a9a08d93f649f5d7f202fad5184ee22f4a31bb607e975d43afe84714449a66"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.0/HyperSeven-Office-3.5.0-win-x64.zip",
-        "size": 167284365,
-        "sha256": "f19fb2fd856f944fa77cc08ae312a516767b74a6ba262599196dd6011772a137"
+        "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-3.5.7-win-x64.zip",
+        "size": 161569017,
+        "sha256": "42c2f03c23b216af946e003ca52232503e7bfdd48219c44c4e494bb5ca96c745"
       }
     }
   },
   "bundle": {
-    "version": "3.5.6",
-    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.6/HyperSeven-Office-bundle-3.5.6.zip",
-    "size": 5316464,
-    "sha256": "5af7b23c32b65f5ce04426cb5c2c3cf69d1432b5dddc040ef9f1a05fb829e7b5",
+    "version": "3.5.7",
+    "url": "https://github.com/dongyoun/sejong/releases/download/v3.5.7/HyperSeven-Office-bundle-3.5.7.zip",
+    "size": 5318491,
+    "sha256": "25ba1f165dca146bcc00b797b3b90240e9fdbd38b396567256138cb6108f5bbc",
     "shellMin": "3.2.0",
-    "notes": "하이퍼 AI를 쓰는 세 가지 길이 한눈에 보입니다.\n- 내 API 키, 밖의 AI(키 없이, MCP), 내 컴퓨터 AI(무료, Ollama) 가운데 편한 길을 고릅니다.\n- [연결 설정 복사] 한 번으로 Claude 데스크톱에서 하이퍼세븐 오피스를 씁니다."
+    "notes": "내 컴퓨터 AI가 긴 문서도 끝까지 읽습니다.\n- Ollama로 쓰는 내 컴퓨터 AI가 문서 크기에 맞춰 읽을 자리를 넓혀, 첨삭 그림이 붙은 공문이나 20쪽 넘는 보고서도 빠짐없이 읽고 고칠 안을 냅니다.\n- 한 번에 읽기엔 너무 긴 문서는 고칠 부분을 골라 보내라고 우리말로 알려 줍니다.\n- 윈도우 설치 파일이 최신 윈도우 11에서도 한 번에 설치됩니다."
   },
   "config": {
     "flags": {},
@@ -60,5 +60,5 @@
       "report": "https://hyperseven.pages.dev/api/report"
     }
   },
-  "sig": "/eIT+4cza+yhtq15OA84gZjkD09sX7+p/905TlYVIn92OfX9Ixa7JThi6EbzgBNB6+UUEfqnSwWTmytdlcG/Bw=="
+  "sig": "HWL1MJvIaBGsWmdZ1+CSMFUosrTZem/SN/mvCcgqnmgdBwf8ObwdHE9R33ARHCGQDSfIxMLAOeoRv8NM3qE7Dw=="
 }
