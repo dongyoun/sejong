@@ -1,43 +1,43 @@
 {
   "product": "hyperseven-cad",
-  "version": "1.3.10",
-  "date": "2026-11-25",
+  "version": "1.3.11",
+  "date": "2026-11-27",
   "minVersion": "0.0.0",
-  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.10",
-  "notes": "하이퍼세븐 캐드 1.3.10: 하이퍼 AI 를 내 API 키로, 또는 키 없이 밖의 AI(MCP)로 쓰는 길이 한눈에 보이고, 내 키로 보내는 답을 조금씩 받아 긴 일도 끊기지 않습니다. 문서 여럿을 함께 열어 오가고, 대지와 용도지역만으로 정북 일조로 깎인 법정 최대 볼륨을 만듭니다. 자세한 내용은 내려받기 쪽에 있습니다.",
+  "page": "https://github.com/dongyoun/hyperseven-cad/releases/tag/v1.3.11",
+  "notes": "하이퍼세븐 캐드 1.3.11: 윈도우에서 로그인 단추가 폴더를 열던 것을 고쳤습니다. Claude 데스크톱은 한 번 눌러 붙고 Codex 연결 줄이 생겼습니다. 모양을 골라 폭·높이를 따르는 문·창을 만드는 문·창 작성기, 숨긴 것을 보고 하나씩 되살리는 목록, 공동주택 채광 사선과 두 동 사이 거리 검토가 들었습니다. 자세한 내용은 내려받기 쪽에 있습니다.",
   "mac": {
     "arm64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.10/HyperSeven-CAD-1.3.10-arm64.dmg",
-        "size": 81381076,
-        "sha256": "3d8e05f290d7c4e8fea53c5775d28443dda34d4a64c8d84090d4959fc356b734"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.11/HyperSeven-CAD-1.3.11-arm64.dmg",
+        "size": 82081738,
+        "sha256": "f21657912ee1f64c633bd02f944bc1cabe52bc29ef2d28ee66b9e759b4e64c4d"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.10/HyperSeven-CAD-1.3.10-arm64.zip",
-        "size": 73869554,
-        "sha256": "e285a1d406b3142fbea984126e8025d52f441e8b95361eeb7bc5fcc4c9a34aa5"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.11/HyperSeven-CAD-1.3.11-arm64.zip",
+        "size": 74558960,
+        "sha256": "b2497c9f85dfe90412f0f80972c541f3d25bc6356dd0d9388fd7b133baaebacc"
       }
     },
     "x64": {
       "dmg": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.10/HyperSeven-CAD-1.3.10-x64.dmg",
-        "size": 94162336,
-        "sha256": "a62a149c5eaa3d18ec90fc9bacf9898ecc40a63755374f8a0879cadaf63897d9"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.11/HyperSeven-CAD-1.3.11-x64.dmg",
+        "size": 94353589,
+        "sha256": "1c9fd8be8c769504614b2eb495f01729252cbac5cb1b60fd81a6c6b38e18b04e"
       },
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.10/HyperSeven-CAD-1.3.10-x64.zip",
-        "size": 84440057,
-        "sha256": "5969f304da9c39af75d64a52f2ce58d12533aa8768c8c6525d0674c562c2e25b"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.11/HyperSeven-CAD-1.3.11-x64.zip",
+        "size": 84621599,
+        "sha256": "c5ab74da1184017d338dc64990303d1ba3a9ce2614af09a541bd3e87e5bb9606"
       }
     }
   },
-  "notes_en": "HyperSeven CAD 1.3.10: using Hyper AI with your own API key, or without a key through an outside AI over MCP, is clear at a glance, and answers sent with your key arrive bit by bit so long tasks are not cut off. Open several documents and switch between them, and build the zoning envelope cut by the north sunlight rule from just the site and the zone. Details are on the download page.",
+  "notes_en": "HyperSeven CAD 1.3.11: sign-in on Windows no longer opens a folder. Claude Desktop connects with one click and there is a Codex connection line. A door and window maker makes doors and windows that follow their width and height, a list shows hidden items to bring back one by one, and the permit review adds the housing daylight plane and the distance between blocks. Details are on the download page.",
   "win": {
     "x64": {
       "zip": {
-        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.10/HyperSeven-CAD-1.3.10-win-x64.zip",
-        "size": 93520208,
-        "sha256": "69f20dab8e08537729841dd748938e55f3039870468b1d6fabadfdefa4028491"
+        "url": "https://github.com/dongyoun/hyperseven-cad/releases/download/v1.3.11/HyperSeven-CAD-1.3.11-win-x64.zip",
+        "size": 94732621,
+        "sha256": "5d77aca06165e710e56ea4ad9750179a2cbd5d7d9d78716b38d31601fae4d237"
       }
     }
   }

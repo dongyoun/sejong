@@ -81,7 +81,7 @@
           <p>HyperSeven CAD runs on Macs (Apple Silicon and Intel) and on Windows 10 and 11 (64-bit).</p>
           <ul>
             <li><b>Mac</b> — Get the .dmg from <a href="cad.html#download">Download</a>, open it and drag <b>HyperSeven CAD</b> into the <b>Applications</b> folder. For an Intel Mac, use <b>Intel Mac</b> under the download button.</li>
-            <li><b>Windows</b> — Click <b>Download for Windows</b> to install from the Microsoft Store. If you use <b>Zip file (.zip)</b> below it, unzip the file and open <b>supercad.exe</b>.</li>
+            <li><b>Windows</b> — Click <b>Download for Windows</b>, unzip the .zip file and open <b>supercad.exe</b>. To install from the store instead, click <b>Microsoft Store</b> below it.</li>
           </ul>
           <h3>First launch</h3>
           <p>On the Mac, if macOS asks whether to open an app downloaded from the internet, click <b>Open</b>. On Windows, if you opened the app from the .zip and see “Windows protected your PC”, click <b>More info → Run anyway</b>.</p>
@@ -274,7 +274,8 @@
           <p>For Claude Code on a Mac, run this one line in Terminal once.</p>
           <pre class="code">claude mcp add hyperseven-cad -- "/Applications/HyperSeven CAD.app/Contents/MacOS/supercad" mcp</pre>
           <ul>
-            <li><b>Claude Desktop</b> — in the card of the Hyper AI panel, click <b>Copy connection settings</b> under <b>Outside AI</b>. Paste it in Claude Desktop under Settings › Developer › Edit Config, then restart Claude.</li>
+            <li><b>Claude Desktop</b> — if Claude Desktop is on this computer, click <b>Connect to Claude Desktop</b> once under <b>Outside AI</b> in the card of the Hyper AI panel (from 1.3.11). Only this app is added to Claude's settings file, other servers stay as they are, and a copy of the old settings is kept in the same folder. Quit Claude completely and open it again to connect. To add it by hand, click <b>Copy connection settings</b> and paste it in Claude Desktop under Settings › Developer › Edit Config.</li>
+            <li><b>Codex</b> — for Codex (the app, CLI and IDE share one configuration), run the same kind of line in a terminal once: <code>codex mcp add hyperseven-cad -- "/Applications/HyperSeven CAD.app/Contents/MacOS/supercad" mcp</code>. <b>Connect another AI app</b> in the Hyper AI panel shows the line for this computer with <b>Copy</b> (from 1.3.11).</li>
             <li><b>Claude Code on Windows</b> — click <b>Connect another AI app</b> in the same place to see the command for this computer. Click <b>Copy</b> and paste it into a terminal. After you add your own key, the same is under <b>How to connect</b> at the top of the panel.</li>
           </ul>
           <p>An outside AI connects without a HyperSeven sign-in or an API key.</p>
